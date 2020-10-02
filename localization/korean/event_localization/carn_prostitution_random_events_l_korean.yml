@@ -6,7 +6,7 @@ carn_prostitution_random_events.0003.notification:1 "매춘: [ROOT.Char.GetFaith
 carn_prostitution_random_events.0005.notification:1 "매춘: 고객이 높은 팀을 제공함"
 
 carn_prostitution_random_events.0011.t:1 "매춘: 매혹적인 제안"
-carn_prostitution_random_events.0011.desc:1 "내 침대에 매혹적으로 누웠을 때, 내 다음 고객이 다름아닌 [client.Custom2('MyCharacterIntroduction', ROOT.Char)]임에 흥미가 일었습니다.\n\n막을 수 없는 정욕에 의해, [client.GetSheHe](은)는 내 서비스에 대해 좋은 보상을 할 것입니다..."
+carn_prostitution_random_events.0011.desc:1 "내 침대에 매혹적으로 누웠을 때, 내 다음 고객이 다름아닌 [client.Custom2('MyCharacterIntroduction', ROOT.Char)]임에 흥미가 일었습니다.\n\n막을 수 없는 욕정에 가득찬 채 나를 노려보는 [client.GetSheHe]는 내 봉사에 분명 좋은 보상을 할 것입니다..."
 
 carn_prostitution_random_events.0011.a:1 "누가 그런 기회를 거절할까?"
 carn_prostitution_random_events.0011.b:1 "거절 할 수 밖에 없어."
