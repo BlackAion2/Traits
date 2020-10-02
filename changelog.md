@@ -22,4 +22,6 @@ New on_actions for modders:
 
 ## Bug Fixes
 
-### Fixed children born from slaves having no owner.
+### Slavery System
+
+* Fixed children born from slaves having no owner.
