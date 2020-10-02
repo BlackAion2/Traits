@@ -908,7 +908,7 @@ window = {
 								fixedgridbox = {
 									name = "traits_tiny"
 									datamodel = "[CharacterWindow.GetTraits]"
-									visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)10')]"
+									visible = "[And(GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)10'), LessThanOrEqualTo_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)22'))]"
 									flipdirection = yes
 									addcolumn = 24
 									addrow = 25
@@ -921,6 +921,36 @@ window = {
 											blockoverride "icon_size"
 											{
 												size = { 25 25 }
+											}
+
+											blockoverride "glow" {
+												glow = {
+													visible = "[Or(Trait.IsGenetic(), Trait.IsInheritable())]"
+													color = { 0.4 0.5 0.65 1 }
+													glow_radius = 2
+													using = Glow_Standard
+												}
+											}
+										}
+									}
+								}
+
+								fixedgridbox = {
+									name = "traits_tiny_showmoretraits"
+									datamodel = "[CharacterWindow.GetTraits]"
+									visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)22')]"
+									flipdirection = yes
+									addcolumn = 17
+									addrow = 18
+									maxhorizontalslots = 16
+									datamodel_wrap = 16
+									maxverticalslots = 3
+
+									item = {
+										icon_trait = {
+											blockoverride "icon_size"
+											{
+												size = { 20 20 }
 											}
 
 											blockoverride "glow" {
@@ -1079,7 +1109,7 @@ window = {
 								fixedgridbox = {
 									name = "traits_tiny"
 									datamodel = "[CharacterWindow.GetTraits]"
-									visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)8')]"
+									visible = "[And(GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)8'), LessThanOrEqualTo_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)18'))]"
 									flipdirection = yes
 									addcolumn = 24
 									addrow = 25
@@ -1092,6 +1122,36 @@ window = {
 											blockoverride "icon_size"
 											{
 												size = { 25 25 }
+											}
+
+											blockoverride "glow" {
+												glow = {
+													visible = "[Or(Trait.IsGenetic(), Trait.IsInheritable())]"
+													color = { 0.4 0.5 0.65 1 }
+													glow_radius = 2
+													using = Glow_Standard
+												}
+											}
+										}
+									}
+								}
+
+								fixedgridbox = {
+									name = "traits_tiny_showmoretraits"
+									datamodel = "[CharacterWindow.GetTraits]"
+									visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)18')]"
+									flipdirection = yes
+									addcolumn = 17
+									addrow = 18
+									maxhorizontalslots = 13
+									datamodel_wrap = 13
+									maxverticalslots = 3
+
+									item = {
+										icon_trait = {
+											blockoverride "icon_size"
+											{
+												size = { 20 20 }
 											}
 
 											blockoverride "glow" {
@@ -2505,6 +2565,8 @@ window = {
 			########## RELATIONS TAB ###########
 			####################################
 
+			# modded by carnalitas to have a scrollbox + slaves list
+
 			widget = {
 				name = "relations"
 				visible = "[CharacterWindow.IsTabShown('relations')]"
@@ -2516,234 +2578,259 @@ window = {
 					name = "relations_main_view"
 					visible = "[Not( Or( Or( CharacterWindow.IsRelationExpanded( 'friends' ), CharacterWindow.IsRelationExpanded( 'rivals' ) ), CharacterWindow.IsRelationExpanded( 'slaves' ) ) )]" # Carnalitas: add a slaves expanded window
 
-					widget = {
-						name = "first_row"
-						layoutpolicy_horizontal = expanding
+					scrollbox = {
 						layoutpolicy_vertical = expanding
-						maximumsize = { -1 110 }
-						scissor = yes
-
-						hbox = {
-							vbox_character_row_item = {
-								name = "wards"
-								visible = "[CharacterWindow.GetCharacter.IsAdult]"
-								layoutpolicy_vertical = expanding
-
-								blockoverride "portrait_datamodel" {
-									datamodel = "[CharacterWindow.GetRelationsOfTypeFillEmpty( GetRelation( 'ward' ), '(int32)2' )]"
-								}
-
-								blockoverride "header_text"
-								{
-									text = "WARDS_LABEL"
-								}
-
-								blockoverride "expand_button" {}
-
-								blockoverride "empty_character"
-								{
-									visible = "[Character.IsValid]"
-								}
-							}
-
-							vbox_character_row_item = {
-								name = "lovers"
-								visible = "[CharacterWindow.GetCharacter.IsAdult]"
-								layoutpolicy_vertical = expanding
-
-								blockoverride "portrait_datamodel" {
-									datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'lover' ) )]"
-								}
-
-								blockoverride "header_text"
-								{
-									text = "LOVERS_LABEL"
-								}
-
-								blockoverride "expand_button" {}
-							}
-
-							vbox_character_row_item = {
-								name = "guardian"
-								visible = "[Not(CharacterWindow.GetCharacter.IsAdult)]"
-								layoutpolicy_vertical = expanding
-
-								blockoverride "portrait_datamodel" {
-									datamodel = "[CharacterWindow.GetRelationsOfTypeFillEmpty( GetRelation( 'guardian' ), '(int32)1' )]"
-								}
-
-								blockoverride "header_text"
-								{
-									text = "GUARDIAN_LABEL"
-								}
-
-								blockoverride "expand_button" {}
-							}
-
-							vbox_character_row_item = {
-								name = "crushes"
-								visible = "[Not(CharacterWindow.GetCharacter.IsAdult)]"
-								layoutpolicy_vertical = expanding
-
-								blockoverride "portrait_datamodel" {
-									datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'crush' ) )]"
-								}
-
-								blockoverride "header_text"
-								{
-									text = "CRUSHES_LABEL"
-								}
-
-								blockoverride "expand_button" {}
-							}
-
-							expand = {}
-						}
-					}
-
-					widget = {
-						name = "second_row"
 						layoutpolicy_horizontal = expanding
-						layoutpolicy_vertical = expanding
-						maximumsize = { -1 110 }
-						scissor = yes
 
-						hbox = {
-							layoutpolicy_horizontal = expanding
+						blockoverride "scrollbox_margins" {}
 
-							vbox_character_row_item = {
-								name = "friends"
-								layoutpolicy_vertical = expanding
+						blockoverride "scrollbox_content" {
+							widget = {
+								name = "first_row"
 								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+								minimumsize = { -1 110 }
+								maximumsize = { -1 110 }
+								scissor = yes
 
-								blockoverride "portrait_datamodel" {
-									datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'friend' ) )]"
-								}
+								hbox = {
+									vbox_character_row_item = {
+										name = "wards"
+										visible = "[CharacterWindow.GetCharacter.IsAdult]"
+										layoutpolicy_vertical = expanding
 
-								blockoverride "header_text"
-								{
-									text = "FRIENDS_LABEL"
-								}
+										blockoverride "portrait_datamodel" {
+											datamodel = "[CharacterWindow.GetRelationsOfTypeFillEmpty( GetRelation( 'ward' ), '(int32)2' )]"
+										}
 
-								blockoverride "remaining_items"
-								{
-									visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'friend' ) )), '(int32)7' ))]"
-									text = "[GetNumberAbove_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'friend' ) )), '(int32)7' )|=]"
-								}
+										blockoverride "header_text"
+										{
+											text = "WARDS_LABEL"
+										}
 
-								blockoverride "expand_button_inside" {
-									visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'friend' ) )), '(int32)7' )]"
-									onclick = "[CharacterWindow.ToggleExpandedRelation( 'friends' )]"
+										blockoverride "expand_button" {}
+
+										blockoverride "empty_character"
+										{
+											visible = "[Character.IsValid]"
+										}
+									}
+
+									vbox_character_row_item = {
+										name = "lovers"
+										visible = "[CharacterWindow.GetCharacter.IsAdult]"
+										layoutpolicy_vertical = expanding
+
+										blockoverride "portrait_datamodel" {
+											datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'lover' ) )]"
+										}
+
+										blockoverride "header_text"
+										{
+											text = "LOVERS_LABEL"
+										}
+
+										blockoverride "expand_button" {}
+									}
+
+									vbox_character_row_item = {
+										name = "guardian"
+										visible = "[Not(CharacterWindow.GetCharacter.IsAdult)]"
+										layoutpolicy_vertical = expanding
+
+										blockoverride "portrait_datamodel" {
+											datamodel = "[CharacterWindow.GetRelationsOfTypeFillEmpty( GetRelation( 'guardian' ), '(int32)1' )]"
+										}
+
+										blockoverride "header_text"
+										{
+											text = "GUARDIAN_LABEL"
+										}
+
+										blockoverride "expand_button" {}
+									}
+
+									vbox_character_row_item = {
+										name = "crushes"
+										visible = "[Not(CharacterWindow.GetCharacter.IsAdult)]"
+										layoutpolicy_vertical = expanding
+
+										blockoverride "portrait_datamodel" {
+											datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'crush' ) )]"
+										}
+
+										blockoverride "header_text"
+										{
+											text = "CRUSHES_LABEL"
+										}
+
+										blockoverride "expand_button" {}
+									}
+
+									expand = {}
 								}
 							}
 
-							expand = {}
-						}
-					}
+							widget = {
+								name = "second_row"
+								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+								minimumsize = { -1 110 }
+								maximumsize = { -1 110 }
+								scissor = yes
 
-					widget = {
-						name = "third_row"
-						layoutpolicy_horizontal = expanding
-						layoutpolicy_vertical = expanding
-						maximumsize = { -1 110 }
-						scissor = yes
+								hbox = {
+									layoutpolicy_horizontal = expanding
 
-						hbox = {
-							layoutpolicy_horizontal = expanding
+									vbox_character_row_item = {
+										name = "friends"
+										layoutpolicy_vertical = expanding
+										layoutpolicy_horizontal = expanding
 
-							# Carnalitas: show slaves
+										blockoverride "portrait_datamodel" {
+											datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'friend' ) )]"
+										}
 
-							vbox_character_row_item = {
-								name = "slaves"
+										blockoverride "header_text"
+										{
+											text = "FRIENDS_LABEL"
+										}
+
+										blockoverride "remaining_items"
+										{
+											visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'friend' ) )), '(int32)7' ))]"
+											text = "[GetNumberAbove_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'friend' ) )), '(int32)7' )|=]"
+										}
+
+										blockoverride "expand_button_inside" {
+											visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'friend' ) )), '(int32)7' )]"
+											onclick = "[CharacterWindow.ToggleExpandedRelation( 'friends' )]"
+										}
+									}
+
+									expand = {}
+								}
+							}
+
+							widget = {
+								name = "third_row"
+								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+								minimumsize = { -1 110 }
+								maximumsize = { -1 110 }
+								scissor = yes
+
+								hbox = {
+									layoutpolicy_horizontal = expanding
+
+									vbox_character_row_item = {
+										name = "rivals"
+										visible = "[CharacterWindow.GetCharacter.IsAdult]"
+										layoutpolicy_vertical = expanding
+										layoutpolicy_horizontal = expanding
+
+										blockoverride "portrait_datamodel" {
+											datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'rival' ) )]"
+										}
+
+										blockoverride "header_text"
+										{
+											text = "RIVALS_LABEL"
+										}
+
+										blockoverride "remaining_items"
+										{
+											visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'rival' ) )), '(int32)7' ))]"
+											text = "[GetNumberAbove_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'rival' ) )), '(int32)7' )|=]"
+										}
+
+										blockoverride "expand_button_inside" {
+											visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'rival' ) )), '(int32)7' )]"
+											onclick = "[CharacterWindow.ToggleExpandedRelation( 'rivals' )]"
+										}
+									}
+
+									vbox_character_row_item = {
+										name = "bullies"
+										visible = "[Not( CharacterWindow.GetCharacter.IsAdult )]"
+										layoutpolicy_vertical = expanding
+										layoutpolicy_horizontal = expanding
+
+										blockoverride "portrait_datamodel" {
+											datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'bully' ) )]"
+										}
+
+										blockoverride "header_text"
+										{
+											text = "BULLIES_LABEL"
+										}
+
+										blockoverride "expand_button" {}
+									}
+
+									vbox_character_row_item = {
+										name = "victims"
+										visible = "[Not( CharacterWindow.GetCharacter.IsAdult )]"
+										layoutpolicy_vertical = expanding
+										layoutpolicy_horizontal = expanding
+
+										blockoverride "portrait_datamodel" {
+											datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'victim' ) )]"
+										}
+
+										blockoverride "header_text"
+										{
+											text = "VICTIMS_LABEL"
+										}
+
+										blockoverride "expand_button" {}
+									}
+
+									expand = {}
+								}
+							}
+
+							widget = {
+								name = "carnalitas_fourth_row"
 								visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'slave' ) )), '(int32)0' ))]"
-								layoutpolicy_vertical = expanding
-								#layoutpolicy_horizontal = expanding
-
-								blockoverride "portrait_datamodel" {
-									datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'slave' ) )]"
-								}
-
-								blockoverride "header_text"
-								{
-									text = "game_concept_slaves"
-								}
-
-								blockoverride "remaining_items"
-								{
-									visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'slave' ) )), '(int32)4' ))]"
-									text = "[GetNumberAbove_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'slave' ) )), '(int32)4' )|=]"
-								}
-
-								blockoverride "expand_button_inside" {
-									visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'slave' ) )), '(int32)4' )]"
-									onclick = "[CharacterWindow.ToggleExpandedRelation( 'slaves' )]"
-								}
-							}
-
-							vbox_character_row_item = {
-								name = "rivals"
-								visible = "[CharacterWindow.GetCharacter.IsAdult]"
-								layoutpolicy_vertical = expanding
 								layoutpolicy_horizontal = expanding
-
-								blockoverride "portrait_datamodel" {
-									datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'rival' ) )]"
-								}
-
-								blockoverride "header_text"
-								{
-									text = "RIVALS_LABEL"
-								}
-
-								blockoverride "remaining_items"
-								{
-									visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'rival' ) )), '(int32)8' ))]"
-									text = "[GetNumberAbove_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'rival' ) )), '(int32)8' )|=]"
-								}
-
-								blockoverride "expand_button_inside" {
-									visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'rival' ) )), '(int32)8' )]"
-									onclick = "[CharacterWindow.ToggleExpandedRelation( 'rivals' )]"
-								}
-							}
-
-							vbox_character_row_item = {
-								name = "bullies"
-								visible = "[Not( CharacterWindow.GetCharacter.IsAdult )]"
 								layoutpolicy_vertical = expanding
-								layoutpolicy_horizontal = expanding
+								minimumsize = { -1 110 }
+								maximumsize = { -1 110 }
+								scissor = yes
 
-								blockoverride "portrait_datamodel" {
-									datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'bully' ) )]"
+								# Carnalitas: show slaves
+								hbox = {
+									layoutpolicy_horizontal = expanding
+
+									vbox_character_row_item = {
+										name = "slaves"
+										visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'slave' ) )), '(int32)0' ))]"
+										layoutpolicy_vertical = expanding
+										layoutpolicy_horizontal = expanding
+
+										blockoverride "portrait_datamodel" {
+											datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'slave' ) )]"
+										}
+
+										blockoverride "header_text"
+										{
+											text = "game_concept_slaves"
+										}
+
+										blockoverride "remaining_items"
+										{
+											visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'slave' ) )), '(int32)7' ))]"
+											text = "[GetNumberAbove_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'slave' ) )), '(int32)7' )|=]"
+										}
+
+										blockoverride "expand_button_inside" {
+											visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'slave' ) )), '(int32)7' )]"
+											onclick = "[CharacterWindow.ToggleExpandedRelation( 'slaves' )]"
+										}
+									}
 								}
-
-								blockoverride "header_text"
-								{
-									text = "BULLIES_LABEL"
-								}
-
-								blockoverride "expand_button" {}
 							}
-
-							vbox_character_row_item = {
-								name = "victims"
-								visible = "[Not( CharacterWindow.GetCharacter.IsAdult )]"
-								layoutpolicy_vertical = expanding
-								layoutpolicy_horizontal = expanding
-
-								blockoverride "portrait_datamodel" {
-									datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'victim' ) )]"
-								}
-
-								blockoverride "header_text"
-								{
-									text = "VICTIMS_LABEL"
-								}
-
-								blockoverride "expand_button" {}
-							}
-
-							expand = {}
 						}
 					}
 

@@ -28,7 +28,7 @@ game_concept_slave_owners_possessive:1 "des maîtres d'esclave"
 game_concept_slave_owner_desc:1 "Un [character|El] peut être légalement reconnu comme étant propriétaire d'un ou plusieurs [slaves|El]. Les maîtres d'esclaves ont toujours un [strong_hook|El] envers leur esclaves et peuvent les acheter ou les vendre au [slave_market|El]. De plus, les [extramarital_sex|El] entre un esclave et son maître sont légales.\n\nSi un maître d'esclave meurt, la possession de ses esclaves sera passée à son [primary_heir|El]."
 
 game_concept_slave_market:1 "Marché aux esclaves"
-game_concept_slave_market_desc:1 "Les [slaves|El], n'étant que des propriétés, peuvent être acheté et vendu par d'autre [characters|El] à partir de l'[interactions|El] 'Acheter l'esclave' ou 'Vendre l'esclave'. Un personnage qui achète un esclave deviendra son [slave_owner|El]."
+game_concept_slave_market_desc:1 "Les [slaves|El], n'étant que des propriétés, peuvent être acheté et vendu par d'autre [characters|El] à partir de l'[interactions|El] 'Acheter l'esclave' ou 'Vendre l'esclave'. Un personnage qui achète un esclave deviendra son [slave_owner|El].\n\nUn esclave ayant de bonnes [skills|El], [traits|El], ou [claims|El] se vendra à un prix bien plus élevé. Un [noble|El], une jeune femme, ou un [GetTrait('eunuch').GetName( GetNullCharacter )] sera particulièrement prisé."
 
 game_concept_prostitute:1 "Prostituée"
 game_concept_prostitutes:1 "Prostituées"

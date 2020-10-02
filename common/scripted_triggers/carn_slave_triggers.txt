@@ -19,6 +19,6 @@ carn_candidate_to_sell_slave_to_trigger = {
 	highest_held_title_tier >= tier_county
 	is_diplomatically_available = yes
 	in_diplomatic_range = scope:actor
-	gold >= scope:recipient.carn_slave_price_value
+	gold > 0
 	NOT = { is_at_war_with = scope:actor }
 }

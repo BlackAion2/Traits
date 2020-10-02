@@ -10,7 +10,6 @@ carn_buy_slave_directly_interaction = {
 	needs_recipient_to_open = yes
 
 	greeting = positive
-	notification_text = carn_buy_slave_offer
 	
 	ai_min_reply_days = 0
 	ai_max_reply_days = 0

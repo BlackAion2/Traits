@@ -63,8 +63,4 @@ carn_futa.0010 = {
 			}
 		}
 	}
-
-	option = {
-		name = OK
-	}
 }

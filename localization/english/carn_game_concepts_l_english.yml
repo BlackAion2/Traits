@@ -28,7 +28,7 @@
  game_concept_slave_owner_desc: "A [character|E] can be a legally recognized $game_concept_slave_owner$ of one or more [slaves|E]. Slave owners always have a [strong_hook|E] on their slaves and can buy or sell them on the [slave_market|E]. Additionally, [extramarital_sex|E] between a slave and their owner is legal.\n\nIf a slave owner dies, ownership of slaves will pass to their [primary_heir|E]."
 
  game_concept_slave_market: "Slave Market"
- game_concept_slave_market_desc: "[slaves|E], being property, can be bought and sold by other [characters|E] through the $carn_buy_slave_directly_interaction$ or $carn_sell_slave_interaction$ [interactions|E]. A character who buys a slave will become their [slave_owner|E]."
+ game_concept_slave_market_desc: "[slaves|E], being property, can be bought and sold by other [characters|E] through the $carn_buy_slave_directly_interaction$ or $carn_sell_slave_interaction$ [interactions|E]. A character who buys a slave will become their [slave_owner|E].\n\nA slave with good [skills|E], [traits|E], or [claims|E] will sell for a much higher price. A [noble|E], young woman, or [GetTrait('eunuch').GetName( GetNullCharacter )] is especially prized."
 
  game_concept_prostitute: "Prostitute"
  game_concept_prostitutes: "Prostitutes"

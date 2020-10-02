@@ -399,6 +399,14 @@ carn_enslave_effect = {
 			}
 		}
 	}
+
+	hidden_effect = {
+		scope:new_slave = {
+			trigger_event = {
+				on_action = carn_on_slave_enslaved
+			}
+		}
+	}
 }
 
 # frees the scoped character if they are a slave
@@ -407,10 +415,14 @@ carn_free_slave_effect = {
 	every_relation = {
 		type = slave_owner
 		remove_relation_slave = prev
+		save_scope_as = former_owner
 	}
 	hidden_effect = {
 		remove_trait = slave
 		add_trait = former_slave
+		trigger_event = {
+			on_action = carn_on_slave_freed
+		}
 	}
 }
 
@@ -608,6 +620,10 @@ carn_free_slave_interaction_effect = {
 }
 
 carn_buy_slave_effect = {
+	save_scope_value_as = {
+		name = slave_price
+		value = $SLAVE_PRICE$
+	}
 	scope:slave = {
 		hidden_effect = {
 			every_relation = {
@@ -621,9 +637,23 @@ carn_buy_slave_effect = {
 		}
 	}
 	scope:buyer = {
-		pay_short_term_gold = {
-			gold = $SLAVE_PRICE$
-			target = scope:seller
+		if = {
+			limit = {
+				gold >= scope:slave_price
+			}
+			pay_short_term_gold = {
+				gold = scope:slave_price
+				target = scope:seller
+			}
+		}
+		else = {
+			custom_tooltip = carn_buyer_not_enough_gold_for_slave_price_tooltip
+			hidden_effect = {
+				pay_short_term_gold = {
+					gold = current_gold_value
+					target = scope:seller
+				}
+			}
 		}
 		set_relation_slave = scope:slave
 		hidden_effect = {

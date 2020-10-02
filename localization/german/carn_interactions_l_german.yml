@@ -56,8 +56,9 @@ carn_buy_slave_on_market_interaction_desc:0 "Browse all available [slaves|E] for
 actor_secondary_carn_buy_slave_on_market_interaction:0 "Buyer"
 
 carn_sell_slave_interaction:0 "Sell Slave"
-carn_sell_slave_interaction_desc:0 "Sell [recipient.GetShortUINameNoTooltip] on the [slave_market|E] for [gold|E]"
+carn_sell_slave_interaction_desc:0 "Sell [recipient.GetShortUINameNoTooltip] on the [slave_market|E] for #high [gold_i][SCOPE.ScriptValue('carn_scope_recipient_carn_slave_price_value')|0]#!"
 recipient_secondary_carn_sell_slave_interaction:0 "Buyer"
+carn_buyer_not_enough_gold_for_slave_price_tooltip:0 "Pays #high [gold_i][SCOPE.ScriptValue('carn_scope_buyer_current_gold_value')|0]#! to [seller.GetShortUINameNoTooltip] #weak (cannot afford full price of [gold_i][SCOPE.ScriptValue('carn_scope_slave_price_value')|0])#!"
 
 carn_secondary_recipient_is_my_knight_reason:0 "[secondary_recipient.GetShortUIName|U] is my [recipient.Custom('KnightCulture')]: $VALUE|=+0$"
 carn_secondary_recipient_is_my_councillor_reason:0 "[secondary_recipient.GetShortUIName|U] is my [councillor|E]: $VALUE|=+0$"

@@ -35,3 +35,7 @@ doctrine_parameter_carn_prostitution_accepted:1 "Tout personnage ayant le moindr
 
 doctrine_parameter_naked_females_active:1 "Les femmes pratiquant cette religion sont dénudées"
 doctrine_parameter_naked_males_active:1 "Les hommes pratiquant cette religion sont dénudés"
+
+carn_dummy_doctrine_name:1 ""
+carn_we_need_this_to_define_parameters_otherwise_error_log_complains_name:1 ""
+carn_we_need_this_to_define_parameters_otherwise_error_log_complains_desc:1 ""

@@ -1,6 +1,6 @@
 ﻿carn_start_birth_control_decision = {
 	ai_check_interval = 0
-	picture = "gfx/interface/illustrations/decisions/decision_prostitution.dds"
+	picture = "gfx/interface/illustrations/decisions/decision_birth_control.dds"
 
 	desc = carn_start_birth_control_decision_desc
 
@@ -46,7 +46,7 @@
 
 carn_stop_birth_control_decision = {
 	ai_check_interval = 0
-	picture = "gfx/interface/illustrations/decisions/decision_prostitution.dds"
+	picture = "gfx/interface/illustrations/decisions/decision_birth_control.dds"
 
 	desc = carn_stop_birth_control_decision_desc
 

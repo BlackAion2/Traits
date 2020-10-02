@@ -25,13 +25,17 @@ carn_sex_scene_fallback = {
 
 # DOES NOT trigger off random passive pregnancy with spouse/consort
 
-# You can check the chance of pregnancy with scope:carn_sex_char_1_could_be_impregnated, scope:carn_sex_char_2_could_be_impregnated
+# You can check the chance of pregnancy with
+# scope:carn_sex_char_1_could_be_impregnated,
+# scope:carn_sex_char_2_could_be_impregnated
 
-# You can check whether impregnation happened with scope:carn_sex_char_1_impregnated, scope:carn_sex_char_2_impregnated
+# You can check whether impregnation happened with
+# scope:carn_sex_char_1_impregnated,
+# scope:carn_sex_char_2_impregnated
 
 # You can check for specific sex acts with "carn_sex_scene_was_vaginal = yes", etc
 
-# root = the character receiving the event
+# root = the character that sees the sex scene event
 # scope:carn_sex_partner = the other partner in the sex effect
 
 carn_on_sex = {

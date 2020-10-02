@@ -35,3 +35,7 @@ doctrine_parameter_carn_prostitution_accepted:1 "拥有[prostitute|E][trait|E]�
 
 doctrine_parameter_naked_females_active:0 "Women following this religion are naked"
 doctrine_parameter_naked_males_active:0 "Men following this religion are naked"
+
+carn_dummy_doctrine_name:0 ""
+carn_we_need_this_to_define_parameters_otherwise_error_log_complains_name:0 ""
+carn_we_need_this_to_define_parameters_otherwise_error_log_complains_desc:0 ""

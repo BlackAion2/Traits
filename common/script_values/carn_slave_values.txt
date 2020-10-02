@@ -189,14 +189,6 @@
 		add = -3
 	}
 	if = {
-		limit = { has_trait = opium_addled }
-		add = -3
-	}
-	if = {
-		limit = { has_trait = henbane_addict }
-		add = -3
-	}
-	if = {
 		limit = { has_trait = rakish }
 		add = -3
 	}
@@ -423,4 +415,15 @@
 
 	# all slaves have a value of at least one ducat, even if they're crap
 	min = 1
+}
+
+# used in localization for carn_buy_slave_effect
+carn_scope_recipient_carn_slave_price_value = {
+	value = scope:recipient.carn_slave_price_value
+}
+carn_scope_buyer_current_gold_value = {
+	value = scope:buyer.current_gold_value
+}
+carn_scope_slave_price_value = {
+	value = scope:slave_price
 }

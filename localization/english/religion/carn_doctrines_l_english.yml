@@ -35,3 +35,7 @@
 
  doctrine_parameter_naked_females_active: "Women following this religion are naked"
  doctrine_parameter_naked_males_active: "Men following this religion are naked" 
+
+ carn_dummy_doctrine_name: ""
+ carn_we_need_this_to_define_parameters_otherwise_error_log_complains_name: ""
+ carn_we_need_this_to_define_parameters_otherwise_error_log_complains_desc: ""

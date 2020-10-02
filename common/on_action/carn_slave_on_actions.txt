@@ -1,4 +1,13 @@
-﻿on_set_relation_slave = {
+﻿# on_set_relation_slave
+# on_remove_relation_slave
+# on_death_relation_slave (fired for the slaveowner when they die)
+# on_set_relation_slave_owner
+# on_remove_relation_slave_owner
+# on_death_relation_slave_owner (fired for the slave when they die)
+# carn_on_slave_enslaved
+# carn_on_slave_freed
+
+on_set_relation_slave = {
 	effect = {
 		if = {
 			limit = {
@@ -87,5 +96,33 @@ on_remove_relation_slave_owner = {
 on_death_relation_slave_owner = { # fired for the slave when they die
 	effect = {
 		remove_relation_slave_owner = scope:target
+	}
+}
+
+# not used in Carnalitas, exposed for mods
+# ROOT is the slave
+# scope:new_owner is the new owner
+carn_on_slave_enslaved = {
+}
+
+# not used in Carnalitas, exposed for mods
+# ROOT is the slave
+# scope:former_owner is the former owner
+carn_on_slave_freed = {
+}
+
+######################################################################
+# vanilla on_actions
+######################################################################
+
+on_birth_child = {
+	events = {
+		carn_slave.0003 # Slave newborns get their owner relation
+	}
+}
+
+on_title_gain = {
+	events = {
+		carn_slave.0002 # Slaves are freed when they gain land for any reason
 	}
 }

@@ -2,6 +2,8 @@
 
 #
 # 0001. You have been enslaved
+# 0002. Slaves are freed when they gain land for any reason
+# 0003. Slave newborns get their owner relation
 #
 
 #
@@ -39,6 +41,46 @@ carn_slave.0001 = {
 					DRAMA = yes
 				}
 			}
+		}
+	}
+}
+
+#
+# 0002. Slaves are freed when they gain land for any reason
+#
+
+carn_slave.0002 = {
+	hidden = yes
+	trigger = {
+		has_trait = slave
+	}
+	immediate = {
+		carn_free_slave_effect = yes
+	}
+}
+
+#
+# 0003. Slave newborns get their owner relation
+#
+
+carn_slave.0003 = {
+	hidden = yes
+
+	trigger = {
+		scope:child = {
+			has_trait = slave
+		}
+	}
+
+	immediate = {
+		scope:mother = {
+			random_relation = {
+				type = slave_owner
+				save_scope_as = mother_owner
+			}
+		}
+		scope:child = {
+			set_relation_slave_owner = scope:mother_owner
 		}
 	}
 }

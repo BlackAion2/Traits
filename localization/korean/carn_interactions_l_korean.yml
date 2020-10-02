@@ -58,6 +58,7 @@ actor_secondary_carn_buy_slave_on_market_interaction:1 "구매자"
 carn_sell_slave_interaction:1 "노예 판매"
 carn_sell_slave_interaction_desc:1 "[recipient.GetShortUINameNoTooltip](을)를 [slave_market|E]에 [gold|E]으로 판다."
 recipient_secondary_carn_sell_slave_interaction:1 "구매자"
+carn_buyer_not_enough_gold_for_slave_price_tooltip:0 "Pays #high [gold_i][SCOPE.ScriptValue('carn_scope_buyer_current_gold_value')|0]#! to [seller.GetShortUINameNoTooltip] #weak (cannot afford full price of [gold_i][SCOPE.ScriptValue('carn_scope_slave_price_value')|0])#!"
 
 carn_secondary_recipient_is_my_knight_reason:1 "[secondary_recipient.GetShortUIName|U] is my [recipient.Custom('KnightCulture')]: $VALUE|=+0$"
 carn_secondary_recipient_is_my_councillor_reason:1 "[secondary_recipient.GetShortUIName|U] is my [councillor|E]: $VALUE|=+0$"
