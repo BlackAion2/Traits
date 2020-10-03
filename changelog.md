@@ -114,6 +114,10 @@ New scripted triggers:
 
 ## Tweaks
 
+### Sex Scene System
+
+* Requesting a noncon scene with the game rule "Dubious Consent Only" enabled will now request a dubcon scene instead of a consensual scene.
+
 ### Lay With Lover/Make Love
 
 * Changed the name of this interaction to Make Love.
@@ -131,6 +135,7 @@ New scripted triggers:
 
 ## Bug Fixes
 
+* Fixed requested sex scene flags not being cleared properly, causing the fallback event to sometimes not appear.
 * Fixed prostitutes only being able to rank up if they're ugly or dumb. They will now correctly rank up if they *aren't* ugly or dumb.
 * Fixed errors being thrown due to attempting to seed traits on dead characters.
 * Fixed sex between slave owners and slaves not correctly requesting noncon/dubcon scenes.

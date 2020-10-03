@@ -54,7 +54,7 @@ carn_sex_scene_effect = {
 			on_action = carn_sex_scene
 		}
 	}
-	clear_variable_list = carn_sex_scene_requested_flags
+	carn_clear_sex_scene_requested_flags_effect = yes
 }
 
 #
@@ -147,6 +147,10 @@ carn_sex_scene_request_noncon = {
 	if = {
 		limit = { has_game_rule = carn_content_consent_noncon }
 		flag:noncon = { add_to_list = carn_sex_scene_requested_flags }
+	}
+	else_if = {
+		limit = { has_game_rule = carn_content_consent_dubcon }
+		flag:dubcon = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }
 
@@ -331,4 +335,16 @@ carn_sex_scene_is_scat = {
 
 carn_sex_scene_is_gore = {
 	flag:gore = { add_to_list = carn_sex_scene_flags }
+}
+
+#
+# carn_clear_sex_scene_requested_flags_effect
+# used internally to clean up variables, don't worry about it
+#
+
+carn_clear_sex_scene_requested_flags_effect = {
+	every_in_list = {
+		list = carn_sex_scene_requested_flags
+		remove_from_list = carn_sex_scene_requested_flags
+	}
 }
