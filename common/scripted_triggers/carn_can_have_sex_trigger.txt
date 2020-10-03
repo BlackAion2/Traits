@@ -1,4 +1,4 @@
-﻿# checks that a character is a valid target to spend time with
+﻿# checks that a character is a reasonable target for a sex scene
 carn_can_have_sex_trigger = {
 	OR = {
 		has_trait_with_flag = carn_can_always_have_sex
