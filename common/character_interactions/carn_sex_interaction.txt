@@ -111,8 +111,8 @@
             # request the sex scene
             hidden_effect = {
 
+                # lovers and soulmates always consensual
                 if = {
-                    # lovers and soulmates always consensual
                     limit = {
                         scope:actor = {
                             OR = {
@@ -123,8 +123,8 @@
                     }
                     carn_sex_scene_request_consensual = yes
                 }
-                else = {
-                    # for slaves and concubines, get scenes ranging from consensual to noncon
+                # for slaves and concubines, get scenes ranging from consensual to noncon
+                else_if = {
                     limit = {
                         scope:actor = {
                             OR = {
@@ -181,8 +181,8 @@
                         carn_sex_scene_request_noncon = yes
                     }
                 }
+                # get dubcon for characters that dislike you / are not attracted to you (but accept sex with you for some reason, like being a prostitute)
                 else_if = {
-                    # get dubcon for characters that dislike you / are not attracted to you (but accept sex with you for some reason, like being a prostitute)
                     limit = {
                         scope:recipient = {
                             OR = {
@@ -196,8 +196,8 @@
                     }
                     carn_sex_scene_request_dubcon = yes
                 }
+                # fallback to consensual scene
                 else = {
-                    # fallback to consensual scene
                     carn_sex_scene_request_consensual = yes
                 }
 
