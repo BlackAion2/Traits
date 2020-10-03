@@ -1,5 +1,5 @@
 ﻿# Increase stress every year
-on_yearly_playable = {
+yearly_playable_pulse = {
 	events = {
 		carn_arousal.0001
 	}

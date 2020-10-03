@@ -54,7 +54,7 @@ carn_prostitution_yearly_maintenance_pulse = {
 						id = carn_prostitution_random_events.0001
 					}
 				}
-				50 = {
+				70 = {
 					trigger_event = { on_action = carn_prostitution_random_events_pulse }
 				}
 			}

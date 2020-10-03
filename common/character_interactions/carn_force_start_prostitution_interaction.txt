@@ -6,25 +6,25 @@
 	desc = carn_force_start_prostitution_interaction_desc
 	
 	is_shown = {
+		OR = {
+			has_game_rule = carn_prostitution_content_any_gender
+			AND = {
+				scope:recipient = { is_male = yes }
+				has_game_rule = carn_prostitution_content_male_only
+			}
+			AND = {
+				scope:recipient = { is_female = yes }
+				has_game_rule = carn_prostitution_content_female_only
+			}
+		}
 		scope:actor = {
 			has_relation_slave = scope:recipient
+			NOT = { faith = { has_doctrine = carn_doctrine_prostitution_crime } }
 		}
 		scope:recipient = {
 			is_adult = yes
 			carn_is_working_as_prostitute_trigger = no
-			OR = {
-				has_game_rule = carn_prostitution_content_any_gender
-				AND = {
-					is_male = yes
-					has_game_rule = carn_prostitution_content_male_only
-				}
-				AND = {
-					is_female = yes
-					has_game_rule = carn_prostitution_content_female_only
-				}
-			}
 			NOR = {
-				faith = { has_doctrine = carn_doctrine_prostitution_crime }
 				has_character_flag = carn_cannot_be_prostitute
 				has_trait_with_flag = carn_cannot_be_prostitute
 			}

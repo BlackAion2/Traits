@@ -143,3 +143,4 @@ New scripted triggers:
 * Fixed prostitutes only being able to rank up if they're ugly or dumb. They will now correctly rank up if they *aren't* ugly or dumb.
 * Fixed errors being thrown due to attempting to seed traits on dead characters.
 * Fixed sex between slave owners and slaves not correctly requesting noncon/dubcon scenes.
+* Fixed `carn_increase_dick_size_one_step_effect` accidentally being overwritten and doing nothing.

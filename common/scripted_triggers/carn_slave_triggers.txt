@@ -21,4 +21,5 @@ carn_candidate_to_sell_slave_to_trigger = {
 	in_diplomatic_range = scope:actor
 	gold > 0
 	NOT = { is_at_war_with = scope:actor }
+	is_imprisoned = no
 }

@@ -27,6 +27,7 @@
     is_valid_showing_failures_only = {
         scope:actor = {
             carn_can_have_sex_trigger = yes
+            is_attracted_to_gender_of = scope:recipient
         }
         scope:recipient = {
             is_diplomatically_available = yes

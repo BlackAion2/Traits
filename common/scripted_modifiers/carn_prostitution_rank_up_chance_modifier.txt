@@ -3,14 +3,14 @@
 	modifier = {
 		add = {
 			value = diplomacy
-			multiply = 0.2
+			multiply = 0.1
 		}
 	}
 
 	modifier = {
 		add = {
 			value = intrigue
-			multiply = 0.2
+			multiply = 0.1
 		}
 	}
 
@@ -21,12 +21,22 @@
 
 	modifier = {
 		add = 1
+		has_trait = diligent
+	}
+
+	modifier = {
+		add = 1
 		has_trait = gregarious
 	}
 
 	modifier = {
 		add = -2
 		has_trait = chaste
+	}
+
+	modifier = {
+		add = -2
+		has_trait = lazy
 	}
 
 	modifier = {
