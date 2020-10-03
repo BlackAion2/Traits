@@ -45,16 +45,16 @@ carn_prostitution_yearly_maintenance_pulse = {
 		}
 		else = {
 			random_list = {
-				20 = {
+				200 = {
 					# nothing
 				}
-				10 = {
+				100 = {
 					carn_prostitution_rank_up_chance_modifier = yes
 					trigger_event = {
 						id = carn_prostitution_random_events.0001
 					}
 				}
-				70 = {
+				700 = {
 					trigger_event = { on_action = carn_prostitution_random_events_pulse }
 				}
 			}

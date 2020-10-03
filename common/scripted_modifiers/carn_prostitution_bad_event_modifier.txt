@@ -1,31 +1,33 @@
 ﻿carn_prostitution_bad_event_modifier = {
 
-	compare_modifier = {
-		target = root
-		value = diplomacy
-		multiplier = -0.1
-		offset = inverted_mediocre_skill_rating
-	}
-
-	compare_modifier = {
-		target = root
-		value = intrigue
-		multiplier = -0.1
-		offset = inverted_mediocre_skill_rating
+	modifier = {
+		add = {
+			value = diplomacy
+			add = -10
+			multiply = -2
+		}
 	}
 
 	modifier = {
-		add = -0.2
+		add = {
+			value = intrigue
+			add = -10
+			multiply = -2
+		}
+	}
+
+	modifier = {
+		factor = 0.8
 		has_trait = seducer
 	}
 
 	modifier = {
-		add = -0.1
+		factor = 0.9
 		has_trait = prostitute_2
 	}
 
 	modifier = {
-		add = -0.2
+		factor = 0.8
 		has_trait = prostitute_3
 	}
 }
