@@ -21,7 +21,7 @@ sluttification.0001 = {
     title = sluttification.0001.t
     
     desc = {
-		desc = sluttification.0001.desc.opening
+	desc = sluttification.0001.desc.opening
         triggered_desc = {
             trigger = {
                 scope:carn_new_trait = flag:lustful
@@ -42,11 +42,11 @@ sluttification.0001 = {
         }
     }
     
-	theme = seduce_scheme
-	left_portrait = {
-		character = scope:recipient
-		animation = flirtation_left
-	}
+    theme = seduce_scheme
+    left_portrait = {
+        character = scope:recipient
+        animation = flirtation_left
+    }
 
     trigger = {
         scope:recipient = {
