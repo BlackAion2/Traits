@@ -2128,7 +2128,7 @@ window = {
 
 				vbox = {
 					name = "family_main_view"
-					visible = "[Not( Or(CharacterWindow.IsRelationExpanded( 'children' ), CharacterWindow.IsRelationExpanded( 'siblings' ) ) )]"
+					visible = "[Not( Or( Or( Or( CharacterWindow.IsRelationExpanded( 'children' ), CharacterWindow.IsRelationExpanded( 'siblings' ) ), CharacterWindow.IsRelationExpanded( 'spouses' ) ), CharacterWindow.IsRelationExpanded( 'concubines' ) ) )]"
 
 					widget = {
 						name = "parents_grandparents_spouses"
@@ -2209,6 +2209,19 @@ window = {
 								}
 							}
 
+							expand = {}
+						}
+					}
+
+					widget = {
+						name = "sec_spouses"
+						visible = "[GreaterThan_int32( Character.GetMaxSpouses, '(int32)1' )]"
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						maximumsize = { -1 110 }
+						scissor = yes
+
+						hbox = {
 							vbox_character_row_item = {
 								name = "secondary_spouses"
 								visible = "[GreaterThan_int32( Character.GetMaxSpouses, '(int32)1' )]"
@@ -2298,7 +2311,19 @@ window = {
 									}
 								}
 							}
+							expand = {}
+						}
+					}
 
+					widget = {
+						name = "consort_conc"
+						visible = "[GreaterThan_int32( Character.GetMaxConsorts, '(int32)0' )]"
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+						maximumsize = { -1 110 }
+						scissor = yes
+
+						hbox = {
 							vbox_character_row_item = {
 								name = "consorts"
 								visible = "[GreaterThan_int32( Character.GetMaxConsorts, '(int32)0' )]"
@@ -2576,7 +2601,7 @@ window = {
 
 				vbox = {
 					name = "relations_main_view"
-					visible = "[Not( Or( Or( CharacterWindow.IsRelationExpanded( 'friends' ), CharacterWindow.IsRelationExpanded( 'rivals' ) ), CharacterWindow.IsRelationExpanded( 'slaves' ) ) )]" # Carnalitas: add a slaves expanded window
+					visible = "[Not( Or( Or( Or( Or( CharacterWindow.IsRelationExpanded( 'friends' ), CharacterWindow.IsRelationExpanded( 'rivals' ) ), CharacterWindow.IsRelationExpanded( 'slaves' ) ), CharacterWindow.IsRelationExpanded( 'lovers' ) ), CharacterWindow.IsRelationExpanded( 'wards' ) ) )]" # Carnalitas: add a slaves expanded window
 
 					scrollbox = {
 						layoutpolicy_vertical = expanding
@@ -2595,45 +2620,6 @@ window = {
 
 								hbox = {
 									vbox_character_row_item = {
-										name = "wards"
-										visible = "[CharacterWindow.GetCharacter.IsAdult]"
-										layoutpolicy_vertical = expanding
-
-										blockoverride "portrait_datamodel" {
-											datamodel = "[CharacterWindow.GetRelationsOfTypeFillEmpty( GetRelation( 'ward' ), '(int32)2' )]"
-										}
-
-										blockoverride "header_text"
-										{
-											text = "WARDS_LABEL"
-										}
-
-										blockoverride "expand_button" {}
-
-										blockoverride "empty_character"
-										{
-											visible = "[Character.IsValid]"
-										}
-									}
-
-									vbox_character_row_item = {
-										name = "lovers"
-										visible = "[CharacterWindow.GetCharacter.IsAdult]"
-										layoutpolicy_vertical = expanding
-
-										blockoverride "portrait_datamodel" {
-											datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'lover' ) )]"
-										}
-
-										blockoverride "header_text"
-										{
-											text = "LOVERS_LABEL"
-										}
-
-										blockoverride "expand_button" {}
-									}
-
-									vbox_character_row_item = {
 										name = "guardian"
 										visible = "[Not(CharacterWindow.GetCharacter.IsAdult)]"
 										layoutpolicy_vertical = expanding
@@ -2651,20 +2637,34 @@ window = {
 									}
 
 									vbox_character_row_item = {
-										name = "crushes"
-										visible = "[Not(CharacterWindow.GetCharacter.IsAdult)]"
+										name = "wards"
+										visible = "[CharacterWindow.GetCharacter.IsAdult]"
 										layoutpolicy_vertical = expanding
 
 										blockoverride "portrait_datamodel" {
-											datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'crush' ) )]"
+											datamodel = "[CharacterWindow.GetRelationsOfTypeFillEmpty( GetRelation( 'ward' ), '(int32)2' )]"
 										}
 
 										blockoverride "header_text"
 										{
-											text = "CRUSHES_LABEL"
+											text = "WARDS_LABEL"
 										}
 
-										blockoverride "expand_button" {}
+										blockoverride "remaining_items"
+										{
+											visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) )), '(int32)7' ))]"
+											text = "[GetNumberAbove_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) )), '(int32)7' )|=]"
+										}
+
+										blockoverride "expand_button_inside" {
+											visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) )), '(int32)7' )]"
+											onclick = "[CharacterWindow.ToggleExpandedRelation( 'wards' )]"
+										}
+
+										blockoverride "empty_character"
+										{
+											visible = "[Character.IsValid]"
+										}
 									}
 
 									expand = {}
@@ -2706,6 +2706,65 @@ window = {
 											visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'friend' ) )), '(int32)7' )]"
 											onclick = "[CharacterWindow.ToggleExpandedRelation( 'friends' )]"
 										}
+									}
+
+									expand = {}
+								}
+							}
+
+							widget = {
+								name = "second_row_lovers"
+								layoutpolicy_horizontal = expanding
+								layoutpolicy_vertical = expanding
+								minimumsize = { -1 110 }
+								maximumsize = { -1 110 }
+								scissor = yes
+
+								hbox = {
+									layoutpolicy_horizontal = expanding
+
+									vbox_character_row_item = {
+										name = "lovers"
+									 	visible = "[CharacterWindow.GetCharacter.IsAdult]"
+										layoutpolicy_vertical = expanding
+										layoutpolicy_horizontal = expanding
+
+										blockoverride "portrait_datamodel" {
+											datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'lover' ) )]"
+										}
+
+										blockoverride "header_text"
+										{
+											text = "LOVERS_LABEL"
+										}
+
+										blockoverride "remaining_items"
+										{
+											visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'lover' ) )), '(int32)7' ))]"
+											text = "[GetNumberAbove_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'lover' ) )), '(int32)7' )|=]"
+										}
+
+										blockoverride "expand_button_inside" {
+											visible = "[GreaterThan_int32( GetDataModelSize(CharacterWindow.GetRelationsOfType( GetRelation( 'lover' ) )), '(int32)7' )]"
+											onclick = "[CharacterWindow.ToggleExpandedRelation( 'lovers' )]"
+										}
+									}
+
+									vbox_character_row_item = {
+										name = "crushes"
+										visible = "[Not(CharacterWindow.GetCharacter.IsAdult)]"
+										layoutpolicy_vertical = expanding
+
+										blockoverride "portrait_datamodel" {
+											datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'crush' ) )]"
+										}
+
+										blockoverride "header_text"
+										{
+											text = "CRUSHES_LABEL"
+										}
+
+										blockoverride "expand_button" {}
 									}
 
 									expand = {}
@@ -2932,6 +2991,71 @@ window = {
 						}
 					}
 				}
+
+				### LOVERS EXPANDED
+				scrollbox = {
+					name = "lovers_expanded"
+					visible = "[CharacterWindow.IsRelationExpanded( 'lovers' )]"
+					size = { 100% 100% }
+
+					blockoverride "scrollbox_replace_vbox" {
+						vbox_character_row_item = {
+							name = "lovers"
+							margin_top = 10
+							spacing = 5
+
+
+							blockoverride "portrait_datamodel" {
+								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'lover' ) )]"
+							}
+
+							blockoverride "header_text"
+							{
+								text = "LOVERS_LABEL"
+							}
+
+							blockoverride "expand_button_inside" {
+								onclick = "[CharacterWindow.ToggleExpandedRelation( 'lovers' )]"
+								down = "[CharacterWindow.IsRelationExpanded( 'lovers' )]"
+							}
+
+							blockoverride "gridbox_slots" {}
+						}
+					}
+				}
+
+				### WARDS EXPANDED
+				scrollbox = {
+					name = "wards_expanded"
+					visible = "[CharacterWindow.IsRelationExpanded( 'wards' )]"
+					size = { 100% 100% }
+
+					blockoverride "scrollbox_replace_vbox" {
+						vbox_character_row_item = {
+							name = "wards"
+							margin_top = 10
+							spacing = 5
+
+
+							blockoverride "portrait_datamodel" {
+								datamodel = "[CharacterWindow.GetRelationsOfType( GetRelation( 'ward' ) )]"
+							}
+
+							blockoverride "header_text"
+							{
+								text = "WARDS_LABEL"
+							}
+
+							blockoverride "expand_button_inside" {
+								onclick = "[CharacterWindow.ToggleExpandedRelation( 'wards' )]"
+								down = "[CharacterWindow.IsRelationExpanded( 'wards' )]"
+							}
+
+							blockoverride "gridbox_slots" {}
+						}
+					}
+				}
+
 				expand = {}
 			}
 
