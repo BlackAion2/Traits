@@ -8,11 +8,11 @@ setting_carn_std_disabled_desc:1 "Les personnages n'attraperont jamais la $trait
 
 rule_carn_sex_interaction:1 "#X Carnalitas:#! Coucher avec un amant"
 setting_carn_sex_interaction_disabled:1 "Désactivé"
-setting_carn_sex_interaction_disabled_desc:1 "Les interactions entre personnages permettant de coucher avec un conjoint, un amant ou un esclave seront désactivées."
+setting_carn_sex_interaction_disabled_desc:1 "Les interactions entre personnages permettant de coucher avec un personnage de son choix seront désactivées."
 setting_carn_sex_interaction_enabled:1 "#high Activé#!"
-setting_carn_sex_interaction_enabled_desc:1 "Vous pouvez coucher avec un conjoint, un amant ou un esclave avec une interaction de personnage. Ceci réduira le stress, et peut être effectué une fois tous les cinq ans."
+setting_carn_sex_interaction_enabled_desc:1 "Vous pouvez coucher avec vos conjoints, vos amants, des esclaves ou autre avec une interaction de personnage. Ceci réduira le stress, et peut être effectué une fois tous les [EmptyScope.ScriptValue('carn_sex_interaction_cooldown_base')|0] mois."
 setting_carn_sex_interaction_no_cd:1 "#high Sans limite de temps#!"
-setting_carn_sex_interaction_no_cd_desc:1 "Vous pouvez coucher avec un conjoint, un amant ou un esclave avec une interaction de personnage. Bien que cette action puisse être effectuée sans limite, elle ne réduira le stress que une fois tous les cinq ans."
+setting_carn_sex_interaction_no_cd_desc:1 "Vous pouvez utiliser l'interaction de personnage $carn_sex_interaction$ autant de fois que vous le souhaitez. Cependant, ces effets en jeux ne seront appliqués que tous les [EmptyScope.ScriptValue('carn_sex_interaction_cooldown_base')|0] mois."
 
 rule_carn_arousal_stress:1 "#X Carnalitas:#! Stress dû à l'excitation"
 setting_carn_arousal_stress_disabled:1 "Désactivé"
