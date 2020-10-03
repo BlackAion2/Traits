@@ -73,12 +73,11 @@
                 if = {
                     limit = {
                         faith = { NOT = { has_doctrine = carn_doctrine_prostitution_accepted } }
-                        add_piety = minor_piety_loss
                     }
+                    add_piety = minor_piety_loss
                 }
             }
 
-            # have sex, lose stress
             if = {
                 limit = {
                     NOT = { has_character_flag = carn_sex_interaction_effect_cd }
@@ -112,8 +111,8 @@
             # request the sex scene
             hidden_effect = {
 
-                # lovers and soulmates always consensual
                 if = {
+                    # lovers and soulmates always consensual
                     limit = {
                         scope:actor = {
                             OR = {
@@ -124,9 +123,8 @@
                     }
                     carn_sex_scene_request_consensual = yes
                 }
-
-                # for slaves and concubines, get scenes ranging from consensual to noncon
                 else = {
+                    # for slaves and concubines, get scenes ranging from consensual to noncon
                     limit = {
                         scope:actor = {
                             OR = {
@@ -183,9 +181,8 @@
                         carn_sex_scene_request_noncon = yes
                     }
                 }
-
-                # get dubcon for characters that dislike you / are not attracted to you (but accept sex with you for some reason, like being a prostitute)
-                else_if = { 
+                else_if = {
+                    # get dubcon for characters that dislike you / are not attracted to you (but accept sex with you for some reason, like being a prostitute)
                     limit = {
                         scope:recipient = {
                             OR = {
@@ -199,9 +196,8 @@
                     }
                     carn_sex_scene_request_dubcon = yes
                 }
-
-                # fallback to consensual scene
-                else = { 
+                else = {
+                    # fallback to consensual scene
                     carn_sex_scene_request_consensual = yes
                 }
 
