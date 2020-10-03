@@ -20,7 +20,6 @@ setting_carn_arousal_stress_disabled_desc:1 "캐릭터는 시간이 흘러가도
 setting_carn_arousal_stress_enabled:1 "#high 허용#!"
 setting_carn_arousal_stress_enabled_desc:1 "캐릭터는 시간이 흐르면 스트레스를 받습니다. 스트레스 증가량은 $trait_lustful$(이)나 $trait_rakish$(을)를 가지거나 $trait_chaste$(이)가 없을 시 증가합니다."
 
-
 rule_carn_pregnancy_complications:1 "#X Carnalitas:#! 임신 합병증"
 setting_carn_pregnancy_complications_default:1 "기본"
 setting_carn_pregnancy_complications_default_desc:1 "임신 및 출산 시 질병 또는 사망의 위험 확률이 변경되지 않습니다."

@@ -7,3 +7,5 @@ carn_can_be_granted_titles:1 "可以被授予头衔"
 carn_not_can_be_granted_titles:1 "不能被授予头衔"
 
 carn_slavery_is_illegal:1 "你的信仰不允许把[CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U]变为奴隶"
+
+carn_cannot_have_max_number_of_slave_prostitutes:0 "You do not have more than [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|0] slaves working as prostitutes"

@@ -1,9 +1,7 @@
 ﻿l_french:
-carn_sex_interaction:1 "Coucher avec mon amant[RECIPIENT.Custom('FR_E')]"
+carn_sex_interaction:1 "Faire l'amour"
 carn_sex_interaction_desc:1 "Passer un moment intime avec [recipient.GetShortUINameNoTooltip]"
-carn_sex_send:1 "Coucher avec [recipient.GetShortUINameNoTooltip]"
-carn_sex_interaction_notification:1 "Coucher avec mon amant[RECIPIENT.Custom('FR_E')]"
-carn_sex_interaction_effect_cd_tt:1 "#weak Cette action n'aura aucun effet en jeu, car vous avez déjà utilisé cette intéraction durant les cinq dernières années#!"
+carn_sex_interaction_effect_cd_tt:1 "#weak Cette action n'aura aucun effet en jeu, car vous avez déjà utilisé cette intéraction au cours des [EmptyScope.ScriptValue('carn_sex_interaction_cooldown_base')|0] mois#!"
 
 carn_enslave_interaction:1 "Asservir"
 carn_enslave_interaction_desc:1 "Faites de [recipient.GetShortUINameNoTooltip] votre [slave|El]"
@@ -81,3 +79,9 @@ actor_secondary_carn_make_same_sex_concubine_interaction:1 "Expéditeur"
 carn_find_same_sex_concubine_interaction:1 "Trouver un[ACTOR.Custom('FR_E')] [ACTOR.Custom('ConcubineConsort')|U]"
 carn_find_same_sex_concubine_interaction_desc:1 "Trouver un[ACTOR.Custom('FR_E')] [actor.Custom('ConcubineConsort')|U] du même sexe dans votre court"
 actor_secondary_carn_find_same_sex_concubine_interaction:1 "Expéditeur"
+
+carn_force_start_prostitution_interaction:1 "Forcer à se prostituer"
+carn_force_start_prostitution_interaction_desc:1 "Forcer [recipient.GetShortUINameNoTooltip] à récolter de l'[gold|El] pour vous en tant que [Concept( 'prostitute', 'prostitué' )|El][recipient.Custom('FR_E')|El]"
+
+carn_force_stop_prostitution_interaction:1 "Arrêter la prostitution forcée"
+carn_force_stop_prostitution_interaction_desc:1 "Arrêter de forcer [recipient.GetShortUINameNoTooltip] à travailler pour vous en tant que [Concept( 'prostitute', 'prostitué' )|El][recipient.Custom('FR_E')|El]"
