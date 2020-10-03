@@ -19,13 +19,7 @@ For example, here is an event that makes women lustful, content, or trusting:
 sluttification.0001 = {
     type = character_event
     title = sluttification.0001.t
-
-	theme = seduce_scheme
-	left_portrait = {
-		character = scope:recipient
-		animation = flirtation_left
-	}
-
+    
     desc = {
 		desc = sluttification.0001.desc.opening
         triggered_desc = {
@@ -47,6 +41,12 @@ sluttification.0001 = {
             desc = sluttification.0001.desc.gained_trusting
         }
     }
+    
+	theme = seduce_scheme
+	left_portrait = {
+		character = scope:recipient
+		animation = flirtation_left
+	}
 
     trigger = {
         scope:recipient = {
