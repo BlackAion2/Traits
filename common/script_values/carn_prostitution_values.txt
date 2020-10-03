@@ -6,7 +6,7 @@ carn_prostitute_sex_interaction_price_value = {
 		limit = { has_trait = prostitute_2 }
 		multiply = 2
 	}
-	if = {
+	else_if = {
 		limit = { has_trait = prostitute_3 }
 		multiply = 5
 	}

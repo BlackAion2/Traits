@@ -11,3 +11,8 @@ carn_slavery_is_illegal = {
 	first_not = carn_slavery_is_illegal
 	third_not = carn_slavery_is_illegal
 }
+
+carn_cannot_have_max_number_of_slave_prostitutes = {
+	first = carn_cannot_have_max_number_of_slave_prostitutes
+	third = carn_cannot_have_max_number_of_slave_prostitutes
+}

@@ -14,7 +14,14 @@ carn_prostitution_yearly_maintenance_pulse = {
 				OR = {
 					carn_can_have_sex_trigger = no
 					age >= carn_prostitution_age_cutoff
-					faith = { has_doctrine = carn_doctrine_prostitution_crime }
+					NOR = {
+						faith = { NOT = { has_doctrine = carn_doctrine_prostitution_crime } }
+						any_relation = {
+							type = slave_owner
+							is_alive = yes
+							faith = { NOT = { has_doctrine = carn_doctrine_prostitution_crime } }
+						}
+					}
 					has_character_flag = carn_cannot_be_prostitute
 					has_trait_with_flag = carn_cannot_be_prostitute
 				}
@@ -24,6 +31,15 @@ carn_prostitution_yearly_maintenance_pulse = {
 				title = msg_carn_stopped_working_as_prostitute
 				left_icon = root
 				custom_tooltip = carn_can_no_longer_work_as_prostitute_tooltip
+			}
+			every_relation = {
+				type = slave_owner
+				send_interface_message = {
+					type = event_generic_neutral
+					title = msg_carn_stopped_working_as_prostitute
+					left_icon = root
+					custom_tooltip = carn_can_no_longer_work_as_prostitute_tooltip
+				}
 			}
 			carn_stop_working_as_prostitute_effect = yes
 		}

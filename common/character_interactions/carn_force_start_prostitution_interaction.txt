@@ -1,0 +1,84 @@
+﻿carn_force_start_prostitution_interaction = {
+	interface_priority = 32
+	common_interaction = yes
+	category = interaction_category_prison
+
+	desc = carn_force_start_prostitution_interaction_desc
+	
+	is_shown = {
+		scope:actor = {
+			has_relation_slave = scope:recipient
+		}
+		scope:recipient = {
+			is_adult = yes
+			carn_is_working_as_prostitute_trigger = no
+			OR = {
+				has_game_rule = carn_prostitution_content_any_gender
+				AND = {
+					is_male = yes
+					has_game_rule = carn_prostitution_content_male_only
+				}
+				AND = {
+					is_female = yes
+					has_game_rule = carn_prostitution_content_female_only
+				}
+			}
+			NOR = {
+				faith = { has_doctrine = carn_doctrine_prostitution_crime }
+				has_character_flag = carn_cannot_be_prostitute
+				has_trait_with_flag = carn_cannot_be_prostitute
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			is_diplomatically_available = yes
+			carn_can_have_sex_trigger = yes
+		}
+	}
+
+	is_valid = {
+		scope:recipient = {
+			age < carn_prostitution_age_cutoff
+		}
+		scope:actor = {
+			custom_description = {
+				text = "carn_cannot_have_max_number_of_slave_prostitutes"
+				any_relation = {
+					type = slave
+					carn_is_working_as_prostitute_trigger = yes
+					count < carn_max_slave_prostitutes_per_owner
+				}
+			}
+		}
+	}
+	
+	on_accept = {
+		scope:actor = {
+			send_interface_toast = {
+				type = event_generic_neutral
+				title = msg_carn_started_working_as_prostitute
+				right_icon = scope:recipient
+				scope:recipient = {
+					carn_start_working_as_prostitute_effect = yes
+				}
+			}
+			if = {
+				limit = {
+					faith = {
+						NOT = { has_doctrine = carn_doctrine_prostitution_accepted }
+					}
+				}
+				add_piety_level = -1
+			}
+			stress_impact = {
+				generous = medium_stress_impact_gain
+				compassionate = major_stress_impact_gain
+			}
+		}
+	}
+
+	auto_accept = yes
+
+}

@@ -2,6 +2,10 @@
 
 ## New Features
 
+### Prostitution System
+
+* You can now force your slaves to earn money for you as prostitutes (up to a maximum of 10 slave-prostitutes). This is a great way to earn money, but it will tank your piety really quickly if slavery or prostitution is shunned in your faith.
+
 ### Personality Replacement Library for Modders
 
 Added a group of scripted effects that remove a random personality trait and replace it with a trait of your choice. This is meant for slave training/brainwashing effects but the possibilities are limitless.

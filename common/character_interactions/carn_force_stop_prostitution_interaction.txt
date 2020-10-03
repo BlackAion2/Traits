@@ -1,0 +1,43 @@
+﻿carn_force_start_prostitution_interaction = {
+	interface_priority = 32
+	common_interaction = yes
+	category = interaction_category_prison
+
+	desc = carn_force_stop_prostitution_interaction_desc
+	
+	is_shown = {
+		scope:actor = {
+			has_relation_slave = scope:recipient
+		}
+		scope:recipient = {
+			carn_is_working_as_prostitute_trigger = yes
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		scope:recipient = {
+			is_diplomatically_available = yes
+			is_available_adult = yes
+		}
+	}
+	
+	on_accept = {
+		scope:actor = {
+			send_interface_message = {
+				type = event_generic_neutral
+				title = msg_carn_stopped_working_as_prostitute
+				right_icon = scope:recipient
+				scope:recipient = {
+					carn_stop_working_as_prostitute_effect = yes
+				}
+			}
+			stress_impact = {
+				greedy = medium_stress_impact_gain
+				compassionate = major_stress_impact_loss
+			}
+		}
+	}
+
+	auto_accept = yes
+
+}
