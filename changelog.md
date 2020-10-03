@@ -5,6 +5,7 @@
 ### Miscellaneous
 
 * Now integrates Show More Traits from Steam Workshop, so you no longer need to use that mod. Our implementation is actually even better than the Workshop version because the super-small grid only appears if needed.
+* Changed relationship and family panels slightly to better accomodate larger numbers of spouses, concubines/consorts and wards. Inspired by Better Charqacter UI.
 
 ## Tweaks
 
