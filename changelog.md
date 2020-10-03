@@ -11,7 +11,9 @@ Added a group of scripted effects that remove a random personality trait and rep
 * `carn_resolve_personality_replacement_effect`
 * `carn_clear_personality_replacement_effect`
 
-You can use `carn_has_replaceable_personality_trait_trigger` to check whether a character has personality traits that are not flagged as "irreplaceable." To set a trait as irreplaceable use `carn_set_personality_trait_as_irreplaceable_trigger` (requires `TRAIT`).
+You can use `carn_has_replaceable_personality_trait_trigger` to check whether a character has personality traits that are not flagged as "irreplaceable."
+
+To mark a trait as irreplaceable for `carn_has_replaceable_personality_trait_trigger`, use `carn_set_personality_trait_as_irreplaceable_trigger` (requires `TRAIT`).
 
 For example, here is an event that makes women lustful, content, or trusting:
 
