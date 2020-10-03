@@ -29,7 +29,7 @@ carn_prostitution_yearly_maintenance_pulse = {
 		}
 		else = {
 			random_list = {
-				40 = {
+				20 = {
 					# nothing
 				}
 				10 = {

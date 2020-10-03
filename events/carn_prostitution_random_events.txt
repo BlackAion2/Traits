@@ -15,21 +15,6 @@
 # 0001. Leveled up prostitute trait
 carn_prostitution_random_events.0001 = {
 	hidden = yes
-
-	trigger = {
-		# only happens if you aren't already max level
-		NOT = { has_trait = prostitute_3 }
-
-		# will never happen if you're ugly or dumb
-		OR = {
-			has_trait = beauty_bad
-			has_trait = intellect_bad
-		}
-	}
-
-	weight_multiplier = {
-		base = 1
-	}
 	
 	immediate = {
 		send_interface_message = {
@@ -64,13 +49,16 @@ carn_prostitution_random_events.0002 = {
 carn_prostitution_random_events.0003 = {
 	hidden = yes
 
-	trigger = {
-		faith = { NOT = { has_doctrine = carn_doctrine_prostitution_accepted } }
-	}
-
 	weight_multiplier = {
 		base = 1
 		carn_prostitution_bad_event_modifier = yes
+
+		modifier = {
+			factor = 0
+			faith = {
+				has_doctrine = carn_doctrine_prostitution_accepted
+			}
+		}
 	}
 	
 	immediate = {
@@ -90,6 +78,11 @@ carn_prostitution_random_events.0004 = {
 	weight_multiplier = {
 		base = 1
 		carn_prostitution_bad_event_modifier = yes
+		
+		modifier = {
+			factor = 0
+			has_game_rule = carn_std_disabled
+		}
 	}
 	
 	immediate = {
@@ -219,6 +212,10 @@ carn_prostitution_random_events.0011 = {
 	desc = carn_prostitution_random_events.0011.desc
 
 	theme = seduce_scheme
+
+	override_background = {
+		event_background = bedchamber
+	}
 
 	left_portrait = {
 		character = scope:client

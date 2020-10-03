@@ -1,13 +1,17 @@
 ﻿carn_prostitution_rank_up_chance_modifier = {
 
-	compare_modifier = {
-		value = diplomacy
-		multiplier = 0.2
+	modifier = {
+		add = {
+			value = diplomacy
+			multiply = 0.2
+		}
 	}
 
-	compare_modifier = {
-		value = intrigue
-		multiplier = 0.2
+	modifier = {
+		add = {
+			value = intrigue
+			multiply = 0.2
+		}
 	}
 
 	modifier = {
@@ -78,5 +82,18 @@
 	modifier = {
 		factor = 0.5
 		age > 40
+	}
+
+	modifier = {
+		factor = 0
+		has_trait = prostitute_3
+	}
+	
+	modifier = {
+		factor = 0
+		OR = {
+			has_trait = beauty_bad
+			has_trait = intellect_bad
+		}
 	}
 }
