@@ -1,3 +1,2 @@
 ﻿l_english:
- carn_slave_prostitution.0001.t: "Earnings from Procuring"
- carn_slave_prostitution.0001.desc: "Your slaves paid you [gold_i][ROOT.Var('carn_slave_prostitution_earnings').GetValue|V0] from their prostitution earnings."
+ carn_slave_prostitution.0001.t: "Earnings from Slave Prostitution"

@@ -95,6 +95,11 @@
 	}
 
 	modifier = {
+		factor = 0.5
+		has_trait = prostitute_2
+	}
+
+	modifier = {
 		factor = 0
 		has_trait = prostitute_3
 	}

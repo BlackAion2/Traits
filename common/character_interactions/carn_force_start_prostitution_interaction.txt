@@ -1,6 +1,6 @@
 ﻿carn_force_start_prostitution_interaction = {
 	interface_priority = 32
-	common_interaction = yes
+	# common_interaction = yes
 	category = interaction_category_prison
 
 	desc = carn_force_start_prostitution_interaction_desc
