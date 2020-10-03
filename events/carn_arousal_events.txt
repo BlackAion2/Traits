@@ -20,14 +20,14 @@ carn_arousal.0001 = {
 			right_icon = this
 			# custom_tooltip = carn_msg_arousal_desc
 			add_stress = {
-				# Using -1 * medium_stress_loss as the base value instead of something more straightforward so as to balance the effect of carn_sex_interaction.
-				value = medium_stress_loss 	
+				# Using -1 * minor_stress_impact_loss as the base value instead of something more straightforward so as to balance the effect of carn_sex_interaction.
+				value = minor_stress_impact_loss 	
 				multiply = -1
 				if = {
 					limit = {
 						carn_has_high_arousal_trigger = yes
 					}
-					multiply = 1.5
+					multiply = 2
 				}
 			}
 		}

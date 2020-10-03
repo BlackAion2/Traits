@@ -230,12 +230,24 @@ carn_prostitution_random_events.0011 = {
 				gold = minor_gold_value
 			}
 		}
-		carn_sex_scene_request_consensual = yes
-		carn_sex_scene_effect = {
-			PLAYER = root
-			TARGET = scope:client
-			STRESS_EFFECTS = yes
-			DRAMA = no
+		show_as_tooltip = {
+			carn_had_sex_with_effect = {
+				CHARACTER_1 = root
+				CHARACTER_2 = scope:client
+				C1_PREGNANCY_CHANCE = pregnancy_chance
+				C2_PREGNANCY_CHANCE = pregnancy_chance
+				STRESS_EFFECTS = yes
+				DRAMA = no
+			}
+		}
+		hidden_effect = {
+			carn_sex_scene_request_consensual = yes
+			carn_sex_scene_effect = {
+				PLAYER = root
+				TARGET = scope:client
+				STRESS_EFFECTS = yes
+				DRAMA = no
+			}
 		}
 		reverse_add_opinion = {
 			target = scope:client

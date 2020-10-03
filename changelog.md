@@ -109,12 +109,28 @@ sluttification.0001 = {
 
 * Changed relationship and family panels slightly to better accomodate larger numbers of spouses, concubines/consorts and wards. Inspired by Better Character UI.
 
+New scripted triggers:
+* `carn_relationship_allows_free_sex_trigger` (requires `PARTNER`)
+
 ## Tweaks
 
+### Lay With Lover/Make Love
+
+* Changed the name of this interaction to Make Love.
+* Now allows you to pay to Make Love to prostitutes.
+* Reduced the amount of Stress lost.
+* Reduced the cooldown to 1 year.
+
+### Stress from Arousal
+
+* Now triggers every year, but grants a reduced amount of stress.
+
 ### Prostitution System
+
 * Significantly increased the chance for random prostitution events to happen.
 
 ## Bug Fixes
 
 * Fixed prostitutes only being able to rank up if they're ugly or dumb. They will now correctly rank up if they *aren't* ugly or dumb.
 * Fixed errors being thrown due to attempting to seed traits on dead characters.
+* Fixed sex between slave owners and slaves not correctly requesting noncon/dubcon scenes.
