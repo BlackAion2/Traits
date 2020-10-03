@@ -136,6 +136,7 @@ New scripted triggers:
 ### Prostitution System
 
 * Significantly increased the chance for random prostitution events to happen.
+* The Sell Slave window now opens to the wealthiest character able to buy a slave from you.
 
 ## Bug Fixes
 
