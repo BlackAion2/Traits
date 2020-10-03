@@ -1,8 +1,6 @@
 ﻿l_simp_chinese:
 carn_sex_interaction:1 "与情人一起共赴巫山"
 carn_sex_interaction_desc:1 "与[recipient.GetShortUINameNoTooltip]度过一段亲密时光。"
-carn_sex_send:1 "与[recipient.GetShortUINameNoTooltip]一起共赴巫山"
-carn_sex_interaction_notification:1 "与情人一起共赴巫山"
 carn_sex_interaction_effect_cd_tt:1 "#weak 由于您在5年以内已经使用过该互动选项，因此将不会有任何效果#!"
 
 carn_enslave_interaction:1 "奴役"
@@ -81,3 +79,9 @@ actor_secondary_carn_make_same_sex_concubine_interaction:0 "Sender"
 carn_find_same_sex_concubine_interaction:0 "Find [ACTOR.Custom('ConcubineConsort')|U]"
 carn_find_same_sex_concubine_interaction_desc:0 "Find a same-sex [actor.Custom('ConcubineConsort')|U] in your court"
 actor_secondary_carn_find_same_sex_concubine_interaction:0 "Sender"
+
+carn_force_start_prostitution_interaction:0 "Start Prostitution"
+carn_force_start_prostitution_interaction_desc:0 "Force [recipient.GetShortUINameNoTooltip] to earn [gold|E] for you as a [prostitute|E]"
+
+carn_force_stop_prostitution_interaction:0 "Stop Prostitution"
+carn_force_stop_prostitution_interaction_desc:0 "Stop [recipient.GetShortUINameNoTooltip] from working as a [prostitute|E]"
