@@ -935,7 +935,6 @@ window = {
 									}
 								}
 
-<<<<<<< HEAD
 								scrollbox = {
 									name = "traits_scroller_smoll"
 									visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)22')]"
@@ -977,32 +976,6 @@ window = {
 															using = Glow_Standard
 														}
 													}
-=======
-								fixedgridbox = {
-									name = "traits_tiny_showmoretraits"
-									datamodel = "[CharacterWindow.GetTraits]"
-									visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)22')]"
-									flipdirection = yes
-									addcolumn = 17
-									addrow = 18
-									maxhorizontalslots = 16
-									datamodel_wrap = 16
-									maxverticalslots = 3
-
-									item = {
-										icon_trait = {
-											blockoverride "icon_size"
-											{
-												size = { 20 20 }
-											}
-
-											blockoverride "glow" {
-												glow = {
-													visible = "[Or(Trait.IsGenetic(), Trait.IsInheritable())]"
-													color = { 0.4 0.5 0.65 1 }
-													glow_radius = 2
-													using = Glow_Standard
->>>>>>> parent of 9abd76a... Merge pull request #114 from TMPhoenix/scrollable-traits
 												}
 											}
 										}
@@ -1180,7 +1153,6 @@ window = {
 									}
 								}
 
-<<<<<<< HEAD
 								scrollbox = {
 									name = "traits_scroller"
 									visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)18')]"
@@ -1213,32 +1185,15 @@ window = {
 													{
 														size = { 39 39 }
 													}
-=======
-								fixedgridbox = {
-									name = "traits_tiny_showmoretraits"
-									datamodel = "[CharacterWindow.GetTraits]"
-									visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)18')]"
-									flipdirection = yes
-									addcolumn = 17
-									addrow = 18
-									maxhorizontalslots = 13
-									datamodel_wrap = 13
-									maxverticalslots = 3
->>>>>>> parent of 9abd76a... Merge pull request #114 from TMPhoenix/scrollable-traits
 
-									item = {
-										icon_trait = {
-											blockoverride "icon_size"
-											{
-												size = { 20 20 }
-											}
-
-											blockoverride "glow" {
-												glow = {
-													visible = "[Or(Trait.IsGenetic(), Trait.IsInheritable())]"
-													color = { 0.4 0.5 0.65 1 }
-													glow_radius = 2
-													using = Glow_Standard
+													blockoverride "glow" {
+														glow = {
+															visible = "[Or(Trait.IsGenetic(), Trait.IsInheritable())]"
+															color = { 0.4 0.5 0.65 1 }
+															glow_radius = 2
+															using = Glow_Standard
+														}
+													}
 												}
 											}
 										}
