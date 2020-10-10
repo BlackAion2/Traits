@@ -141,6 +141,7 @@ New scripted triggers:
 
 ## Bug Fixes
 
+* Fixed carn_can_have_sex_trigger not checking whether a character is an adult. (Damn you Paradox and your inconsistent trigger naming)
 * Fixed requested sex scene flags not being cleared properly, causing the fallback event to sometimes not appear.
 * Fixed prostitution random events being less affected by traits than intended.
 * Fixed prostitutes only being able to rank up if they're ugly or dumb. They will now correctly rank up if they *aren't* ugly or dumb.
