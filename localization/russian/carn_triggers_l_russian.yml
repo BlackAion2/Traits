@@ -7,3 +7,5 @@ carn_can_be_granted_titles:1 "Можно передать [titles|E]"
 carn_not_can_be_granted_titles:0 "Cannot be granted titles"
 
 carn_slavery_is_illegal:0 "Your faith does not permit the taking of [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U] as slaves"
+
+carn_cannot_have_max_number_of_slave_prostitutes:0 "You do not have more than [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|0] slaves working as prostitutes"

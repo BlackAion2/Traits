@@ -7,3 +7,5 @@ carn_can_be_granted_titles:1 "Peut se voir attribuer des titres"
 carn_not_can_be_granted_titles:1 "Ne peut pas se voir attribuer de titres"
 
 carn_slavery_is_illegal:1 "Votre foi ne vous permet pas d'asservir des [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U]"
+
+carn_cannot_have_max_number_of_slave_prostitutes:1 "Vous n'avez pas plus de [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|0] esclaves travaillant en tant que prostituées"

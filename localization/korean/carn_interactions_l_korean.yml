@@ -1,8 +1,6 @@
 ﻿l_korean:
 carn_sex_interaction:1 "연인과 자다"
 carn_sex_interaction_desc:1 "[recipient.GetShortUINameNoTooltip]와 친밀한 시간을 가진다."
-carn_sex_send:1 "[recipient.GetShortUINameNoTooltip]와 잔다"
-carn_sex_interaction_notification:1 "연인과 잔다"
 carn_sex_interaction_effect_cd_tt:1 "#weak 5년이 되기 전에 해당 상호작용을 수행하였기에 게임 내 효과는 없습니다. #!"
 
 carn_enslave_interaction:1 "노예화"
@@ -81,3 +79,9 @@ actor_secondary_carn_make_same_sex_concubine_interaction:1 "보낸다"
 carn_find_same_sex_concubine_interaction:1 "[ACTOR.Custom('ConcubineConsort')|U](을)를 찾는다"
 carn_find_same_sex_concubine_interaction_desc:1 "같은 성별의 [actor.Custom('ConcubineConsort')|U](을)를 당신의 궁전에서 찾는다"
 actor_secondary_carn_find_same_sex_concubine_interaction:1 "보낸다"
+
+carn_force_start_prostitution_interaction:0 "Start Prostitution"
+carn_force_start_prostitution_interaction_desc:0 "Force [recipient.GetShortUINameNoTooltip] to earn [gold|E] for you as a [prostitute|E]"
+
+carn_force_stop_prostitution_interaction:0 "Stop Prostitution"
+carn_force_stop_prostitution_interaction_desc:0 "Stop [recipient.GetShortUINameNoTooltip] from working as a [prostitute|E]"

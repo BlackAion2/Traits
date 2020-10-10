@@ -1,13 +1,9 @@
-﻿@carn_prostitution_cooldown_time = 0
-
-carn_work_as_prostitute_decision = {
+﻿carn_work_as_prostitute_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_prostitution.dds"
 
 	desc = carn_work_as_prostitute_decision_desc
 
 	selection_tooltip = carn_work_as_prostitute_decision_tooltip
-
-	cooldown = { days = @carn_prostitution_cooldown_time }
 
 	is_shown = {
 		is_adult = yes
@@ -105,8 +101,6 @@ carn_stop_work_as_prostitute_decision = {
 	desc = carn_stop_work_as_prostitute_decision_desc
 
 	selection_tooltip = carn_stop_work_as_prostitute_decision_tooltip
-
-	cooldown = { days = @carn_prostitution_cooldown_time }
 
 	is_shown = {
 		carn_is_working_as_prostitute_trigger = yes

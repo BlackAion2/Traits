@@ -1,0 +1,10 @@
+﻿# used in carn_sex_interaction
+# requires PARTNER
+carn_relationship_allows_free_sex_trigger = {
+	OR = {
+		is_consort_of = $PARTNER$
+		has_relation_lover = $PARTNER$
+		has_relation_soulmate = $PARTNER$
+		has_relation_slave = $PARTNER$
+	}
+}

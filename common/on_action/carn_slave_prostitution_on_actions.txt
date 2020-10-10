@@ -1,0 +1,5 @@
+﻿yearly_playable_pulse = {
+	events = {
+		carn_slave_prostitution.0001 # owners earn money from their slave-prostitutes
+	}
+}

@@ -1,1 +1,13 @@
 ﻿carn_prostitution_age_cutoff = 45
+
+carn_prostitute_sex_interaction_price_value = {
+	value = 15
+	if = {
+		limit = { has_trait = prostitute_2 }
+		multiply = 2
+	}
+	else_if = {
+		limit = { has_trait = prostitute_3 }
+		multiply = 5
+	}
+}

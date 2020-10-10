@@ -570,6 +570,3 @@ carn_add_tits_big_3_effect = {
 	}
 	add_character_flag = carn_dt_traits_seeded
 }
-
-carn_increase_dick_size_one_step_effect = {
-}

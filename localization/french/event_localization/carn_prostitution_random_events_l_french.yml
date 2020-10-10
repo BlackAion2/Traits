@@ -1,5 +1,5 @@
 ﻿l_french:
-carn_can_no_longer_work_as_prostitute_tooltip:1 "Vous ne pouvez plus travailler en tant que prostitué[ROOT.Char.Custom('FR_E')]"
+carn_can_no_longer_work_as_prostitute_tooltip:1 "Ne peut plus se prostituer"
 carn_prostitution_random_events.0001.notification:1 "Prostitution: Compétence améliorée"
 carn_prostitution_random_events.0002.notification:1 "Prostitution: Diffamation par un rival"
 carn_prostitution_random_events.0003.notification:1 "Prostitution: Des [ROOT.Char.GetFaith.PriestNeuterPlural|U] vous accusent"

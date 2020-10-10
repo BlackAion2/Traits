@@ -1,6 +1,4 @@
-﻿# carn_sex_interaction. Basic Diplomatic Interaction for initiating sex
-
-carn_sex_interaction = {
+﻿carn_sex_interaction = {
     category = interaction_category_friendly
     
     desc = carn_sex_interaction_desc
@@ -8,31 +6,79 @@ carn_sex_interaction = {
     use_diplomatic_range = no
 
     is_shown = {
-        NOT = { has_game_rule = carn_sex_interaction_disabled }
-        scope:actor = {
-            OR = {
-                is_consort_of = scope:recipient
-                has_relation_lover = scope:recipient
-                has_relation_soulmate = scope:recipient
-                has_relation_slave = scope:recipient
+        NOR = {
+            has_game_rule = carn_sex_interaction_disabled
+            scope:actor = scope:recipient
+        }
+        OR = {
+            scope:actor = {
+                carn_relationship_allows_free_sex_trigger = {
+                    PARTNER = scope:recipient
+                }
+            }
+            scope:recipient = {
+                carn_is_prostitute_trigger = yes
             }
         }
     }
 
-	cooldown = { years = carn_sex_interaction_cooldown }
+	cooldown = { months = carn_sex_interaction_cooldown }
 
     is_valid_showing_failures_only = {
         scope:actor = {
             carn_can_have_sex_trigger = yes
+            is_attracted_to_gender_of = scope:recipient
         }
         scope:recipient = {
             is_diplomatically_available = yes
             carn_can_have_sex_trigger = yes
         }
+            
+        # if this is a paid transaction, actor needs the gold
+        trigger_if = {
+            limit = {
+                scope:recipient = {
+                    carn_is_prostitute_trigger = yes
+                }
+                NOT = {
+                    scope:actor = {
+                        carn_relationship_allows_free_sex_trigger = {
+                            PARTNER = scope:recipient
+                        }
+                    }
+                }
+            }
+            scope:actor.gold >= scope:recipient.carn_prostitute_sex_interaction_price_value
+        }
     }
 
     on_accept = {
         scope:actor = {
+
+            # pay money for prostitution, and possibly lose piety if your faith dislikes this
+            if = {
+                limit = {
+                    scope:recipient = {
+                        carn_is_prostitute_trigger = yes
+                    }
+                    NOT = {
+                        carn_relationship_allows_free_sex_trigger = {
+                            PARTNER = scope:recipient
+                        }
+                    }
+                }
+                pay_short_term_gold = {
+                    target = scope:recipient
+                    gold = scope:recipient.carn_prostitute_sex_interaction_price_value
+                }
+                if = {
+                    limit = {
+                        faith = { NOT = { has_doctrine = carn_doctrine_prostitution_accepted } }
+                    }
+                    add_piety = minor_piety_loss
+                }
+            }
+
             if = {
                 limit = {
                     NOT = { has_character_flag = carn_sex_interaction_effect_cd }
@@ -48,12 +94,12 @@ carn_sex_interaction = {
                     }
                 }
                 stress_impact = {
-                    base = medium_stress_loss
+                    base = minor_stress_impact_loss
                     chaste = activity_stress_gain_impact
                 }
                 add_character_flag = {
                     flag = carn_sex_interaction_effect_cd
-                    years = 5
+                    months = carn_sex_interaction_cooldown_base
                 }
             }
             else = {
@@ -62,12 +108,15 @@ carn_sex_interaction = {
                     add_character_flag = carn_block_next_had_sex_with_effect
                 }
             }
+
+            # request the sex scene
             hidden_effect = {
+
+                # lovers and soulmates always consensual
                 if = {
                     limit = {
                         scope:actor = {
                             OR = {
-                                is_consort_of = scope:recipient
                                 has_relation_lover = scope:recipient
                                 has_relation_soulmate = scope:recipient
                             }
@@ -75,40 +124,85 @@ carn_sex_interaction = {
                     }
                     carn_sex_scene_request_consensual = yes
                 }
+                # for slaves and concubines, get scenes ranging from consensual to noncon
                 else_if = {
                     limit = {
                         scope:actor = {
-                            has_relation_slave_owner = scope:recipient
+                            OR = {
+                                is_concubine_of = scope:recipient
+                                has_relation_slave_owner = scope:recipient
+                            }
                         }
                     }
+                    # Consensual: I'm into you, and I either like you or you're super hot
                     if = {
                         limit = {
                             scope:recipient = {
-                                opinion = {
-                                    target = scope:owner
-                                    value > 50
+                                OR = {
+                                    opinion = {
+                                        target = scope:actor
+                                        value >= 50
+                                    }
+                                    scope:actor = { attraction >= 20 } # if you're hot enough they'll happily hatefuck you
                                 }
-                                is_attracted_to_gender_of = scope:owner
+                                is_attracted_to_gender_of = scope:actor
                             }
                         }
                         carn_sex_scene_request_consensual = yes
                     }
+                    # Dubcon: Either I'm into you but not that into you, or I don't swing that way but I like you enough to humor you
                     else_if = {
                         limit = {
                             scope:recipient = {
-                                opinion = {
-                                    target = scope:owner
-                                    value > 0
+                                OR = {
+                                    AND = {
+                                        is_attracted_to_gender_of = scope:actor
+                                        OR = {
+                                            opinion = {
+                                                target = scope:actor
+                                                value > 0
+                                            }
+                                            scope:actor = { attraction >= 10 } # if you're hot enough they'll be kinda ok with it
+                                        }
+                                    }
+                                    AND = {
+                                        NOT = { is_attracted_to_gender_of = scope:actor }
+                                        opinion = {
+                                            target = scope:actor
+                                            value >= 75
+                                        }
+                                    }
                                 }
-                                is_attracted_to_gender_of = scope:owner
                             }
                         }
                         carn_sex_scene_request_dubcon = yes
                     }
+                    # Noncon: I either hate you or I don't swing this way, get me outta here
                     else = {
                         carn_sex_scene_request_noncon = yes
                     }
                 }
+                # get dubcon for characters that dislike you / are not attracted to you (but accept sex with you for some reason, like being a prostitute)
+                else_if = {
+                    limit = {
+                        scope:recipient = {
+                            OR = {
+                                opinion = {
+                                    target = scope:actor
+                                    value < 0
+                                }
+                                NOT = { is_attracted_to_gender_of = scope:actor }
+                            }
+                        }
+                    }
+                    carn_sex_scene_request_dubcon = yes
+                }
+                # fallback to consensual scene
+                else = {
+                    carn_sex_scene_request_consensual = yes
+                }
+
+                # actually fire the sex scene
                 carn_sex_scene_effect = {
                     PLAYER = scope:actor
                     TARGET = scope:recipient

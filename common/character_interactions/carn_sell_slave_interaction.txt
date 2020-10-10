@@ -6,6 +6,35 @@ carn_sell_slave_interaction = {
 
 	desc = carn_sell_slave_interaction_desc
 
+	redirect = { # open to the richest possible recipient to sell to
+		scope:actor = {
+			every_neighboring_and_across_water_top_liege_realm_owner = {
+				limit = { carn_candidate_to_sell_slave_to_trigger = yes }
+				add_to_list = possible_suggested_buyers
+			}
+			if = {
+				limit = { exists = liege }
+				liege = {
+					every_vassal = {
+						limit = { carn_candidate_to_sell_slave_to_trigger = yes }
+						add_to_list = possible_suggested_buyers
+					}
+				}
+			}
+			every_vassal = {
+				limit = { carn_candidate_to_sell_slave_to_trigger = yes }
+				add_to_list = possible_suggested_buyers
+			}
+		}
+		ordered_in_list = {
+			list = possible_suggested_buyers
+			order_by = gold
+			max = 1
+			check_range_bounds = no
+			save_scope_as = secondary_recipient
+		}
+	}
+
 	populate_recipient_list = {
 		scope:actor = {
 			every_neighboring_and_across_water_top_liege_realm_owner = {

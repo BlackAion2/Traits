@@ -1,8 +1,6 @@
 ﻿l_russian:
 carn_sex_interaction:1 "Переспать с любовни[Select_CString(recipient.IsFemale, 'цей', 'ком' )]"
 carn_sex_interaction_desc:1 "Провести интимный момент с [recipient.GetShortUINameNoTooltip]."
-carn_sex_send:1 "Переспать с [recipient.GetShortUINameNoTooltip]"
-carn_sex_interaction_notification:1 "Переспать с любовницей"
 carn_sex_interaction_effect_cd_tt:1 "Никаких эффектов от занятий любовью не будет так как вы уже использовали это взаимодействие менее чем пять лет назад!"
 
 carn_enslave_interaction:0 "Enslave"
@@ -81,3 +79,9 @@ actor_secondary_carn_make_same_sex_concubine_interaction:0 "Sender"
 carn_find_same_sex_concubine_interaction:0 "Find [ACTOR.Custom('ConcubineConsort')|U]"
 carn_find_same_sex_concubine_interaction_desc:0 "Find a same-sex [actor.Custom('ConcubineConsort')|U] in your court"
 actor_secondary_carn_find_same_sex_concubine_interaction:0 "Sender"
+
+carn_force_start_prostitution_interaction:0 "Start Prostitution"
+carn_force_start_prostitution_interaction_desc:0 "Force [recipient.GetShortUINameNoTooltip] to earn [gold|E] for you as a [prostitute|E]"
+
+carn_force_stop_prostitution_interaction:0 "Stop Prostitution"
+carn_force_stop_prostitution_interaction_desc:0 "Stop [recipient.GetShortUINameNoTooltip] from working as a [prostitute|E]"

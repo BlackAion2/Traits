@@ -18,6 +18,7 @@ carn_dt.0001 = {
 	trigger = {
 		has_game_rule = carn_dt_enabled_true
 		NOT = { has_character_flag = carn_dt_traits_seeded }
+		is_alive = yes
 	}
 
 	immediate = {

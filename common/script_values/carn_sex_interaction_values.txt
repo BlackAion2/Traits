@@ -1,5 +1,9 @@
-﻿carn_sex_interaction_cooldown = {
-	value = 5
+﻿carn_sex_interaction_cooldown_base = {
+	value = 12
+}
+
+carn_sex_interaction_cooldown = {
+	value = carn_sex_interaction_cooldown_base
 	if = {
 		limit = { has_game_rule = carn_sex_interaction_no_cd }
 		multiply = 0
