@@ -23,9 +23,16 @@ import sys;
 import glob;
 import shutil;
 from typing import Tuple, List;
+from enum import Enum;
+
+class TranslationStatus(Enum):
+    """Status enum for translations"""
+    UNTRANSLATED = 0
+    TRANSLATED = 1
+    NEEDSUPDATE = 2
 
 #key, value, translated, comment
-Yaml = Tuple[str, str, bool, bool];
+Yaml = Tuple[str, str, TranslationStatus, bool];
 
 BASE_LANGUAGE = 'english';
 ENCODING = 'utf-8-sig';
@@ -53,7 +60,7 @@ def get_lang_name(lang: str) -> str:
 def get_yaml(string: str) -> Yaml:
     """Gets a YAML Tuple for the current line"""
 
-    empty = ('', '', False, False);
+    empty = ('', '', TranslationStatus.UNTRANSLATED, False);
 
     if is_empty(string):
         return empty;
@@ -64,7 +71,7 @@ def get_yaml(string: str) -> Yaml:
     try:
         comment_index = line.index('#');
         if comment_index == 0:
-            return ('', '', False, True);
+            return ('', '', TranslationStatus.UNTRANSLATED, True);
     except ValueError:
         pass;
 
@@ -72,7 +79,7 @@ def get_yaml(string: str) -> Yaml:
     index = -1;
     key = '';
     value = '';
-    translated = False;
+    status = TranslationStatus.UNTRANSLATED;
 
     try:
         index = line.index(':');
@@ -83,19 +90,22 @@ def get_yaml(string: str) -> Yaml:
     key = line[0:index];
 
     if line_len <= index+1:
-        return (key, value, translated, False);
+        return (key, value, status, False);
 
     if not is_empty(line[index+1]):
         translation_value = line[index+1];
-        if not translation_value in ('0', '1'):
+        if not translation_value in ('0', '1', '2'):
             print('Unknown translation value \"'+translation_value+'\" in line \"'+line+'\"');
         else:
-            translated = translation_value == '1';
+            if translation_value == '1':
+                status = TranslationStatus.TRANSLATED;
+            if translation_value == '2':
+                status = TranslationStatus.NEEDSUPDATE;
         value = line[index+2:].strip();
     else:
         value = line[index+1:].strip();
 
-    result = (key, value, translated, False);
+    result = (key, value, status, False);
     return result;
 
 def get_yaml_from_file(path: str) -> List[Yaml]:
@@ -112,7 +122,7 @@ def get_yaml_from_file(path: str) -> List[Yaml]:
 
 def yaml_to_string(yaml: Yaml, include_translate: bool = True) -> str:
     """Converst a YAML Tuple to string"""
-    translate_str = '' if not include_translate else '1' if yaml[2] else '0';
+    translate_str = '' if not include_translate else str(yaml[2].value);
     return yaml[0]+':'+translate_str+' '+yaml[1]+'\n';
 
 def update_translation_file(input_path: str, output_path: str, output_lang: str):
@@ -151,7 +161,8 @@ def update_translation_file(input_path: str, output_path: str, output_lang: str)
             continue;
 
         # searching for a YAML tuple with the same key as the current
-        found_in_output = next((x for x in output_yaml if x[0] == cur_input[0]), ('', '', False));
+        found_in_output = next((x for x in output_yaml if x[0] == cur_input[0]),
+            ('', '', TranslationStatus.UNTRANSLATED, False));
 
         # not found means we just add the input
         if not found_in_output[0]:
@@ -160,7 +171,7 @@ def update_translation_file(input_path: str, output_path: str, output_lang: str)
             continue;
 
         # if we found it in the output file we check if it's translated
-        if found_in_output[2]:
+        if found_in_output[2] == TranslationStatus.TRANSLATED:
             new_lines[i] = yaml_to_string(found_in_output);
             continue;
 
@@ -203,7 +214,7 @@ def updating(output_language: str):
     print('Using '+BASE_LANGUAGE+' Translations from '+base_dir+' in '+output_dir);
     copy_base_translations(base_dir, output_dir, BASE_LANGUAGE, output_language);
 
-def get_translation_stats_file(base: str, path: str, cur_lang: str, detail: bool) -> Tuple[str, int, int]:
+def get_translation_stats_file(base: str, path: str, cur_lang: str, detail: bool) -> Tuple[str, int, int, int]:
     """Gets the number of translated and not translated string of a file"""
 
     yaml = get_yaml_from_file(path);
@@ -211,6 +222,7 @@ def get_translation_stats_file(base: str, path: str, cur_lang: str, detail: bool
     total = 0;
     translated = 0;
     not_translated = 0;
+    needs_update = 0;
 
     lang_name = get_lang_name(cur_lang);
 
@@ -223,16 +235,18 @@ def get_translation_stats_file(base: str, path: str, cur_lang: str, detail: bool
             continue;
 
         total += 1;
-        if x[2]:
+        if x[2] == TranslationStatus.TRANSLATED:
             translated += 1;
-        else:
+        elif x[2] == TranslationStatus.UNTRANSLATED:
             if detail:
                 print(path+' '+x[0]);
             not_translated += 1;
+        else:
+            needs_update += 1;
 
-    return (path.replace(base, ''), translated, not_translated);
+    return (path.replace(base, ''), translated, not_translated, needs_update);
 
-def get_translation_stats_folder(base: str, folder: str, cur_lang: str, detail: bool) -> List[Tuple[str, int, int]]:
+def get_translation_stats_folder(base: str, folder: str, cur_lang: str, detail: bool) -> List[Tuple[str, int, int, int]]:
     """Gets Translation stats for a folder"""
 
     result = list();
@@ -261,7 +275,7 @@ def stats(lang: str):
     """Displays Translation Statistics"""
 
     print('Translation Statistics:\n');
-    print('%-15s %10s %7s %7s' % ('Language ', 'Translated', 'Missing', 'Ratio'))
+    print('%-15s %10s %7s %8s %7s' % ('Language ', 'Translated', 'Missing', 'Outdated', 'Ratio'))
 
     languages = glob.glob(localization_dir+'\\*');
     detail = lang != '';
@@ -274,14 +288,16 @@ def stats(lang: str):
         lang_stats = get_translation_stats_folder(language+'\\', language, name, detail);
         translated = list(map(lambda x: x[1], lang_stats));
         missing = list(map(lambda x: x[2], lang_stats));
+        needs_update = list(map(lambda x: x[3], lang_stats));
         total_translated = add(translated);
         total_missing = add(missing);
-        total = total_translated+total_missing;
+        total_needs_update = add(needs_update);
+        total = total_translated+total_missing+total_needs_update;
         ratio = (total_translated/total)*100;
 
         ratio_str = f'{ratio:.2f}%';
 
-        print('%-15s %10s %7s %7s' % (name, total_translated, total_missing, ratio_str))
+        print('%-15s %10s %7s %8s %7s' % (name, total_translated, total_missing, total_needs_update, ratio_str))
 
 
 def main():
