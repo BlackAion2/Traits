@@ -935,22 +935,37 @@ window = {
 									}
 								}
 
+								scrollbox = {
+									name = "traits_scroller_smoll"
+									visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)22')]"
+									size = { 0 55 }
+									layoutpolicy_vertical = fixed
+									layoutpolicy_horizontal = expanding
+									scrollbarpolicy_vertical = as_needed
+									# blockoverride "scrollbox_margin"
+									# {
+									# 	margin_left = 3
+									# 	margin_right = 10
+									# }
+									using = Animation_Tab_Switch
+									blockoverride "scrollbox_content"
+									{
+										spacing = 2
 								fixedgridbox = {
-									name = "traits_tiny_showmoretraits"
+											name = "traits_tiny_showmoretraits_smoll"
 									datamodel = "[CharacterWindow.GetTraits]"
 									visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)22')]"
 									flipdirection = yes
-									addcolumn = 17
-									addrow = 18
-									maxhorizontalslots = 16
-									datamodel_wrap = 16
-									maxverticalslots = 3
+											addcolumn = 43
+											addrow = 43
+											maxhorizontalslots = 6
+											datamodel_wrap = 6
 
 									item = {
 										icon_trait = {
 											blockoverride "icon_size"
 											{
-												size = { 20 20 }
+														size = { 42 42 }
 											}
 
 											blockoverride "glow" {
@@ -959,6 +974,8 @@ window = {
 													color = { 0.4 0.5 0.65 1 }
 													glow_radius = 2
 													using = Glow_Standard
+														}
+													}
 												}
 											}
 										}
@@ -1136,30 +1153,47 @@ window = {
 									}
 								}
 
+								scrollbox = {
+									name = "traits_scroller"
+									visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)18')]"
+									size = { 0 55 }
+									layoutpolicy_vertical = fixed
+									layoutpolicy_horizontal = expanding
+									scrollbarpolicy_vertical = as_needed
+									# blockoverride "scrollbox_margin"
+									# {
+									# 	margin_left = 3
+									# 	margin_right = 10
+									# }
+									using = Animation_Tab_Switch
+									blockoverride "scrollbox_content"
+									{
+										spacing = 2
 								fixedgridbox = {
 									name = "traits_tiny_showmoretraits"
-									datamodel = "[CharacterWindow.GetTraits]"
-									visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)18')]"
-									flipdirection = yes
-									addcolumn = 17
-									addrow = 18
-									maxhorizontalslots = 13
-									datamodel_wrap = 13
-									maxverticalslots = 3
+											datamodel = "[CharacterWindow.GetTraits]"
+											visible = "[GreaterThan_int32(GetDataModelSize(CharacterWindow.GetTraits), '(int32)18')]"
+											flipdirection = yes
+											addcolumn = 40
+											addrow = 40
+											maxhorizontalslots = 5
+											datamodel_wrap = 5
 
-									item = {
-										icon_trait = {
-											blockoverride "icon_size"
-											{
-												size = { 20 20 }
-											}
+											item = {
+												icon_trait = {
+													blockoverride "icon_size"
+													{
+														size = { 39 39 }
+													}
 
-											blockoverride "glow" {
-												glow = {
-													visible = "[Or(Trait.IsGenetic(), Trait.IsInheritable())]"
-													color = { 0.4 0.5 0.65 1 }
-													glow_radius = 2
-													using = Glow_Standard
+													blockoverride "glow" {
+														glow = {
+															visible = "[Or(Trait.IsGenetic(), Trait.IsInheritable())]"
+															color = { 0.4 0.5 0.65 1 }
+															glow_radius = 2
+															using = Glow_Standard
+														}
+													}
 												}
 											}
 										}
