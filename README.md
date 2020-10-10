@@ -1,8 +1,10 @@
 # Carnalitas
 
+[Releases](https://github.com/cherisong/Carnalitas/releases)
+
 [LoversLab download page](https://www.loverslab.com/files/file/14207-carnalitas/)
 
-[Carnalitas Discord Channel](https://discord.gg/fYWeGVd)
+[Carnalitas Channel on the House Irae Discord Server](https://discord.gg/fYWeGVd)
 
 [How to Contribute to Carnalitas](https://github.com/cherisong/Carnalitas/blob/development/CONTRIBUTING.md)
 
