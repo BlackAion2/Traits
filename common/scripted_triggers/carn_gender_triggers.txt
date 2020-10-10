@@ -1,6 +1,9 @@
 ﻿# Whether this character is futanari
 carn_is_futa_trigger = {
-	has_trait = futa_group
+	OR = {
+		has_trait = futa
+		has_trait = futa_genetic
+	}
 }
 
 # Whether this character is a non-futanari female

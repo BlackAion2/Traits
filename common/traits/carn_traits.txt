@@ -34,8 +34,6 @@ futa = {
 	# genetic = yes
 	physical = yes
 
-	group = futa_group
-
 	# birth = 0.5
 	# random_creation = 0.5
 
@@ -70,8 +68,6 @@ futa_genetic = {
 	# child_inheritance_sex = female
 	genetic = yes
 	physical = yes
-	
-	group = futa_group
 
 	birth = 0
 	random_creation = 0
