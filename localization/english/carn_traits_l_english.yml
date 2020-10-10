@@ -1,5 +1,7 @@
 ﻿l_english:
 
+trait_futa_group: "[GetNullCharacter.Custom('CarnFutaTraitName')|U]"
+
 trait_futa: "Futanari"
 trait_futa_immersive: "Hermaphrodite"
 trait_futa_desc: "This character has the sexual organs of both a woman and a man.\n\nDue to game engine restrictions, this character cannot father children or marry other women in the current version of Carnalitas. She can still marry men and get pregnant."

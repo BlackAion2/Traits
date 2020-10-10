@@ -111,6 +111,7 @@ sluttification.0001 = {
 
 ### Miscellaneous
 
+* For modders, added customizable localization for "futanari/hermaphrodite" and variations.
 * Changed relationship and family panels slightly to better accomodate larger numbers of spouses, concubines/consorts and wards. Inspired by Better Character UI, but as usual our implementation is even better because it defaults to the normal UI and only changes if you need the extra space.
 * Changed Trait panel to show a scroll area when a character has a large amount of traits.
 
