@@ -4,7 +4,7 @@
 
 [LoversLab Page](https://www.loverslab.com/files/file/14207-carnalitas/)
 
-[Carnalitas Channel on the House Irae Discord Server](https://discord.gg/fYWeGVd)
+[House Irae Discord Server](https://discord.gg/fYWeGVd)
 
 [Carnalitas Wiki](https://github.com/cherisong/Carnalitas/wiki)
 
