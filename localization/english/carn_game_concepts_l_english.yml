@@ -19,7 +19,7 @@
  game_concept_slavery: "Slavery"
  game_concept_slave_possessive: "Slave's"
  game_concept_slaves_possessive: "Slaves'"
- game_concept_slave_desc: "A $game_concept_slave$ is a [character|E] that has been stripped of their rights and enslaved. They belong to an [slave_owner|E], who has a [strong_hook|E] on them and can buy or sell them on the [slave_market|E]. Additionally, [extramarital_sex|E] between a slave and their owner is legal.\n\nSlaves may not hold or inherit [titles|E], and any children born to a slave mother will also be slaves.\n\nIf a slave owner dies, ownership of slaves will pass to their [primary_heir|E].\n\nTo escape slavery, a slave must be freed by their owner through the $carn_free_slave_interaction$ [character_interaction|E]."
+ game_concept_slave_desc:2 "A $game_concept_slave$ is a [character|E] that has been stripped of their rights and enslaved. They belong to an [slave_owner|E], who has a [strong_hook|E] on them and can buy or sell them on the [slave_market|E]. Additionally, [extramarital_sex|E] between a slave and their owner is legal.\n\nSlaves may not hold or inherit [titles|E], and any children born to a slave mother will also be slaves.\n\nIf a slave owner dies, ownership of slaves will pass to their [primary_heir|E].\n\nTo escape slavery, a slave must be freed by their owner through the $carn_free_slave_interaction$ [character_interaction|E]."
 
  game_concept_slave_owner: "Owner"
  game_concept_slave_owners: "Owners"
@@ -28,11 +28,11 @@
  game_concept_slave_owner_desc: "A [character|E] can be a legally recognized $game_concept_slave_owner$ of one or more [slaves|E]. Slave owners always have a [strong_hook|E] on their slaves and can buy or sell them on the [slave_market|E]. Additionally, [extramarital_sex|E] between a slave and their owner is legal.\n\nIf a slave owner dies, ownership of slaves will pass to their [primary_heir|E]."
 
  game_concept_slave_market: "Slave Market"
- game_concept_slave_market_desc: "[slaves|E], being property, can be bought and sold by other [characters|E] through the $carn_buy_slave_directly_interaction$ or $carn_sell_slave_interaction$ [interactions|E]. A character who buys a slave will become their [slave_owner|E].\n\nA slave with good [skills|E], [traits|E], or [claims|E] will sell for a much higher price. A [noble|E], young woman, or [GetTrait('eunuch').GetName( GetNullCharacter )] is especially prized."
+ game_concept_slave_market_desc:2 "[slaves|E], being property, can be bought and sold by other [characters|E] through the $carn_buy_slave_directly_interaction$ or $carn_sell_slave_interaction$ [interactions|E]. A character who buys a slave will become their [slave_owner|E].\n\nA slave with good [skills|E], [traits|E], or [claims|E] will sell for a much higher price. A [noble|E], young woman, or [GetTrait('eunuch').GetName( GetNullCharacter )] is especially prized."
 
  game_concept_prostitute: "Prostitute"
  game_concept_prostitutes: "Prostitutes"
  game_concept_prostitution: "Prostitution"
  game_concept_prostitute_possessive: "Prostitute's"
  game_concept_prostitutes_possessive: "Prostitutes'"
- game_concept_prostitute_desc: "A prostitute is a [character|E] who solicits payment for sex. Any character can use the $carn_work_as_prostitute_decision$ [decision|E] to become a prostitute, as long as their [faith|E] allows them to do so.\n\nThe performance of a prostitute is based on their [diplomacy|E], [intrigue|E], intelligence, and attractiveness. An especially skilled prostitute may become an [GetTrait('prostitute_2').GetName( GetNullCharacter )] or even a [GetTrait('prostitute_3').GetName( GetNullCharacter )].\n\nWorking as a prostitute is legally sanctioned and not considered [extramarital_sex|E]. However, it may still result in [bastard|E] children or other consequences if the character is not careful..."
+ game_concept_prostitute_desc:2 "A prostitute is a [character|E] who solicits payment for sex. Any character can use the $carn_work_as_prostitute_decision$ [decision|E] to become a prostitute, as long as their [faith|E] allows them to do so.\n\nThe performance of a prostitute is based on their [diplomacy|E], [intrigue|E], intelligence, and attractiveness. An especially skilled prostitute may become an [GetTrait('prostitute_2').GetName( GetNullCharacter )] or even a [GetTrait('prostitute_3').GetName( GetNullCharacter )].\n\nWorking as a prostitute is legally sanctioned and not considered [extramarital_sex|E]. However, it may still result in [bastard|E] children or other consequences if the character is not careful..."
