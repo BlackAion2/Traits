@@ -1,5 +1,5 @@
 ﻿l_english:
- carn_sex_interaction:2 "Make Love"
+ carn_sex_interaction: "Make Love"
  carn_sex_interaction_desc: "Spend an intimate moment with [recipient.GetShortUINameNoTooltip]"
  carn_sex_interaction_effect_cd_tt: "#weak No game effects will happen because you have used this interaction in the last [EmptyScope.ScriptValue('carn_sex_interaction_cooldown_base')|0] months#!"
 
