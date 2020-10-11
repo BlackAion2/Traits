@@ -1,5 +1,5 @@
 ﻿l_korean:
-carn_sex_interaction:1 "연인과 자다"
+carn_sex_interaction:2 "연인과 자다"
 carn_sex_interaction_desc:1 "[recipient.GetShortUINameNoTooltip]와 친밀한 시간을 가진다."
 carn_sex_interaction_effect_cd_tt:1 "#weak 5년이 되기 전에 해당 상호작용을 수행하였기에 게임 내 효과는 없습니다. #!"
 
