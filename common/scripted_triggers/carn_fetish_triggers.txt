@@ -1,0 +1,10 @@
+﻿carn_has_a_fetish_trigger = {
+	has_variable_list = carn_active_fetishes
+}
+
+carn_has_given_fetish_trigger = {
+	is_target_in_variable_list = {
+		name = carn_active_fetishes
+		target = flag:$FETISH$
+	}
+}
