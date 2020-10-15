@@ -47,3 +47,10 @@ carn_they_lose_submissive:1 "[TARGET_CHARACTER.GetShortUIName|U] is no longer [C
 
 carn_i_lost_submissive:1 "[TARGET_CHARACTER.GetShortUIName|U](은)는 이제 당신의 [submissive|E](이)가 아니다."
 carn_they_lost_submissive:1 "[TARGET_CHARACTER.GetShortUIName|U](은)는 이제 [CHARACTER.GetShortUINamePossessive]의 [submissive|E](이)가 아니다."
+
+carn_i_gain_fetish:0 "You gain a fetish"
+carn_i_gained_fetish:0 "You gained a fetish"
+carn_they_gain_fetish:0 "[CHARACTER.GetShortUIName|U] gains a fetish"
+carn_they_gained_fetish:0 "[CHARACTER.GetShortUIName|U] gained a fetish"
+carn_gains_fetish:0 "Gains a fetish"
+carn_gained_fetish:0 "Gained a fetish"
