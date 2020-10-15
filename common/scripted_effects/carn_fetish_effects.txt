@@ -1,18 +1,15 @@
-﻿# randomly seed 1-2 fetishes based on game rules
-carn_seed_fetishes_effect = {
-	add_character_flag = carn_fetishes_seeded
+﻿# Adds a random fetish to a character based on several factors
+# Will never add the same one twice
+carn_add_random_fetish_effect = {
+	if = {
+		limit = { has_game_rule = carn_fetishes_enabled_true }
 
-	set_while_counter_variable_effect = yes
-	while = {
-		limit = { var:while_counter < 2 }
+		add_character_flag = carn_fetishes_seeded
+
 		random_list = {
-			100 = { # rolled nothing
-			}
-
 			# fetishes with game rule toggle
-			0 = { # Anal
-				modifier = { # Female
-					add = 30
+			30 = { # Anal
+				trigger = { # Female
 					has_game_rule = carn_content_anal_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -35,9 +32,8 @@ carn_seed_fetishes_effect = {
 					target = flag:carn_fetish_anal
 				}
 			}
-			0 = { # Sadism
-				modifier = { # Female
-					add = 20
+			20 = { # Sadism
+				trigger = { # Female
 					has_game_rule = carn_content_painful_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -67,9 +63,8 @@ carn_seed_fetishes_effect = {
 					target = flag:carn_fetish_sadism
 				}
 			}
-			0 = { # Masochism
-				modifier = { # Female & Futa
-					add = 40
+			40 = { # Masochism
+				trigger = { # Female & Futa
 					has_game_rule = carn_content_painful_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -95,9 +90,8 @@ carn_seed_fetishes_effect = {
 					target = flag:carn_fetish_masochism
 				}
 			}
-			0 = { # Bestiality
-				modifier = { # Any Gender
-					add = 5
+			5 = { # Bestiality
+				trigger = { # Any Gender
 					has_game_rule = carn_content_bestiality_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -111,9 +105,8 @@ carn_seed_fetishes_effect = {
 					target = flag:carn_fetish_bestiality
 				}
 			}
-			0 = { # Watersports
-				modifier = { # Female & Futa
-					add = 5
+			5 = { # Watersports
+				trigger = { # Female & Futa
 					has_game_rule = carn_content_watersports_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -131,9 +124,8 @@ carn_seed_fetishes_effect = {
 					target = flag:carn_fetish_watersports
 				}
 			}
-			0 = { # Scat
-				modifier = { # Female & Futa
-					add = 5
+			5 = { # Scat
+				trigger = { # Female & Futa
 					has_game_rule = carn_content_scat_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -151,9 +143,8 @@ carn_seed_fetishes_effect = {
 					target = flag:carn_fetish_scat
 				}
 			}
-			0 = { # Gore
-				modifier = { # Female & Futa
-					add = 2
+			2 = { # Gore
+				trigger = { # Female & Futa
 					has_game_rule = carn_content_gore_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -189,9 +180,8 @@ carn_seed_fetishes_effect = {
 			}
 
 			# fetishes without game rule toggle
-			0 = { # Foot play
-				modifier = { # Female & Futa
-					add = 1
+			1 = { # Foot play
+				trigger = { # Female & Futa
 					NOT = {
 						is_target_in_variable_list = {
 							name = carn_active_fetishes
@@ -208,9 +198,8 @@ carn_seed_fetishes_effect = {
 					target = flag:carn_fetish_foot_play
 				}
 			}
-			0 = { # Bondage
-				modifier = { # Any Gender
-					add = 45
+			45 = { # Bondage
+				trigger = { # Any Gender
 					NOT = {
 						is_target_in_variable_list = {
 							name = carn_active_fetishes
@@ -235,9 +224,8 @@ carn_seed_fetishes_effect = {
 					target = flag:carn_fetish_bondage
 				}
 			}
-			0 = { # Dom
-				modifier = { # Female
-					add = 45
+			45 = { # Dom
+				trigger = { # Female
 					NOT = {
 						is_target_in_variable_list = {
 							name = carn_active_fetishes
@@ -254,9 +242,8 @@ carn_seed_fetishes_effect = {
 					target = flag:carn_fetish_domination
 				}
 			}
-			0 = { # Sub
-				modifier = { # Female & Futa
-					add = 65
+			65 = { # Sub
+				trigger = { # Female & Futa
 					NOT = {
 						is_target_in_variable_list = {
 							name = carn_active_fetishes
@@ -286,7 +273,5 @@ carn_seed_fetishes_effect = {
 				}
 			}
 		}
-		increase_while_counter_variable_effect = yes
 	}
-	remove_while_counter_variable_effect = yes
 }

@@ -80,9 +80,9 @@ setting_carn_futa_trait_inheritance_on_desc:1 "由于扶她是生理上的特质
 
 rule_carn_fetishes_enabled:1 "#X Carnalitas:#! 恋物癖"
 setting_carn_fetishes_enabled_false:1 "关闭"
-setting_carn_fetishes_enabled_false_desc:1 "此系统关闭，角色不会拥有恋物癖特质。"
+setting_carn_fetishes_enabled_false_desc:2 "此系统关闭，角色不会拥有恋物癖特质。"
 setting_carn_fetishes_enabled_true:1 "#high 开启#!"
-setting_carn_fetishes_enabled_true_desc:1 "角色们将会拥有恋物癖特质。其他选项中选择了不启用一些场景将会影响到本系统使得某些恋物癖不会出现。"
+setting_carn_fetishes_enabled_true_desc:2 "角色们将会拥有恋物癖特质。其他选项中选择了不启用一些场景将会影响到本系统使得某些恋物癖不会出现。"
 
 rule_carn_slavery_content:1 "#X 巫山世界：#!奴隶系统"
 setting_carn_slavery_content_disabled:1 "关闭"
