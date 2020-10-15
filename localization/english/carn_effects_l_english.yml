@@ -47,3 +47,10 @@
 
  carn_i_lost_submissive: "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [submissive|E]"
  carn_they_lost_submissive: "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [submissive|E]"
+
+ carn_i_gain_fetish: "You gain a fetish"
+ carn_i_gained_fetish: "You gained a fetish"
+ carn_they_gain_fetish: "[CHARACTER.GetShortUIName|U] gains a fetish"
+ carn_they_gained_fetish: "[CHARACTER.GetShortUIName|U] gained a fetish"
+ carn_gains_fetish: "Gains a fetish"
+ carn_gained_fetish: "Gained a fetish"

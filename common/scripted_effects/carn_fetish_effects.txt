@@ -4,272 +4,278 @@ carn_add_random_fetish_effect = {
 	if = {
 		limit = { has_game_rule = carn_fetishes_enabled_true }
 
-		add_character_flag = carn_fetishes_seeded
+		custom_description = {
+			text = carn_add_random_fetish_effect
+		}
 
-		random_list = {
-			# fetishes with game rule toggle
-			30 = { # Anal
-				trigger = { # Female
-					has_game_rule = carn_content_anal_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_anal
+		hidden_effect = {
+			add_character_flag = carn_fetishes_seeded
+	
+			random_list = {
+				# fetishes with game rule toggle
+				30 = { # Anal
+					trigger = { # Female
+						has_game_rule = carn_content_anal_on
+						NOT = {
+							is_target_in_variable_list = {
+								name = carn_active_fetishes
+								target = flag:carn_fetish_anal
+							}
 						}
 					}
-				}
-				modifier = { # Male & Futa
-					factor = 2
-					carn_gender_can_impregnate_trigger = yes
-				}
-				modifier = { # Male Gay
-					factor = 2
-					is_male = yes
-					is_attracted_to_men = yes
-				}
-				add_to_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_anal
-				}
-			}
-			20 = { # Sadism
-				trigger = { # Female
-					has_game_rule = carn_content_painful_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_sadism
-						}
+					modifier = { # Male & Futa
+						factor = 2
+						carn_gender_can_impregnate_trigger = yes
+					}
+					modifier = { # Male Gay
+						factor = 2
+						is_male = yes
+						is_attracted_to_men = yes
+					}
+					add_to_variable_list = {
+						name = carn_active_fetishes
+						target = flag:carn_fetish_anal
 					}
 				}
-				modifier = { # Male & Futa
-					factor = 2
-					carn_gender_can_impregnate_trigger = yes
-				}
-				modifier = { # Callous
-					factor = 2
-					has_trait = callous
-				}
-				modifier = { # Sadistic
-					factor = 10
-					has_trait = sadistic
-				}
-				modifier = { # Compassionate
-					factor = 0.5
-					has_trait = compassionate
-				}
-				add_to_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_sadism
-				}
-			}
-			40 = { # Masochism
-				trigger = { # Female & Futa
-					has_game_rule = carn_content_painful_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_masochism
+				20 = { # Sadism
+					trigger = { # Female
+						has_game_rule = carn_content_painful_on
+						NOT = {
+							is_target_in_variable_list = {
+								name = carn_active_fetishes
+								target = flag:carn_fetish_sadism
+							}
 						}
 					}
-				}
-				modifier = { # Male
-					factor = 0.5
-					is_male = yes
-				}
-				modifier = { # Paranoid
-					factor = 0.5
-					has_trait = paranoid
-				}
-				modifier = { # Trusting
-					factor = 1.5
-					has_trait = trusting
-				}
-				add_to_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_masochism
-				}
-			}
-			5 = { # Bestiality
-				trigger = { # Any Gender
-					has_game_rule = carn_content_bestiality_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_bestiality
-						}
+					modifier = { # Male & Futa
+						factor = 2
+						carn_gender_can_impregnate_trigger = yes
+					}
+					modifier = { # Callous
+						factor = 2
+						has_trait = callous
+					}
+					modifier = { # Sadistic
+						factor = 10
+						has_trait = sadistic
+					}
+					modifier = { # Compassionate
+						factor = 0.5
+						has_trait = compassionate
+					}
+					add_to_variable_list = {
+						name = carn_active_fetishes
+						target = flag:carn_fetish_sadism
 					}
 				}
-				add_to_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_bestiality
-				}
-			}
-			5 = { # Watersports
-				trigger = { # Female & Futa
-					has_game_rule = carn_content_watersports_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_watersports
+				40 = { # Masochism
+					trigger = { # Female & Futa
+						has_game_rule = carn_content_painful_on
+						NOT = {
+							is_target_in_variable_list = {
+								name = carn_active_fetishes
+								target = flag:carn_fetish_masochism
+							}
 						}
 					}
-				}
-				modifier = { # Male
-					factor = 2
-					is_male = yes
-				}
-				add_to_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_watersports
-				}
-			}
-			5 = { # Scat
-				trigger = { # Female & Futa
-					has_game_rule = carn_content_scat_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_scat
-						}
+					modifier = { # Male
+						factor = 0.5
+						is_male = yes
+					}
+					modifier = { # Paranoid
+						factor = 0.5
+						has_trait = paranoid
+					}
+					modifier = { # Trusting
+						factor = 1.5
+						has_trait = trusting
+					}
+					add_to_variable_list = {
+						name = carn_active_fetishes
+						target = flag:carn_fetish_masochism
 					}
 				}
-				modifier = { # Male
-					factor = 2
-					is_male = yes
-				}
-				add_to_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_scat
-				}
-			}
-			2 = { # Gore
-				trigger = { # Female & Futa
-					has_game_rule = carn_content_gore_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_gore
+				5 = { # Bestiality
+					trigger = { # Any Gender
+						has_game_rule = carn_content_bestiality_on
+						NOT = {
+							is_target_in_variable_list = {
+								name = carn_active_fetishes
+								target = flag:carn_fetish_bestiality
+							}
 						}
 					}
-				}
-				modifier = { # Male
-					factor = 2.5
-					is_male = yes
-				}
-				modifier = { # Compassionate
-					factor = 0
-					has_trait = compassionate
-				}
-				modifier = { # Callous
-					factor = 2
-					has_trait = callous
-				}
-				modifier = { # Sadistic
-					factor = 2
-					has_trait = sadistic
-				}
-				modifier = { # Wrathful
-					factor = 2
-					has_trait = wrathful
-				}
-				add_to_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_gore
-				}
-			}
-
-			# fetishes without game rule toggle
-			1 = { # Foot play
-				trigger = { # Female & Futa
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_foot_play
-						}
+					add_to_variable_list = {
+						name = carn_active_fetishes
+						target = flag:carn_fetish_bestiality
 					}
 				}
-				modifier = { # Male
-					factor = 10
-					is_male = yes
-				}
-				add_to_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_foot_play
-				}
-			}
-			45 = { # Bondage
-				trigger = { # Any Gender
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_bondage
+				5 = { # Watersports
+					trigger = { # Female & Futa
+						has_game_rule = carn_content_watersports_on
+						NOT = {
+							is_target_in_variable_list = {
+								name = carn_active_fetishes
+								target = flag:carn_fetish_watersports
+							}
 						}
 					}
-				}
-				modifier = { # Trusting
-					factor = 1.5
-					has_trait = trusting
-				}
-				modifier = { # Craven
-					factor = 0.5
-					has_trait = craven
-				}
-				modifier = { # Paranoid
-					factor = 0.5
-					has_trait = paranoid
-				}
-				add_to_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_bondage
-				}
-			}
-			45 = { # Dom
-				trigger = { # Female
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_domination
-						}
+					modifier = { # Male
+						factor = 2
+						is_male = yes
+					}
+					add_to_variable_list = {
+						name = carn_active_fetishes
+						target = flag:carn_fetish_watersports
 					}
 				}
-				modifier = { # Male & Futa
-					add = 15
-					carn_gender_can_impregnate_trigger = yes
-				}
-				add_to_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_domination
-				}
-			}
-			65 = { # Sub
-				trigger = { # Female & Futa
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_submission
+				5 = { # Scat
+					trigger = { # Female & Futa
+						has_game_rule = carn_content_scat_on
+						NOT = {
+							is_target_in_variable_list = {
+								name = carn_active_fetishes
+								target = flag:carn_fetish_scat
+							}
 						}
 					}
+					modifier = { # Male
+						factor = 2
+						is_male = yes
+					}
+					add_to_variable_list = {
+						name = carn_active_fetishes
+						target = flag:carn_fetish_scat
+					}
 				}
-				modifier = { # Male
-					add = -15
-					is_male = yes
+				2 = { # Gore
+					trigger = { # Female & Futa
+						has_game_rule = carn_content_gore_on
+						NOT = {
+							is_target_in_variable_list = {
+								name = carn_active_fetishes
+								target = flag:carn_fetish_gore
+							}
+						}
+					}
+					modifier = { # Male
+						factor = 2.5
+						is_male = yes
+					}
+					modifier = { # Compassionate
+						factor = 0
+						has_trait = compassionate
+					}
+					modifier = { # Callous
+						factor = 2
+						has_trait = callous
+					}
+					modifier = { # Sadistic
+						factor = 2
+						has_trait = sadistic
+					}
+					modifier = { # Wrathful
+						factor = 2
+						has_trait = wrathful
+					}
+					add_to_variable_list = {
+						name = carn_active_fetishes
+						target = flag:carn_fetish_gore
+					}
 				}
-				modifier = { # Craven
-					factor = 0.5
-					has_trait = craven
+	
+				# fetishes without game rule toggle
+				1 = { # Foot play
+					trigger = { # Female & Futa
+						NOT = {
+							is_target_in_variable_list = {
+								name = carn_active_fetishes
+								target = flag:carn_fetish_foot_play
+							}
+						}
+					}
+					modifier = { # Male
+						factor = 10
+						is_male = yes
+					}
+					add_to_variable_list = {
+						name = carn_active_fetishes
+						target = flag:carn_fetish_foot_play
+					}
 				}
-				modifier = { # Paranoid
-					factor = 0.5
-					has_trait = paranoid
+				45 = { # Bondage
+					trigger = { # Any Gender
+						NOT = {
+							is_target_in_variable_list = {
+								name = carn_active_fetishes
+								target = flag:carn_fetish_bondage
+							}
+						}
+					}
+					modifier = { # Trusting
+						factor = 1.5
+						has_trait = trusting
+					}
+					modifier = { # Craven
+						factor = 0.5
+						has_trait = craven
+					}
+					modifier = { # Paranoid
+						factor = 0.5
+						has_trait = paranoid
+					}
+					add_to_variable_list = {
+						name = carn_active_fetishes
+						target = flag:carn_fetish_bondage
+					}
 				}
-				modifier = { # Trusting
-					factor = 1.5
-					has_trait = trusting
+				45 = { # Dom
+					trigger = { # Female
+						NOT = {
+							is_target_in_variable_list = {
+								name = carn_active_fetishes
+								target = flag:carn_fetish_domination
+							}
+						}
+					}
+					modifier = { # Male & Futa
+						add = 15
+						carn_gender_can_impregnate_trigger = yes
+					}
+					add_to_variable_list = {
+						name = carn_active_fetishes
+						target = flag:carn_fetish_domination
+					}
 				}
-				add_to_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_submission
+				65 = { # Sub
+					trigger = { # Female & Futa
+						NOT = {
+							is_target_in_variable_list = {
+								name = carn_active_fetishes
+								target = flag:carn_fetish_submission
+							}
+						}
+					}
+					modifier = { # Male
+						add = -15
+						is_male = yes
+					}
+					modifier = { # Craven
+						factor = 0.5
+						has_trait = craven
+					}
+					modifier = { # Paranoid
+						factor = 0.5
+						has_trait = paranoid
+					}
+					modifier = { # Trusting
+						factor = 1.5
+						has_trait = trusting
+					}
+					add_to_variable_list = {
+						name = carn_active_fetishes
+						target = flag:carn_fetish_submission
+					}
 				}
 			}
 		}

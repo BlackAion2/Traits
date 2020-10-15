@@ -69,3 +69,12 @@ remove_relation_submissive = {
 	third_past = carn_they_lost_submissive
 	global_past = carn_they_lost_submissive
 }
+
+carn_add_random_fetish_effect = {
+	first = carn_i_gain_fetish
+	first_past = carn_i_gained_fetish
+	third = carn_they_gain_fetish
+	third_past = carn_they_gained_fetish
+	global = carn_gains_fetish
+	global_past = carn_gained_fetish
+}
