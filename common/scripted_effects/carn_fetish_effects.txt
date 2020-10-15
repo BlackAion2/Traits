@@ -12,7 +12,7 @@ carn_seed_fetishes_effect = {
 			# fetishes with game rule toggle
 			0 = {
 				modifier = {
-					add = 10
+					add = 30
 					has_game_rule = carn_content_anal_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -21,6 +21,10 @@ carn_seed_fetishes_effect = {
 						}
 					}
 				}
+				modifier = {
+					factor = 2
+					carn_gender_can_impregnate_trigger = yes
+				}
 				add_to_variable_list = {
 					name = carn_active_fetishes
 					target = flag:carn_fetish_anal
@@ -28,7 +32,7 @@ carn_seed_fetishes_effect = {
 			}
 			0 = {
 				modifier = {
-					add = 10
+					add = 20
 					has_game_rule = carn_content_painful_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -37,6 +41,10 @@ carn_seed_fetishes_effect = {
 						}
 					}
 				}
+				modifier = { # 
+					factor = 2
+					carn_gender_can_impregnate_trigger = yes
+				}
 				add_to_variable_list = {
 					name = carn_active_fetishes
 					target = flag:carn_fetish_sadism
@@ -44,7 +52,7 @@ carn_seed_fetishes_effect = {
 			}
 			0 = {
 				modifier = {
-					add = 10
+					add = 40
 					has_game_rule = carn_content_painful_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -53,6 +61,10 @@ carn_seed_fetishes_effect = {
 						}
 					}
 				}
+				modifier = { # 
+					factor = 0.5
+					is_male = yes
+				}
 				add_to_variable_list = {
 					name = carn_active_fetishes
 					target = flag:carn_fetish_masochism
@@ -60,7 +72,7 @@ carn_seed_fetishes_effect = {
 			}
 			0 = {
 				modifier = {
-					add = 10
+					add = 5
 					has_game_rule = carn_content_bestiality_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -76,7 +88,7 @@ carn_seed_fetishes_effect = {
 			}
 			0 = {
 				modifier = {
-					add = 10
+					add = 5
 					has_game_rule = carn_content_watersports_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -85,6 +97,10 @@ carn_seed_fetishes_effect = {
 						}
 					}
 				}
+				modifier = { # 
+					factor = 2
+					is_male = yes
+				}
 				add_to_variable_list = {
 					name = carn_active_fetishes
 					target = flag:carn_fetish_watersports
@@ -92,7 +108,7 @@ carn_seed_fetishes_effect = {
 			}
 			0 = {
 				modifier = {
-					add = 10
+					add = 5
 					has_game_rule = carn_content_scat_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -101,6 +117,10 @@ carn_seed_fetishes_effect = {
 						}
 					}
 				}
+				modifier = { # 
+					factor = 2
+					is_male = yes
+				}
 				add_to_variable_list = {
 					name = carn_active_fetishes
 					target = flag:carn_fetish_scat
@@ -108,7 +128,7 @@ carn_seed_fetishes_effect = {
 			}
 			0 = {
 				modifier = {
-					add = 10
+					add = 2
 					has_game_rule = carn_content_gore_on
 					NOT = {
 						is_target_in_variable_list = {
@@ -116,6 +136,10 @@ carn_seed_fetishes_effect = {
 							target = flag:carn_fetish_gore
 						}
 					}
+				}
+				modifier = { # 
+					factor = 2.5
+					is_male = yes
 				}
 				add_to_variable_list = {
 					name = carn_active_fetishes
@@ -126,13 +150,17 @@ carn_seed_fetishes_effect = {
 			# fetishes without game rule toggle
 			0 = {
 				modifier = {
-					add = 10
+					add = 1
 					NOT = {
 						is_target_in_variable_list = {
 							name = carn_active_fetishes
 							target = flag:carn_fetish_foot_play
 						}
 					}
+				}
+				modifier = { # 
+					factor = 10
+					is_male = yes
 				}
 				add_to_variable_list = {
 					name = carn_active_fetishes
@@ -141,7 +169,7 @@ carn_seed_fetishes_effect = {
 			}
 			0 = {
 				modifier = {
-					add = 10
+					add = 45
 					NOT = {
 						is_target_in_variable_list = {
 							name = carn_active_fetishes
@@ -156,12 +184,16 @@ carn_seed_fetishes_effect = {
 			}
 			0 = {
 				modifier = {
-					add = 10
+					add = 45
 					NOT = {
 						is_target_in_variable_list = {
 							name = carn_active_fetishes
 							target = flag:carn_fetish_domination
 						}
+					}
+					modifier = { 
+						add = 15
+						carn_gender_can_impregnate_trigger = yes
 					}
 				}
 				add_to_variable_list = {
@@ -171,13 +203,17 @@ carn_seed_fetishes_effect = {
 			}
 			0 = {
 				modifier = {
-					add = 10
+					add = 65
 					NOT = {
 						is_target_in_variable_list = {
 							name = carn_active_fetishes
 							target = flag:carn_fetish_submission
 						}
 					}
+				}
+				modifier = { 
+					add = -15
+					is_male = yes
 				}
 				add_to_variable_list = {
 					name = carn_active_fetishes
