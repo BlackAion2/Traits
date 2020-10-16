@@ -1,4 +1,6 @@
 ﻿l_english:
+ NOT_IS_ATTRACTED_TO_TRIGGER:0 "Is not attracted to [TARGET_CHARACTER.GetShortUIName]"
+
  carn_i_can_be_granted_titles: "You can be granted titles"
  carn_not_i_can_be_granted_titles: "You cannot be granted titles"
  carn_they_can_be_granted_titles: "[CHARACTER.GetShortUIName|U] can be granted titles"
