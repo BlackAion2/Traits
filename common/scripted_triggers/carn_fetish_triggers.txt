@@ -1,5 +1,9 @@
 ﻿carn_has_a_fetish_trigger = {
 	has_variable_list = carn_active_fetishes
+	list_size = {
+		name = carn_active_fetishes
+		value > 0
+	}
 }
 
 carn_has_given_fetish_trigger = {
