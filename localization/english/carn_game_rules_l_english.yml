@@ -80,9 +80,9 @@
 
  rule_carn_fetishes_enabled: "#X Carnalitas:#! Fetishes"
  setting_carn_fetishes_enabled_false: "Disabled"
- setting_carn_fetishes_enabled_false_desc: "Characters will not spawn with fetishes."
+ setting_carn_fetishes_enabled_false_desc: "Characters will not receive fetishes."
  setting_carn_fetishes_enabled_true: "#high Enabled#!"
- setting_carn_fetishes_enabled_true_desc: "Characters may spawn with fetishes. Disabling some scene types will prevent their associated fetishes from appearing."
+ setting_carn_fetishes_enabled_true_desc: "Deviant characters will receive a fetish. Disabling some scene types will prevent their associated fetishes from appearing."
 
  rule_carn_slavery_content: "#X Carnalitas:#! Slavery System"
  setting_carn_slavery_content_disabled: "Disabled"

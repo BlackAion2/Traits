@@ -10,9 +10,10 @@ carn_fetish.0001 = {
 		has_game_rule = carn_fetishes_enabled_true
 		NOT = { has_character_flag = carn_fetishes_seeded }
 		age >= 16
+		is_deviant_trigger = yes
 	}
 
 	immediate = {
-		carn_seed_fetishes_effect = yes
+		carn_add_random_fetish_effect = yes
 	}
 }

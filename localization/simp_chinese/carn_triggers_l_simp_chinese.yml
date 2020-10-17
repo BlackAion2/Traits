@@ -9,3 +9,10 @@ carn_not_can_be_granted_titles:1 "不能被授予头衔"
 carn_slavery_is_illegal:1 "你的信仰不允许把[CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U]变为奴隶"
 
 carn_cannot_have_max_number_of_slave_prostitutes:0 "You do not have more than [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|0] slaves working as prostitutes"
+
+carn_i_have_a_fetish_trigger:0 "You have a fetish"
+carn_not_i_have_a_fetish_trigger:0 "You do #bold not#! have a fetish"
+carn_they_have_a_fetish_trigger:0 "[CHARACTER.GetShortUIName|U] has a fetish"
+carn_not_they_have_a_fetish_trigger:0 "[CHARACTER.GetShortUIName|U] does #bold not#! have a fetish"
+carn_has_a_fetish_trigger:0 "Has a fetish"
+carn_not_has_a_fetish_trigger:0 "Does #bold not#! have a fetish"
