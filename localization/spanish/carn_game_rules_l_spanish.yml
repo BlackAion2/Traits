@@ -50,9 +50,9 @@ setting_carn_dt_trait_names_immersive_desc:0 "The breast and penis size traits o
 
 rule_carn_futa_trait_name:0 "#X Carnalitas:#! Futanari Trait Name"
 setting_carn_futa_trait_name_futa:0 "Default"
-setting_carn_futa_trait_name_futa_desc:0 "A woman with both male and female sexual organs will be called a '$trait_futa$.'"
+setting_carn_futa_trait_name_futa_desc:0 "A woman with both male and female sexual organs will be called a $carn_futanari$."
 setting_carn_futa_trait_name_hermaphrodite:0 "#high Immersive#!"
-setting_carn_futa_trait_name_hermaphrodite_desc:0 "A woman with both male and female sexual organs will be called a '$trait_futa_immersive$.'"
+setting_carn_futa_trait_name_hermaphrodite_desc:0 "A woman with both male and female sexual organs will be called a $carn_hermaphrodite$."
 
 rule_carn_futa_content:0 "#X Carnalitas:#! Futanari Characters"
 setting_carn_futa_content_disabled:0 "Disabled"

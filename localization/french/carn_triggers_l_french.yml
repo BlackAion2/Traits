@@ -1,4 +1,6 @@
 ﻿l_french:
+NOT_IS_ATTRACTED_TO_TRIGGER:1 "N'est pas attiré[CHARACTER.Custom('FR_E')] par [TARGET_CHARACTER.GetShortUIName]"
+
 carn_i_can_be_granted_titles:1 "Vous pouvez vous voir attribuer des titres"
 carn_not_i_can_be_granted_titles:1 "Vous ne pouvez pas vous voir attribuer de titres"
 carn_they_can_be_granted_titles:1 "[CHARACTER.Custom('FR_only_le_GetShortUIName')|U][CHARACTER.GetShortUIName|V] peut se voir attribuer des titres"
@@ -10,9 +12,9 @@ carn_slavery_is_illegal:1 "Votre foi ne vous permet pas d'asservir des [CHARACTE
 
 carn_cannot_have_max_number_of_slave_prostitutes:1 "Vous n'avez pas plus de [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|0] esclaves travaillant en tant que prostituées"
 
-carn_i_have_a_fetish_trigger:0 "You have a fetish"
-carn_not_i_have_a_fetish_trigger:0 "You do #bold not#! have a fetish"
-carn_they_have_a_fetish_trigger:0 "[CHARACTER.GetShortUIName|U] has a fetish"
-carn_not_they_have_a_fetish_trigger:0 "[CHARACTER.GetShortUIName|U] does #bold not#! have a fetish"
-carn_has_a_fetish_trigger:0 "Has a fetish"
-carn_not_has_a_fetish_trigger:0 "Does #bold not#! have a fetish"
+carn_i_have_a_fetish_trigger:1 "Vous avez un fétiche"
+carn_not_i_have_a_fetish_trigger:1 "Vous n'avez #bold pas#! de fétiche"
+carn_they_have_a_fetish_trigger:1 "[CHARACTER.GetShortUIName|U] a un fétiche"
+carn_not_they_have_a_fetish_trigger:1 "[CHARACTER.GetShortUIName|U] n'a #bold pas#! de fétiche"
+carn_has_a_fetish_trigger:1 "A un fétiche"
+carn_not_has_a_fetish_trigger:1 "N'a #bold pas#! de fétiche"

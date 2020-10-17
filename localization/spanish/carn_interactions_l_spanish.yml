@@ -2,6 +2,7 @@
 carn_sex_interaction:0 "Make Love"
 carn_sex_interaction_desc:0 "Spend an intimate moment with [recipient.GetShortUINameNoTooltip]"
 carn_sex_interaction_effect_cd_tt:0 "#weak No game effects will happen because you have used this interaction in the last [EmptyScope.ScriptValue('carn_sex_interaction_cooldown_base')|0] months#!"
+carn_sex_interaction_not_attracted_to_warning_tt:0 "#X You are not attracted to [recipient.GetShortUINameNoTooltip]#!"
 
 carn_enslave_interaction:0 "Enslave"
 carn_enslave_interaction_desc:0 "Turn [recipient.GetShortUINameNoTooltip] into your [slave|E]"

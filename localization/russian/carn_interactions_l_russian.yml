@@ -2,6 +2,7 @@
 carn_sex_interaction:1 "Переспать с любовни[Select_CString(recipient.IsFemale, 'цей', 'ком' )]"
 carn_sex_interaction_desc:1 "Провести интимный момент с [recipient.GetShortUINameNoTooltip]."
 carn_sex_interaction_effect_cd_tt:1 "Никаких эффектов от занятий любовью не будет так как вы уже использовали это взаимодействие менее чем пять лет назад!"
+carn_sex_interaction_not_attracted_to_warning_tt:0 "#X You are not attracted to [recipient.GetShortUINameNoTooltip]#!"
 
 carn_enslave_interaction:0 "Enslave"
 carn_enslave_interaction_desc:0 "Turn [recipient.GetShortUINameNoTooltip] into your [slave|E]"

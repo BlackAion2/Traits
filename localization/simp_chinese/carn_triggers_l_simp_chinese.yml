@@ -1,4 +1,6 @@
 ﻿l_simp_chinese:
+NOT_IS_ATTRACTED_TO_TRIGGER:0 "Is not attracted to [TARGET_CHARACTER.GetShortUIName]"
+
 carn_i_can_be_granted_titles:1 "你可以被授予头衔"
 carn_not_i_can_be_granted_titles:1 "你不能被授予头衔"
 carn_they_can_be_granted_titles:1 "[CHARACTER.GetShortUIName|U]可以被授予头衔"

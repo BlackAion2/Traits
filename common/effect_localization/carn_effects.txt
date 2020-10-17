@@ -182,7 +182,7 @@ carn_remove_all_fetishes_effect = {
 	first = carn_i_lose_fetishes_effect
 	first_past = carn_i_lost_fetishes_effect
 	third = carn_they_lose_fetishes_effect
-	third_past = carn_lost_gained_fetishes_effect
+	third_past = carn_they_lost_fetishes_effect
 	global = carn_lose_fetishes_effect
 	global_past = carn_lost_fetishes_effect
 }
@@ -191,7 +191,7 @@ carn_remove_given_fetish_effect = {
 	first = carn_i_lose_fetish_effect
 	first_past = carn_i_lost_fetish_effect
 	third = carn_they_lose_fetish_effect
-	third_past = carn_lost_gained_fetish_effect
+	third_past = carn_they_lost_fetish_effect
 	global = carn_lose_fetish_effect
 	global_past = carn_lost_fetish_effect
 }

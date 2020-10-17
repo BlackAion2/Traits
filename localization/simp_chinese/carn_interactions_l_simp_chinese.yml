@@ -2,6 +2,7 @@
 carn_sex_interaction:2 "与情人一起共赴巫山"
 carn_sex_interaction_desc:1 "与[recipient.GetShortUINameNoTooltip]度过一段亲密时光。"
 carn_sex_interaction_effect_cd_tt:1 "#weak 由于您在5年以内已经使用过该互动选项，因此将不会有任何效果#!"
+carn_sex_interaction_not_attracted_to_warning_tt:0 "#X You are not attracted to [recipient.GetShortUINameNoTooltip]#!"
 
 carn_enslave_interaction:1 "奴役"
 carn_enslave_interaction_desc:1 "把[recipient.GetShortUINameNoTooltip]变为你的[slave|E]"

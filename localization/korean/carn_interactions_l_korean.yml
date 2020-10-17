@@ -2,6 +2,7 @@
 carn_sex_interaction:2 "연인과 자다"
 carn_sex_interaction_desc:1 "[recipient.GetShortUINameNoTooltip]와 친밀한 시간을 가진다."
 carn_sex_interaction_effect_cd_tt:1 "#weak 5년이 되기 전에 해당 상호작용을 수행하였기에 게임 내 효과는 없습니다. #!"
+carn_sex_interaction_not_attracted_to_warning_tt:0 "#X You are not attracted to [recipient.GetShortUINameNoTooltip]#!"
 
 carn_enslave_interaction:1 "노예화"
 carn_enslave_interaction_desc:1 "[recipient.GetShortUINameNoTooltip](을)를 당신의 [slave|E](으)로 만든다"
