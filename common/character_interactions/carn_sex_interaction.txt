@@ -104,8 +104,7 @@
                 else = {
                     custom_tooltip = carn_sex_interaction_not_attracted_to_warning_tt
                     stress_impact = {
-                        base = medium_stress_gain
-                        chaste = major_stress_gain
+                        base = major_stress_impact_gain
                     }
                 }
                 add_character_flag = {
