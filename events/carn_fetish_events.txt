@@ -9,7 +9,7 @@ carn_fetish.0001 = {
 	trigger = {
 		has_game_rule = carn_fetishes_enabled_true
 		NOT = { has_character_flag = carn_fetishes_seeded }
-		age >= 16
+		is_adult = yes
 		is_deviant_trigger = yes
 	}
 

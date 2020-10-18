@@ -24,7 +24,7 @@ carn_dt.0001 = {
 	immediate = {
 		carn_seed_dt_traits_effect = yes
 		if = {
-			limit = { age >= 16 }
+			limit = { is_adult = yes }
 			carn_activate_gender_specific_dt_traits_effect = yes
 		}
 	}

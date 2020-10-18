@@ -9,7 +9,7 @@ New triggers:
 * `carn_has_a_fetish_trigger`
 * `carn_has_given_fetish_trigger` (requires `FETISH`)
 
-New effects to add fetish:
+New effects to add fetishes:
 * `carn_add_random_fetish_effect`
 * `carn_add_fetish_anal_effect`
 * `carn_add_fetish_sadism_effect`
@@ -49,4 +49,5 @@ List of fetishes (`flag:` not necessary anymore):
 
 ## Bug Fixes
 
+* Immortal characters will now be treated by Carnalitas as their effective age instead of their chronological age, allowing them to remain prostitutes, fetch higher prices as slaves, etc.
 * Fixed the variable list `carn_personality_replacement_excluded_traits` persisting forever, screwing up future personality replacement effects of a different type.

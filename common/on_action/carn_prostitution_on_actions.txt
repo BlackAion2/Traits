@@ -13,7 +13,7 @@ carn_prostitution_yearly_maintenance_pulse = {
 			limit = {
 				OR = {
 					carn_can_have_sex_trigger = no
-					age >= carn_prostitution_age_cutoff
+					effective_age >= carn_prostitution_age_cutoff
 					NOR = {
 						faith = { NOT = { has_doctrine = carn_doctrine_prostitution_crime } }
 						any_relation = {

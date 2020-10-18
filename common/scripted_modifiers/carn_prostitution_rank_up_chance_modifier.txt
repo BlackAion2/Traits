@@ -83,17 +83,17 @@
 
 	modifier = {
 		factor = 2
-		age <= 21
+		effective_age <= 21
 	}
 
 	modifier = {
 		factor = 0.75
-		age > 30
+		effective_age > 30
 	}
 
 	modifier = {
 		factor = 0.5
-		age > 40
+		effective_age > 40
 	}
 
 	modifier = {

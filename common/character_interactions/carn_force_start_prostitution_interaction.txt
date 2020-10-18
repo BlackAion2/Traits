@@ -40,7 +40,7 @@
 
 	is_valid = {
 		scope:recipient = {
-			age < carn_prostitution_age_cutoff
+			effective_age < carn_prostitution_age_cutoff
 		}
 		scope:actor = {
 			custom_description = {
