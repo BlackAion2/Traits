@@ -19,7 +19,11 @@
 				has_game_rule = carn_birth_control_female_only
 			}
 		}
-		NOT = { has_character_modifier = carn_using_birth_control_modifier }
+		NOR = {
+			has_character_modifier = carn_using_birth_control_modifier
+			has_character_flag = carn_cannot_use_birth_control
+			has_trait_with_flag = carn_cannot_use_birth_control
+		}
 	}
 
 	is_valid_showing_failures_only = {

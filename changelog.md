@@ -46,6 +46,7 @@ List of fetishes (`flag:` not necessary anymore):
 ### Miscellaneous
 
 * Added `can_not_be_granted_titles` as a character flag.
+* added `carn_cannot_use_birth_control` as a trait and character flag.
 
 ## Bug Fixes
 
