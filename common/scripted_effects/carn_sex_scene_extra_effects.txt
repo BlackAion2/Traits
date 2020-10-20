@@ -1,0 +1,22 @@
+﻿# This effect is meant for streamlining sex events
+carn_make_root_and_sex_partner_naked_for_this_event_effect = {
+	if = {
+		limit = { is_ai = no }
+		add_character_flag = {
+			flag = is_naked
+			days = 1
+		}
+		scope:carn_sex_partner = {
+			add_character_flag = {
+				flag = is_naked
+				days = 1
+			}
+		}
+	}
+}
+carn_make_root_and_sex_partner_no_longer_naked_effect = {
+	remove_character_flag = is_naked
+	scope:carn_sex_partner = {
+		remove_character_flag = is_naked
+	}
+}

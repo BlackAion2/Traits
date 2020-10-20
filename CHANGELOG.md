@@ -45,6 +45,7 @@ List of fetishes (`flag:` not necessary anymore):
 
 ### Miscellaneous
 
+* Added the scripted effects `carn_make_root_and_sex_partner_naked_for_this_event_effect` and `carn_make_root_and_sex_partner_no_longer_naked_effect`
 * Added `can_not_be_granted_titles` as a character flag.
 * added `carn_cannot_use_birth_control` as a trait and character flag.
 
