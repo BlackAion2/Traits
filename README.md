@@ -16,7 +16,7 @@
 
 ## Official Submods
 
-[Carnalitas - Historical Slavery Doctrines](https://github.com/cherisong/Carnalitas-Historical-Slavery-Doctrines)
+[Carnalitas - Historical Slavery Doctrines](https://gitgud.io/cherisong/carnalitas-historical-slavery-doctrines)
 
 ## Load Order
 
