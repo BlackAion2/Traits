@@ -30,7 +30,7 @@ carn_prostitution_yearly_maintenance_pulse = {
 			send_interface_message = {
 				type = event_generic_neutral
 				title = msg_carn_stopped_working_as_prostitute
-				left_icon = root
+				left_icon = scope:carn_prostitute
 				custom_tooltip = carn_can_no_longer_work_as_prostitute_tooltip
 			}
 			every_relation = {
@@ -38,7 +38,7 @@ carn_prostitution_yearly_maintenance_pulse = {
 				send_interface_message = {
 					type = event_generic_neutral
 					title = msg_carn_stopped_working_as_prostitute
-					left_icon = root
+					left_icon = scope:carn_prostitute
 					custom_tooltip = carn_can_no_longer_work_as_prostitute_tooltip
 				}
 			}
