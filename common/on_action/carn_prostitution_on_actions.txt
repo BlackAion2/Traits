@@ -9,6 +9,7 @@ carn_prostitution_yearly_maintenance_pulse = {
 		carn_is_working_as_prostitute_trigger = yes
 	}
 	effect = {
+		save_scope_as = carn_prostitute
 		if = {
 			limit = {
 				OR = {
