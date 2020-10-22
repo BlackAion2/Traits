@@ -49,6 +49,10 @@ List of fetishes (`flag:` not necessary anymore):
 * Added `can_not_be_granted_titles` as a character flag.
 * added `carn_cannot_use_birth_control` as a trait and character flag.
 
+## Tweaks
+
+* Increased the fertility reduction from birth control from -50% to -100%.
+
 ## Bug Fixes
 
 * Immortal characters will now be treated by Carnalitas as their effective age instead of their chronological age, allowing them to remain prostitutes, fetch higher prices as slaves, etc.

@@ -1,6 +1,6 @@
 ﻿carn_using_birth_control_modifier = {
 	icon = fertility_positive
-	fertility = -0.5
+	fertility = -1.0
 	spouse_opinion = -5
 	monthly_income = -0.5
 	monthly_piety = -0.2
