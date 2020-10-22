@@ -5,6 +5,13 @@ carn_relationship_allows_free_sex_trigger = {
 		is_consort_of = $PARTNER$
 		has_relation_lover = $PARTNER$
 		has_relation_soulmate = $PARTNER$
-		has_relation_slave = $PARTNER$
+		AND = {
+			has_relation_slave = $PARTNER$
+			NOT = {
+				relation_with_character_is_incestuous_in_my_faith_trigger = {
+					CHARACTER = $PARTNER$
+				}
+			}
+		}
 	}
 }
