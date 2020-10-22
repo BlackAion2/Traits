@@ -1,6 +1,6 @@
 ﻿CarnFutaTraitName = {
 	# must be in a character scope due to engine limitation
-	# just use GetNullCharacter.Custom('CarnFutaTraitName')
+	# just use GetPlayer.Custom('CarnFutaTraitName')
 	type = character
 	text = {
 		trigger = { has_game_rule = carn_futa_trait_name_hermaphrodite }
