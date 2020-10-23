@@ -9,6 +9,7 @@ carn_arousal.0001 = {
 
 	trigger = {
 		is_ai = no
+		is_adult = yes
 		has_game_rule = carn_arousal_stress_enabled
 		carn_has_low_arousal_trigger = no
 	}
