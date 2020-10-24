@@ -27,7 +27,6 @@
     is_valid_showing_failures_only = {
         scope:actor = {
             carn_can_have_sex_trigger = yes
-            is_attracted_to_gender_of = scope:recipient
         }
         scope:recipient = {
             is_diplomatically_available = yes
@@ -93,9 +92,20 @@
                         DRAMA = yes
                     }
                 }
-                stress_impact = {
-                    base = minor_stress_impact_loss
-                    chaste = activity_stress_gain_impact
+                if = {
+                    limit = {
+                        is_attracted_to_gender_of = scope:recipient
+                    }
+                    stress_impact = {
+                        base = minor_stress_impact_loss
+                        chaste = activity_stress_gain_impact
+                    }
+                }
+                else = {
+                    custom_tooltip = carn_sex_interaction_not_attracted_to_warning_tt
+                    stress_impact = {
+                        base = major_stress_impact_gain
+                    }
                 }
                 add_character_flag = {
                     flag = carn_sex_interaction_effect_cd

@@ -1,0 +1,47 @@
+﻿l_french: 
+########################################
+# French specific localization strings #
+########################################
+
+# game concepts
+game_concept_dominant_male:1 "dominant"
+game_concept_dominant_female:1 "dominante"
+game_concept_dominants_male:1 "dominants"
+game_concept_dominants_female:1 "dominantes"
+
+game_concept_submissive_male:1 "soumis"
+game_concept_submissive_female:1 "soumise"
+game_concept_submissives_male:1 "soumis"
+game_concept_submissives_female:1 "soumises"
+
+game_concept_slave_owners_male:1 "maître"
+game_concept_slave_owners_female:1 "maîtresse"
+game_concept_slave_owners_male:1 "maîtres"
+game_concept_slave_owners_female:1 "maîtresses"
+
+# Interactiosn
+carn_sex_interaction_neutral:1 "coucher avec un ou une amante"
+
+# relations
+relation_dominant_male:1 "dominant"
+relation_dominant_female:1 "dominante"
+relation_dominant_male_possessive:1 "du dominant"
+relation_dominant_female_possessive:1 "de la dominante"
+
+relation_submissive_male:1 "soumis"
+relation_submissive_female:1 "soumise"
+relation_submissive_male_possessive:1 "du soumis"
+relation_submissive_female_possessive:1 "de la soumise"
+
+relation_slave_owner_male:1 "maître"
+relation_slave_owner_female:1 "maîtresse"
+relation_slave_owner_male_possessive:1 "du maître"
+relation_slave_owner_female_possessive:1 "de la maîtresse"
+
+# Religion
+carn_doctrine_same_slavery_name_full:1 "Asservissement de coreligionnaires"
+
+# Traits
+trait_prostitute_1_lowercase:1 "prostituée débutante"
+trait_prostitute_2_lowercase:1 "prostituée expérimentée"
+trait_prostitute_3_lowercase:1 "prostituée de renom"

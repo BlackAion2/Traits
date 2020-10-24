@@ -1,4 +1,6 @@
 ﻿l_english:
+ NOT_IS_ATTRACTED_TO_TRIGGER: "Is not attracted to [TARGET_CHARACTER.GetShortUIName]"
+
  carn_i_can_be_granted_titles: "You can be granted titles"
  carn_not_i_can_be_granted_titles: "You cannot be granted titles"
  carn_they_can_be_granted_titles: "[CHARACTER.GetShortUIName|U] can be granted titles"
@@ -9,3 +11,12 @@
  carn_slavery_is_illegal: "Your faith does not permit the taking of [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U] as slaves"
 
  carn_cannot_have_max_number_of_slave_prostitutes: "You do not have more than [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|0] slaves working as prostitutes"
+
+carn_effective_age_under_prostitution_age_cutoff: "Age is less than [EmptyScope.ScriptValue('carn_prostitution_age_cutoff')|0]"
+
+ carn_i_have_a_fetish_trigger: "You have a fetish"
+ carn_not_i_have_a_fetish_trigger: "You do #bold not#! have a fetish"
+ carn_they_have_a_fetish_trigger: "[CHARACTER.GetShortUIName|U] has a fetish"
+ carn_not_they_have_a_fetish_trigger: "[CHARACTER.GetShortUIName|U] does #bold not#! have a fetish"
+ carn_has_a_fetish_trigger: "Has a fetish"
+ carn_not_has_a_fetish_trigger: "Does #bold not#! have a fetish"

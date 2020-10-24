@@ -2,6 +2,7 @@
 carn_sex_interaction:1 "Faire l'amour"
 carn_sex_interaction_desc:1 "Passer un moment intime avec [recipient.GetShortUINameNoTooltip]"
 carn_sex_interaction_effect_cd_tt:1 "#weak Cette action n'aura aucun effet en jeu, car vous avez déjà utilisé cette intéraction au cours des [EmptyScope.ScriptValue('carn_sex_interaction_cooldown_base')|0] mois#!"
+carn_sex_interaction_not_attracted_to_warning_tt:1 "#X Vous n'êtes pas attiré[actor.Custom('FR_E')] par [recipient.GetShortUINameNoTooltip]#!"
 
 carn_enslave_interaction:1 "Asservir"
 carn_enslave_interaction_desc:1 "Faites de [recipient.GetShortUINameNoTooltip] votre [slave|El]"
@@ -42,7 +43,7 @@ carn_refused_free_illegal_slaves_opinion:1 "A refuser d'affranchir des esclaves"
 
 carn_seize_slave_interaction:1 "S'emparer de l'esclave"
 carn_seize_slave_interaction_desc:1 "Faites de [recipient.GetShortUINameNoTooltip] votre propre [slave|El]"
-carn_wants_to_be_liege_slave:1 "Préfère s[recipient.Custom('FR_OnA')] Maître actuel : $VALUE|=+0$"
+carn_wants_to_be_liege_slave:1 "Préfère s[recipient.Custom('FR_OnA')] Maîtr[recipient.Custom('FR_EEsse')] actuel : $VALUE|=+0$"
 carn_wants_to_be_your_slave:1 "Vous préfère en tant que Maître : $VALUE|=+0$"
 
 carn_buy_slave_directly_interaction:1 "Acheter un esclave"

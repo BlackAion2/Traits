@@ -1,20 +1,22 @@
 # Carnalitas
 
-[LoversLab download page](https://www.loverslab.com/files/file/14207-carnalitas/)
+[Releases](https://gitgud.io/cherisong/carnalitas/-/releases)
 
-[Carnalitas Discord Channel](https://discord.gg/fYWeGVd)
+[LoversLab Page](https://www.loverslab.com/files/file/14207-carnalitas/)
 
-[How to Contribute to Carnalitas](https://github.com/cherisong/Carnalitas/blob/development/CONTRIBUTING.md)
+[House Irae Discord Server](https://discord.gg/fYWeGVd)
 
-[Carnalitas Wiki](https://github.com/cherisong/Carnalitas/wiki)
+[Carnalitas Wiki](https://gitgud.io/cherisong/carnalitas/-/wikis/home)
 
-[Development Board](https://github.com/cherisong/Carnalitas/projects/1)
+[How to Contribute to Carnalitas](https://gitgud.io/cherisong/carnalitas/-/blob/development/CONTRIBUTING.md)
 
-[Credits](https://github.com/cherisong/Carnalitas/wiki/Credits)
+[Development Board](https://gitgud.io/cherisong/carnalitas/-/boards/5325)
+
+[Credits](https://gitgud.io/cherisong/carnalitas/-/wikis/99.-Credits)
 
 ## Official Submods
 
-[Carnalitas - Historical Slavery Doctrines](https://github.com/cherisong/Carnalitas-Historical-Slavery-Doctrines)
+[Carnalitas - Historical Slavery Doctrines](https://gitgud.io/cherisong/carnalitas-historical-slavery-doctrines)
 
 ## Load Order
 
@@ -24,7 +26,7 @@
 * mods that list Carnalitas as a prerequisite
 
 ## Carnalitas Succession Law
-By contributing material for Carnalitas you are agreeing to distribute it under the [GNU General Public License 3.0](https://github.com/cherisong/Carnalitas/blob/development/LICENSE.md).
+By contributing material for Carnalitas you are agreeing to distribute it under the [GNU General Public License 3.0](https://gitgud.io/cherisong/carnalitas/-/blob/development/LICENSE.md).
 
 This basically means that:
 1. Anyone can copy, modify and distribute this software.
@@ -37,4 +39,4 @@ This basically means that:
 8. This software is provided without warranty.
 9. The software author or license can not be held liable for any damages inflicted by the software.
 
-Carnalitas is (c) its contributors, who are listed [here](https://github.com/cherisong/Carnalitas/wiki/Credits).
+Carnalitas is (c) its contributors, who are listed [here](https://gitgud.io/cherisong/carnalitas/-/wikis/99.-Credits).

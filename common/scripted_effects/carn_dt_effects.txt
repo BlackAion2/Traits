@@ -279,7 +279,7 @@ carn_increase_dick_size_one_step_effect = {
 	if = {
 		limit = {
 			has_game_rule = carn_dt_enabled_true
-			age >= 16
+			is_adult = yes
 			carn_gender_can_impregnate_trigger = yes
 		}
 		if = {
@@ -316,7 +316,7 @@ carn_decrease_dick_size_one_step_effect = {
 	if = {
 		limit = {
 			has_game_rule = carn_dt_enabled_true
-			age >= 16
+			is_adult = yes
 			carn_gender_can_impregnate_trigger = yes
 		}
 		if = {
@@ -353,7 +353,7 @@ carn_increase_tits_size_one_step_effect = {
 	if = {
 		limit = {
 			has_game_rule = carn_dt_enabled_true
-			age >= 16
+			is_adult = yes
 			is_female = yes
 		}
 		if = {
@@ -390,7 +390,7 @@ carn_decrease_tits_size_one_step_effect = {
 	if = {
 		limit = {
 			has_game_rule = carn_dt_enabled_true
-			age >= 16
+			is_adult = yes
 			is_female = yes
 		}
 		if = {
@@ -432,7 +432,7 @@ carn_add_dick_small_1_effect = {
 		limit = { has_game_rule = carn_dt_enabled_true }
 		add_trait = dick_small_1
 		if = {
-			limit = { age < 16 }
+			limit = { is_adult = no }
 			make_trait_inactive = dick_small_1
 		}
 	}
@@ -444,7 +444,7 @@ carn_add_dick_small_2_effect = {
 		limit = { has_game_rule = carn_dt_enabled_true }
 		add_trait = dick_small_2
 		if = {
-			limit = { age < 16 }
+			limit = { is_adult = no }
 			make_trait_inactive = dick_small_2
 		}
 	}
@@ -456,7 +456,7 @@ carn_add_dick_small_3_effect = {
 		limit = { has_game_rule = carn_dt_enabled_true }
 		add_trait = dick_small_3
 		if = {
-			limit = { age < 16 }
+			limit = { is_adult = no }
 			make_trait_inactive = dick_small_3
 		}
 	}
@@ -468,7 +468,7 @@ carn_add_dick_big_1_effect = {
 		limit = { has_game_rule = carn_dt_enabled_true }
 		add_trait = dick_big_1
 		if = {
-			limit = { age < 16 }
+			limit = { is_adult = no }
 			make_trait_inactive = dick_big_1
 		}
 	}
@@ -480,7 +480,7 @@ carn_add_dick_big_2_effect = {
 		limit = { has_game_rule = carn_dt_enabled_true }
 		add_trait = dick_big_2
 		if = {
-			limit = { age < 16 }
+			limit = { is_adult = no }
 			make_trait_inactive = dick_big_2
 		}
 	}
@@ -492,7 +492,7 @@ carn_add_dick_big_3_effect = {
 		limit = { has_game_rule = carn_dt_enabled_true }
 		add_trait = dick_big_3
 		if = {
-			limit = { age < 16 }
+			limit = { is_adult = no }
 			make_trait_inactive = dick_big_3
 		}
 	}
@@ -504,7 +504,7 @@ carn_add_tits_small_1_effect = {
 		limit = { has_game_rule = carn_dt_enabled_true }
 		add_trait = tits_small_1
 		if = {
-			limit = { age < 16 }
+			limit = { is_adult = no }
 			make_trait_inactive = tits_small_1
 		}
 	}
@@ -516,7 +516,7 @@ carn_add_tits_small_2_effect = {
 		limit = { has_game_rule = carn_dt_enabled_true }
 		add_trait = tits_small_2
 		if = {
-			limit = { age < 16 }
+			limit = { is_adult = no }
 			make_trait_inactive = tits_small_2
 		}
 	}
@@ -528,7 +528,7 @@ carn_add_tits_small_3_effect = {
 		limit = { has_game_rule = carn_dt_enabled_true }
 		add_trait = tits_small_3
 		if = {
-			limit = { age < 16 }
+			limit = { is_adult = no }
 			make_trait_inactive = tits_small_3
 		}
 	}
@@ -540,7 +540,7 @@ carn_add_tits_big_1_effect = {
 		limit = { has_game_rule = carn_dt_enabled_true }
 		add_trait = tits_big_1
 		if = {
-			limit = { age < 16 }
+			limit = { is_adult = no }
 			make_trait_inactive = tits_big_1
 		}
 	}
@@ -552,7 +552,7 @@ carn_add_tits_big_2_effect = {
 		limit = { has_game_rule = carn_dt_enabled_true }
 		add_trait = tits_big_2
 		if = {
-			limit = { age < 16 }
+			limit = { is_adult = no }
 			make_trait_inactive = tits_big_2
 		}
 	}
@@ -564,7 +564,7 @@ carn_add_tits_big_3_effect = {
 		limit = { has_game_rule = carn_dt_enabled_true }
 		add_trait = tits_big_3
 		if = {
-			limit = { age < 16 }
+			limit = { is_adult = no }
 			make_trait_inactive = tits_big_3
 		}
 	}

@@ -1619,4 +1619,5 @@ carn_resolve_personality_replacement_effect = {
 carn_clear_personality_replacement_effect = {
 	clear_saved_scope = carn_replaced_trait
 	clear_saved_scope = carn_new_trait
+	clear_variable_list = carn_personality_replacement_excluded_traits
 }

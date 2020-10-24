@@ -16,3 +16,17 @@ carn_cannot_have_max_number_of_slave_prostitutes = {
 	first = carn_cannot_have_max_number_of_slave_prostitutes
 	third = carn_cannot_have_max_number_of_slave_prostitutes
 }
+
+carn_effective_age_under_prostitution_age_cutoff = {
+	first = carn_effective_age_under_prostitution_age_cutoff
+	third = carn_effective_age_under_prostitution_age_cutoff
+}
+
+carn_has_a_fetish_trigger = {
+	first = carn_i_have_a_fetish_trigger
+	first_not = carn_not_i_have_a_fetish_trigger
+	third = carn_they_have_a_fetish_trigger
+	third_not = carn_not_they_have_a_fetish_trigger
+	global = carn_has_a_fetish_trigger
+	global_not = carn_not_has_a_fetish_trigger
+}

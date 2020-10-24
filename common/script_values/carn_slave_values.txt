@@ -291,9 +291,10 @@
 	# very young children and elderly are worth less
 	if = {
 		limit = {
+			is_immortal = no
 			OR = {
-				age < 6
-				age >= 50
+				effective_age < 6
+				effective_age >= 50
 			}
 		}
 		multiply = 0.5

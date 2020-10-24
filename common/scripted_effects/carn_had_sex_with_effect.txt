@@ -114,9 +114,9 @@ carn_had_sex_with_effect = {
 					if = {
 						limit = {
 							is_pregnant = no
-							age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
-							age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
-							$CHARACTER_2$ = { age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE }
+							effective_age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
+							effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
+							$CHARACTER_2$ = { effective_age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE }
 						}
 						add_to_variable_list = {
 							name = potential_father_variable_list
@@ -198,7 +198,7 @@ carn_had_sex_with_effect = {
 								if = {
 									limit = {
 										is_pregnant = no
-										age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
+										effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
 									}
 									random = {
 										chance = $C2_PREGNANCY_CHANCE$
@@ -220,11 +220,11 @@ carn_had_sex_with_effect = {
 						}
 						else_if = {
 							limit = {
-								age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE
+								effective_age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE
 								$CHARACTER_2$ = {
 									is_pregnant = no
-									age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
-									age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
+									effective_age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
+									effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
 								}
 							}
 							save_scope_value_as = {
