@@ -1,5 +1,4 @@
 ﻿### BEDCHAMBER ###
-### Fix for original ###
 bedchamber = {
 	background = {
 		reference = "gfx/interface/illustrations/event_scenes/bedchamber.dds"
