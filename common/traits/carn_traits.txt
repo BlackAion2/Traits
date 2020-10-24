@@ -30,12 +30,7 @@ futa = {
 		}
 	}
 
-	# child_inheritance_sex = female
-	# genetic = yes
 	physical = yes
-
-	# birth = 0.5
-	# random_creation = 0.5
 
 	desc = {
 		first_valid = {
@@ -65,15 +60,12 @@ futa_genetic = {
 		}
 	}
 
-	# child_inheritance_sex = female
 	genetic = yes
 	physical = yes
+	good = yes
 
 	birth = 0
 	random_creation = 0
-
-	# birth = 0.5
-	# random_creation = 0.5
 
 	desc = {
 		first_valid = {
