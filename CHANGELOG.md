@@ -1,4 +1,4 @@
-# Carnalitas v1.2.5
+# Carnalitas v1.3
 
 ## New Features
 
