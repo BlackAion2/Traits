@@ -28,10 +28,10 @@ carn_remove_lactating_trait_effect = {
 	}
 }
 
-carn_indefinitely_lactating_effect = {
+carn_start_indefinitely_lactating_effect = {
 	if = {
 		limit = {
-			NOT = { has_game_rule = carn_lactation_disabled }
+			carn_can_lactate_trigger = yes
 		}
 		if = {
 			limit = {

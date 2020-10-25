@@ -27,6 +27,8 @@ carn_is_lactating_indefinitely_trigger = {
 
 carn_can_lactate_trigger = {
 	NOT = { has_game_rule = carn_lactation_disabled }
+	is_alive = yes
+	is_adult = yes
 	OR = {
 		AND = {
 			is_female = yes

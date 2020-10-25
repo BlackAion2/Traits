@@ -10,7 +10,7 @@
 	}
 
 	effect = {
-		carn_indefinitely_lactating_effect = yes
+		carn_start_indefinitely_lactating_effect = yes
 	}
 
 	ai_potential = {
@@ -35,7 +35,7 @@ carn_continue_breastfeeding_indefinitely_decision = {
 	}
 
 	effect = {
-		carn_indefinitely_lactating_effect = yes
+		carn_start_indefinitely_lactating_effect = yes
 	}
 
 	ai_potential = {
