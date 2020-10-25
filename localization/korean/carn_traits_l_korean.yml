@@ -73,6 +73,10 @@ trait_tits_big_3_immersive:1 "관능적인""
 trait_tits_big_3_desc:1 "이 캐릭터의 가슴은 전설적이다."
 trait_tits_big_3_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip]의 가슴은 전설적이다."
 
+trait_lactating:0 "Lactating"
+trait_lactating_desc:0 "This character breasts are swollen with milk."
+trait_lactating_character_desc:0 "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] breasts are swollen with milk."
+
 trait_slave:1 "노예"
 trait_slave_desc:1 "이 캐릭터는 다른 사람의 재산입니다. 법에 따라 인간 이하의 것으로 인식되기도 합니다."
 trait_slave_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip](은)는 다른 사람의 재산입니다. 법에 따라 인간 이하의 것으로 인식되기도 합니다."

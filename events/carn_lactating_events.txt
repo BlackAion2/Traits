@@ -1,0 +1,30 @@
+﻿namespace = carn_lactating
+
+# Seed event
+carn_lactating.0001 = {
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+		is_female = yes
+	}
+
+	immediate = {
+		carn_seed_lactating_trait_effect = yes
+	}
+}
+
+# Remove trait if no longer eligible
+carn_lactating.0002 = {
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+		has_trait = lactating
+		carn_should_still_be_lactating_trigger = no
+	}
+
+	immediate = {
+		carn_remove_lactating_trait_effect = yes
+	}
+}

@@ -1,0 +1,15 @@
+﻿# Used to check if character should still be lactating
+carn_should_still_be_lactating_trigger = {
+	OR = {
+		carn_is_lactating_indefinitely = yes
+		is_pregnant = yes
+		any_child = {
+			age <= 1
+			count >= 1
+		}
+	}
+}
+
+carn_is_lactating_indefinitely = {
+	has_character_flag = indefinitely_lactating
+}

@@ -1,0 +1,75 @@
+﻿carn_induce_lactation_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_birth_control.dds"
+
+	desc = carn_induce_lactation_decision_desc
+
+	is_shown = {
+		is_female = yes
+		NOT = { has_trait = lactating }
+	}
+
+	effect = {
+		carn_indefinitely_lactating_effect = yes
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+carn_continue_breastfeeding_indefinitely_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_birth_control.dds"
+
+	desc = carn_continue_breastfeeding_indefinitely_decision_desc
+
+	is_shown = {
+		is_female = yes
+		has_trait = lactating
+		carn_is_lactating_indefinitely = no
+	}
+
+	effect = {
+		carn_indefinitely_lactating_effect = yes
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}
+
+carn_stop_breastfeeding_decision = {
+	ai_check_interval = 0
+	picture = "gfx/interface/illustrations/decisions/decision_birth_control.dds"
+
+	desc = carn_stop_breastfeeding_decision_desc
+
+	is_shown = {
+		has_trait = lactating
+	}
+
+	is_valid_showing_failures_only = {
+		NOT = { has_trait = pregnant }
+	}
+
+	effect = {
+		carn_remove_lactating_trait_effect = yes
+	}
+
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+}

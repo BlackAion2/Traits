@@ -1,5 +1,9 @@
 # Carnalitas v1.2.5
 
+## New Features
+
+* Lactation system implemented
+
 ## Tweaks
 
 * Custom localization will now correctly give "a hermaphrodite" not "an hermaphrodite."

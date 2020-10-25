@@ -1,0 +1,5 @@
+﻿yearly_playable_pulse = {
+	events = {
+		carn_lactating.0002 # Remove lactating trait if no longer eligible
+	}
+}
