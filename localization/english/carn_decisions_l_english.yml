@@ -25,7 +25,7 @@
  msg_carn_stopped_birth_control: "Stopped Birth Control"
 
  carn_induce_lactation_decision: "Induce Lactation"
- carn_induce_lactation_decision_desc: "Using a concoction of potions and herbs I will force my body to start producing milk."
+ carn_induce_lactation_decision_desc: "Using a combination of potions, herbs, and physical stimulation I will force my body to start producing milk."
  carn_induce_lactation_decision_tooltip: "Gain the trait [GetTrait('lactating').GetName( ROOT.Char )]"
  carn_induce_lactation_decision_confirm: "Start lactating"
 
