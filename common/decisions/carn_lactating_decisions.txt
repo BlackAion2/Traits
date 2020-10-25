@@ -5,8 +5,8 @@
 	desc = carn_induce_lactation_decision_desc
 
 	is_shown = {
-		is_female = yes
-		NOT = { has_trait = lactating }
+		carn_can_lactate_trigger = yes
+		carn_is_lactating_trigger = no
 	}
 
 	effect = {
@@ -29,9 +29,9 @@ carn_continue_breastfeeding_indefinitely_decision = {
 	desc = carn_continue_breastfeeding_indefinitely_decision_desc
 
 	is_shown = {
-		is_female = yes
+		carn_can_lactate_trigger = yes
 		has_trait = lactating
-		carn_is_lactating_indefinitely = no
+		carn_is_lactating_indefinitely_trigger = no
 	}
 
 	effect = {
@@ -55,10 +55,6 @@ carn_stop_breastfeeding_decision = {
 
 	is_shown = {
 		has_trait = lactating
-	}
-
-	is_valid_showing_failures_only = {
-		NOT = { has_trait = pregnant }
 	}
 
 	effect = {

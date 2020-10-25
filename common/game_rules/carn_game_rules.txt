@@ -31,6 +31,14 @@ carn_birth_control = {
 	carn_birth_control_male_only = {}
 }
 
+carn_lactation = {
+	default = carn_lactation_female_only
+	carn_lactation_disabled = {}
+	carn_lactation_any_gender = {}
+	carn_lactation_female_only = {}
+	carn_lactation_male_only = {}
+}
+
 carn_dt_enabled = {
 	default = carn_dt_enabled_false
 	carn_dt_enabled_false = {}

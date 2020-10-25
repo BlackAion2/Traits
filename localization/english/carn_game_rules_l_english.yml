@@ -36,6 +36,16 @@
  setting_carn_birth_control_male_only: "#high Male Only#!"
  setting_carn_birth_control_male_only_desc: "Only male or futanari characters will be able to use birth control, reducing their fertility at the cost of income."
 
+ rule_carn_lactation: "#X Carnalitas:#! Lactation"
+ setting_carn_lactation_disabled: "Disabled"
+ setting_carn_lactation_disabled_desc: "Lactation will not be available."
+ setting_carn_lactation_any_gender: "#high Any Gender#!"
+ setting_carn_lactation_any_gender_desc: "Both male and female characters will be able to lactate."
+ setting_carn_lactation_female_only: "#high Female Only#!"
+ setting_carn_lactation_female_only_desc: "Only female (and futanari) characters will be able to lactate."
+ setting_carn_lactation_male_only: "#high Male Only#!"
+ setting_carn_lactation_male_only_desc: "Only male characters will be able to lactate."
+
  rule_carn_dt_enabled: "#X Carnalitas:#! Body Part Traits"
  setting_carn_dt_enabled_false: "Disabled"
  setting_carn_dt_enabled_false_desc: "Characters will not spawn with congenital breast and penis size traits."

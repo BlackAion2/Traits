@@ -26,7 +26,7 @@ msg_carn_stopped_birth_control:1 "Contraception arrêtée"
 
 carn_induce_lactation_decision:0 "Induce Lactation"
 carn_induce_lactation_decision_desc:0 "Using a concoction of potions and herbs I will force my body to start producing milk."
-carn_induce_lactation_decision_tooltip:0 "Increase your [health|E] at the cost of [fertility|E]"
+carn_induce_lactation_decision_tooltip:0 "Gain the trait [GetTrait('lactating').GetName( ROOT.Char )]"
 carn_induce_lactation_decision_confirm:0 "Start lactating"
 
 carn_continue_breastfeeding_indefinitely_decision:0 "Continue Breastfeeding"
@@ -34,7 +34,7 @@ carn_continue_breastfeeding_indefinitely_decision_desc:0 "Despite it being frown
 carn_continue_breastfeeding_indefinitely_decision_tooltip:0 "Intentionally decide to continue breastfeeding"
 carn_continue_breastfeeding_indefinitely_decision_confirm:0 "I will continue producing milk"
 
-carn_stop_breastfeeding_decision:0 "Stop Breastfeeding"
+carn_stop_breastfeeding_decision:0 "Halt Lactation"
 carn_stop_breastfeeding_decision_desc:0 "It is time for my breasts to stop producing milk so that my body may return to normal."
-carn_stop_breastfeeding_decision_tooltip:0 "You stop breastfeeding and lose the trait [GetTrait('lactating').GetName( ROOT.Char )]"
-carn_stop_breastfeeding_decision_confirm:0 "Stop breastfeeding"
+carn_stop_breastfeeding_decision_tooltip:0 "Lose the trait [GetTrait('lactating').GetName( ROOT.Char )]"
+carn_stop_breastfeeding_decision_confirm:0 "Stop lactation"

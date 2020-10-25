@@ -597,8 +597,8 @@ lactating = {
 
 	random_creation = 0
 
-	fertility = -0.25
-	health = 0.25
+	flag = carn_is_lactating
+	flag = no_message
 
 	desc = {
 		first_valid = {

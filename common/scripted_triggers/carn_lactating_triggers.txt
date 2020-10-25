@@ -1,8 +1,7 @@
 ﻿# Used to check if character should still be lactating
 carn_should_still_be_lactating_trigger = {
 	OR = {
-		carn_is_lactating_indefinitely = yes
-		is_pregnant = yes
+		carn_is_lactating_indefinitely_trigger = yes
 		any_child = {
 			age <= 1
 			count >= 1
@@ -10,6 +9,32 @@ carn_should_still_be_lactating_trigger = {
 	}
 }
 
-carn_is_lactating_indefinitely = {
-	has_character_flag = indefinitely_lactating
+carn_is_lactating_trigger = {
+	trigger_if = {
+		limit = {
+			carn_can_lactate_trigger = yes
+		}
+		has_trait_with_flag = carn_is_lactating
+	}
+	trigger_else = {
+		always = no
+	}
+}
+
+carn_is_lactating_indefinitely_trigger = {
+	has_character_flag = carn_indefinitely_lactating
+}
+
+carn_can_lactate_trigger = {
+	NOT = { has_game_rule = carn_lactation_disabled }
+	OR = {
+		AND = {
+			is_female = yes
+			NOT = { has_game_rule = carn_lactation_male_only }
+		}
+		AND = {
+			is_male = yes
+			NOT = { has_game_rule = carn_lactation_female_only }
+		}
+	}
 }
