@@ -20,3 +20,10 @@ carn_effective_age_under_prostitution_age_cutoff: "Age is less than [EmptyScope.
  carn_not_they_have_a_fetish_trigger: "[CHARACTER.GetShortUIName|U] does #bold not#! have a fetish"
  carn_has_a_fetish_trigger: "Has a fetish"
  carn_not_has_a_fetish_trigger: "Does #bold not#! have a fetish"
+
+ carn_i_am_lactating_trigger: "Your breasts are producing milk"
+ carn_not_i_am_lactating_trigger: "Your breasts are #bold not#! producing milk"
+ carn_they_are_lactating_trigger: "[CHARACTER.GetShortUINamePossessive|U] breasts are producing milk"
+ carn_not_they_are_lactating_trigger: "[CHARACTER.GetShortUINamePossessive|U] breasts are #bold not#! producing milk"
+ carn_is_lactating_trigger: "Is producing milk"
+ carn_not_is_lactating_trigger: "Is #bold not#! producing milk"
