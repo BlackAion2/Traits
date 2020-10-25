@@ -2,11 +2,7 @@
 carn_seed_lactating_trait_effect = {
 	if = {
 		limit = {
-			# Check if character has any children that would still be breastfed
-			any_child = {
-				age <= 1
-				count >= 1
-			}
+			carn_should_still_be_lactating_trigger = yes
 		}
 		add_trait = lactating
 	}
@@ -25,6 +21,10 @@ carn_remove_lactating_trait_effect = {
 	if = {
 		limit = { has_trait = lactating }
 		remove_trait = lactating
+	}
+	if = {
+		limit = { has_character_flag = carn_indefinitely_lactating }
+		remove_character_flag = carn_indefinitely_lactating
 	}
 }
 

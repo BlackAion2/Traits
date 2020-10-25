@@ -662,7 +662,10 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+					has_trait = lactating
+				}
 			}
 		}
 	}
@@ -679,7 +682,10 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+					has_trait = lactating
+				}
 			}
 		}
 	}
@@ -696,7 +702,10 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+					has_trait = lactating
+				}
 			}
 		}
 	}
@@ -713,7 +722,10 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+					has_trait = lactating
+				}
 			}
 		}
 	}
@@ -730,7 +742,10 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+					has_trait = lactating
+				}
 			}
 		}
 	}
@@ -747,7 +762,10 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+					has_trait = lactating
+				}
 			}
 		}
 	}
@@ -764,7 +782,10 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+					has_trait = lactating
+				}
 			}
 		}
 	}
@@ -781,7 +802,10 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+					has_trait = lactating
+				}
 			}
 		}
 	}
@@ -798,7 +822,10 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+					has_trait = lactating
+				}
 			}
 		}
 	}
@@ -1105,159 +1132,6 @@
 			modifier = {
 				add = 3
 				has_trait = tits_big_3
-			}
-		}
-	}
-	lactating_bust_default = {
-		dna_modifiers = {
-			morph = {
-				mode = replace
-				gene = gene_bs_bust
-				template = bust_default
-				value = 0.65
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 3
-				has_trait = lactating
-			}
-		}
-	}
-	lactating_bust_shape_1_half = {
-		dna_modifiers = {
-			morph = {
-				mode = replace
-				gene = gene_bs_bust
-				template = bust_shape_1_half
-				value = 0.65
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 3
-				has_trait = lactating
-			}
-		}
-	}
-	lactating_bust_shape_1_full = {
-		dna_modifiers = {
-			morph = {
-				mode = replace
-				gene = gene_bs_bust
-				template = bust_shape_1_full
-				value = 0.65
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 3
-				has_trait = lactating
-			}
-		}
-	}
-	lactating_bust_shape_2_half = {
-		dna_modifiers = {
-			morph = {
-				mode = replace
-				gene = gene_bs_bust
-				template = bust_shape_2_half
-				value = 0.65
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 3
-				has_trait = lactating
-			}
-		}
-	}
-	lactating_bust_shape_2_full = {
-		dna_modifiers = {
-			morph = {
-				mode = replace
-				gene = gene_bs_bust
-				template = bust_shape_2_full
-				value = 0.65
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 3
-				has_trait = lactating
-			}
-		}
-	}
-	lactating_bust_shape_3_half = {
-		dna_modifiers = {
-			morph = {
-				mode = replace
-				gene = gene_bs_bust
-				template = bust_shape_3_half
-				value = 0.65
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 3
-				has_trait = lactating
-			}
-		}
-	}
-	lactating_bust_shape_3_full = {
-		dna_modifiers = {
-			morph = {
-				mode = replace
-				gene = gene_bs_bust
-				template = bust_shape_3_full
-				value = 0.65
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 3
-				has_trait = lactating
-			}
-		}
-	}
-	lactating_bust_shape_4_half = {
-		dna_modifiers = {
-			morph = {
-				mode = replace
-				gene = gene_bs_bust
-				template = bust_shape_4_half
-				value = 0.65
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 3
-				has_trait = lactating
-			}
-		}
-	}
-	lactating_bust_shape_4_full = {
-		dna_modifiers = {
-			morph = {
-				mode = replace
-				gene = gene_bs_bust
-				template = bust_shape_4_full
-				value = 0.65
-			}
-		}
-		weight = {
-			base = 0
-			modifier = {
-				add = 3
-				has_trait = lactating
 			}
 		}
 	}

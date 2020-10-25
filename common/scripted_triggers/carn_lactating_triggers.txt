@@ -2,6 +2,7 @@
 carn_should_still_be_lactating_trigger = {
 	OR = {
 		carn_is_lactating_indefinitely_trigger = yes
+		# Check if character has any children that would still be breastfed
 		any_child = {
 			age <= 1
 			count >= 1
@@ -22,7 +23,10 @@ carn_is_lactating_trigger = {
 }
 
 carn_is_lactating_indefinitely_trigger = {
-	has_character_flag = carn_indefinitely_lactating
+	AND = {
+		carn_is_lactating_trigger = yes
+		has_character_flag = carn_indefinitely_lactating
+	}
 }
 
 carn_can_lactate_trigger = {
