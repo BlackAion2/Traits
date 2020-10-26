@@ -16,8 +16,11 @@ quarterly_playable_pulse = {
 start_arousal_tracking_pulse = {
 	trigger = {
 		is_ai = no
+		is_adult = yes
+		NOT = { has_character_flag = carn_track_arousal_periodically }
 	}
-	effect = {
+	effect = {		
+		add_character_flag = carn_track_arousal_periodically
 		trigger_event = {
 			id = carn_arousal.0002
 			days = 1

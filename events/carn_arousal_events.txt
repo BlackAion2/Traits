@@ -45,7 +45,12 @@ carn_arousal.0002 = {
 
 	trigger = {
 		is_ai = no
-		is_adult = yes
+	}
+
+	# Player character changed without dying
+	on_trigger_fail = {
+		# Flag needs to be removed in case we want to play that character again later
+		remove_character_flag = carn_track_arousal_periodically
 	}
 
 	immediate = {
@@ -56,7 +61,7 @@ carn_arousal.0002 = {
 			}
 			set_variable = {
 				name = arousal
-				value = 0
+				value = 100
 			}
 		}
 
