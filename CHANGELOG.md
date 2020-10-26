@@ -3,6 +3,7 @@
 ## New Features
 
 * Lactation system implemented
+* Rape/Defile prisoner character interaction
 
 ## Tweaks
 

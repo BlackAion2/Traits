@@ -1,0 +1,142 @@
+﻿carn_defile_prisoner = {
+	category = interaction_category_prison
+	interface_priority = 30
+	use_diplomatic_range = no
+
+	desc = carn_defile_prisoner_desc
+
+	is_shown = {
+		has_game_rule = carn_content_consent_noncon
+		scope:recipient = { is_imprisoned_by = scope:actor }
+	}
+
+	cooldown = { years = carn_sex_interaction_cooldown }
+
+	is_valid_showing_failures_only = {
+		scope:actor = { carn_can_have_sex_trigger = yes }
+		scope:recipient = { is_adult = yes }
+		scope:recipient = { is_diplomatically_available = yes }
+		scope:recipient = {
+			NOR = {
+				has_trait_with_flag = carn_cannot_have_sex
+				has_character_flag = carn_cannot_have_sex
+			}
+		}
+		scope:recipient = {
+			custom_description = {
+				text = "currently_being_tortured"
+				NOT = { has_character_flag = is_being_tortured }
+			}
+		}
+	}
+
+	is_highlighted = {
+		OR = {
+			scope:actor = { has_trait = lustful }
+			scope:actor = { has_trait = rakish }
+			scope:actor = { has_trait = sadistic }
+		}
+	}
+
+	on_accept = {
+		scope:actor = {
+			if = {
+				limit = {
+					NOT = { has_character_flag = carn_sex_interaction_effect_cd }
+				}
+				show_as_tooltip = {
+					carn_had_sex_with_effect = {
+						CHARACTER_1 = scope:actor
+						CHARACTER_2 = scope:recipient
+						C1_PREGNANCY_CHANCE = pregnancy_chance
+						C2_PREGNANCY_CHANCE = pregnancy_chance
+						STRESS_EFFECTS = yes
+						DRAMA = yes
+					}
+				}
+			}
+
+			if = {
+				limit = { is_ai = no }
+
+				if = {
+					limit = {
+						has_character_flag = carn_sex_interaction_effect_cd
+					}
+					add_character_flag = carn_block_next_had_sex_with_effect
+				}
+
+				carn_sex_scene_request_noncon = yes
+				carn_sex_scene_request_giving_player = yes
+
+				carn_sex_scene_effect = {
+					PLAYER = scope:actor
+					TARGET = scope:recipient
+					STRESS_EFFECTS = yes
+					DRAMA = yes
+				}
+			}
+		}
+
+		blind_and_castrate_actor_effect = yes #Stress & dread
+		
+		scope:recipient = {
+			add_character_modifier = {
+				modifier = carn_recently_defiled
+				years = 1
+			}
+			if = {
+				limit = { is_ai = no }
+
+				carn_sex_scene_request_noncon = yes
+				carn_sex_scene_request_receiving_player = yes
+
+				carn_sex_scene_effect = {
+					PLAYER = scope:recipient
+					TARGET = scope:actor
+					STRESS_EFFECTS = no # Being raped shouldn't give stress loss
+					DRAMA = yes
+				}
+			}
+		}
+
+		torture_blind_castrate_opinion_effect = { VERB = carn_defiled }
+	}
+
+	auto_accept = yes
+	
+	# AI
+	ai_targets = {
+		ai_recipients = prisoners
+	}
+	
+	ai_frequency = 24
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = -25
+
+		modifier = {
+			has_trait = lustful
+			add = 30
+		}
+		modifier = {
+			has_trait = rakish
+			add = 30
+		}
+		modifier = {
+			has_trait = sadistic
+			add = 30
+		}
+		ai_value_modifier = {
+			ai_compassion = tiny_chance_impact_negative_ai_value #Adds +50 for highly uncompassionate characters, -50 for highly compassionate characters
+		}
+		opinion_modifier = {
+			opinion_target = scope:recipient
+			multiplier = -0.25
+		}
+	}
+}
