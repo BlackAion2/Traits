@@ -10,6 +10,12 @@
             has_game_rule = carn_sex_interaction_disabled
             scope:actor = scope:recipient
         }
+        scope:actor = {
+            is_adult = yes
+        }
+        scope:recipient = {
+            is_adult = yes
+        }
         OR = {
             scope:actor = {
                 carn_relationship_allows_free_sex_trigger = {

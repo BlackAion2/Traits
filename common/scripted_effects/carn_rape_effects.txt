@@ -221,9 +221,18 @@ carn_rape_effect = {
 
 carn_rape_opinion_effects_effect = {
 	scope:carn_rape_victim = {
-		add_opinion = {
-			modifier = raped_me
-			target = scope:carn_rape_rapist
+		if = {
+			limit = {
+				NOT = {
+					carn_has_given_fetish_trigger = {
+						FETISH = carn_fetish_masochism
+					}
+				}
+			}
+			add_opinion = {
+				modifier = raped_me
+				target = scope:carn_rape_rapist
+			}
 		}
 		if = {
 			limit = {
@@ -281,26 +290,35 @@ carn_rape_victim_stress_effect = {
 		}
 		if = {
 			limit = {
-				NOR = {
-					has_trait = craven
-					has_trait = chaste
-					has_trait = celibate
-					has_trait = brave
+				NOT = {
+					carn_has_given_fetish_trigger = {
+						FETISH = carn_fetish_masochism
+					}
 				}
 			}
-			add_stress = massive_stress_impact_gain
-		}
-		else = {
-			stress_impact = {
-				craven = monumental_stress_gain
-				chaste = monumental_stress_gain
-				celibate = monumental_stress_gain
-				brave = medium_stress_impact_gain
+			if = {
+				limit = {
+					NOR = {
+						has_trait = craven
+						has_trait = chaste
+						has_trait = celibate
+						has_trait = brave
+					}
+				}
+				add_stress = massive_stress_impact_gain
 			}
-		}
-		random = {
-			chance = 50
-			add_trait_force_tooltip = depressed_1
+			else = {
+				stress_impact = {
+					craven = monumental_stress_gain
+					chaste = monumental_stress_gain
+					celibate = monumental_stress_gain
+					brave = medium_stress_impact_gain
+				}
+			}
+			random = {
+				chance = 50
+				add_trait_force_tooltip = depressed_1
+			}
 		}
 	}
 }

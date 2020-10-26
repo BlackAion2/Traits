@@ -64,3 +64,9 @@ carn_stole_my_slave_opinion = {
 carn_wants_to_be_your_slave_opinion = {
 	opinion = 10
 }
+
+carn_forced_me_into_prostitution_opinion = {
+	opinion = -50
+	years = 30
+	decaying = yes
+}

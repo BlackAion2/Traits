@@ -114,7 +114,25 @@ carn_sex_scene.0004 = {
 	}
 
 	option = {
-		name = carn_sex_scene.0004.a
+		name = {
+			trigger = {
+				NOT = {
+					carn_has_given_fetish_trigger = {
+						FETISH = carn_fetish_masochism
+					}
+				}
+			}
+			text = carn_sex_scene.0004.a
+		}
+
+		name = {
+			trigger = {
+				carn_has_given_fetish_trigger = {
+					FETISH = carn_fetish_masochism
+				}
+			}
+			text = carn_sex_scene.0004.a.masochist
+		}
 	}
 
 	after = {

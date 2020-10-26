@@ -9,7 +9,13 @@
 	is_shown = {
         NOT = { has_game_rule = carn_sex_interaction_disabled }
 		has_game_rule = carn_content_consent_noncon
-		scope:recipient = { is_imprisoned_by = scope:actor }
+		scope:actor = {
+			is_adult = yes
+		}
+		scope:recipient = {
+			is_adult = yes
+			is_imprisoned_by = scope:actor
+		}
 	}
 
 	cooldown = { months = carn_sex_interaction_cooldown }
@@ -46,7 +52,7 @@
 					DRAMA = yes
 				}
 			}
-			
+
 			carn_rape_effect = {
 				RAPIST = scope:actor
 				VICTIM = scope:recipient

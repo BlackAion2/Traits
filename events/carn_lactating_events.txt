@@ -21,7 +21,7 @@ carn_lactating.0002 = {
 	trigger = {
 		NOT = { has_game_rule = carn_lactation_disabled }
 		is_alive = yes
-		has_trait = lactating
+		#has_trait = lactating
 		carn_should_still_be_lactating_trigger = no
 	}
 
@@ -41,9 +41,5 @@ carn_lactating.0003 = {
 
 	immediate = {
 		carn_add_lactating_trait_effect = yes
-		add_character_modifier = {
-			modifier = carn_postpartum_infertility_modifier
-			days = 365
-		}
 	}
 }

@@ -35,3 +35,6 @@ New scripted effects:
 * Bedchamber event background now actually uses the bedchamber illustration that was included with the game.
 * The Make Love notification will now prioritize any spouse or concubine that you are attracted to.
 * You can no longer Make Love to prostitutes who aren't currently working.
+* Make Love interaction will no longer appear in the menu if either participant is a child.
+* If you turn a slave into a prostitute, they will now hate you unless they have a submission fetish.
+* Fixed positive prostitution events becoming less common if you're a good prostitute, rather than more common.
