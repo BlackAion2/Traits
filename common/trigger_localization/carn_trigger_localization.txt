@@ -27,6 +27,11 @@ carn_effective_age_under_prostitution_age_cutoff = {
 	third = carn_effective_age_under_prostitution_age_cutoff
 }
 
+carn_effective_age_under_lactation_age_cutoff = {
+	first = carn_effective_age_under_lactation_age_cutoff
+	third = carn_effective_age_under_lactation_age_cutoff
+}
+
 carn_has_a_fetish_trigger = {
 	first = carn_i_have_a_fetish_trigger
 	first_not = carn_not_i_have_a_fetish_trigger

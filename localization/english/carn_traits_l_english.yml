@@ -73,10 +73,6 @@ trait_tits_big_3_immersive: "Voluptuous"
 trait_tits_big_3_desc: "This character's enormous bosom is the stuff of legends."
 trait_tits_big_3_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip]'s enormous bosom is the stuff of legends."
 
-trait_lactating: "Lactating"
-trait_lactating_desc: "This character breasts are swollen with milk."
-trait_lactating_character_desc: "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] breasts are swollen with milk."
-
 trait_slave: "Slave"
 trait_slave_desc: "This character is the property of another person, recognized by law to be less than a human being."
 trait_slave_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is the property of another person, recognized by law to be less than a human being."

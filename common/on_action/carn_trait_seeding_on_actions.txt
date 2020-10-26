@@ -2,7 +2,6 @@
 	events = {
 		carn_futa.0001 # initialize this character with futa trait
 		carn_dt.0001 # initialize this character with dt traits
-		carn_lactating.0001 # Initialize this character with the lactating trait
 	}
 }
 

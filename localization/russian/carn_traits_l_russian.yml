@@ -73,10 +73,6 @@ trait_tits_big_3_immersive:1 "Грудастая"
 trait_tits_big_3_desc:1 "О огромной груди этого персонажа ходят легенды."
 trait_tits_big_3_character_desc:1 "О огромной груди [ROOT.GetCharacter.GetFirstNameNoTooltip] ходят легенды."
 
-trait_lactating:0 "Lactating"
-trait_lactating_desc:0 "This character breasts are swollen with milk."
-trait_lactating_character_desc:0 "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] breasts are swollen with milk."
-
 trait_slave:1 "Личный раб"
 trait_slave_desc:1 "Этот персонаж - легальная собственность другого человека, не имеющая никаких прав."
 trait_slave_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip] - легальная собственность другого человека, не имеющая никаких прав."

@@ -32,7 +32,8 @@
 
 	is_valid = {
 		custom_description = {
-			text = "carn_effective_age_under_prostitution_age_cutoff"
+			text = "carn_effective_age_under_value"
+			value = carn_prostitution_age_cutoff
 			effective_age < carn_prostitution_age_cutoff
 		}
 	}

@@ -16,7 +16,7 @@ carn_dt.0001 = {
 	hidden = yes
 
 	trigger = {
-		has_game_rule = carn_dt_enabled_true
+		has_game_rule = carn_dt_enabled
 		NOT = { has_character_flag = carn_dt_traits_seeded }
 		is_alive = yes
 	}
@@ -37,7 +37,7 @@ carn_dt.0002 = {
 	hidden = yes
 
 	trigger = {
-		has_game_rule = carn_dt_enabled_true
+		has_game_rule = carn_dt_enabled
 	}
 
 	immediate = {
@@ -55,7 +55,7 @@ carn_dt.0003 = {
 	hidden = yes
 
 	trigger = {
-		has_game_rule = carn_dt_enabled_true
+		has_game_rule = carn_dt_enabled
 	}
 
 	immediate = {

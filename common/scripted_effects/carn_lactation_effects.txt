@@ -1,0 +1,111 @@
+﻿# carn_set_milk_production_effect
+# carn_stop_milk_production_effect
+# carn_change_milk_production_effect
+# carn_change_milk_production_with_maximum_effect
+# carn_set_milk_production_minimum_effect
+# carn_set_milk_production_maximum_effect
+
+# refer to script_values/carn_lactation_values.txt for what different lactation values roughly correspond to
+
+# carn_set_milk_production_effect
+# requires VALUE (integer)
+carn_set_milk_production_effect = {
+	if = {
+		limit = {
+			carn_can_lactate_trigger = yes
+		}
+		set_variable = {
+			name = carn_milk_production
+			value = $VALUE$
+		}
+		carn_set_milk_production_minimum_effect = { MINIMUM = 0 }
+	}
+}
+
+# carn_stop_milk_production_effect
+carn_stop_milk_production_effect = {
+	remove_variable = carn_milk_production
+}
+
+# carn_change_milk_production_effect
+# requires VALUE (integer)
+carn_change_milk_production_effect = {
+	if = {
+		limit = {
+			carn_can_lactate_trigger = yes
+		}
+		if = {
+			limit = {
+				NOT = { exists = var:carn_milk_production }
+			}
+			set_variable = {
+				name = carn_milk_production
+				value = $VALUE$
+			}
+		}
+		else = {
+			change_variable = {
+				name = carn_milk_production
+				add = $VALUE$
+			}
+		}
+		carn_set_milk_production_minimum_effect = { MINIMUM = 0 }
+	}
+}
+
+# carn_change_milk_production_with_maximum_effect
+# requires VALUE (integer)
+carn_change_milk_production_with_maximum_effect = {
+	if = {
+		limit = {
+			carn_can_lactate_trigger = yes
+		}
+		if = {
+			limit = {
+				NOT = { exists = var:carn_milk_production }
+			}
+			set_variable = {
+				name = carn_milk_production
+				value = $VALUE$
+			}
+		}
+		else = {
+			change_variable = {
+				name = carn_milk_production
+				add = $VALUE$
+			}
+		}
+		carn_set_milk_production_minimum_effect = { MINIMUM = 0 }
+		carn_set_milk_production_maximum_effect = { MAXIMUM = 0 }
+	}
+}
+
+# carn_set_milk_production_minimum_effect
+# requires MINIMUM
+carn_set_milk_production_minimum_effect = {
+	if = {
+		limit = {
+			exists = var:carn_milk_production
+			var:carn_milk_production < $MINIMUM$
+		}
+		set_variable = {
+			name = carn_milk_production
+			value = $MINIMUM$
+		}
+	}
+}
+
+# carn_set_milk_production_maximum_effect
+# requires MAXIMUM
+carn_set_milk_production_maximum_effect = {
+	if = {
+		limit = {
+			exists = var:carn_milk_production
+			var:carn_milk_production > $MAXIMUM$
+		}
+		set_variable = {
+			name = carn_milk_production
+			value = $MAXIMUM$
+		}
+	}
+}

@@ -14,7 +14,7 @@
 
  carn_cannot_have_sex: "Cannot have sex"
 
-carn_effective_age_under_prostitution_age_cutoff: "Age is less than [EmptyScope.ScriptValue('carn_prostitution_age_cutoff')|0]"
+carn_effective_age_under_value: "Age is less than $VALUE|0$"
 
  carn_i_have_a_fetish_trigger: "You have a fetish"
  carn_not_i_have_a_fetish_trigger: "You do #bold not#! have a fetish"

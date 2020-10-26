@@ -1,0 +1,59 @@
+﻿namespace = carn_lactation
+
+# 0001. Yearly milk production decrease
+# 0002. Gain milk production on pregnancy
+# 0003. Seed lactation at start of game
+
+# 0001. Yearly milk production decrease
+carn_lactation.0001 = {
+	hidden = yes
+
+	trigger = {
+		carn_is_lactating_trigger = yes
+		carn_milk_production_decreases_yearly_trigger = yes
+	}
+
+	immediate = {
+		carn_change_milk_production_effect = {
+			VALUE = carn_yearly_milk_production_change
+		}
+	}
+}
+
+# 0002. Gain milk production on pregnancy
+carn_lactation.0002 = {
+	hidden = yes
+
+	trigger = {
+		carn_can_lactate_trigger = yes
+	}
+
+	immediate = {
+		carn_change_milk_production_with_maximum_effect = {
+			VALUE = carn_on_pregnancy_milk_production_increase
+			MAXIMUM = carn_on_pregnancy_milk_production_cap
+		}
+	}
+}
+
+# 0003. Seed lactation from pregnancy on character initialization pulse
+carn_lactation.0003 = {
+	hidden = yes
+
+	trigger = {
+		carn_can_lactate_trigger = yes
+		is_female = yes
+		OR = {
+			carn_is_visibly_pregnant_trigger = yes
+			any_child = {
+				age < 5
+			}
+		}
+	}
+
+	immediate = {
+		carn_change_milk_production_effect = {
+			VALUE = carn_on_pregnancy_milk_production_increase
+		}
+	}
+}

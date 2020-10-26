@@ -32,17 +32,17 @@ carn_birth_control = {
 }
 
 carn_lactation = {
-	default = carn_lactation_female_only
+	default = carn_lactation_disabled
 	carn_lactation_disabled = {}
-	carn_lactation_any_gender = {}
 	carn_lactation_female_only = {}
 	carn_lactation_male_only = {}
+	carn_lactation_any_gender = {}
 }
 
-carn_dt_enabled = {
-	default = carn_dt_enabled_false
-	carn_dt_enabled_false = {}
-	carn_dt_enabled_true = {}
+carn_dt = {
+	default = carn_dt_disabled
+	carn_dt_disabled = {}
+	carn_dt_enabled = {}
 }
 
 carn_dt_trait_names = {
@@ -70,15 +70,15 @@ carn_futa_trait_name = {
 }
 
 carn_futa_trait_inheritance = {
-	default = carn_futa_trait_inheritance_off
-	carn_futa_trait_inheritance_off = {}
-	carn_futa_trait_inheritance_on = {}
+	default = carn_futa_trait_inheritance_disabled
+	carn_futa_trait_inheritance_disabled = {}
+	carn_futa_trait_inheritance_enabled = {}
 }
 
-carn_fetishes_enabled = {
-	default = carn_fetishes_enabled_false
-	carn_fetishes_enabled_false = {}
-	carn_fetishes_enabled_true = {}
+carn_fetishes = {
+	default = carn_fetishes_disabled
+	carn_fetishes_disabled = {}
+	carn_fetishes_enabled = {}
 }
 
 carn_slavery_content = {
@@ -114,9 +114,9 @@ carn_prostitution_default_religious_doctrine = {
 }
 
 carn_content_anal = {
-	default = carn_content_anal_off
-	carn_content_anal_off = {}
-	carn_content_anal_on = {}
+	default = carn_content_anal_disabled
+	carn_content_anal_disabled = {}
+	carn_content_anal_enabled = {}
 }
 
 carn_content_consent = {
@@ -127,31 +127,31 @@ carn_content_consent = {
 }
 
 carn_content_painful = {
-	default = carn_content_painful_off
-	carn_content_painful_off = {}
-	carn_content_painful_on = {}
+	default = carn_content_painful_disabled
+	carn_content_painful_disabled = {}
+	carn_content_painful_enabled = {}
 }
 
 carn_content_bestiality = {
-	default = carn_content_bestiality_off
-	carn_content_bestiality_off = {}
-	carn_content_bestiality_on = {}
+	default = carn_content_bestiality_disabled
+	carn_content_bestiality_disabled = {}
+	carn_content_bestiality_enabled = {}
 }
 
 carn_content_watersports = {
-	default = carn_content_watersports_off
-	carn_content_watersports_off = {}
-	carn_content_watersports_on = {}
+	default = carn_content_watersports_disabled
+	carn_content_watersports_disabled = {}
+	carn_content_watersports_enabled = {}
 }
 
 carn_content_scat = {
-	default = carn_content_scat_off
-	carn_content_scat_off = {}
-	carn_content_scat_on = {}
+	default = carn_content_scat_disabled
+	carn_content_scat_disabled = {}
+	carn_content_scat_enabled = {}
 }
 
 carn_content_gore = {
-	default = carn_content_gore_off
-	carn_content_gore_off = {}
-	carn_content_gore_on = {}
+	default = carn_content_gore_disabled
+	carn_content_gore_disabled = {}
+	carn_content_gore_enabled = {}
 }

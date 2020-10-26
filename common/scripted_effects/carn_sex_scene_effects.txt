@@ -114,7 +114,7 @@ carn_sex_scene_request_vaginal = {
 
 carn_sex_scene_request_anal = {
 	if = {
-		limit = { has_game_rule = carn_content_anal_on }
+		limit = { has_game_rule = carn_content_anal_enabled }
 		flag:anal = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }
@@ -163,7 +163,7 @@ carn_sex_scene_request_dubcon = {
 
 carn_sex_scene_request_painful = {
 	if = {
-		limit = { has_game_rule = carn_content_painful_on }
+		limit = { has_game_rule = carn_content_painful_enabled }
 		flag:painful = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }
@@ -174,7 +174,7 @@ carn_sex_scene_request_bdsm = {
 
 carn_sex_scene_request_bestiality = {
 	if = {
-		limit = { has_game_rule = carn_content_bestiality_on }
+		limit = { has_game_rule = carn_content_bestiality_enabled }
 		flag:bestiality = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }
@@ -193,21 +193,21 @@ carn_sex_scene_request_toy = {
 
 carn_sex_scene_request_watersports = {
 	if = {
-		limit = { has_game_rule = carn_content_watersports_on }
+		limit = { has_game_rule = carn_content_watersports_enabled }
 		flag:watersports = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }
 
 carn_sex_scene_request_scat = {
 	if = {
-		limit = { has_game_rule = carn_content_scat_on }
+		limit = { has_game_rule = carn_content_scat_enabled }
 		flag:scat = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }
 
 carn_sex_scene_request_gore = {
 	if = {
-		limit = { has_game_rule = carn_content_gore_on }
+		limit = { has_game_rule = carn_content_gore_enabled }
 		flag:gore = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }

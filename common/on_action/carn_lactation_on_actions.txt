@@ -1,5 +1,17 @@
 ﻿yearly_playable_pulse = {
 	events = {
-		carn_lactating.0002 # Remove lactating trait if no longer eligible
+		carn_lactation.0001 # Yearly milk production decrease
+	}
+}
+
+on_pregnancy_mother = {
+	events = {
+		carn_lactation.0002 # Gain milk production on pregnancy
+	}
+}
+
+carn_character_initialization_pulse = {
+    events = {
+		carn_lactation.0003 # Seed lactation from pregnancy on character initialization pulse
 	}
 }
