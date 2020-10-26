@@ -4,3 +4,23 @@ yearly_playable_pulse = {
 		carn_arousal.0001
 	}
 }
+
+quarterly_playable_pulse = {
+	on_actions = {
+		start_arousal_tracking_pulse
+	}
+}
+
+# Check every quarter if arousal tracking should start, since it's only done for the player
+# Would be cleaner to catch character switch events directly
+start_arousal_tracking_pulse = {
+	trigger = {
+		is_ai = no
+	}
+	effect = {
+		trigger_event = {
+			id = carn_arousal.0002
+			days = 1
+		}
+	}
+}

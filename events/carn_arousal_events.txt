@@ -34,3 +34,41 @@ carn_arousal.0001 = {
 		}
 	}
 }
+
+
+#
+# 0002. Increase arousal periodically
+#
+
+carn_arousal.0002 = {
+	hidden = yes
+
+	trigger = {
+		is_ai = no
+		is_adult = yes
+	}
+
+	immediate = {
+		# Basic "seeding".
+		if = {
+			limit = {
+				NOT = { has_variable = arousal }
+			}
+			set_variable = {
+				name = arousal
+				value = 0
+			}
+		}
+
+		change_variable = {
+			name = arousal
+			add = 1
+		}
+
+		# Repeat every day ad nauseam
+		trigger_event = {
+			id = carn_arousal.0002
+			days = 1
+		}
+	}
+}
