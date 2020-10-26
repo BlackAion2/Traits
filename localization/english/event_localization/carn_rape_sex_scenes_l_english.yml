@@ -1,4 +1,6 @@
-﻿ carn_sex_scene.0003.t:0 "Defilement"
+﻿l_english: 
+
+ carn_sex_scene.0003.t:0 "Defilement"
  carn_sex_scene.0003.desc_opening:0 "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] looks at me with fear and dread as I approach [carn_sex_target.GetHerHim].\n\nI rip [carn_sex_target.GetHerHis] [carn_sex_target.Custom('GetClothingArticle')] off [carn_sex_target.GetHerHis] body and force myself onto [carn_sex_target.GetHerHim]. Driven by lust, I have my way with my prisoner, without a care for anything but my own pleasure.\n\n"
  carn_sex_scene.0003.desc_ending:0 "After having had my fun with [carn_sex_target.GetHerHim], I take my leave, paying [carn_sex_target.GetHerHim] no more attention."
  carn_sex_scene.0003.a:0 "Now [carn_sex_target.GetShortUIName] knows [carn_sex_target.GetHerHis] place."

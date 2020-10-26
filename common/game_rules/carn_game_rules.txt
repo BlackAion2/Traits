@@ -11,32 +11,36 @@ carn_arousal_stress = {
 	carn_arousal_stress_enabled = {}
 }
 
-carn_std = {
-	default = carn_std_enabled
-	carn_std_enabled = {}
-	carn_std_disabled = {}
+carn_slavery_content = {
+	default = carn_slavery_content_disabled
+	carn_slavery_content_disabled = {}
+	carn_slavery_content_enabled = {}
+	carn_slavery_content_require_acceptance = {}
+	carn_slavery_content_consensual_only = {}
 }
 
-carn_pregnancy_complications = {
-	default = carn_pregnancy_complications_default
-	carn_pregnancy_complications_default = {}
-	carn_pregnancy_complications_never = {}
+carn_slavery_default_religious_doctrine = {
+	default = carn_slavery_default_religious_doctrine_historical
+	carn_slavery_default_religious_doctrine_historical = {}
+	carn_slavery_default_religious_doctrine_accepted = {}
+	carn_slavery_default_religious_doctrine_shunned = {}
+	carn_slavery_default_religious_doctrine_criminal = {}
+	carn_slavery_default_religious_doctrine_inverted = {}
 }
 
-carn_birth_control = {
-	default = carn_birth_control_disabled
-	carn_birth_control_disabled = {}
-	carn_birth_control_any_gender = {}
-	carn_birth_control_female_only = {}
-	carn_birth_control_male_only = {}
+carn_prostitution_content = {
+	default = carn_prostitution_content_disabled
+	carn_prostitution_content_disabled = {}
+	carn_prostitution_content_any_gender = {}
+	carn_prostitution_content_female_only = {}
+	carn_prostitution_content_male_only = {}
 }
 
-carn_lactation = {
-	default = carn_lactation_disabled
-	carn_lactation_disabled = {}
-	carn_lactation_female_only = {}
-	carn_lactation_male_only = {}
-	carn_lactation_any_gender = {}
+carn_prostitution_default_religious_doctrine = {
+	default = carn_prostitution_default_religious_doctrine_shunned
+	carn_prostitution_default_religious_doctrine_shunned = {}
+	carn_prostitution_default_religious_doctrine_accepted = {}
+	carn_prostitution_default_religious_doctrine_criminal = {}
 }
 
 carn_dt = {
@@ -75,48 +79,38 @@ carn_futa_trait_inheritance = {
 	carn_futa_trait_inheritance_enabled = {}
 }
 
+carn_lactation = {
+	default = carn_lactation_disabled
+	carn_lactation_disabled = {}
+	carn_lactation_female_only = {}
+	carn_lactation_male_only = {}
+	carn_lactation_any_gender = {}
+}
+
+carn_std = {
+	default = carn_std_enabled
+	carn_std_enabled = {}
+	carn_std_disabled = {}
+}
+
+carn_pregnancy_complications = {
+	default = carn_pregnancy_complications_default
+	carn_pregnancy_complications_default = {}
+	carn_pregnancy_complications_never = {}
+}
+
+carn_birth_control = {
+	default = carn_birth_control_disabled
+	carn_birth_control_disabled = {}
+	carn_birth_control_any_gender = {}
+	carn_birth_control_female_only = {}
+	carn_birth_control_male_only = {}
+}
+
 carn_fetishes = {
 	default = carn_fetishes_disabled
 	carn_fetishes_disabled = {}
 	carn_fetishes_enabled = {}
-}
-
-carn_slavery_content = {
-	default = carn_slavery_content_disabled
-	carn_slavery_content_disabled = {}
-	carn_slavery_content_enabled = {}
-	carn_slavery_content_require_acceptance = {}
-	carn_slavery_content_consensual_only = {}
-}
-
-carn_slavery_default_religious_doctrine = {
-	default = carn_slavery_default_religious_doctrine_historical
-	carn_slavery_default_religious_doctrine_historical = {}
-	carn_slavery_default_religious_doctrine_accepted = {}
-	carn_slavery_default_religious_doctrine_shunned = {}
-	carn_slavery_default_religious_doctrine_criminal = {}
-	carn_slavery_default_religious_doctrine_inverted = {}
-}
-
-carn_prostitution_content = {
-	default = carn_prostitution_content_disabled
-	carn_prostitution_content_disabled = {}
-	carn_prostitution_content_any_gender = {}
-	carn_prostitution_content_female_only = {}
-	carn_prostitution_content_male_only = {}
-}
-
-carn_prostitution_default_religious_doctrine = {
-	default = carn_prostitution_default_religious_doctrine_shunned
-	carn_prostitution_default_religious_doctrine_shunned = {}
-	carn_prostitution_default_religious_doctrine_accepted = {}
-	carn_prostitution_default_religious_doctrine_criminal = {}
-}
-
-carn_content_anal = {
-	default = carn_content_anal_disabled
-	carn_content_anal_disabled = {}
-	carn_content_anal_enabled = {}
 }
 
 carn_content_consent = {
@@ -124,6 +118,12 @@ carn_content_consent = {
 	carn_content_consent_dubcon = {}
 	carn_content_consent_noncon = {}
 	carn_content_consent_always = {}
+}
+
+carn_content_anal = {
+	default = carn_content_anal_disabled
+	carn_content_anal_disabled = {}
+	carn_content_anal_enabled = {}
 }
 
 carn_content_painful = {

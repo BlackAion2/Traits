@@ -20,8 +20,8 @@
 # Will trigger a noncon sex scene if TRIGGER_SEX_SCENE is yes
 
 carn_rape_effect = {
-	$RAPIST$ = { save_scope_as = scope:carn_rape_rapist }
-	$VICTIM$ = { save_scope_as = scope:carn_rape_victim }
+	$RAPIST$ = { save_scope_as = carn_rape_rapist }
+	$VICTIM$ = { save_scope_as = carn_rape_victim }
 
 	if = {
 		limit = { $TRIGGER_SEX_SCENE$ = yes }
@@ -230,7 +230,7 @@ carn_rape_opinion_effects_effect = {
 				}
 			}
 			add_opinion = {
-				modifier = raped_me
+				modifier = carn_raped_me
 				target = scope:carn_rape_rapist
 			}
 		}
@@ -258,7 +258,7 @@ carn_rape_opinion_effects_effect = {
 				list = family_of_tortured
 				add_opinion = {
 					target = scope:carn_rape_rapist
-					modifier = raped_family_member
+					modifier = carn_raped_family_member
 				}
 			}
 		}
@@ -275,7 +275,7 @@ carn_rape_opinion_effects_effect = {
 				custom = all_close_family_and_spouses
 				add_opinion = {
 					target = scope:carn_rape_rapist
-					modifier = raped_family_member
+					modifier = carn_raped_family_member
 				}
 			}
 		}

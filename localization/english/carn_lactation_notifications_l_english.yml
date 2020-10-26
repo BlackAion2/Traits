@@ -1,0 +1,22 @@
+﻿l_english:
+
+ carn_msg_started_lactating: "Started Lactating"
+ carn_msg_stopped_lactating: "Stopped Lactating"
+ carn_msg_milk_production_increased: "Milk Production Increased"
+ carn_msg_milk_production_decreased: "Milk Production Decreased"
+
+ carn_milk_production_notification_desc: "You are now producing [SCOPE.Custom('CarnMilkProductionDescription')] milk"
+
+ carn_very_low_milk_production_description: "a very small trickle of"
+ carn_low_milk_production_description: "a small amount of"
+ carn_average_milk_production_description: "an healthy amount of"
+ carn_high_milk_production_description: "an impressive amount of"
+ carn_very_high_milk_production_description: "an incredible amount of"
+ carn_extreme_milk_production_description: "an extreme amount of"
+
+ carn_stopped_lactating_notification_desc: "You are no longer producing milk"
+
+ carn_starts_lactating_tooltip: "Starts lactating"
+ carn_stops_lactating_tooltip: "Stops lactating"
+ carn_milk_production_increases_tooltip: "Milk production increases"
+ carn_milk_production_decreases_tooltip: "Milk production decreases"

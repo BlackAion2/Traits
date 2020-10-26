@@ -1,4 +1,0 @@
-﻿carn_postpartum_infertility_modifier = {
-	icon = fertility_negative
-	fertility = -0.25
-}

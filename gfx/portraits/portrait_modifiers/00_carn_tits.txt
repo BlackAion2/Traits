@@ -7,7 +7,7 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_default
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
@@ -28,7 +28,7 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_1_half
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
@@ -49,7 +49,7 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_1_full
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
@@ -70,7 +70,7 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_2_half
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
@@ -91,7 +91,7 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_2_full
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
@@ -112,7 +112,7 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_3_half
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
@@ -133,7 +133,7 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_3_full
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
@@ -154,7 +154,7 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_4_half
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
@@ -175,7 +175,7 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_4_full
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {

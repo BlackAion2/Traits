@@ -1,5 +1,7 @@
 # Carnalitas v1.3
 
+**This update breaks save game compatibility, make sure to finish any games in progress first**
+
 ## New Features
 
 ### Rape System
@@ -22,17 +24,21 @@ New character and trait flags:
 
 Carnalitas now has a system to simulate character lactation. This is disabled by default but there are game rules to activate it for women, men, or all characters.
 
-When the system is active, women will start lactating when they gain the Pregnant trait. Their milk production is initially low, but they can increase it by having many children in short succession. If a woman is not pregnant her milk production will taper off and eventually stop.
+When the system is active, all characters have a milk production value, and women will gain milk production (and start lactating) when they get pregnant. When not pregnant a character's milk production will slowly decrease until they stop lactating.
 
 The system is fairly bare bones, but it offers a framework for mods to induce lactation, increase milk productivity, have events that tie into a character's milk production level, and so on.
 
 New scripted effects:
+* `carn_create_milk_production_change_effect`
+* `carn_resolve_milk_production_change_effect`
 * `carn_set_milk_production_effect` (requires `VALUE`)
 * `carn_stop_milk_production_effect`
 * `carn_change_milk_production_effect` (requires `VALUE`)
-* `carn_change_milk_production_with_maximum_effect` (requires `VALUE`, `MAXIMUM`)
 * `carn_set_milk_production_minimum_effect` (requires `MINIMUM`)
 * `carn_set_milk_production_maximum_effect` (requires `MAXIMUM`)
+* `carn_send_milk_production_change_notification_effect`
+
+See documentation for how to use these scripted effects.
 
 New scripted triggers:
 * `carn_can_lactate_trigger`
@@ -44,6 +50,11 @@ New scripted triggers:
 * `carn_has_high_milk_production_trigger`
 * `carn_has_very_high_milk_production_trigger`
 * `carn_has_extreme_milk_production_trigger`
+
+New on_actions:
+* `carn_on_start_lactating`
+* `carn_on_stop_lactating`
+* `carn_on_milk_production_change`
 
 New character and trait flags:
 * `carn_block_yearly_milk_production_decrease` (prevents lactation level from decreasing, like the Pregnant trait)
