@@ -2467,8 +2467,8 @@ widget = {
 							max = 10000
 							value = "[FixedPointToProgressbarValue(GetPlayer.MakeScope.Var('arousal').GetValue)]" 
 							
-							#progresstexture = "gfx/interface/progressbars/progress_purple.dds"
-							#noprogresstexture = "gfx/interface/progressbars/progress_purple_bg.dds"
+							progresstexture = "gfx/interface/progressbars/progress_pink.dds"
+							noprogresstexture = "gfx/interface/progressbars/progress_purple_bg.dds"
 
 							using = Animation_ShowHide_Standard
 						}
