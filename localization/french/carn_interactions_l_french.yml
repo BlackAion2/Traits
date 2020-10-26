@@ -86,3 +86,7 @@ carn_force_start_prostitution_interaction_desc:1 "Forcer [recipient.GetShortUINa
 
 carn_force_stop_prostitution_interaction:1 "Arrêter la prostitution forcée"
 carn_force_stop_prostitution_interaction_desc:1 "Arrêter de forcer [recipient.GetShortUINameNoTooltip] à travailler pour vous en tant que [Concept( 'prostitute', 'prostitué' )|El][recipient.Custom('FR_E')|El]"
+
+carn_defile_prisoner:0 "Defile Prisoner"
+carn_defile_prisoner_desc:0 "Have your way with [recipient.GetShortUINameNoTooltip]."
+carn_defile_prisoner_notification:0 "Defile Prisoner"

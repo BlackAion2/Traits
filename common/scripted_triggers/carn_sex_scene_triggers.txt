@@ -50,7 +50,7 @@ carn_sex_scene_matches_requested_flags_trigger = {
 #
 
 carn_sex_scene_is_giving_player = {
-	flag:givingplayer = { add_to_temporary_list = carn_sex_scene_flags }
+	flag:giving_player = { add_to_temporary_list = carn_sex_scene_flags }
 }
 
 carn_sex_scene_is_receiving_player = {
