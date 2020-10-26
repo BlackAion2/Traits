@@ -73,6 +73,10 @@ trait_tits_big_3_immersive:1 "惊天爆乳"
 trait_tits_big_3_desc:1 "这个角色庞大的乳房犹如吟游诗人口中的传说。"
 trait_tits_big_3_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip]庞大的乳房犹如吟游诗人口中的传说。"
 
+trait_lactating:0 "Lactating"
+trait_lactating_desc:0 "This character breasts are swollen with milk."
+trait_lactating_character_desc:0 "[ROOT.GetCharacter.GetFirstNamePossessiveNoTooltip] breasts are swollen with milk."
+
 trait_slave:1 "奴隶"
 trait_slave_desc:1 "这名角色是另一个人的财产，法律规定其地位比普通人类要低贱。"
 trait_slave_character_desc:1 "[ROOT.GetCharacter.GetFirstNameNoTooltip]是另一个人的财产，法律规定其地位比普通人类要低贱。"

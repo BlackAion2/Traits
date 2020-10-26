@@ -1,0 +1,44 @@
+﻿# Used for seeding the 'lactating' trait
+carn_seed_lactating_trait_effect = {
+	if = {
+		limit = {
+			carn_should_still_be_lactating_trigger = yes
+		}
+		add_trait = lactating
+	}
+}
+
+carn_add_lactating_trait_effect = {
+	if = {
+		limit = {
+			carn_can_lactate_trigger = yes
+		}
+		add_trait = lactating
+	}
+}
+
+carn_remove_lactating_trait_effect = {
+	if = {
+		limit = { has_trait = lactating }
+		remove_trait = lactating
+	}
+	if = {
+		limit = { has_character_flag = carn_indefinitely_lactating }
+		remove_character_flag = carn_indefinitely_lactating
+	}
+}
+
+carn_start_indefinitely_lactating_effect = {
+	if = {
+		limit = {
+			carn_can_lactate_trigger = yes
+		}
+		if = {
+			limit = {
+				NOT = { has_trait = lactating }
+			}
+			carn_add_lactating_trait_effect = yes
+		}
+		add_character_flag = carn_indefinitely_lactating
+	}
+}

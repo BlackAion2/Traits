@@ -36,6 +36,16 @@ setting_carn_birth_control_female_only_desc:0 "Only female or futanari character
 setting_carn_birth_control_male_only:0 "#high Male Only#!"
 setting_carn_birth_control_male_only_desc:0 "Only male or futanari characters will be able to use birth control, reducing their fertility at the cost of income."
 
+rule_carn_lactation:0 "#X Carnalitas:#! Lactation"
+setting_carn_lactation_disabled:0 "Disabled"
+setting_carn_lactation_disabled_desc:0 "Lactation will not be available."
+setting_carn_lactation_any_gender:0 "#high Any Gender#!"
+setting_carn_lactation_any_gender_desc:0 "Both male and female characters will be able to lactate."
+setting_carn_lactation_female_only:0 "#high Female Only#!"
+setting_carn_lactation_female_only_desc:0 "Only female (and futanari) characters will be able to lactate."
+setting_carn_lactation_male_only:0 "#high Male Only#!"
+setting_carn_lactation_male_only_desc:0 "Only male characters will be able to lactate."
+
 rule_carn_dt_enabled:1 "#X Carnalitas:#! Половые признаки"
 setting_carn_dt_enabled_false:1 "Выключены"
 setting_carn_dt_enabled_false_desc:1 "Персонажи не будут появляться с врождёнными чертами груди и пениса."

@@ -1,7 +1,8 @@
 # Carnalitas v1.3
 
-# New Features
+## New Features
 
+* Lactation system implemented
 * Rape/Defile prisoner character interaction
 
 ## Tweaks

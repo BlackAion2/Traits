@@ -23,3 +23,18 @@ carn_stop_birth_control_decision_desc:1 "인공적인 장애물들은 침실에 
 carn_stop_birth_control_decision_tooltip:1 "당신의 [income|E](와)과 [piety|E](을)를 소비함으로서 [fertility|E](을)를 줄이는 것을 멈춘다"
 carn_stop_birth_control_decision_confirm:1 "내 몸은 준비가 되었어"
 msg_carn_stopped_birth_control:1 "임신 조절을 그만둔다"
+
+carn_induce_lactation_decision:0 "Induce Lactation"
+carn_induce_lactation_decision_desc:0 "Using a combination of potions, herbs, and physical stimulation I will force my body to start producing milk."
+carn_induce_lactation_decision_tooltip:0 "Gain the trait [GetTrait('lactating').GetName( ROOT.Char )]"
+carn_induce_lactation_decision_confirm:0 "Start lactating"
+
+carn_continue_breastfeeding_indefinitely_decision:0 "Continue Breastfeeding"
+carn_continue_breastfeeding_indefinitely_decision_desc:0 "Despite it being frowned upon, I will continue breastfeeding until I decide otherwise."
+carn_continue_breastfeeding_indefinitely_decision_tooltip:0 "Intentionally decide to continue breastfeeding"
+carn_continue_breastfeeding_indefinitely_decision_confirm:0 "I will continue producing milk"
+
+carn_stop_breastfeeding_decision:0 "Halt Lactation"
+carn_stop_breastfeeding_decision_desc:0 "It is time for my breasts to stop producing milk so that my body may return to normal."
+carn_stop_breastfeeding_decision_tooltip:0 "Lose the trait [GetTrait('lactating').GetName( ROOT.Char )]"
+carn_stop_breastfeeding_decision_confirm:0 "Stop lactation"

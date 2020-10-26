@@ -30,3 +30,12 @@ carn_has_a_fetish_trigger = {
 	global = carn_has_a_fetish_trigger
 	global_not = carn_not_has_a_fetish_trigger
 }
+
+carn_is_lactating_trigger = {
+	first = carn_i_am_lactating_trigger
+	first_not = carn_not_i_am_lactating_trigger
+	third = carn_they_are_lactating_trigger
+	third_not = carn_not_they_are_lactating_trigger
+	global = carn_is_lactating_trigger
+	global_not = carn_not_is_lactating_trigger
+}

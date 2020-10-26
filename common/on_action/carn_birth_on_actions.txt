@@ -1,0 +1,5 @@
+﻿on_birth_mother = {
+	events = {
+		carn_lactating.0003 # Add lactating trait since pregnancy trait is removed after birth
+	}
+}
