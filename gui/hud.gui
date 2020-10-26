@@ -2457,15 +2457,67 @@ widget = {
 					}
 
 					hbox = {
+						# level 0
 						progressbar_standard = {
-							name = "arousal_progressbar"
+							name = "arousal_progressbar_0"
 							size = { 60 20 }
-							visible = yes
+							visible = "[LessThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('arousal').GetValue, '(CFixedPoint)100')]"
 							layoutpolicy_horizontal = expanding
 				
 							min = 0
 							max = 10000
-							value = "[FixedPointToProgressbarValue(GetPlayer.MakeScope.Var('arousal').GetValue)]" 
+							value = "[FixedPointToProgressbarValue(GetPlayer.MakeScope.Var('arousal').GetValue)]"
+							
+							progresstexture = "gfx/interface/progressbars/progress_pink.dds"
+							noprogresstexture = "gfx/interface/progressbars/progress_purple_bg.dds"
+
+							using = Animation_ShowHide_Standard
+						}
+
+						# level 1
+						progressbar_standard = {
+							name = "arousal_progressbar_1"
+							size = { 60 20 }
+							visible = "[And( GreaterThan_CFixedPoint(GetPlayer.MakeScope.Var('arousal').GetValue, '(CFixedPoint)100'), LessThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('arousal').GetValue, '(CFixedPoint)200') )]"
+							layoutpolicy_horizontal = expanding
+				
+							min = 10000
+							max = 20000
+							value = "[FixedPointToProgressbarValue(GetPlayer.MakeScope.Var('arousal').GetValue)]"
+							
+							progresstexture = "gfx/interface/progressbars/progress_pink.dds"
+							noprogresstexture = "gfx/interface/progressbars/progress_purple_bg.dds"
+
+							using = Animation_ShowHide_Standard
+						}
+
+						# level 2
+						progressbar_standard = {
+							name = "arousal_progressbar_2"
+							size = { 60 20 }
+							visible = "[And( GreaterThan_CFixedPoint(GetPlayer.MakeScope.Var('arousal').GetValue, '(CFixedPoint)200'), LessThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('arousal').GetValue, '(CFixedPoint)300') )]"
+							layoutpolicy_horizontal = expanding
+				
+							min = 20000
+							max = 30000
+							value = "[FixedPointToProgressbarValue(GetPlayer.MakeScope.Var('arousal').GetValue)]"
+							
+							progresstexture = "gfx/interface/progressbars/progress_pink.dds"
+							noprogresstexture = "gfx/interface/progressbars/progress_purple_bg.dds"
+
+							using = Animation_ShowHide_Standard
+						}
+
+						# level 3
+						progressbar_standard = {
+							name = "arousal_progressbar_3"
+							size = { 60 20 }
+							visible = "[GreaterThan_CFixedPoint(GetPlayer.MakeScope.Var('arousal').GetValue, '(CFixedPoint)300')]"
+							layoutpolicy_horizontal = expanding
+				
+							min = 30000
+							max = 40000
+							value = "[FixedPointToProgressbarValue(GetPlayer.MakeScope.Var('arousal').GetValue)]"
 							
 							progresstexture = "gfx/interface/progressbars/progress_pink.dds"
 							noprogresstexture = "gfx/interface/progressbars/progress_purple_bg.dds"
@@ -2486,12 +2538,49 @@ widget = {
 							parentanchor = vcenter
 							position = { 41 0 }
 							size = { 35 35 }
+							visible = "[LessThanOrEqualTo_CFixedPoint(GetPlayer.MakeScope.Var('arousal').GetValue, '(CFixedPoint)100')]"
+
+							texture = "gfx/interface/icons/arousal/icon_arousal_level.dds"
+							framesize = { 70 70 }
+
+							# Decides if icon for level 0-1-2-3 should be used. Index starts at 1.
+							frame = 1 #"[IntToFrameIndex( GetPlayer.GetStressLevel )]"
+						}
+						icon = {
+							parentanchor = vcenter
+							position = { 41 0 }
+							size = { 35 35 }
+							visible = "[GreaterThan_CFixedPoint(GetPlayer.MakeScope.Var('arousal').GetValue, '(CFixedPoint)100')]"
+
+							texture = "gfx/interface/icons/arousal/icon_arousal_level.dds"
+							framesize = { 70 70 }
+
+							# Decides if icon for level 0-1-2-3 should be used. Index starts at 1.
+							frame = 2 #"[IntToFrameIndex( GetPlayer.GetStressLevel )]"
+						}
+						icon = {
+							parentanchor = vcenter
+							position = { 41 0 }
+							size = { 35 35 }
+							visible = "[GreaterThan_CFixedPoint(GetPlayer.MakeScope.Var('arousal').GetValue, '(CFixedPoint)200')]"
 
 							texture = "gfx/interface/icons/arousal/icon_arousal_level.dds"
 							framesize = { 70 70 }
 
 							# Decides if icon for level 0-1-2-3 should be used. Index starts at 1.
 							frame = 3 #"[IntToFrameIndex( GetPlayer.GetStressLevel )]"
+						}
+						icon = {
+							parentanchor = vcenter
+							position = { 41 0 }
+							size = { 35 35 }
+							visible = "[GreaterThan_CFixedPoint(GetPlayer.MakeScope.Var('arousal').GetValue, '(CFixedPoint)300')]"
+
+							texture = "gfx/interface/icons/arousal/icon_arousal_level.dds"
+							framesize = { 70 70 }
+
+							# Decides if icon for level 0-1-2-3 should be used. Index starts at 1.
+							frame = 4 #"[IntToFrameIndex( GetPlayer.GetStressLevel )]"
 						}
 					}
 				}
