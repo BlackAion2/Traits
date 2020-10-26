@@ -8,9 +8,11 @@
  carn_can_be_granted_titles: "Can be granted titles"
  carn_not_can_be_granted_titles: "Cannot be granted titles"
 
- carn_slavery_is_illegal: "Your faith does not permit the taking of [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U] as slaves"
+ carn_cannot_be_raped: "Cannot be raped"
 
  carn_cannot_have_max_number_of_slave_prostitutes: "You do not have more than [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|0] slaves working as prostitutes"
+
+ carn_cannot_have_sex: "Cannot have sex"
 
 carn_effective_age_under_prostitution_age_cutoff: "Age is less than [EmptyScope.ScriptValue('carn_prostitution_age_cutoff')|0]"
 
@@ -21,9 +23,13 @@ carn_effective_age_under_prostitution_age_cutoff: "Age is less than [EmptyScope.
  carn_has_a_fetish_trigger: "Has a fetish"
  carn_not_has_a_fetish_trigger: "Does #bold not#! have a fetish"
 
- carn_i_am_lactating_trigger: "Your breasts are producing milk"
- carn_not_i_am_lactating_trigger: "Your breasts are #bold not#! producing milk"
- carn_they_are_lactating_trigger: "[CHARACTER.GetShortUINamePossessive|U] breasts are producing milk"
- carn_not_they_are_lactating_trigger: "[CHARACTER.GetShortUINamePossessive|U] breasts are #bold not#! producing milk"
- carn_is_lactating_trigger: "Is producing milk"
- carn_not_is_lactating_trigger: "Is #bold not#! producing milk"
+ carn_is_diplomatically_available: "Is currently occupied"
+
+ carn_i_am_lactating_trigger: "You are lactating"
+ carn_not_i_am_lactating_trigger: "You are #bold not#! lactating"
+ carn_they_are_lactating_trigger: "[CHARACTER.GetShortUIName|U] is lactating"
+ carn_not_they_are_lactating_trigger: "[CHARACTER.GetShortUIName|U] is #bold not#! lactating"
+ carn_is_lactating_trigger: "Is lactating"
+ carn_not_is_lactating_trigger: "Is #bold not#! lactating"
+
+ carn_slavery_is_illegal: "Your faith does not permit the taking of [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U] as slaves"

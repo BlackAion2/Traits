@@ -4,13 +4,3 @@
  carn_sex_scene.0001.desc_opening: "I find my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('carn_sex_target'))] [carn_sex_target.GetTitledFirstName] waiting eagerly."
  carn_sex_scene.0001.desc_ending: "[ROOT.Char.Custom2('sex_scene', SCOPE.sC('carn_sex_target'))]"
  carn_sex_scene.0001.a: "Wonderful."
-
- carn_sex_scene.0003.t:0 "Defiling Prisoner [carn_sex_target.GetFirstNameNoTooltip]"
- carn_sex_scene.0003.desc_opening:0 "My prisoner [carn_sex_target.GetShortUIName] looks at me with dread in [carn_sex_target.GetHerHis] eyes as I approach [carn_sex_target.GetHerHim], my intend clear.\n\n[carn_sex_target.GetSheHe|U] winces as I reach down for [carn_sex_target.GetHerHis] groin. My arousal grows ever stronger while I touch [carn_sex_target.GetHerHim] down there.\n\nI rip [carn_sex_target.GetHerHis] [carn_sex_target.Custom('GetClothingArticle')] off [carn_sex_target.GetHerHis] body and force myself onto [carn_sex_target.GetHerHim]. Driven by lust, I have my way with this prisoner, caring about nothing but my own pleasure.\n\n"
- carn_sex_scene.0003.desc_ending:0 "After having had my fun with [carn_sex_target.GetHerHim], I take my leave, paying [carn_sex_target.GetHerHim] no more attention."
- carn_sex_scene.0003.a:0 "I do what I want."
-
- carn_sex_scene.0004.t:0 "Defiled"
- carn_sex_scene.0004.desc_opening:0 "My jailor [carn_sex_target.GetShortUIName] looks at me as [carn_sex_target.GetSheHe] approaches me, [carn_sex_target.GetHerHis] intend clear.\n\nI wince as [carn_sex_target.GetSheHe] reaches down for my groin. It sickens me to see [carn_sex_target.GetHerHis] arousal grow while [carn_sex_target.GetSheHe] touches me down there.\n\n[carn_sex_target.GetSheHe|U] rips my [carn_sex_player.Custom('GetClothingArticle')] off my body and forces [carn_sex_target.GetHerselfHimself] onto me. Driven by lust, [carn_sex_target.GetSheHe] has [carn_sex_target.GetHerHis] way with me, caring about nothing but [carn_sex_target.GetHerHis] own pleasure.\n\n"
- carn_sex_scene.0004.desc_ending:0 "After defiling me, [carn_sex_target.GetSheHe] takes [carn_sex_target.GetHerHis] leave, paying me no more attention."
- carn_sex_scene.0004.a:0 "Please [carn_sex_player.GetFaith.HighGodName], help me."

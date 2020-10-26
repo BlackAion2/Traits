@@ -7,15 +7,24 @@
 					has_character_flag = carn_sex_interaction_effect_cd
 				}
             	carn_can_have_sex_trigger = yes
-				exists = primary_spouse
-				primary_spouse = {
+				any_consort = {
+					root = { is_attracted_to_gender_of = prev }
+            		is_diplomatically_available = yes
             		carn_can_have_sex_trigger = yes
 				}
+			}
+			random_consort = {
+				limit = {
+					root = { is_attracted_to_gender_of = prev }
+            		is_diplomatically_available = yes
+					carn_can_have_sex_trigger = yes
+				}
+				save_scope_as = sexable_consort
 			}
 			try_create_important_action = {
 				important_action_type = action_carn_can_sex_interaction
 				actor = root
-				recipient = primary_spouse
+				recipient = sexable_consort
 			}
 		}
 	}

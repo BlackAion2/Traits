@@ -1,0 +1,62 @@
+﻿# checks that a character is a reasonable target for a sex scene
+carn_can_have_sex_trigger = {
+	OR = {
+		has_trait_with_flag = carn_can_always_have_sex
+		has_character_flag = carn_can_always_have_sex
+		AND = {
+			custom_description = {
+				text = "carn_is_diplomatically_available"
+            	is_diplomatically_available = yes
+			}
+			is_adult = yes
+			is_alive = yes
+			is_in_an_activity = no
+			is_imprisoned = no
+			has_contagious_deadly_disease_trigger = no
+			NOR = {
+				has_trait = incapable
+				has_trait = celibate
+				has_wounds_trigger = yes
+				has_treatable_disease_trigger = yes
+				custom_description = {
+					text = "carn_cannot_have_sex"
+					has_trait_with_flag = carn_cannot_have_sex
+					has_character_flag = carn_cannot_have_sex
+				}
+			}
+		}
+	}
+}
+
+carn_can_be_raped_trigger = {
+	custom_description = {
+		text = "carn_cannot_be_raped"
+		NOR = {
+			has_trait_with_flag = carn_cannot_be_raped
+			has_character_flag = carn_cannot_be_raped
+		}
+	}
+	OR = {
+		has_trait_with_flag = carn_can_always_have_sex
+		has_character_flag = carn_can_always_have_sex
+		AND = {
+			custom_description = {
+				text = "carn_is_diplomatically_available"
+            	is_diplomatically_available = yes
+			}
+			is_adult = yes
+			is_alive = yes
+			has_contagious_deadly_disease_trigger = no
+			NOR = {
+				has_trait = incapable
+				has_wounds_trigger = yes
+				has_treatable_disease_trigger = yes
+				custom_description = {
+					text = "carn_cannot_have_sex"
+					has_trait_with_flag = carn_cannot_have_sex
+					has_character_flag = carn_cannot_have_sex
+				}
+			}
+		}
+	}
+}

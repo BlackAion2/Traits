@@ -589,32 +589,8 @@ tits_big_3 = {
 	}
 }
 
-# Lactating
-lactating = {
-	index = 6914
-
-	physical = yes
-
-	random_creation = 0
-
-	flag = carn_is_lactating
-	flag = no_message
-
-	desc = {
-		first_valid = {
-			triggered_desc = {
-				trigger = {
-					NOT = { exists = this }
-				}
-				desc = trait_lactating_desc
-			}
-			desc = trait_lactating_character_desc
-		}
-	}
-}
-
 slave = { # Chattel Slave
-	index = 6915
+	index = 6914
 
 	opposites = {
 		former_slave
@@ -652,7 +628,7 @@ slave = { # Chattel Slave
 }
 
 former_slave = { # Freedman/Freedwoman
-	index = 6916
+	index = 6915
 
 	opposites = {
 		slave
@@ -693,7 +669,7 @@ former_slave = { # Freedman/Freedwoman
 }
 
 prostitute_1 = {
-	index = 6917
+	index = 6916
 	lifestyle = yes
 
 	name = {
@@ -761,7 +737,7 @@ prostitute_1 = {
 }
 
 prostitute_2 = {
-	index = 6918
+	index = 6917
 	lifestyle = yes
 
 	name = {
@@ -832,7 +808,7 @@ prostitute_2 = {
 }
 
 prostitute_3 = {
-	index = 6919
+	index = 6918
 	lifestyle = yes
 
 	name = {

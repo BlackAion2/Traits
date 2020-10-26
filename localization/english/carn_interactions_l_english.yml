@@ -87,6 +87,6 @@
  carn_force_stop_prostitution_interaction: "Stop Prostitution"
  carn_force_stop_prostitution_interaction_desc: "Stop [recipient.GetShortUINameNoTooltip] from working as a [prostitute|E]"
 
- carn_defile_prisoner: "Defile Prisoner"
- carn_defile_prisoner_desc: "Have your way with [recipient.GetShortUINameNoTooltip]."
- carn_defile_prisoner_notification: "Defile Prisoner"
+ carn_rape_interaction: "Rape"
+ carn_rape_interaction_desc: "Have your way with [recipient.GetShortUINameNoTooltip]"
+ carn_rape_effect_not_attracted_to_warning_tt: "#X You are not attracted to [carn_rape_victim.GetShortUINameNoTooltip]#!"

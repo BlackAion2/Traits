@@ -1,4 +1,4 @@
-﻿carn_recently_defiled = {
+﻿carn_recently_raped = {
 	icon = health_negative
 	health = -0.25
 }

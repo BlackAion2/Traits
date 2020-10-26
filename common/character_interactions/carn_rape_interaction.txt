@@ -1,0 +1,127 @@
+﻿carn_rape_interaction = {
+	category = interaction_category_prison
+
+	desc = carn_rape_interaction_desc
+	interface_priority = 30
+	use_diplomatic_range = no
+
+
+	is_shown = {
+        NOT = { has_game_rule = carn_sex_interaction_disabled }
+		has_game_rule = carn_content_consent_noncon
+		scope:recipient = { is_imprisoned_by = scope:actor }
+	}
+
+	cooldown = { months = carn_sex_interaction_cooldown }
+
+	is_valid_showing_failures_only = {
+		scope:actor = {
+			carn_can_have_sex_trigger = yes
+		}
+		scope:recipient = {
+            carn_can_be_raped_trigger = yes
+		}
+		scope:recipient = {
+			custom_description = {
+				text = "currently_being_tortured"
+				NOT = { has_character_flag = is_being_tortured }
+			}
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				scope:actor = {
+					NOT = { has_character_flag = carn_sex_interaction_effect_cd }
+				}
+			}
+			show_as_tooltip = {
+				carn_had_sex_with_effect = {
+					CHARACTER_1 = scope:actor
+					CHARACTER_2 = scope:recipient
+					C1_PREGNANCY_CHANCE = pregnancy_chance
+					C2_PREGNANCY_CHANCE = pregnancy_chance
+					STRESS_EFFECTS = no
+					DRAMA = yes
+				}
+			}
+			
+			carn_rape_effect = {
+				RAPIST = scope:actor
+				VICTIM = scope:recipient
+				TRIGGER_SEX_SCENE = no
+			}
+
+			scope:actor = {
+				add_character_flag = {
+					flag = carn_sex_interaction_effect_cd
+					months = carn_sex_interaction_cooldown_base
+				}
+			}
+		}
+		else = {
+			custom_tooltip = carn_sex_interaction_effect_cd_tt
+			scope:actor = {
+				add_character_flag = carn_block_next_had_sex_with_effect
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { scope:actor = { is_ai = no } }
+				carn_sex_scene_request_noncon = yes
+				carn_sex_scene_request_dom_player = yes
+				carn_sex_scene_effect = {
+					PLAYER = scope:actor
+					TARGET = scope:recipient
+					STRESS_EFFECTS = no
+					DRAMA = yes
+				}
+			}
+			if = {
+				limit = { scope:recipient = { is_ai = no } }
+				carn_sex_scene_request_noncon = yes
+				carn_sex_scene_request_sub_player = yes
+				carn_sex_scene_effect = {
+					PLAYER = scope:recipient
+					TARGET = scope:actor
+					STRESS_EFFECTS = no
+					DRAMA = yes
+				}
+			}
+		}
+	}
+
+	auto_accept = yes
+	
+	# AI
+	ai_targets = {
+		ai_recipients = prisoners
+	}
+	
+	ai_frequency = 24
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = -50
+
+		modifier = {
+			has_trait = lustful
+			add = 30
+		}
+		modifier = {
+			has_trait = sadistic
+			add = 30
+		}
+		ai_value_modifier = {
+			ai_compassion = tiny_chance_impact_negative_ai_value #Adds +50 for highly uncompassionate characters, -50 for highly compassionate characters
+		}
+		opinion_modifier = {
+			opinion_target = scope:recipient
+			multiplier = -0.25
+		}
+	}
+}
