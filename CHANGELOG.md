@@ -2,8 +2,8 @@
 
 ## New Features
 
-* Lactation system implemented
-* Rape/Defile prisoner character interaction
+* Lactation system implemented (TODO: REWORK, WRITE DOCUMENTATION)
+* Rape/Defile prisoner character interaction (TODO: REWORK)
 
 ## Tweaks
 
