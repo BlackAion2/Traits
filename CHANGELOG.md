@@ -74,12 +74,15 @@ New scripted effects:
 
 ## Tweaks
 
-* Custom localization will now correctly give "a hermaphrodite" not "an hermaphrodite."
 * Being a futa will no longer block you from the Strengthen Bloodline decision.
 * Bedchamber event background now actually uses the bedchamber illustration that was included with the game.
 * The Make Love notification will now prioritize any spouse or concubine that you are attracted to.
+* If you turn a slave into a prostitute, they will now hate you unless they have a submission fetish.
+* Modding: Renamed the IDs of many game rules to be more internally consistent.
+
+## Bug Fixes
+
+* Custom localization will now correctly give "a hermaphrodite" not "an hermaphrodite."
 * You can no longer Make Love to prostitutes who aren't currently working.
 * Make Love interaction will no longer appear in the menu if either participant is a child.
-* If you turn a slave into a prostitute, they will now hate you unless they have a submission fetish.
 * Fixed positive prostitution events becoming less common if you're a good prostitute, rather than more common.
-* Modding: Renamed the IDs of many game rules to be more internally consistent.
