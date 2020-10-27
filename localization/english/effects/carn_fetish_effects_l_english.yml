@@ -1,53 +1,5 @@
 ﻿l_english:
 
- carn_i_gain_slave: "[TARGET_CHARACTER.GetShortUIName|U] becomes your [slave|E]"
- carn_they_gain_slave: "[TARGET_CHARACTER.GetShortUIName|U] becomes [CHARACTER.GetShortUINamePossessive] [slave|E]"
-
- carn_i_got_slave: "[TARGET_CHARACTER.GetShortUIName|U] became your [slave|E]"
- carn_they_got_slave: "[TARGET_CHARACTER.GetShortUIName|U] became [CHARACTER.GetShortUINamePossessive] [slave|E]"
-
- carn_i_gain_slave_owner: "[TARGET_CHARACTER.GetShortUIName|U] becomes your [slave_owner|E]"
- carn_they_gain_slave_owner: "[TARGET_CHARACTER.GetShortUIName|U] becomes [CHARACTER.GetShortUINamePossessive] [slave_owner|E]"
-
- carn_i_got_slave_owner: "[TARGET_CHARACTER.GetShortUIName|U] became your [slave_owner|E]"
- carn_they_got_slave_owner: "[TARGET_CHARACTER.GetShortUIName|U] became [CHARACTER.GetShortUINamePossessive] [slave_owner|E]"
-
- carn_i_lose_slave: "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [slave|E]"
- carn_they_lose_slave: "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [slave|E]"
-
- carn_i_lost_slave: "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [slave|E]"
- carn_they_lost_slave: "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [slave|E]"
-
- carn_i_lose_slave_owner: "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [slave_owner|E]"
- carn_they_lose_slave_owner: "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [slave_owner|E]"
-
- carn_i_lost_slave_owner: "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [slave_owner|E]"
- carn_they_lost_slave_owner: "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [slave_owner|E]"
-
- carn_i_gain_dominant: "[TARGET_CHARACTER.GetShortUIName|U] becomes your [dominant|E]"
- carn_they_gain_dominant: "[TARGET_CHARACTER.GetShortUIName|U] becomes [CHARACTER.GetShortUINamePossessive] [dominant|E]"
-
- carn_i_got_dominant: "[TARGET_CHARACTER.GetShortUIName|U] became your [dominant|E]"
- carn_they_got_dominant: "[TARGET_CHARACTER.GetShortUIName|U] became [CHARACTER.GetShortUINamePossessive] [dominant|E]"
-
- carn_i_lose_dominant: "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [dominant|E]"
- carn_they_lose_dominant: "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [dominant|E]"
-
- carn_i_lost_dominant: "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [dominant|E]"
- carn_they_lost_dominant: "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [dominant|E]"
-
- carn_i_gain_submissive: "[TARGET_CHARACTER.GetShortUIName|U] becomes your [submissive|E]"
- carn_they_gain_submissive: "[TARGET_CHARACTER.GetShortUIName|U] becomes [CHARACTER.GetShortUINamePossessive] [submissive|E]"
-
- carn_i_got_submissive: "[TARGET_CHARACTER.GetShortUIName|U] became your [submissive|E]"
- carn_they_got_submissive: "[TARGET_CHARACTER.GetShortUIName|U] became [CHARACTER.GetShortUINamePossessive] [submissive|E]"
-
- carn_i_lose_submissive: "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [submissive|E]"
- carn_they_lose_submissive: "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [submissive|E]"
-
- carn_i_lost_submissive: "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [submissive|E]"
- carn_they_lost_submissive: "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [submissive|E]"
-
  carn_i_gain_fetish: "You gain a fetish"
  carn_i_gained_fetish: "You gained a fetish"
  carn_they_gain_fetish: "[CHARACTER.GetShortUIName|U] gains a fetish"
@@ -132,6 +84,27 @@
  carn_gain_fetish_submission_effect: "Gains a submission fetish"
  carn_gained_fetish_submission_effect: "Gained a submission fetish"
 
+ carn_i_gain_fetish_raping_effect: "You gain a dominant rape fetish"
+ carn_i_gained_fetish_raping_effect: "You gained a dominant rape fetish"
+ carn_they_gain_fetish_raping_effect: "[CHARACTER.GetShortUIName|U] gains a dominant rape fetish"
+ carn_they_gained_fetish_raping_effect: "[CHARACTER.GetShortUIName|U] gained a dominant rape fetish"
+ carn_gain_fetish_raping_effect: "Gains a dominant rape fetish"
+ carn_gained_fetish_raping_effect: "Gained a dominant rape fetish"
+
+carn_i_gain_fetish_being_raped_effect: "You gain a submissive rape fetish"
+ carn_i_gained_fetish_being_raped_effect: "You gained a submissive rape fetish"
+ carn_they_gain_fetish_being_raped_effect: "[CHARACTER.GetShortUIName|U] gains a submissive rape fetish"
+ carn_they_gained_fetish_being_raped_effect: "[CHARACTER.GetShortUIName|U] gained a submissive rape fetish"
+ carn_gain_fetish_being_raped_effect: "Gains a submissive rape fetish"
+ carn_gained_fetish_being_raped_effect: "Gained a submissive rape fetish"
+
+carn_i_gain_fetish_lactation_effect: "You gain a lactation fetish"
+ carn_i_gained_fetish_lactation_effect: "You gained a lactation fetish"
+ carn_they_gain_fetish_lactation_effect: "[CHARACTER.GetShortUIName|U] gains a lactation fetish"
+ carn_they_gained_fetish_lactation_effect: "[CHARACTER.GetShortUIName|U] gained a lactation fetish"
+ carn_gain_fetish_lactation_effect: "Gains a lactation fetish"
+ carn_gained_fetish_lactation_effect: "Gained a lactation fetish"
+
  carn_i_lose_fetishes_effect: "You lose all fetishes"
  carn_i_lost_fetishes_effect: "You lost all fetishes"
  carn_they_lose_fetishes_effect: "[CHARACTER.GetShortUIName|U] loses all fetishes"
@@ -145,3 +118,6 @@
  carn_they_lost_fetish_effect: "[CHARACTER.GetShortUIName|U] lost a fetish"
  carn_lose_fetish_effect: "Loses a fetish"
  carn_lost_fetish_effect: "Lost a fetish"
+
+
+ carn_msg_fetish_gained: "Fetish Gained"

@@ -66,6 +66,43 @@ Added the trait flag `carn_pregnancy` for modders, meant for marking a trait as 
 New scripted trigger:
 * `carn_is_visibly_pregnant_trigger`
 
+### Fetish System ###
+
+Fetish system has been reworked again.
+
+* Fetish flags are no longer prefixed with `carn_fetish_`. So for example, the fetish that was formerly `carn_fetish_anal` is now `anal`.
+* All fetish-specific scripted effects are deprecated. Use `carn_add_fetish_effect` instead.
+* Added custom GUI to the character window showing a character's fetishes. Due to engine limitations, only hardcoded fetishes are supported.
+
+New fetishes:
+* `raping`
+* `being_raped`
+* `lactation`
+
+New scripted effects:
+* `carn_give_deviant_secret_or_trait_no_fetish_effect`
+* `carn_give_deviant_secret_or_trait_if_has_any_fetish_effect`
+* `carn_remove_deviant_secret_or_trait_if_has_no_fetishes_effect`
+
+New on_actions:
+* `carn_on_new_random_fetish` - add new fetishes to this on_action
+* `carn_on_gain_fetish`
+* `carn_on_lose_fetish`
+
+Renamed scripted effects:
+* `carn_add_given_fetish_effect` to `carn_add_fetish_effect`
+* `carn_remove_given_fetish_effect` to `carn_remove_fetish_effect`
+
+Renamed scripted triggers:
+* `carn_has_given_fetish_trigger` to `carn_has_fetish_trigger`
+
+Steps to add a new fetish:
+* Decide on a tag. Here we will use `EXAMPLE`
+* Add a fetish gaining event to `carn_on_add_random_fetish`
+* Create effect localization for `carn_add_fetish_EXAMPLE_effect`
+* Create scripted GUI for `carn_fetish_gui_EXAMPLE`
+* Add your effect to the fetish icon in `character_window.gui`
+
 ### Miscellaneous
 
 New scripted effects:
@@ -86,3 +123,4 @@ New scripted effects:
 * You can no longer Make Love to prostitutes who aren't currently working.
 * Make Love interaction will no longer appear in the menu if either participant is a child.
 * Fixed positive prostitution events becoming less common if you're a good prostitute, rather than more common.
+* Fixed `carn_has_any_fetish_trigger` not working properly.

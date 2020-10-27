@@ -9,4 +9,4 @@
  carn_sex_scene.0004.desc_opening:0 "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] looks at me hungrily as [carn_sex_target.GetSheHe] approaches me, [carn_sex_target.GetHerHis] intent clear.\n\n[carn_sex_target.GetSheHe|U] rips my [carn_sex_player.Custom('GetClothingArticle')] off my body and forces [carn_sex_target.GetHerselfHimself] onto me. Driven by lust, [carn_sex_target.GetSheHe] has [carn_sex_target.GetHerHis] way with me, without a care for anything but [carn_sex_target.GetHerHis] own pleasure.\n\n"
  carn_sex_scene.0004.desc_ending:0 "After defiling me, [carn_sex_target.GetSheHe] takes [carn_sex_target.GetHerHis] leave, paying me no more attention."
  carn_sex_scene.0004.a:0 "I feel sick..."
- carn_sex_scene.0004.a.masochist:0 "That felt... good..."
+ carn_sex_scene.0004.a.being_raped_fetish:0 "That felt... good..."

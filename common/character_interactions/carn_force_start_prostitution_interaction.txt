@@ -65,8 +65,8 @@
 						limit = {
 							carn_is_prostitute_trigger = no
 							NOT = {
-								carn_has_given_fetish_trigger = {
-									FETISH = carn_fetish_submission
+								carn_has_fetish_trigger = {
+									FETISH = submission
 								}
 							}
 						}

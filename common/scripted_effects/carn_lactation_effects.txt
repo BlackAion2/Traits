@@ -118,7 +118,7 @@ carn_resolve_milk_production_change_effect = {
 			# milk production increased
 			limit = {
 				var:carn_old_milk_production = {
-					compare_value < var:carn_new_milk_production
+					compare_value < prev.var:carn_new_milk_production
 				}
 			}
 			custom_tooltip = carn_milk_production_increases_tooltip
@@ -127,7 +127,7 @@ carn_resolve_milk_production_change_effect = {
 			# milk production decreased
 			limit = {
 				var:carn_old_milk_production = {
-					compare_value > var:carn_new_milk_production
+					compare_value > prev.var:carn_new_milk_production
 				}
 			}
 			custom_tooltip = carn_milk_production_decreases_tooltip

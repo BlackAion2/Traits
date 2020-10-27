@@ -32,12 +32,12 @@ carn_effective_age_under_lactation_age_cutoff = {
 	third = carn_effective_age_under_lactation_age_cutoff
 }
 
-carn_has_a_fetish_trigger = {
+carn_has_any_fetish_trigger = {
 	first = carn_i_have_a_fetish_trigger
 	first_not = carn_not_i_have_a_fetish_trigger
 	third = carn_they_have_a_fetish_trigger
 	third_not = carn_not_they_have_a_fetish_trigger
-	global = carn_has_a_fetish_trigger
+	global = carn_has_any_fetish_trigger
 	global_not = carn_not_has_a_fetish_trigger
 }
 

@@ -117,8 +117,8 @@ carn_sex_scene.0004 = {
 		name = {
 			trigger = {
 				NOT = {
-					carn_has_given_fetish_trigger = {
-						FETISH = carn_fetish_masochism
+					carn_has_fetish_trigger = {
+						FETISH = being_raped
 					}
 				}
 			}
@@ -127,11 +127,11 @@ carn_sex_scene.0004 = {
 
 		name = {
 			trigger = {
-				carn_has_given_fetish_trigger = {
-					FETISH = carn_fetish_masochism
+				carn_has_fetish_trigger = {
+					FETISH = being_raped
 				}
 			}
-			text = carn_sex_scene.0004.a.masochist
+			text = carn_sex_scene.0004.a.being_raped_fetish
 		}
 	}
 

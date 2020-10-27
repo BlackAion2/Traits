@@ -1,0 +1,135 @@
+﻿carn_fetish_gui = {
+	scope = character
+	saved_scopes = {
+		player
+	}
+	is_shown = {
+		OR = {
+			has_trait = deviant
+			scope:player = {
+				any_known_secret = {
+					secret_type = secret_deviant
+					secret_owner = root
+				}
+			}
+		}
+		carn_has_any_fetish_trigger = yes
+	}
+}
+
+carn_fetish_gui_anal = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = anal
+		}
+	}
+}
+
+carn_fetish_gui_sadism = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = sadism
+		}
+	}
+}
+
+carn_fetish_gui_masochism = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = masochism
+		}
+	}
+}
+
+carn_fetish_gui_bestiality = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = bestiality
+		}
+	}
+}
+
+carn_fetish_gui_watersports = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = watersports
+		}
+	}
+}
+
+carn_fetish_gui_scat = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = scat
+		}
+	}
+}
+
+carn_fetish_gui_gore = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = gore
+		}
+	}
+}
+
+carn_fetish_gui_foot_play = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = foot_play
+		}
+	}
+}
+
+carn_fetish_gui_bondage = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = bondage
+		}
+	}
+}
+
+carn_fetish_gui_domination = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = domination
+		}
+	}
+}
+
+carn_fetish_gui_submission = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = submission
+		}
+	}
+}
+
+carn_fetish_gui_raping = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = raping
+		}
+	}
+}
+
+carn_fetish_gui_being_raped = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = being_raped
+		}
+	}
+}

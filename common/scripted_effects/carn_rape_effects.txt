@@ -224,8 +224,8 @@ carn_rape_opinion_effects_effect = {
 		if = {
 			limit = {
 				NOT = {
-					carn_has_given_fetish_trigger = {
-						FETISH = carn_fetish_masochism
+					carn_has_fetish_trigger = {
+						FETISH = being_raped
 					}
 				}
 			}
@@ -291,8 +291,8 @@ carn_rape_victim_stress_effect = {
 		if = {
 			limit = {
 				NOT = {
-					carn_has_given_fetish_trigger = {
-						FETISH = carn_fetish_masochism
+					carn_has_fetish_trigger = {
+						FETISH = being_raped
 					}
 				}
 			}
