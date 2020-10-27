@@ -1,4 +1,4 @@
-﻿yearly_playable_pulse = {
+﻿random_yearly_everyone_pulse = {
 	events = {
 		carn_lactation.0001 # Yearly milk production decrease
 	}
