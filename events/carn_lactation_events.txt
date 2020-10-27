@@ -59,6 +59,7 @@ carn_lactation.0003 = {
 				age < 5
 			}
 		}
+		carn_is_lactating_trigger = no
 	}
 
 	immediate = {

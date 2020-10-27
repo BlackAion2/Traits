@@ -19,11 +19,11 @@ carn_can_lactate_trigger = {
 	OR = {
 		AND = {
 			is_female = yes
-			has_game_rule = carn_lactation_female_only
+			NOT = { has_game_rule = carn_lactation_male_only }
 		}
 		AND = {
 			is_male = yes
-			has_game_rule = carn_lactation_male_only
+			NOT = { has_game_rule = carn_lactation_female_only }
 		}
 	}
 }
