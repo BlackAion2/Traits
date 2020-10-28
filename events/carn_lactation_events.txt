@@ -9,6 +9,7 @@ carn_lactation.0001 = {
 	hidden = yes
 
 	trigger = {
+		is_alive = yes # To increase performance somewhat
 		carn_is_lactating_trigger = yes
 		carn_milk_production_decreases_yearly_trigger = yes
 	}
@@ -59,6 +60,7 @@ carn_lactation.0003 = {
 				age < 5
 			}
 		}
+		carn_is_lactating_trigger = no
 	}
 
 	immediate = {
