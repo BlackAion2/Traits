@@ -17,6 +17,20 @@ carn_sex_scene_matches_requested_flags_trigger = {
 			NOT = { is_in_list = carn_sex_scene_flags }
 		}
 	}
+	trigger_if = {
+		limit = {
+			list_size = {
+				name = carn_sex_scene_excluded_flags
+				value > 0
+			}
+		}
+		NOT = {
+			any_in_list = {
+				list = carn_sex_scene_flags
+				is_in_list = carn_sex_scene_excluded_flags
+			}
+		}
+	}
 }
 
 #
