@@ -4229,7 +4229,7 @@ types CharacterWindow
 			datacontext = "[GetScriptedGui( 'carn_fetish_gui' )]"
 			visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).AddScope( 'player', GetPlayer.MakeScope ).End )]"
 			size = { 20 20 }
-			texture = "gfx/interface/icons/modifiers/health_negative.dds"
+			texture = "gfx/interface/icons/icon_carn_fetish_gui.dds"
 			tooltipwidget = {
 				container = {
 					using = DefaultTooltipBackground

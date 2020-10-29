@@ -136,3 +136,12 @@ carn_fetish_gui_being_raped = {
 		}
 	}
 }
+
+carn_fetish_gui_lactation = {
+	scope = character
+	is_shown = {
+		carn_has_fetish_trigger = {
+			FETISH = lactation
+		}
+	}
+}

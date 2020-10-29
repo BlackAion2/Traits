@@ -1,7 +1,7 @@
 ﻿
 #################################################################################
 # carn_sex_scene_effect
-# Written by Cheri and it that likes warm drinks
+# Written by Cheri, it that likes warm drinks, Ernie Collins
 #################################################################################
 #
 # carn_sex_scene_effect is the general purpose scripted effect to trigger a sex scene event through Carnalitas.

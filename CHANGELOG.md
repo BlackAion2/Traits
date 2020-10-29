@@ -6,7 +6,7 @@
 
 ### Exclude Sex Scene Flags
 
-Added the ability to exclude specific flags when requesting a sex scene.
+Modding: Added the ability to exclude specific flags when requesting a sex scene.
 
 New scripted effects:
 * `carn_sex_scene_exclude_giving_player`
