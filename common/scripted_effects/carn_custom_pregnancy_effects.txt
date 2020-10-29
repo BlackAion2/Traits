@@ -49,6 +49,12 @@ carn_start_custom_pregnancy_effect = {
 		}
 		if = {
 			limit = {
+				$CAN_BE_ABORTED$ = no
+			}
+			add_character_flag = carn_block_aborting_next_custom_pregnancy
+		}
+		if = {
+			limit = {
 				is_pregnant = yes
 			}
 			if = {

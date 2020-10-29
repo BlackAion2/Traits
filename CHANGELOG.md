@@ -141,8 +141,8 @@ New trait and character flags:
 * `carn_suppress_all_on_pregnancy_notification`
 
 New character flags (not trait flags):
-* `carn_suppress_next_on_pregnancy_maintenance`
-* `carn_suppress_next_on_pregnancy_notification`
+* `carn_suppress_next_on_pregnancy_maintenance` (removed after suppressing the event)
+* `carn_suppress_next_on_pregnancy_notification` (removed after suppressing the events)
 
 New on_actions:
 * `carn_on_pregnancy_maintenance_suppressed`
@@ -154,7 +154,7 @@ New scripted triggers:
 
 ### (Modding) Absolute Birth Control
 
-The `carn_absolute_birth_control` trait flag or character flag will completely block a character from ever getting the Pregnant trait. It does this by replacing all vanilla on_pregnancy events with a hidden event that ends the pregnancy.
+The `carn_absolute_birth_control` trait flag or character flag will completely block a character from ever getting the Pregnant trait. It does this by replacing all vanilla `on_pregnancy` events with a hidden event that ends the pregnancy.
 
 This is useful for situations where you want all of a character's pregnancies to be replaced with something else. It's also useful where you want to control a character's fertility, but don't want their infertility to affect marriage proposals, display in the UI, etc.
 
