@@ -132,9 +132,7 @@ This new group of character and trait flags allows modders to suppress various e
 
 This allows you to do events like Adroit Religion's sacred orgy where a child that would normally be considered a bastard has a different pregnancy event instead.
 
-Use the new on_actions to add your own pregnancy events in place of the suppressed events. **If you use `on_pregnancy_mother` instead of the new on_actions, you will step on the absolute birth control function.`**
-
-You can use a unique character flag to differentiate your suppressed pregnancy from the suppressed pregnancies of other mods.
+Use the new on_actions, `carn_on_pregnancy_maintenance_suppressed` and `carn_on_pregnancy_notification_suppressed`, to add your own pregnancy events in place of the suppressed events. You can use a unique character flag to differentiate your suppressed pregnancy from the suppressed pregnancies of other mods.
 
 Note that your new pregnancy notification event will have to do all the groundwork of adding the `pregnant` trait, playing music cues, etc.
 
