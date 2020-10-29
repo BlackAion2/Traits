@@ -13,8 +13,14 @@ carn_prostitution_yearly_maintenance_pulse = {
 		if = {
 			limit = {
 				OR = {
-					carn_can_have_sex_trigger = no
-					effective_age >= carn_prostitution_age_cutoff
+					AND = {
+						is_male = no
+						has_game_rule = carn_prostitution_content_male_only
+					}
+					AND = {
+						is_female = no
+						has_game_rule = carn_prostitution_content_female_only
+					}
 					NOR = {
 						faith = { NOT = { has_doctrine = carn_doctrine_prostitution_crime } }
 						any_relation = {
@@ -25,6 +31,8 @@ carn_prostitution_yearly_maintenance_pulse = {
 					}
 					has_character_flag = carn_cannot_be_prostitute
 					has_trait_with_flag = carn_cannot_be_prostitute
+					carn_can_have_sex_trigger = no
+					effective_age >= carn_prostitution_age_cutoff
 				}
 			}
 			send_interface_message = {
