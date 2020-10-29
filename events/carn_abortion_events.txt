@@ -1,0 +1,14 @@
+﻿namespace = carn_abortion
+
+# 0001. Clear carn_block_aborting_next_normal_pregnancy after pregnancy ends
+
+carn_abortion.0001 = {
+	hidden = yes
+
+	trigger = {
+	}
+	
+	immediate = {
+		remove_character_flag = carn_block_aborting_next_normal_pregnancy
+	}
+}

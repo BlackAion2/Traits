@@ -1,0 +1,11 @@
+﻿on_birth_mother = {
+	events = {
+		carn_abortion.0001 # Clear carn_block_aborting_next_normal_pregnancy after pregnancy ends
+	}
+}
+
+on_pregnancy_ended_mother = {
+	events = {
+		carn_abortion.0001 # Clear carn_block_aborting_next_normal_pregnancy after pregnancy ends
+	}
+}

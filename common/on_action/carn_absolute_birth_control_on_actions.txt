@@ -1,0 +1,12 @@
+﻿on_pregnancy_mother = {
+	events = {
+		carn_absolute_birth_control.0001
+	}
+}
+
+# fires when a pregnancy is ended due to `carn_absolute_birth_control`
+# no effects currently, meant for modders
+carn_on_absolute_birth_control_end_pregnancy = {
+	events = {
+	}
+}
