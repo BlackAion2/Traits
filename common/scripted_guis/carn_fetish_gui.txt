@@ -6,10 +6,13 @@
 	is_shown = {
 		OR = {
 			has_trait = deviant
-			scope:player = {
-				any_known_secret = {
-					secret_type = secret_deviant
-					secret_owner = root
+			AND = {
+				exists = scope:player
+				scope:player = {
+					any_known_secret = {
+						secret_type = secret_deviant
+						secret_owner = root
+					}
 				}
 			}
 		}

@@ -8,11 +8,11 @@
 carn_sex_scene.0002 = {
 	hidden = yes
 	immediate = {
-		carn_clear_sex_scene_requested_flags_effect = yes
+		carn_clear_sex_scene_flags_effect = yes
 		carn_sex_scene_request_consensual = yes
 		trigger_event = { id = carn_sex_scene.0001 }
 
 		# clear list again to prevent consensual flag leaking into next request
-		carn_clear_sex_scene_requested_flags_effect = yes
+		carn_clear_sex_scene_flags_effect = yes
 	}
 }

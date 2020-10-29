@@ -4,6 +4,36 @@
 
 ## New Features
 
+### Exclude Sex Scene Flags
+
+Added the ability to exclude specific flags when requesting a sex scene.
+
+New scripted effects:
+* `carn_sex_scene_exclude_giving_player`
+* `carn_sex_scene_exclude_receiving_player`
+* `carn_sex_scene_exclude_dom_player`
+* `carn_sex_scene_exclude_sub_player`
+* `carn_sex_scene_exclude_oral`
+* `carn_sex_scene_exclude_vaginal`
+* `carn_sex_scene_exclude_anal`
+* `carn_sex_scene_exclude_handjob`
+* `carn_sex_scene_exclude_masturbation`
+* `carn_sex_scene_exclude_orgy`
+* `carn_sex_scene_exclude_cum_inside`
+* `carn_sex_scene_exclude_cum_outside`
+* `carn_sex_scene_exclude_consensual`
+* `carn_sex_scene_exclude_noncon`
+* `carn_sex_scene_exclude_dubcon`
+* `carn_sex_scene_exclude_painful`
+* `carn_sex_scene_exclude_bdsm`
+* `carn_sex_scene_exclude_bestiality`
+* `carn_sex_scene_exclude_petplay`
+* `carn_sex_scene_exclude_bondage`
+* `carn_sex_scene_exclude_toy`
+* `carn_sex_scene_exclude_watersports`
+* `carn_sex_scene_exclude_scat`
+* `carn_sex_scene_exclude_gore`
+
 ### Rape System
 
 * Added a character interaction to rape a prisoner in your dungeon. This is only available if you have both Make Love and noncon scenes enabled.
