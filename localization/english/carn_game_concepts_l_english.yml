@@ -36,3 +36,13 @@
  game_concept_prostitute_possessive: "Prostitute's"
  game_concept_prostitutes_possessive: "Prostitutes'"
  game_concept_prostitute_desc: "A prostitute is a [character|E] who solicits payment for sex. Any character can use the $carn_work_as_prostitute_decision$ [decision|E] to become a prostitute, as long as their [faith|E] allows them to do so.\n\nThe performance of a prostitute is based on their [diplomacy|E], [intrigue|E], intelligence, and attractiveness. An especially skilled prostitute may become an [GetTrait('prostitute_2').GetName( GetNullCharacter )] or even a [GetTrait('prostitute_3').GetName( GetNullCharacter )].\n\nWorking as a prostitute is legally sanctioned and not considered [extramarital_sex|E]. However, it may still result in [bastard|E] children or other consequences if the character is not careful..."
+
+ game_concept_fetish: "Fetish"
+ game_concept_fetishes: "Fetishes"
+ game_concept_fetish_desc: "When a [character|E] gains the [GetTrait('deviant').GetName( GetNullCharacter )] trait, they will also get a random fetish if the Fetish System is enabled. Your fetishes will appear next to your sexuality.\n\nFetishes are purely cosmetic by default, but mods may add features and content for characters with specific fetishes."
+
+ game_concept_lactation: "Lactation"
+ game_concept_lactating: "Lactating"
+ game_concept_milk: "Milk"
+ game_concept_milk_production: "Milk Production"
+ game_concept_lactation_desc: "[characters|E] may have their milk production increased by [pregnancy|E] or other effects. This will cause them to start lactating.\n\nA character's milk production decreases naturally over time when she is not pregnant. She can prolong or increase her milk production by getting pregnant again. Mods may also add other ways to manipulate milk production.\n\nLactation is purely cosmetic by default, but mods may add features and content for lactating characters."

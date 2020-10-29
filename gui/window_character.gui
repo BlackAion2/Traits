@@ -751,6 +751,20 @@ window = {
 								}
 							}
 
+							# Carnalitas: lactation UI
+							hbox = {
+								margin_left = 4
+								spacing = -3
+
+								icon = {
+									datacontext = "[GetScriptedGui( 'carn_lactation_gui' )]"
+									visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									size = { 23 23 }
+									texture = "gfx/interface/icons/modifiers/drink_positive.dds"
+									tooltip = "carn_lactation_gui_tooltip"
+								}
+							}
+
 							expand = {}
 						}
 
