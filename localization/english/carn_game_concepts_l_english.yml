@@ -39,10 +39,10 @@
 
  game_concept_fetish: "Fetish"
  game_concept_fetishes: "Fetishes"
- game_concept_fetish_desc: "When a [character|E] gains the [GetTrait('deviant').GetName( GetNullCharacter )] trait, they will also get a random fetish if the Fetish System is enabled. Your fetishes will appear next to your sexuality.\n\nFetishes are purely cosmetic by default, but mods may add features and content for characters with specific fetishes."
+ game_concept_fetish_desc: "When a [character|E] gains the [GetTrait('deviant').GetName( GetNullCharacter )] [trait|E] or [secret|E], they will also get a random fetish if Carnalitas's Fetish System is enabled. You can see a character's publicly known fetishes by mousing over the icon next to their sexual orientation.\n\nFetishes are purely cosmetic by default, but mods may add features and content for characters with specific fetishes."
 
  game_concept_lactation: "Lactation"
  game_concept_lactating: "Lactating"
  game_concept_milk: "Milk"
  game_concept_milk_production: "Milk Production"
- game_concept_lactation_desc: "[characters|E] may have their milk production increased by [pregnancy|E] or other effects. This will cause them to start lactating.\n\nA character's milk production decreases naturally over time when she is not pregnant. She can prolong or increase her milk production by getting pregnant again. Mods may also add other ways to manipulate milk production.\n\nLactation is purely cosmetic by default, but mods may add features and content for lactating characters."
+ game_concept_lactation_desc: "When Carnalitas's Lactation System is enabled, [characters|E] may have their milk production increased by pregnancy or other effects. This will cause them to start lactating for a period of time. Successive pregnancies allow a character to produce more milk and lactate for a longer period of time.\n\nLactation is purely cosmetic by default, but mods may add features and content for lactating characters."

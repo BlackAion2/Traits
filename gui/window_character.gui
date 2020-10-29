@@ -753,14 +753,12 @@ window = {
 
 							# Carnalitas: lactation UI
 							hbox = {
-								margin_left = 4
-								spacing = -3
 
 								icon = {
 									datacontext = "[GetScriptedGui( 'carn_lactation_gui' )]"
 									visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 									size = { 23 23 }
-									texture = "gfx/interface/icons/modifiers/drink_positive.dds"
+									texture = "gfx/interface/icons/icon_carn_lactation_gui.dds"
 									tooltip = "carn_lactation_gui_tooltip"
 								}
 							}
@@ -4246,16 +4244,25 @@ types CharacterWindow
 			texture = "gfx/interface/icons/icon_carn_fetish_gui.dds"
 			tooltipwidget = {
 				container = {
-					using = DefaultTooltipBackground
+					using = GeneralTooltipSetup
+					alwaystransparent = no
+					widget = {
+						name = "background"
+						using = DefaultTooltipBackground
+						size = { 100% 100% }
+						alwaystransparent = no
+					}
 					vbox = {
 						margin = { 20 20 }
 						margin_top = 10
 						layoutpolicy_horizontal = expanding
+						alwaystransparent = no
 
 						text_single = {
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							text = "carn_fetish_gui_title"
 						}
 
@@ -4263,6 +4270,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_anal' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_anal"
@@ -4272,6 +4280,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_sadism' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_sadism"
@@ -4281,6 +4290,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_masochism' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_masochism"
@@ -4290,6 +4300,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_bestiality' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_bestiality"
@@ -4299,6 +4310,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_watersports' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_watersports"
@@ -4308,6 +4320,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_scat' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_scat"
@@ -4317,6 +4330,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_gore' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_gore"
@@ -4326,6 +4340,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_foot_play' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_foot_play"
@@ -4335,6 +4350,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_bondage' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_bondage"
@@ -4344,6 +4360,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_domination' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_domination"
@@ -4353,6 +4370,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_submission' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_submission"
@@ -4362,6 +4380,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_raping' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_raping"
@@ -4371,6 +4390,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_being_raped' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_being_raped"
@@ -4380,6 +4400,7 @@ types CharacterWindow
 							layoutpolicy_horizontal = growing
 							fonttintcolor = "[TooltipInfo.GetTintColor]"
 							using = DefaultTooltipText
+							alwaystransparent = no
 							datacontext = "[GetScriptedGui( 'carn_fetish_gui_lactation' )]"
 							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
 							text = "carn_fetish_gui_lactation"
