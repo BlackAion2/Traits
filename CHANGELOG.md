@@ -201,9 +201,6 @@ New scripted triggers:
 * `carn_custom_pregnancy_stage_equals_trigger` (requires `STAGE`)
 * `carn_custom_pregnancy_can_be_aborted_trigger`
 
-New character flag (not trait flags):
-* `carn_block_aborting_next_custom_pregnancy` (prevents custom pregnancy from being overwritten)
-
 New trait flags:
 * `carn_custom_pregnancy` (put on your equivalent of the Pregnant trait for scripts)
 * `carn_use_pregnant_portrait` (shows a pregnant belly on the character)
