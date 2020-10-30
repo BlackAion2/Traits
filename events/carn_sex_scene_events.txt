@@ -8,6 +8,7 @@
 carn_sex_scene.0002 = {
 	hidden = yes
 	immediate = {
+		debug_log = "Carnalitas: No appropriate sex scene could be found for requested flags. Fell back to generic PDX sex scene."
 		carn_clear_sex_scene_flags_effect = yes
 		carn_sex_scene_request_consensual = yes
 		trigger_event = { id = carn_sex_scene.0001 }
