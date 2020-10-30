@@ -1,0 +1,75 @@
+﻿namespace = carn_lactation
+
+# 0001. Yearly milk production decrease
+# 0002. Gain milk production on pregnancy
+# 0003. Seed lactation at start of game
+
+# 0001. Yearly milk production decrease
+carn_lactation.0001 = {
+	hidden = yes
+
+	trigger = {
+		is_alive = yes # To increase performance somewhat
+		carn_is_lactating_trigger = yes
+		carn_milk_production_decreases_yearly_trigger = yes
+	}
+
+	immediate = {
+		carn_create_milk_production_change_effect = yes
+		carn_change_milk_production_effect = {
+			VALUE = carn_yearly_milk_production_change
+		}
+		carn_resolve_milk_production_change_effect = {
+			SEND_NOTIFICATION = yes
+		}
+	}
+}
+
+# 0002. Gain milk production on pregnancy
+carn_lactation.0002 = {
+	hidden = yes
+
+	trigger = {
+		carn_can_lactate_trigger = yes
+	}
+
+	immediate = {
+		carn_create_milk_production_change_effect = yes
+		carn_change_milk_production_effect = {
+			VALUE = carn_on_pregnancy_milk_production_increase
+		}
+		carn_set_milk_production_maximum_effect = {
+			MAXIMUM = carn_on_pregnancy_milk_production_cap
+		}
+		carn_resolve_milk_production_change_effect = {
+			SEND_NOTIFICATION = yes
+		}
+	}
+}
+
+# 0003. Seed lactation from pregnancy on character initialization pulse
+carn_lactation.0003 = {
+	hidden = yes
+
+	trigger = {
+		carn_can_lactate_trigger = yes
+		is_female = yes
+		OR = {
+			carn_is_visibly_pregnant_trigger = yes
+			any_child = {
+				age < 5
+			}
+		}
+		carn_is_lactating_trigger = no
+	}
+
+	immediate = {
+		carn_create_milk_production_change_effect = yes
+		carn_change_milk_production_effect = {
+			VALUE = carn_on_pregnancy_milk_production_increase
+		}
+		carn_resolve_milk_production_change_effect = {
+			SEND_NOTIFICATION = no
+		}
+	}
+}

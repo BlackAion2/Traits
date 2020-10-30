@@ -1,0 +1,52 @@
+﻿carn_on_pregnancy_milk_production_increase = 100
+carn_on_pregnancy_milk_production_cap = 300
+carn_yearly_milk_production_change = -20
+carn_lactation_age_cutoff = 45
+
+#############################################################
+# Very Low milk production
+#############################################################
+# after a lot of coaxing, a few droplets come out
+
+carn_very_low_milk_production_amount = 1
+
+#############################################################
+# Low milk production
+#############################################################
+# after some coaxing, a thin stream of milk comes out
+
+carn_low_milk_production_amount = 40
+
+#############################################################
+# Average milk production
+#############################################################
+# after some coaxing, a regular flow of milk comes out
+# your breasts get sore and leak milk if you don't milk them
+# this is the default human level of lactation following pregnancy
+
+carn_average_milk_production_amount = 80
+
+#############################################################
+# High milk production
+#############################################################
+# your breasts are sensitive and prone to let down milk, and get swollen if you don't milk them
+# this is the realistic maximum for humans irl
+
+carn_high_milk_production_amount = 200
+
+#############################################################
+# Very High milk production
+#############################################################
+# superhuman levels of milk production
+# milk is constantly oozing from your breasts, you need to be milked regularly
+# this is how the average "hucow" is depicted
+
+carn_very_high_milk_production_amount = 500
+
+#############################################################
+# Extreme milk production
+#############################################################
+# milk is constantly running from your breasts, it's hard to have a normal life
+# you're basically a pair of milk factories attached to a girl
+
+carn_extreme_milk_production_amount = 1000

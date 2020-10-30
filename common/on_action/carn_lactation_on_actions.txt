@@ -1,0 +1,38 @@
+﻿random_yearly_everyone_pulse = {
+	events = {
+		carn_lactation.0001 # Yearly milk production decrease
+	}
+}
+
+on_pregnancy_mother = {
+	events = {
+		carn_lactation.0002 # Gain milk production on pregnancy
+	}
+}
+
+carn_character_initialization_pulse = {
+    events = {
+		carn_lactation.0003 # Seed lactation from pregnancy on character initialization pulse
+	}
+}
+
+# does nothing as of now, meant for modders to hook into
+# triggered when a character that was not formerly lactating starts lactating
+carn_on_start_lactating = {
+	events = {
+	}
+}
+
+# does nothing as of now, meant for modders to hook into
+# triggered when a character that was lactating stops lactating
+carn_on_stop_lactating = {
+	events = {
+	}
+}
+
+# does nothing as of now, meant for modders to hook into
+# triggered whenever an effect modifies a character's milk production
+carn_on_milk_production_change = {
+	events = {
+	}
+}

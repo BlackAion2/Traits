@@ -11,68 +11,6 @@ carn_arousal_stress = {
 	carn_arousal_stress_enabled = {}
 }
 
-carn_std = {
-	default = carn_std_enabled
-	carn_std_enabled = {}
-	carn_std_disabled = {}
-}
-
-carn_pregnancy_complications = {
-	default = carn_pregnancy_complications_default
-	carn_pregnancy_complications_default = {}
-	carn_pregnancy_complications_never = {}
-}
-
-carn_birth_control = {
-	default = carn_birth_control_disabled
-	carn_birth_control_disabled = {}
-	carn_birth_control_any_gender = {}
-	carn_birth_control_female_only = {}
-	carn_birth_control_male_only = {}
-}
-
-carn_dt_enabled = {
-	default = carn_dt_enabled_false
-	carn_dt_enabled_false = {}
-	carn_dt_enabled_true = {}
-}
-
-carn_dt_trait_names = {
-	default = carn_dt_trait_names_default
-	carn_dt_trait_names_default = {}
-	carn_dt_trait_names_immersive = {}
-}
-
-carn_futa_content = {
-	default = carn_futa_content_disabled
-	carn_futa_content_disabled = {}
-	carn_futa_content_no_seeding = {}
-	carn_futa_content_very_rare = {}
-	carn_futa_content_rare = {}
-	carn_futa_content_uncommon = {}
-	carn_futa_content_common = {}
-	carn_futa_content_very_common = {}
-	carn_futa_content_always = {}
-}
-
-carn_futa_trait_name = {
-	default = carn_futa_trait_name_futa
-	carn_futa_trait_name_futa = {}
-	carn_futa_trait_name_hermaphrodite = {}
-}
-
-carn_futa_trait_inheritance = {
-	default = carn_futa_trait_inheritance_off
-	carn_futa_trait_inheritance_off = {}
-	carn_futa_trait_inheritance_on = {}
-}
-
-carn_fetishes_enabled = {
-	default = carn_fetishes_enabled_false
-	carn_fetishes_enabled_false = {}
-	carn_fetishes_enabled_true = {}
-}
-
 carn_slavery_content = {
 	default = carn_slavery_content_disabled
 	carn_slavery_content_disabled = {}
@@ -105,10 +43,74 @@ carn_prostitution_default_religious_doctrine = {
 	carn_prostitution_default_religious_doctrine_criminal = {}
 }
 
-carn_content_anal = {
-	default = carn_content_anal_off
-	carn_content_anal_off = {}
-	carn_content_anal_on = {}
+carn_dt = {
+	default = carn_dt_disabled
+	carn_dt_disabled = {}
+	carn_dt_enabled = {}
+}
+
+carn_dt_trait_names = {
+	default = carn_dt_trait_names_default
+	carn_dt_trait_names_default = {}
+	carn_dt_trait_names_immersive = {}
+}
+
+carn_futa_content = {
+	default = carn_futa_content_disabled
+	carn_futa_content_disabled = {}
+	carn_futa_content_no_seeding = {}
+	carn_futa_content_very_rare = {}
+	carn_futa_content_rare = {}
+	carn_futa_content_uncommon = {}
+	carn_futa_content_common = {}
+	carn_futa_content_very_common = {}
+	carn_futa_content_always = {}
+}
+
+carn_futa_trait_name = {
+	default = carn_futa_trait_name_futa
+	carn_futa_trait_name_futa = {}
+	carn_futa_trait_name_hermaphrodite = {}
+}
+
+carn_futa_trait_inheritance = {
+	default = carn_futa_trait_inheritance_disabled
+	carn_futa_trait_inheritance_disabled = {}
+	carn_futa_trait_inheritance_enabled = {}
+}
+
+carn_lactation = {
+	default = carn_lactation_disabled
+	carn_lactation_disabled = {}
+	carn_lactation_female_only = {}
+	carn_lactation_male_only = {}
+	carn_lactation_any_gender = {}
+}
+
+carn_std = {
+	default = carn_std_enabled
+	carn_std_enabled = {}
+	carn_std_disabled = {}
+}
+
+carn_pregnancy_complications = {
+	default = carn_pregnancy_complications_default
+	carn_pregnancy_complications_default = {}
+	carn_pregnancy_complications_never = {}
+}
+
+carn_birth_control = {
+	default = carn_birth_control_disabled
+	carn_birth_control_disabled = {}
+	carn_birth_control_any_gender = {}
+	carn_birth_control_female_only = {}
+	carn_birth_control_male_only = {}
+}
+
+carn_fetishes = {
+	default = carn_fetishes_disabled
+	carn_fetishes_disabled = {}
+	carn_fetishes_enabled = {}
 }
 
 carn_content_consent = {
@@ -118,32 +120,38 @@ carn_content_consent = {
 	carn_content_consent_always = {}
 }
 
+carn_content_anal = {
+	default = carn_content_anal_disabled
+	carn_content_anal_disabled = {}
+	carn_content_anal_enabled = {}
+}
+
 carn_content_painful = {
-	default = carn_content_painful_off
-	carn_content_painful_off = {}
-	carn_content_painful_on = {}
+	default = carn_content_painful_disabled
+	carn_content_painful_disabled = {}
+	carn_content_painful_enabled = {}
 }
 
 carn_content_bestiality = {
-	default = carn_content_bestiality_off
-	carn_content_bestiality_off = {}
-	carn_content_bestiality_on = {}
+	default = carn_content_bestiality_disabled
+	carn_content_bestiality_disabled = {}
+	carn_content_bestiality_enabled = {}
 }
 
 carn_content_watersports = {
-	default = carn_content_watersports_off
-	carn_content_watersports_off = {}
-	carn_content_watersports_on = {}
+	default = carn_content_watersports_disabled
+	carn_content_watersports_disabled = {}
+	carn_content_watersports_enabled = {}
 }
 
 carn_content_scat = {
-	default = carn_content_scat_off
-	carn_content_scat_off = {}
-	carn_content_scat_on = {}
+	default = carn_content_scat_disabled
+	carn_content_scat_disabled = {}
+	carn_content_scat_enabled = {}
 }
 
 carn_content_gore = {
-	default = carn_content_gore_off
-	carn_content_gore_off = {}
-	carn_content_gore_on = {}
+	default = carn_content_gore_disabled
+	carn_content_gore_disabled = {}
+	carn_content_gore_enabled = {}
 }

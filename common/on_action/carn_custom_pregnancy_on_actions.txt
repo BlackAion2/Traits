@@ -1,0 +1,70 @@
+﻿############################################################################
+# carn_on_custom_pregnancy_stage_change
+############################################################################
+# No events, meant for modders
+# Fires when a custom pregnancy advances in stage
+# Use `carn_has_custom_pregnancy_trigger` and `carn_custom_pregnancy_stage_equals_trigger` as conditions for your custom pregnancy stage event
+# If you want multiple stages, use `carn_setup_delayed_custom_pregnancy_stage_change` to fire another event after a while
+carn_on_custom_pregnancy_stage_change = {
+	events = {
+	}
+}
+
+############################################################################
+# carn_on_start_custom_pregnancy
+############################################################################
+carn_on_start_custom_pregnancy = {
+	events = {
+	}
+}
+
+############################################################################
+# carn_on_end_custom_pregnancy
+############################################################################
+# fires right before the custom pregnancy ends
+carn_on_end_custom_pregnancy = {
+	events = {
+	}
+}
+
+############################################################################
+# carn_on_custom_pregnancy_replace_normal_pregnancy
+############################################################################
+# fires when a modder starts a custom pregnancy on a character that is already pregnant with a normal pregnancy, ending the normal pregnancy
+# custom pregnancy has been set, but normal pregnancy has not been ended
+# scope:new_pregnancy_type - the new pregnancy type, i.e. "flag:dragon_egg"
+carn_on_custom_pregnancy_replace_normal_pregnancy = {
+	events = {
+	}
+}
+
+############################################################################
+# carn_on_custom_pregnancy_failed_to_replace_normal_pregnancy
+############################################################################
+# fires when a modder attempts to start a custom pregnancy on a character that is already pregnant with a normal pregnancy, but can't because the normal pregnancy cannot be aborted
+# scope:new_pregnancy_type - the new pregnancy type, i.e. "flag:dragon_egg"
+carn_on_custom_pregnancy_failed_to_replace_normal_pregnancy = {
+	events = {
+	}
+}
+
+############################################################################
+# carn_on_custom_pregnancy_replace_custom_pregnancy
+############################################################################
+# fires when a modder overwrites a character's custom pregnancy with another one
+# current custom pregnancy has not been changed yet
+# scope:new_pregnancy_type - the new pregnancy type, i.e. "flag:dragon_egg"
+carn_on_custom_pregnancy_replace_custom_pregnancy = {
+	events = {
+	}
+}
+
+############################################################################
+# carn_on_custom_pregnancy_failed_to_replace_custom_pregnancy
+############################################################################
+# fires when a modder attempts to start a custom pregnancy on a character that is already pregnant with a custom pregnancy, but can't because the earlier pregnancy cannot be aborted
+# scope:new_pregnancy_type - the new pregnancy type, i.e. "flag:dragon_egg"
+carn_on_custom_pregnancy_failed_to_replace_custom_pregnancy = {
+	events = {
+	}
+}

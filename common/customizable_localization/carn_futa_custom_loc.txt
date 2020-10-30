@@ -11,6 +11,7 @@
 	}
 }
 
+# "futanari" / "hermaphrodites"
 CarnFutaTraitNamePlural = {
 	type = character
 	text = {
@@ -22,6 +23,7 @@ CarnFutaTraitNamePlural = {
 	}
 }
 
+# "futanari's" / "hermaphrodite's"
 CarnFutaTraitNamePossessive = {
 	type = character
 	text = {
@@ -33,6 +35,8 @@ CarnFutaTraitNamePossessive = {
 	}
 }
 
+# "a" futanari / "a" hermaphrodite
+# mainly for other languages where the article might be different
 CarnFutaTraitNameArticle = {
 	type = character
 	text = {

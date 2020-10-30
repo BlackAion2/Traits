@@ -7,7 +7,7 @@ carn_fetish.0001 = {
 	hidden = yes
 
 	trigger = {
-		has_game_rule = carn_fetishes_enabled_true
+		has_game_rule = carn_fetishes_enabled
 		NOT = { has_character_flag = carn_fetishes_seeded }
 		is_adult = yes
 		is_deviant_trigger = yes

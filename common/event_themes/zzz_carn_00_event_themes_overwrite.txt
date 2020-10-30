@@ -1,0 +1,61 @@
+﻿seduction = {
+	icon = {
+		reference = "gfx/interface/icons/event_types/type_seduction.dds"
+	}
+	sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_seduction"
+	}
+	background = {
+		event_background = bedchamber
+	}
+}
+
+seduce_scheme = {
+	icon = {
+		reference = "gfx/interface/icons/event_types/type_seduction.dds"
+	}
+	sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_seduction"
+	}
+	background = {
+		event_background = bedchamber
+	}
+}
+
+intrigue_temptation_focus = {
+	icon = {
+		reference = "gfx/interface/icons/event_types/type_seduction.dds"
+	}
+	sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_seduction"
+	}
+	background = {
+		event_background = bedchamber
+	}
+}
+
+lover_relation = { # depends on scope:lover to show special soulmate icon
+	icon = {
+		trigger = {
+			exists = scope:lover
+			has_relation_soulmate = scope:lover
+		}
+		reference = "gfx/interface/icons/event_types/type_love.dds"
+	}
+	icon = {
+		reference = "gfx/interface/icons/event_types/type_seduction.dds"
+	}
+	sound = {
+		trigger = {
+			exists = scope:lover
+			has_relation_soulmate = scope:lover
+		}
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_love"
+	}
+	sound = {
+		reference = "event:/SFX/Events/Themes/sfx_event_theme_type_seduction"
+	}
+	background = {
+		event_background = bedchamber
+	}
+}

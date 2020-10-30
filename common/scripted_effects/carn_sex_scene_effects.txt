@@ -1,7 +1,7 @@
 ﻿
 #################################################################################
 # carn_sex_scene_effect
-# Written by Cheri and it that likes warm drinks
+# Written by Cheri, it that likes warm drinks, Ernie Collins
 #################################################################################
 #
 # carn_sex_scene_effect is the general purpose scripted effect to trigger a sex scene event through Carnalitas.
@@ -54,7 +54,7 @@ carn_sex_scene_effect = {
 			on_action = carn_sex_scene
 		}
 	}
-	carn_clear_sex_scene_requested_flags_effect = yes
+	carn_clear_sex_scene_flags_effect = yes
 }
 
 #
@@ -114,7 +114,7 @@ carn_sex_scene_request_vaginal = {
 
 carn_sex_scene_request_anal = {
 	if = {
-		limit = { has_game_rule = carn_content_anal_on }
+		limit = { has_game_rule = carn_content_anal_enabled }
 		flag:anal = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }
@@ -163,7 +163,7 @@ carn_sex_scene_request_dubcon = {
 
 carn_sex_scene_request_painful = {
 	if = {
-		limit = { has_game_rule = carn_content_painful_on }
+		limit = { has_game_rule = carn_content_painful_enabled }
 		flag:painful = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }
@@ -174,7 +174,7 @@ carn_sex_scene_request_bdsm = {
 
 carn_sex_scene_request_bestiality = {
 	if = {
-		limit = { has_game_rule = carn_content_bestiality_on }
+		limit = { has_game_rule = carn_content_bestiality_enabled }
 		flag:bestiality = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }
@@ -193,24 +193,150 @@ carn_sex_scene_request_toy = {
 
 carn_sex_scene_request_watersports = {
 	if = {
-		limit = { has_game_rule = carn_content_watersports_on }
+		limit = { has_game_rule = carn_content_watersports_enabled }
 		flag:watersports = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }
 
 carn_sex_scene_request_scat = {
 	if = {
-		limit = { has_game_rule = carn_content_scat_on }
+		limit = { has_game_rule = carn_content_scat_enabled }
 		flag:scat = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }
 
 carn_sex_scene_request_gore = {
 	if = {
-		limit = { has_game_rule = carn_content_gore_on }
+		limit = { has_game_rule = carn_content_gore_enabled }
 		flag:gore = { add_to_list = carn_sex_scene_requested_flags }
 	}
 }
+
+#
+# Use these to EXCLUDE a specific flag when requesting a sex scene.
+#
+# carn_sex_scene_exclude_giving_player
+# carn_sex_scene_exclude_receiving_player
+# carn_sex_scene_exclude_dom_player
+# carn_sex_scene_exclude_sub_player
+# carn_sex_scene_exclude_oral
+# carn_sex_scene_exclude_vaginal
+# carn_sex_scene_exclude_anal
+# carn_sex_scene_exclude_handjob
+# carn_sex_scene_exclude_masturbation
+# carn_sex_scene_exclude_orgy
+# carn_sex_scene_exclude_cum_inside
+# carn_sex_scene_exclude_cum_outside
+# carn_sex_scene_exclude_consensual
+# carn_sex_scene_exclude_noncon
+# carn_sex_scene_exclude_dubcon
+# carn_sex_scene_exclude_painful
+# carn_sex_scene_exclude_bdsm
+# carn_sex_scene_exclude_bestiality
+# carn_sex_scene_exclude_petplay
+# carn_sex_scene_exclude_bondage
+# carn_sex_scene_exclude_toy
+# carn_sex_scene_exclude_watersports
+# carn_sex_scene_exclude_scat
+# carn_sex_scene_exclude_gore
+#
+
+carn_sex_scene_exclude_giving_player = {
+	flag:giving_player = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_receiving_player = {
+	flag:receiving_player = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_dom_player = {
+	flag:dom_player = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_sub_player = {
+	flag:sub_player = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_oral = {
+	flag:oral = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_vaginal = {
+	flag:vaginal = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_anal = {
+	flag:anal = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_handjob = {
+	flag:handjob = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_masturbation = {
+	flag:masturbation = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_orgy = {
+	flag:orgy = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_cum_inside = {
+	flag:cum_inside = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_cum_outside = {
+	flag:cum_outside = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_consensual = {
+	flag:consensual = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_noncon = {
+	flag:noncon = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_dubcon = {
+	flag:dubcon = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_painful = {
+	flag:painful = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_bdsm = {
+	flag:bdsm = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_bestiality = {
+	flag:bestiality = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_petplay = {
+	flag:petplay = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_bondage = {
+	flag:bondage = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_toy = {
+	flag:toy = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_watersports = {
+	flag:watersports = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_scat = {
+	flag:scat = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
+carn_sex_scene_exclude_gore = {
+	flag:gore = { add_to_list = carn_sex_scene_excluded_flags }
+}
+
 
 #
 # Use these to DEFINE a sex scene event in the immediate block, so that events triggering from carn_on_sex will know what flags the event has.
@@ -338,13 +464,17 @@ carn_sex_scene_is_gore = {
 }
 
 #
-# carn_clear_sex_scene_requested_flags_effect
+# carn_clear_sex_scene_flags_effect
 # used internally to clean up variables, don't worry about it
 #
 
-carn_clear_sex_scene_requested_flags_effect = {
+carn_clear_sex_scene_flags_effect = {
 	every_in_list = {
 		list = carn_sex_scene_requested_flags
 		remove_from_list = carn_sex_scene_requested_flags
+	}
+	every_in_list = {
+		list = carn_sex_scene_excluded_flags
+		remove_from_list = carn_sex_scene_excluded_flags
 	}
 }
