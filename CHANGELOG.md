@@ -247,6 +247,7 @@ New scripted effects:
 * The Make Love notification will now prioritize any spouse or concubine that you are attracted to.
 * If you turn a slave into a prostitute, they will now hate you unless they have a submission fetish.
 * Modding: Renamed the IDs of many game rules to be more internally consistent.
+* Modding: Sex Scene System now outputs a debug message if no appropriate sex scene could be found for requested flags.
 
 ## Bug Fixes
 
