@@ -1,5 +1,5 @@
 ﻿carn_work_as_prostitute_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_prostitution.dds"
+	picture = "gfx/interface/illustrations/decisions/decision_carn_prostitution.dds"
 
 	desc = carn_work_as_prostitute_decision_desc
 
@@ -100,7 +100,7 @@
 
 carn_stop_work_as_prostitute_decision = {
 	ai_check_interval = 0
-	picture = "gfx/interface/illustrations/decisions/decision_prostitution.dds"
+	picture = "gfx/interface/illustrations/decisions/decision_carn_prostitution.dds"
 
 	desc = carn_stop_work_as_prostitute_decision_desc
 

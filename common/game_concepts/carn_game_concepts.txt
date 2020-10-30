@@ -26,7 +26,7 @@ slave_market = {
 }
 
 slave_owner = {
-	texture = "gfx/interface/icons/slave_owner_icon.dds"
+	texture = "gfx/interface/icons/icon_carn_slave_owner.dds"
 	alias = { slave_owners slave_owner_possessive slave_owners_possessive }
 	parent = relation
 }
