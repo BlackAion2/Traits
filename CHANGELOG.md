@@ -2,6 +2,7 @@
 
 Compatible with saved games from version 1.3 and up.
 
-## Bug Fixes
+## Tweaks
 
-* Made fetishes GUI less hard-coded
+* Made fetishes GUI less hard-coded.
+* Gave all fetishes a corresponding game concept description.
