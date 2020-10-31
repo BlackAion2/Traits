@@ -1,4 +1,7 @@
-﻿carn_tits = {
+﻿# This file is named 00_carn_tits so that the vanilla game's clothing replacement for bust gene will be loaded after it.
+# DO NOT RENAME THIS FILE to anything after 01_clothes, or you will get boobs clipping with clothes.
+
+carn_tits = {
 	usage = game
 	selection_behavior = weighted_random
 	tits_average_bust_default = {
