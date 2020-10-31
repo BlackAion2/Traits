@@ -188,5 +188,8 @@ carn_fetish_tooltip_effect = {
 		flag:lactation = {
 			custom_tooltip = carn_fetish_gui_lactation
 		}
+		fallback = {
+			custom_tooltip = carn_fetish_gui_unknown
+		}
 	}
 }
