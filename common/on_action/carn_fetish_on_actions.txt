@@ -13,8 +13,8 @@ carn_on_new_random_fetish = {
 		45 = carn_fetish.1008 # Bondage
 		45 = carn_fetish.1009 # Domination
 		65 = carn_fetish.1010 # Submission
-		30 = carn_fetish.1011 # Raping
-		30 = carn_fetish.1012 # Being raped
+		15 = carn_fetish.1011 # Raping
+		15 = carn_fetish.1012 # Being raped
 		30 = carn_fetish.1013 # Lactation
 	}
 }
