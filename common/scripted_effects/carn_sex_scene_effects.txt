@@ -43,6 +43,8 @@
 # 	}
 # }
 #
+# You can also exclude certain flags with the syntax `carn_sex_scene_exclude_*` where `*` is the name of the flag.
+#
 
 carn_sex_scene_effect = {
 	$PLAYER$ = { save_scope_as = carn_sex_player }
