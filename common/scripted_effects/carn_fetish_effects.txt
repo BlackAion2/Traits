@@ -142,3 +142,51 @@ carn_remove_deviant_secret_or_trait_if_has_no_fetishes_effect = {
 		}
 	}
 }
+
+carn_fetish_tooltip_effect = {
+	switch = {
+		trigger = $FETISH$
+		flag:anal = {
+			custom_tooltip = carn_fetish_gui_anal
+		}
+		flag:sadism = {
+			custom_tooltip = carn_fetish_gui_sadism
+		}
+		flag:masochism = {
+			custom_tooltip = carn_fetish_gui_masochism
+		}
+		flag:bestiality = {
+			custom_tooltip = carn_fetish_gui_bestiality
+		}
+		flag:watersports = {
+			custom_tooltip = carn_fetish_gui_watersports
+		}
+		flag:scat = {
+			custom_tooltip = carn_fetish_gui_scat
+		}
+		flag:gore = {
+			custom_tooltip = carn_fetish_gui_gore
+		}
+		flag:foot_play = {
+			custom_tooltip = carn_fetish_gui_foot_play
+		}
+		flag:bondage = {
+			custom_tooltip = carn_fetish_gui_bondage
+		}
+		flag:domination = {
+			custom_tooltip = carn_fetish_gui_domination
+		}
+		flag:submission = {
+			custom_tooltip = carn_fetish_gui_submission
+		}
+		flag:raping = {
+			custom_tooltip = carn_fetish_gui_raping
+		}
+		flag:being_raped = {
+			custom_tooltip = carn_fetish_gui_being_raped
+		}
+		flag:lactation = {
+			custom_tooltip = carn_fetish_gui_lactation
+		}
+	}
+}
