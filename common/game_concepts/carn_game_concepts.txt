@@ -35,3 +35,63 @@ submissive = {
 	alias = { submissive_short submissives submissive_possessive submissives_possessive }
 	parent = relation
 }
+
+anal = {
+	parent = fetish
+}
+
+sadism = {
+	parent = fetish
+}
+
+masochism = {
+	parent = fetish
+}
+
+bestiality = {
+	parent = fetish
+}
+
+watersports = {
+	parent = fetish
+}
+
+scat = {
+	parent = fetish
+}
+
+gore = {
+	parent = fetish
+}
+
+foot_play = {
+	parent = fetish
+}
+
+bondage = {
+	parent = fetish
+}
+
+domination = {
+	parent = fetish
+}
+
+submission = {
+	parent = fetish
+}
+
+raping = {
+	parent = fetish
+}
+
+being_raped = {
+	parent = fetish
+}
+
+lactation_fetish = {
+	parent = fetish
+}
+
+unknown_fetish = {
+	parent = fetish
+}
