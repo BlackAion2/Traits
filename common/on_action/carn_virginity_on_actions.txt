@@ -1,24 +1,17 @@
-﻿# currently does nothing, meant for modders
-carn_on_lose_virginity = {
+﻿carn_on_lose_virginity = {
 	events = {
+		carn_virginity.0002 # Notification after losing virginity
 	}
 }
 
-# currently does nothing, meant for modders
 carn_on_regain_virginity = {
 	events = {
-	}
-}
-
-# Characters having sex lose virginity
-carn_on_sex = {
-	events = {
-		carn_virginity.0002
+		carn_virginity.0002 # Notification after regaining virginity
 	}
 }
 
 # Make sure all people involved in the pregnancy lose their status as a virgin
-# This is for random pregnancies
+# This is necessary for random pregnancies
 #
 # root/scope:mother is the pregnant mother
 # scope:father is the assumed father

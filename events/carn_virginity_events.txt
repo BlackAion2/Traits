@@ -15,29 +15,42 @@ carn_virginity.0001 = {
 	}
 }
 
-# Lose virginity status on pregnancy for everyone involved
+# Notify if virginity is lost
 carn_virginity.0002 = {
 	hidden = yes
 	type = character_event
 
 	trigger = {
-		carn_sex_scene_was_masturbation = no
-		OR = {
-			carn_is_virgin_trigger = yes
-			scope:carn_sex_partner = { carn_is_virgin_trigger = yes }
-		}
+		NOT = { has_character_flag = carn_block_virginity_notifications }
 	}
 
 	immediate = {
-		carn_lose_virginity_effect = yes
-		scope:carn_sex_partner = { carn_lose_virginity_effect = yes }
+		if = {
+			limit = { carn_is_virgin_trigger = yes }
+			send_interface_toast = {
+				title = carn_msg_virginity_regained
+				right_icon = this
+				custom_description_no_bullet = {
+					text = carn_regain_virginity_effect
+				}
+			}
+		}
+		else = {
+			send_interface_toast = {
+				title = carn_msg_virginity_lost
+				right_icon = this
+				custom_description_no_bullet = {
+					text = carn_lose_virginity_effect
+				}
+			}
+		}
 	}
 }
 
 # Effect for carn_virginity.0003 so no notifications are shown
 scripted_effect carn_virginity_0003_lose_virginity_effect = {
 	add_character_flag = {
-		flag = carn_block_virginity_notification
+		flag = carn_block_virginity_notifications
 		days = 2
 	}
 	carn_lose_virginity_effect = yes

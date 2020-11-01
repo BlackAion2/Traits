@@ -22,26 +22,15 @@
 carn_lose_virginity_effect = {
 	if = {
 		limit = { carn_is_virgin_trigger = yes }
-		if = {
-			limit = { has_character_flag = carn_block_virginity_notification }
-			custom_description = {
-				text = carn_lose_virginity_effect
-			}
-		}
-		else = {
-			send_interface_toast = {
-				title = carn_msg_virginity_regained
-				right_icon = this
-				custom_description_no_bullet = {
-					text = carn_lose_virginity_effect
-				}
-			}
+
+		custom_description = {
+			text = carn_lose_virginity_effect
 		}
 
 		remove_character_flag = carn_is_virgin
 
 		trigger_event = {
-			on_action = carn_on_regain_virginity
+			on_action = carn_on_lose_virginity
 		}
 	}
 }
@@ -49,20 +38,9 @@ carn_lose_virginity_effect = {
 carn_regain_virginity_effect = {
 	if = {
 		limit = { carn_is_virgin_trigger = no }
-		if = {
-			limit = { has_character_flag = carn_block_virginity_notification }
-			custom_description = {
-				text = carn_regain_virginity_effect
-			}
-		}
-		else = {
-			send_interface_toast = {
-				title = carn_msg_virginity_regained
-				right_icon = this
-				custom_description_no_bullet = {
-					text = carn_regain_virginity_effect
-				}
-			}
+
+		custom_description = {
+			text = carn_regain_virginity_effect
 		}
 
 		add_character_flag = carn_is_virgin

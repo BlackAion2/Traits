@@ -1,0 +1,8 @@
+﻿l_english:
+
+ carn_i_lie_with: "You lie with [TARGET_CHARACTER.GetShortUIName]"
+ carn_i_lay_with: "You lay with [TARGET_CHARACTER.GetShortUIName]"
+ carn_they_lie_with: "[CHARACTER.GetShortUIName] lies with [TARGET_CHARACTER.GetShortUIName]"
+ carn_they_lay_with: "[CHARACTER.GetShortUIName] lay with [TARGET_CHARACTER.GetShortUIName]"
+ carn_lies_with: "Lies with [TARGET_CHARACTER.GetShortUIName]"
+ carn_lay_with: "Lay with [TARGET_CHARACTER.GetShortUIName]"
