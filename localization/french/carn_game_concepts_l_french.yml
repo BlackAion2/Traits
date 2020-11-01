@@ -46,3 +46,48 @@ game_concept_lactating:1 "Allaiter"
 game_concept_milk:1 "Lait"
 game_concept_milk_production:1 "Production de lait"
 game_concept_lactation_desc:1 "Quand le système de lactation de Carnalitas est activé, les [characters|E] peuvent voir leur production de lait augmenter par la grossesse ou d'autres effets. Cela les fera allaiter pendant un certain temps. Les grossesses successives permettent à un personnage de produire plus de lait et d'allaiter sur une période plus longue.\n\nLa lactation est purement cosmétique par défaut, mais des mods peuvent ajouter des caractéristiques et du contenu pour les personnages qui allaitent."
+
+game_concept_anal:1 "Anal"
+game_concept_anal_desc:1 "L'acte sexuel impliquant la pénétration de l'anus."
+
+game_concept_sadism:1 "Sadisme"
+game_concept_sadism_desc:1 "Le fait de d'éprouver du plaisir en infligeant de la douleur aux autres."
+
+game_concept_masochism:1 "Masochisme"
+game_concept_masochism_desc:1 "le fait de prendre du plaisir à ressentir la douleur."
+
+game_concept_bestiality:1 "Bestialité"
+game_concept_bestiality_desc:1 "L'acte d'avoir des relations sexuelles avec des animaux."
+
+game_concept_watersports:1 "Ondinisme (Watersports)"
+game_concept_watersports_desc:1 "Le fait de d'éprouver du plaisir en urinant sur quelqu'un, ou en se faisant uriner dessus."
+
+game_concept_scat:1 "Scatophilie"
+game_concept_scat_desc:1 "Le fait de gagner du plaisir soit en chiant, soit en se faisant chier dessus par quelqu'un."
+
+game_concept_gore:1 "Gore"
+game_concept_gore_desc:1 "Le fait d'éprouver du plaisir à la vue du sang et des entrailles."
+
+game_concept_foot_play:1 "Fétichisme des pieds"
+game_concept_foot_play_desc:1 "Le fait d'éprouver du plaisir de tout acte (sexuel ou autre) impliquant les pieds."
+
+game_concept_bondage:1 "Bondage"
+game_concept_bondage_desc:1 "Le fait d'éprouver du plaisir soit en ligotant quelqu'un, soit en étant ligoté."
+
+game_concept_domination:1 "Domination"
+game_concept_domination_desc:1 "$game_concept_dominant_desc$"
+
+game_concept_submission:1 "Soumission"
+game_concept_submission_desc:1 "$game_concept_submissive_desc$"
+
+game_concept_raping:1 "Viol (Agresseur)"
+game_concept_raping_desc:1 "L'acte de faire l'amour avec quelqu'un contre sa volonté."
+
+game_concept_being_raped:1 "Viol (Victime)"
+game_concept_being_raped_desc:1 "L'acte d'avoir des relations sexuelles contre sa volonté."
+
+game_concept_lactation_fetish:1 "$game_concept_lactation$"
+game_concept_lactation_fetish_desc:1 "$game_concept_lactation_desc$"
+
+game_concept_unknown_fetish:1 "Fétiche inconnu"
+game_concept_unknown_fetish_desc:1 "Un fétiche inconnu. Quoi que ce soit, c'est probablement tordu."
