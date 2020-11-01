@@ -1,0 +1,8 @@
+﻿l_french:
+
+carn_i_lie_with:1 "Vous couchez avec [TARGET_CHARACTER.GetShortUIName]"
+carn_i_lay_with:1 "Vous avez couché avec [TARGET_CHARACTER.GetShortUIName]"
+carn_they_lie_with:1 "[CHARACTER.GetShortUIName] couche avec [TARGET_CHARACTER.GetShortUIName]"
+carn_they_lay_with:1 "[CHARACTER.GetShortUIName] a couché avec [TARGET_CHARACTER.GetShortUIName]"
+carn_lies_with:1 "Couche avec [TARGET_CHARACTER.GetShortUIName]"
+carn_lay_with:1 "A couché avec [TARGET_CHARACTER.GetShortUIName]"

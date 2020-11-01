@@ -68,8 +68,7 @@ carn_had_sex_with_effect = {
 				object = $CHARACTER_2$
 			}
 		}
-		else_if = {
-			limit = { this = $CHARACTER_2$ }
+		else = {
 			custom_description = {
 				text = carn_had_sex_with_effect
 				subject = $CHARACTER_2$
