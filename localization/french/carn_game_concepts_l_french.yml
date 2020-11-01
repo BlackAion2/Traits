@@ -36,3 +36,13 @@ game_concept_prostitution:1 "Prostitution"
 game_concept_prostitute_possessive:1 "de la prostituée"
 game_concept_prostitutes_possessive:1 "des prostituées"
 game_concept_prostitute_desc:1 "Une prostituée est un [character|El] offrant des services sexuels contre paiement. Tout personnage peut utiliser la [decision|El] '$carn_work_as_prostitute_decision$' pour devenir un ou une prostituée, à condition que sa [faith|El] le lui permette.\n\nLa performance d'une prostituée est basée sur sa [diplomacy|El], son [intrigue|El], son intelligence, ainsi que son attractivité. Une prostituée particulièrement douée peut devenir une [GetTrait('prostitute_2').GetName( GetNullCharacter )] voir une [GetTrait('prostitute_3').GetName( GetNullCharacter )].\n\nTravailler en tant que prostituée est légalement reconnu et n'est pas considéré comme [extramarital_sex|El]. Cependant, cela peut tout de même engendrer des [bastards|E] et autres conséquences si le personnage ne fait pas attention..."
+
+game_concept_fetish:1 "Fétiche"
+game_concept_fetishes:1 "Fétiches"
+game_concept_fetish_desc:1 "Quand un [character|El] obtient le [trait|El] ou le [secret|El] [GetTrait('deviant').GetName( GetNullCharacter )], il obtient aussi un fétiche aléatoire si le système de fétiches de Carnalitas est activé. Vous pouvez voir les fétiches connus d'un personnage en survolant l'icone adjacent à celui de leur orientation sexuelle.\n\nLes fétiches sont purement cosmétiques par défaut, mais des mods peuvent ajouter des fonctionnalités et du contenu pour les personnages ayant des fétiches spécifiques."
+
+game_concept_lactation:1 "Lactation"
+game_concept_lactating:1 "Allaiter"
+game_concept_milk:1 "Lait"
+game_concept_milk_production:1 "Production de lait"
+game_concept_lactation_desc:1 "Quand le système de lactation de Carnalitas est activé, les [characters|E] peuvent voir leur production de lait augmenter par la grossesse ou d'autres effets. Cela les fera allaiter pendant un certain temps. Les grossesses successives permettent à un personnage de produire plus de lait et d'allaiter sur une période plus longue.\n\nLa lactation est purement cosmétique par défaut, mais des mods peuvent ajouter des caractéristiques et du contenu pour les personnages qui allaitent."

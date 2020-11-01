@@ -1,0 +1,12 @@
+﻿l_french:
+
+carn_sex_scene.0003.t:1 "Viol"
+carn_sex_scene.0003.desc_opening:1 "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] me regarde avec crainte et effroi alors que je m'approche d[carn_sex_target.Custom('FR_EluiElle')].\n\nJe déchire s[carn_sex_target.Custom('GetClothingArticle')] et entreprend de [carn_sex_target.Custom('FR_LeLa')] monter. Poussé[carn_sex_player.Custom('FR_E')] par mes pulsions, je profite de m[carn_sex_target.Custom('FR_OnA')] prisoni[carn_sex_target.Custom('FR_ErEre')], sans me soucier d'autre chose que de mon propre plaisir.\n\n"
+carn_sex_scene.0003.desc_ending:1 "Après m'être fait plaisir avec son corps, je me retire, ne lui payant plus guère attention."
+carn_sex_scene.0003.a:1 "[carn_sex_target.GetShortUIName|U] connait maintenant sa place."
+
+carn_sex_scene.0004.t:1 "Violé[carn_sex_target.Custom('FR_E')]"
+carn_sex_scene.0004.desc_opening:1 "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] me regarde avec envie tout en s'approchant de moi, son intention ne laissant que peu de place au mystère.\n\n[carn_sex_target.Custom('FR_IlElle')|U] déchire m[carn_sex_player.Custom('GetClothingArticle')] et entreprend de me monter. Poussé[carn_sex_target.Custom('FR_E')] par ses pulsions, [carn_sex_target.Custom('FR_IlElle')] profite de moi, sans se soucier d'autre chose que de son propre plaisir.\n\n"
+carn_sex_scene.0004.desc_ending:1 "Après m'avoir souillé, [carn_sex_target.Custom('FR_IlElle')] se retire, ne me payant guère attention."
+carn_sex_scene.0004.a:1 "Je ne me sens pas bien..."
+carn_sex_scene.0004.a.being_raped_fetish:1 "C'était... bien..."
