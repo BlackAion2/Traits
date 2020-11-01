@@ -51,16 +51,29 @@ carn_had_sex_with_effect = {
 				value = no
 			}
 		}
+
 		if = {
-			limit = { this = $CHARACTER_1$ }
-			custom_tooltip = carn_had_sex_with_effect.first_person.tt
-		}
-		else_if = {
-			limit = { this = $CHARACTER_2$ }
-			custom_tooltip = carn_had_sex_with_effect.other_person.tt
+			limit = {
+				OR = {
+					this = $CHARACTER_1$
+					NOR = {
+						this = $CHARACTER_1$
+						this = $CHARACTER_2$
+					}
+				}
+			}
+			custom_description = {
+				text = carn_had_sex_with_effect
+				subject = $CHARACTER_1$
+				object = $CHARACTER_2$
+			}
 		}
 		else = {
-			custom_tooltip = carn_had_sex_with_effect.third_person.tt
+			custom_description = {
+				text = carn_had_sex_with_effect
+				subject = $CHARACTER_2$
+				object = $CHARACTER_1$
+			}
 		}
 
 		if = {
