@@ -5,14 +5,16 @@
 	}
 	is_shown = {
 		OR = {
-			root = scope:player # Show own fetishes even without deviant trait or secret
 			has_trait = deviant
 			AND = {
 				exists = scope:player
-				scope:player = {
-					any_known_secret = {
-						secret_type = secret_deviant
-						secret_owner = root
+				OR = {
+					root = scope:player # Show own fetishes even without deviant trait or secret
+					scope:player = {
+						any_known_secret = {
+							secret_type = secret_deviant
+							secret_owner = root
+						}
 					}
 				}
 			}
@@ -24,7 +26,7 @@
 carn_fetish_gui_list = {
 	scope = character
 	is_shown = {
-		always = yes
+		carn_has_any_fetish_trigger = yes
 	}
 	effect = {
 		every_in_list = {
