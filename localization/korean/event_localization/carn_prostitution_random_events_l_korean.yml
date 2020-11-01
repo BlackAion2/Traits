@@ -1,5 +1,6 @@
 ﻿l_korean:
-carn_can_no_longer_work_as_prostitute_tooltip:1 "당신은 더 이상 창녀로 일할 수 없다"
+#carn_can_no_longer_work_as_prostitute_tooltip:1 "당신은 더 이상 창녀로 일할 수 없다"
+carn_can_no_longer_work_as_prostitute_tooltip:2 "[carn_prostitute.GetShortUIName|U] can no longer work as a prostitute"
 carn_prostitution_random_events.0001.notification:1 "매춘: 스킬 증가"
 carn_prostitution_random_events.0002.notification:1 "매춘: 라이벌이 당신을 모략함"
 carn_prostitution_random_events.0003.notification:1 "매춘: [ROOT.Char.GetFaith.PriestNeuterPlural|U](이)가 당신을 책망함"

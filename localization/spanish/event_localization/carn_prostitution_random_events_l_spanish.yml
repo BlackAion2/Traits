@@ -1,5 +1,5 @@
 ﻿l_spanish:
-carn_can_no_longer_work_as_prostitute_tooltip:2 "[carn_prostitute.GetShortUIName|U] can no longer work as a prostitute"
+carn_can_no_longer_work_as_prostitute_tooltip:0 "[carn_prostitute.GetShortUIName|U] can no longer work as a prostitute"
 carn_prostitution_random_events.0001.notification:0 "Prostitution: Improved Skills"
 carn_prostitution_random_events.0002.notification:0 "Prostitution: Rivals Slander You"
 carn_prostitution_random_events.0003.notification:0 "Prostitution: [ROOT.Char.GetFaith.PriestNeuterPlural|U] Condemn You"
