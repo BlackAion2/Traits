@@ -1,0 +1,17 @@
+﻿carn_lose_virginity_effect = {
+	first = carn_i_lose_virginity
+	first_past = carn_i_lost_virginity
+	third = carn_they_lose_virginity
+	third_past = carn_they_lost_virginity
+	global = carn_loses_virginity
+	global_past = carn_lost_virginity
+}
+
+carn_regain_virginity_effect = {
+	first = carn_i_regain_virginity
+	first_past = carn_i_regained_virginity
+	third = carn_they_regain_virginity
+	third_past = carn_they_regained_virginity
+	global = carn_regains_virginity
+	global_past = carn_regained_virginity
+}

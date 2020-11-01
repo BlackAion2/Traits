@@ -1,0 +1,5 @@
+﻿carn_character_initialization_pulse = {
+	events = {
+		carn_virginity.0001 # Add virginity flag to appropriate characters
+	}
+}

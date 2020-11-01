@@ -59,3 +59,12 @@ carn_slavery_is_illegal = {
 	first_not = carn_slavery_is_illegal
 	third_not = carn_slavery_is_illegal
 }
+
+carn_is_virgin_trigger = {
+	first = carn_i_am_virgin
+	first_not = carn_not_i_am_virgin
+	third = carn_they_are_virgin
+	third_not = carn_not_they_are_virgin
+	global = carn_is_virgin
+	global_not = carn_not_is_virgin
+}

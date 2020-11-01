@@ -1,0 +1,18 @@
+﻿l_english:
+
+ carn_i_lose_virginity: "You lose your virginity"
+ carn_i_lost_virginity: "You lost your virginity"
+ carn_they_lose_virginity: "[CHARACTER.GetShortUIName|U] loses [CHARACTER.GetHerHis] virginity"
+ carn_they_lost_virginity: "[CHARACTER.GetShortUIName|U] lost [CHARACTER.GetHerHis] virginity"
+ carn_loses_virginity: "Loses [CHARACTER.GetHerHis] virginity"
+ carn_lost_virginity: "Lost [CHARACTER.GetHerHis] virginity"
+
+ carn_i_regain_virginity: "You regain your virginity"
+ carn_i_regained_virginity: "You regained your virginity"
+ carn_they_regain_virginity: "[CHARACTER.GetShortUIName|U] regains [CHARACTER.GetHerHis] virginity"
+ carn_they_regained_virginity: "[CHARACTER.GetShortUIName|U] regained [CHARACTER.GetHerHis] virginity"
+ carn_regains_virginity: "Regains [CHARACTER.GetHerHis] virginity"
+ carn_regained_virginity: "Regained [CHARACTER.GetHerHis] virginity"
+
+ carn_msg_virginity_lost: "Virginity Lost"
+ carn_msg_virginity_regained: "Virginity Regained"

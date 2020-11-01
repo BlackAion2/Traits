@@ -1,0 +1,3 @@
+﻿carn_is_virgin_trigger = {
+	has_character_flag = carn_is_virgin
+}

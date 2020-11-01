@@ -1,0 +1,74 @@
+﻿carn_virginity_seed_effect = {
+	add_character_flag = carn_virginity_seeded
+
+	if = {
+		limit = {
+			NOR = {
+				age > 30
+				any_child = {
+					even_if_dead = yes
+					count > 0
+				}
+				any_consort = {
+					even_if_dead = yes
+					count > 0
+				}
+			}
+		}
+		add_character_flag = carn_is_virgin
+	}
+}
+
+carn_lose_virginity_effect = {
+	if = {
+		limit = { carn_is_virgin_trigger = yes }
+		if = {
+			limit = { has_character_flag = carn_block_virginity_notification }
+			custom_description = {
+				text = carn_lose_virginity_effect
+			}
+		}
+		else = {
+			send_interface_toast = {
+				title = carn_msg_virginity_regained
+				right_icon = this
+				custom_description_no_bullet = {
+					text = carn_lose_virginity_effect
+				}
+			}
+		}
+
+		remove_character_flag = carn_is_virgin
+
+		trigger_event = {
+			on_action = carn_on_regain_virginity
+		}
+	}
+}
+
+carn_regain_virginity_effect = {
+	if = {
+		limit = { carn_is_virgin_trigger = no }
+		if = {
+			limit = { has_character_flag = carn_block_virginity_notification }
+			custom_description = {
+				text = carn_regain_virginity_effect
+			}
+		}
+		else = {
+			send_interface_toast = {
+				title = carn_msg_virginity_regained
+				right_icon = this
+				custom_description_no_bullet = {
+					text = carn_regain_virginity_effect
+				}
+			}
+		}
+
+		add_character_flag = carn_is_virgin
+
+		trigger_event = {
+			on_action = carn_on_regain_virginity
+		}
+	}
+}
