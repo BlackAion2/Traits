@@ -1,4 +1,0 @@
-﻿l_french:
-carn_had_sex_with_effect.first_person.tt:1 "Vous couchez avec [carn_sex_char_2.GetShortUIName]"
-carn_had_sex_with_effect.third_person.tt:1 "[carn_sex_char_1.GetShortUIName|U] couche avec [carn_sex_char_2.GetShortUIName]"
-carn_had_sex_with_effect.other_person.tt:1 "Couche avec [carn_sex_char_1.GetShortUIName]"
