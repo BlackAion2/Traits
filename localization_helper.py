@@ -37,6 +37,7 @@ Yaml = Tuple[str, str, TranslationStatus, bool];
 
 BASE_LANGUAGE = 'english';
 ENCODING = 'utf-8-sig';
+BACKUP_SUFFIX = '_backup';
 
 localization_dir = os.path.abspath('localization');
 base_dir = os.path.join(localization_dir, BASE_LANGUAGE);
@@ -225,6 +226,35 @@ def copy_base_translations(input_dir: str, output_dir: str, input_lang: str, out
             path = os.path.join(output_dir, file_name);
             update_translation_file(item, path, output_lang);
 
+def rename_deleted_or_moved_files(input_dir: str, output_dir: str, input_lang: str, output_lang: str):
+    """
+    Rename files in the translation that are not present in the english localization anymore
+    """
+
+    input_lang_file_name = get_lang_name(input_lang)+'.yml';
+    output_lang_file_name = get_lang_name(output_lang)+'.yml';
+
+
+    # We get a list of all files in the english localization
+    input_file_list = list()
+    for subdir, dirs, files in os.walk(input_dir):
+        for file in files:
+            cur_input_file = os.path.join(subdir, file).split(input_lang_file_name);
+            cur_input_file = cur_input_file[0].split(input_dir);
+            input_file_list += cur_input_file;
+
+    # We compare the translation files with the english ones, and rename those that don't exist in the english loc anymore
+    # With the exception of the language specific custom localizations in "custom_localization_[output_lang]"
+    for subdir, dirs, files in os.walk(output_dir):
+        for file in files:
+            cur_output_file = os.path.join(subdir, file).split(output_lang_file_name);
+            cur_output_file = cur_output_file[0].split(output_lang);
+            if not cur_output_file[1] in input_file_list and not os.path.isdir(cur_output_file[1]) and not file.endswith(BACKUP_SUFFIX) and not subdir.endswith("custom_localization_" + output_lang):
+                print("========================================");
+                print("=> '" + input_lang + cur_output_file[1] + input_lang_file_name + "' doesn't exist anymore");
+                print(" ==> renaming the " + output_lang + " version for backup");
+                os.rename(os.path.join(subdir, file), os.path.join(subdir, file) + BACKUP_SUFFIX)
+
 def updating(output_language: str):
     """Updates all Translations"""
 
@@ -235,6 +265,7 @@ def updating(output_language: str):
 
     print('=> Using '+BASE_LANGUAGE+' Translations from '+base_dir+' in '+output_dir);
     copy_base_translations(base_dir, output_dir, BASE_LANGUAGE, output_language);
+    rename_deleted_or_moved_files(base_dir, output_dir, BASE_LANGUAGE, output_language);
 
 def get_translation_stats_file(base: str, path: str, cur_lang: str, detail: bool) -> Tuple[str, int, int, int]:
     """Gets the number of translated and not translated string of a file"""
