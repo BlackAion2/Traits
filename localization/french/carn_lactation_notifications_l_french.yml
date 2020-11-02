@@ -1,0 +1,15 @@
+﻿l_french:
+
+carn_msg_started_lactating:1 "Début de la lactation"
+carn_msg_stopped_lactating:1 "Fin de la lactation"
+carn_msg_milk_production_increased:1 "Production de lait augmentée"
+carn_msg_milk_production_decreased:1 "Production de lait diminuée"
+
+carn_milk_production_notification_desc:1 "Vous produisez maintenant [SCOPE.Custom('CarnMilkProductionDescription')] de [milk|El]"
+
+carn_stopped_lactating_notification_desc:1 "Vous ne produisez plus de [milk|El]."
+
+carn_starts_lactating_tooltip:1 "Commence à [lactating|El]"
+carn_stops_lactating_tooltip:1 "Arrête d'[lactating|El]"
+carn_milk_production_increases_tooltip:1 "La [milk_production|El] augmente"
+carn_milk_production_decreases_tooltip:1 "La [milk_production|El] diminue"
