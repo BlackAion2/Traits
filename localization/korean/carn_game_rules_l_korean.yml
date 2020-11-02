@@ -36,6 +36,16 @@ setting_carn_birth_control_female_only_desc:1 "오직 여성과 후타나리만�
 setting_carn_birth_control_male_only:1 "#high 남성 한정#!"
 setting_carn_birth_control_male_only_desc:1 "오직 남성과 후타나리만이 수입을 줄임으로서 생식력을 감소시키는 임신 조절 결단을 사용가능합니다."
 
+rule_carn_lactation:0 "#X Carnalitas:#! Lactation System"
+setting_carn_lactation_disabled:0 "Disabled"
+setting_carn_lactation_disabled_desc:0 "Carnalitas's lactation system will be inactive."
+setting_carn_lactation_female_only:0 "#high Female Only#!"
+setting_carn_lactation_female_only_desc:0 "Pregnancy or mods can cause female and futanari characters to lactate."
+setting_carn_lactation_male_only:0 "#high Male Only#!"
+setting_carn_lactation_male_only_desc:0 "Mods can cause male characters to lactate."
+setting_carn_lactation_any_gender:0 "#high Any Gender#!"
+setting_carn_lactation_any_gender_desc:0 "Pregnancy or mods can cause characters of any gender to lactate."
+
 rule_carn_dt:1 "#X Carnalitas:#! 신체 부위 트레잇"
 setting_carn_dt_disabled:1 "불가"
 setting_carn_dt_disabled_desc:1 "캐릭터는 타고난 가슴이나 음경의 사이즈를 트레잇으로 보유하지 않습니다."
