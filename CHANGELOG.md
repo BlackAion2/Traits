@@ -24,6 +24,12 @@ New on_action:
 
 * `carn_on_birth_notification_suppressed`
 
+### Miscellaneous
+
+New scripted triggers:
+
+* `carn_should_have_no_pregnancy_complications_trigger`
+
 ## Tweaks
 
 * Fetish GUI is no longer hardcoded from the character window. Instead it is now reliant on a list in scripted_gui which should be easier to maintain.
