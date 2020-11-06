@@ -11,6 +11,33 @@ carn_arousal_stress = {
 	carn_arousal_stress_enabled = {}
 }
 
+carn_manage_arousal = {
+	default = carn_manage_arousal_disabled
+	carn_manage_arousal_disabled = {}
+	carn_manage_arousal_enabled = {}
+}
+
+carn_arousal_difficulty = {
+	default = carn_arousal_difficulty_default
+	carn_arousal_difficulty_very_easy = {}
+	carn_arousal_difficulty_easy = {}
+	carn_arousal_difficulty_default = {}
+	carn_arousal_difficulty_hard = {}
+	carn_arousal_difficulty_very_hard = {}
+}
+
+carn_arousal_passive_gain = {
+	default = carn_arousal_passive_gain_disabled
+	carn_arousal_passive_gain_disabled = {}
+	carn_arousal_passive_gain_enabled = {}
+}
+
+carn_std = {
+	default = carn_std_enabled
+	carn_std_enabled = {}
+	carn_std_disabled = {}
+}
+
 carn_slavery_content = {
 	default = carn_slavery_content_disabled
 	carn_slavery_content_disabled = {}

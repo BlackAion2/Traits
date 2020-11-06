@@ -34,3 +34,33 @@ carn_arousal.0001 = {
 		}
 	}
 }
+
+
+#
+# 0002. Increase arousal periodically
+#
+
+carn_arousal.0002 = {
+	hidden = yes
+
+	trigger = {
+		is_ai = no
+	}
+
+	# Player character changed without dying
+	on_trigger_fail = {
+		# Flag needs to be removed in case we lose control of a character (thus dropping out of this event loop), but get to play this character again later
+		remove_character_flag = carn_track_arousal_periodically
+	}
+
+	immediate = {
+		carn_add_arousal_effect = { 
+			VALUE = 1
+		}
+
+		trigger_event = {
+			id = carn_arousal.0002
+			days = 3
+		}
+	}
+}

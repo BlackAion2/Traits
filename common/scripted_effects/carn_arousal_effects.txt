@@ -1,0 +1,39 @@
+﻿# carn_add_arousal_effect
+
+
+carn_add_arousal_effect = {
+	if = {
+		limit = {
+			NOT = { has_variable = arousal }
+		}
+		set_variable = {
+			name = arousal
+			value = 100
+		}
+	}
+
+	if = {
+		limit = {
+			$VALUE$ > 0
+		}
+		change_variable = {
+			name = arousal
+			add = {
+				add = $VALUE$
+				multiply = carn_arousal_gain_difficulty_multiplier
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			$VALUE$ < 0
+		}
+		change_variable = {
+			name = arousal
+			add = {
+				add = $VALUE$
+				multiply = carn_arousal_loss_difficulty_multiplier
+			}
+		}
+	}
+}

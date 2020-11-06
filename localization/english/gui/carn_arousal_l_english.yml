@@ -1,0 +1,2 @@
+﻿l_english:
+ PLAYER_AROUSAL_TOOLTIP: "#T Arousal: [GetPlayer.MakeScope.Var('arousal').GetValue]/300#!"
