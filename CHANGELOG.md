@@ -37,4 +37,5 @@ New scripted triggers:
 ## Bug Fixes
 
 * Fixed pregnancy events having multiple sets of options. This fix overrides `pregnancy_events.txt`
+* Fixed the Free Slave interaction having bad AI weighting, causing error.log to overflow with error messages after a while.
 * Randomly generated peasant/populist rebellion leaders which are made into slaves no longer disappear if captured in battle.
