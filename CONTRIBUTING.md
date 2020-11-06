@@ -30,6 +30,8 @@ Once your feature is done, or at least stable and functioning (doesn't cause cra
 
 ## Adding new translations
 
+**Note: Only do this just before a final release**
+
 Translations go into the `localization` folder where each language gets its own sub directory. You can use the localization helper to quickly setup a new language (requires [Python](https://www.python.org/)):
 
 In a terminal (shell, cmd, powershell...), execute the following command

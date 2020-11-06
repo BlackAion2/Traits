@@ -1,0 +1,312 @@
+﻿###################################################################
+# LACTATION EFFECTS
+# by Cheri
+#
+# These effects are meant for modders to manipulate a character's milk production.
+#
+# First, use `carn_create_milk_production_change_effect = yes`
+# This will initialize necessary variables
+#
+# Then use any of the following scripted effects:
+# `carn_set_milk_production_effect` (requires VALUE)
+# `carn_change_milk_production_effect` (requires VALUE)
+# `carn_set_milk_production_minimum_effect` (requires MINIMUM)
+# `carn_set_milk_production_maximum_effect` (requires MAXIMUM)
+#
+# Finally, use `carn_resolve_milk_production_change_effect` to commit the effect and show an appropriate tooltip, trigger on_actions, etc.
+# Takes argument `SEND_NOTIFICATION` which can be yes or no
+#
+# refer to script_values/carn_lactation_values.txt for what different lactation values roughly correspond to
+#
+# Here is an example that increases the character's milk production by 10
+#
+# effect = {
+#	carn_create_milk_production_change_effect = yes
+#	carn_change_milk_production_effect = {
+#		VALUE = 10
+#	}
+#	carn_resolve_milk_production_change_effect = {
+#		SEND_NOTIFICATION = yes
+#	}
+# }
+#
+###################################################################
+
+# carn_create_milk_production_change_effect
+# carn_resolve_milk_production_change_effect
+
+# carn_set_milk_production_effect
+# carn_stop_milk_production_effect
+# carn_change_milk_production_effect
+# carn_set_milk_production_minimum_effect
+# carn_set_milk_production_maximum_effect
+
+# carn_send_milk_production_change_notification_effect
+
+# carn_create_milk_production_change_effect
+carn_create_milk_production_change_effect = {
+
+	# initialize variables if they don't exist yet
+	if = {
+		limit = {
+			NOT = { exists = var:carn_milk_production }
+		}
+		set_variable = {
+			name = carn_milk_production
+			value = 0
+		}
+	}
+	set_variable = {
+		name = carn_old_milk_production
+		value = var:carn_milk_production
+	}
+	set_variable = {
+		name = carn_new_milk_production
+		value = var:carn_milk_production
+	}
+}
+
+# carn_resolve_milk_production_change_effect
+# requires SEND_NOTIFICATION = yes or no
+carn_resolve_milk_production_change_effect = {
+	if = {
+		limit = {
+			carn_can_lactate_trigger = yes
+		}
+
+		### ACTUALLY CHANGING THE VARIABLE
+
+		set_variable = {
+			name = carn_milk_production
+			value = var:carn_new_milk_production
+		}
+
+		### NOTIFICATIONS AND ON_ACTIONS ###
+
+		if = {
+			limit = {
+				NOT = {
+					var:carn_old_milk_production = var:carn_new_milk_production
+				}
+			}
+			trigger_event = {
+				on_action = carn_on_milk_production_change
+			}
+		}
+
+		if = {
+			limit = {
+				var:carn_old_milk_production <= 0
+				var:carn_new_milk_production > 0
+			}
+			trigger_event = {
+				on_action = carn_on_start_lactating
+			}
+			custom_tooltip = carn_starts_lactating_tooltip
+		}
+		else_if = {
+			limit = {
+				var:carn_old_milk_production > 0
+				var:carn_new_milk_production <= 0
+			}
+			trigger_event = {
+				on_action = carn_on_stop_lactating
+			}
+			custom_tooltip = carn_stops_lactating_tooltip
+		}
+		else_if = {
+			# milk production increased
+			limit = {
+				var:carn_old_milk_production = {
+					compare_value < prev.var:carn_new_milk_production
+				}
+			}
+			custom_tooltip = carn_milk_production_increases_tooltip
+		}
+		else_if = {
+			# milk production decreased
+			limit = {
+				var:carn_old_milk_production = {
+					compare_value > prev.var:carn_new_milk_production
+				}
+			}
+			custom_tooltip = carn_milk_production_decreases_tooltip
+		}
+
+		hidden_effect = {
+			if = {
+				limit = { $SEND_NOTIFICATION$ = yes }
+				carn_send_milk_production_change_notification_effect = yes
+			}
+		}
+
+		# free up memory
+		remove_variable = carn_old_milk_production
+		remove_variable = carn_new_milk_production
+	}
+}
+
+# carn_set_milk_production_effect
+# requires VALUE (integer)
+carn_set_milk_production_effect = {
+	set_variable = {
+		name = carn_new_milk_production
+		value = $VALUE$
+	}
+	carn_set_milk_production_minimum_effect = {
+		MINIMUM = 0
+	}
+}
+
+# carn_stop_milk_production_effect
+carn_stop_milk_production_effect = {
+	set_variable = {
+		name = carn_new_milk_production
+		value = 0
+	}
+}
+
+# carn_change_milk_production_effect
+# requires VALUE (integer)
+carn_change_milk_production_effect = {
+	change_variable = {
+		name = carn_new_milk_production
+		add = $VALUE$
+	}
+	carn_set_milk_production_minimum_effect = {
+		MINIMUM = 0
+	}
+}
+
+# carn_set_milk_production_minimum_effect
+# requires MINIMUM (integer)
+carn_set_milk_production_minimum_effect = {
+	if = {
+		limit = {
+			var:carn_new_milk_production < $MINIMUM$
+		}
+		set_variable = {
+			name = carn_new_milk_production
+			value = $MINIMUM$
+		}
+	}
+}
+
+# carn_set_milk_production_maximum_effect
+# requires MAXIMUM (integer)
+carn_set_milk_production_maximum_effect = {
+	if = {
+		limit = {
+			var:carn_new_milk_production > $MAXIMUM$
+		}
+		set_variable = {
+			name = carn_new_milk_production
+			value = $MAXIMUM$
+		}
+	}
+}
+
+# carn_send_milk_production_change_notification_effect
+# used internally
+carn_send_milk_production_change_notification_effect = {
+	if = {
+		# started lactating
+		limit = {
+			var:carn_old_milk_production <= 0
+			var:carn_new_milk_production > 0
+		}
+		send_interface_message = {
+			type = event_generic_neutral
+			title = carn_msg_started_lactating
+			right_icon = this
+			custom_tooltip = carn_milk_production_notification_desc
+		}
+	}
+	else_if = {
+		# stopped lactating
+		limit = {
+			var:carn_old_milk_production > 0
+			var:carn_new_milk_production <= 0
+		}
+		send_interface_message = {
+			type = event_generic_neutral
+			title = carn_msg_stopped_lactating
+			right_icon = this
+			custom_tooltip = carn_stopped_lactating_notification_desc
+		}
+	}
+	else_if = {
+		# milk production increased one or more tiers
+		limit = {
+			OR = {
+				AND = {
+					var:carn_old_milk_production < carn_very_low_milk_production_amount
+					var:carn_new_milk_production >= carn_very_low_milk_production_amount
+				}
+				AND = {
+					var:carn_old_milk_production < carn_low_milk_production_amount
+					var:carn_new_milk_production >= carn_low_milk_production_amount
+				}
+				AND = {
+					var:carn_old_milk_production < carn_average_milk_production_amount
+					var:carn_new_milk_production >= carn_average_milk_production_amount
+				}
+				AND = {
+					var:carn_old_milk_production < carn_high_milk_production_amount
+					var:carn_new_milk_production >= carn_high_milk_production_amount
+				}
+				AND = {
+					var:carn_old_milk_production < carn_very_high_milk_production_amount
+					var:carn_new_milk_production >= carn_very_high_milk_production_amount
+				}
+				AND = {
+					var:carn_old_milk_production < carn_extreme_milk_production_amount
+					var:carn_new_milk_production >= carn_extreme_milk_production_amount
+				}
+			}
+		}
+		send_interface_message = {
+			type = event_generic_neutral
+			title = carn_msg_milk_production_increased
+			right_icon = this
+			custom_tooltip = carn_milk_production_notification_desc
+		}
+	}
+	else_if = {
+		# milk production decreased one or more tiers
+		limit = {
+			OR = {
+				AND = {
+					var:carn_old_milk_production >= carn_very_low_milk_production_amount
+					var:carn_new_milk_production < carn_very_low_milk_production_amount
+				}
+				AND = {
+					var:carn_old_milk_production >= carn_low_milk_production_amount
+					var:carn_new_milk_production < carn_low_milk_production_amount
+				}
+				AND = {
+					var:carn_old_milk_production >= carn_average_milk_production_amount
+					var:carn_new_milk_production < carn_average_milk_production_amount
+				}
+				AND = {
+					var:carn_old_milk_production >= carn_high_milk_production_amount
+					var:carn_new_milk_production < carn_high_milk_production_amount
+				}
+				AND = {
+					var:carn_old_milk_production >= carn_very_high_milk_production_amount
+					var:carn_new_milk_production < carn_very_high_milk_production_amount
+				}
+				AND = {
+					var:carn_old_milk_production >= carn_extreme_milk_production_amount
+					var:carn_new_milk_production < carn_extreme_milk_production_amount
+				}
+			}
+		}
+		send_interface_message = {
+			type = event_generic_neutral
+			title = carn_msg_milk_production_decreased
+			right_icon = this
+			custom_tooltip = carn_milk_production_notification_desc
+		}
+	}
+}

@@ -1,0 +1,102 @@
+﻿# carn_start_custom_pregnancy_effect (requires `PREGNANCY_TYPE`, `DAYS_UNTIL_NEXT_STAGE`, `CAN_BE_ABORTED`)
+# carn_setup_delayed_custom_pregnancy_stage_change (requires `DAYS`)
+# carn_end_custom_pregnancy_effect
+
+# carn_start_custom_pregnancy_effect
+# requires:
+# PREGNANCY_TYPE (arbitary string),
+# DAYS_UNTIL_NEXT_STAGE (integer),
+# CAN_BE_ABORTED (yes/no)
+carn_start_custom_pregnancy_effect = {
+	save_scope_value_as = {
+		name = new_pregnancy_type
+		value = flag:$PREGNANCY_TYPE$
+	}
+	if = {
+		limit = {
+			carn_has_any_custom_pregnancy_trigger = yes
+			carn_custom_pregnancy_can_be_aborted_trigger = no
+		}
+		trigger_event = {
+			on_action = carn_on_custom_pregnancy_failed_to_replace_custom_pregnancy
+		}
+	}
+	else_if = {
+		limit = {
+			carn_normal_pregnancy_can_be_aborted_trigger = no
+		}
+		trigger_event = {
+			on_action = carn_on_custom_pregnancy_failed_to_replace_normal_pregnancy
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				carn_has_any_custom_pregnancy_trigger = yes
+			}
+			trigger_event = {
+				on_action = carn_on_custom_pregnancy_replace_custom_pregnancy
+			}
+			carn_end_custom_pregnancy_effect = yes
+		}
+		set_variable = {
+			name = carn_custom_pregnancy
+			value = flag:$PREGNANCY_TYPE$
+		}
+		set_variable = {
+			name = carn_custom_pregnancy_stage
+			value = 0
+		}
+		if = {
+			limit = {
+				$CAN_BE_ABORTED$ = no
+			}
+			add_character_flag = carn_block_aborting_next_custom_pregnancy
+		}
+		if = {
+			limit = {
+				is_pregnant = yes
+			}
+			if = {
+				limit = {
+					carn_has_absolute_birth_control_trigger = yes
+				}
+				trigger_event = {
+					id = carn_absolute_birth_control.0001
+				}
+			}
+			else = {
+				trigger_event = {
+					on_action = carn_on_custom_pregnancy_replace_normal_pregnancy
+				}
+				end_pregnancy = yes
+			}
+		}
+		trigger_event = {
+			on_action = carn_on_start_custom_pregnancy
+		}
+		trigger_event = {
+			id = carn_custom_pregnancy.0001
+			days = $DAYS_UNTIL_NEXT_STAGE$
+		}
+	}
+}
+
+# carn_setup_delayed_custom_pregnancy_stage_change
+# requires DAYS (integer)
+carn_setup_delayed_custom_pregnancy_stage_change = {
+	trigger_event = {
+		id = carn_custom_pregnancy.0001
+		days = $DAYS$
+	}
+}
+
+# carn_end_custom_pregnancy_effect
+carn_end_custom_pregnancy_effect = {
+	trigger_event = {
+		on_action = carn_on_end_custom_pregnancy
+	}
+	remove_variable = carn_custom_pregnancy
+	remove_variable = carn_custom_pregnancy_stage
+	remove_character_flag = carn_block_aborting_next_custom_pregnancy
+}

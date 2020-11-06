@@ -17,17 +17,17 @@
 	}
 
 	modifier = {
-		factor = 0.2
+		factor = 1.2
 		has_trait = seducer
 	}
 
 	modifier = {
-		factor = 0.1
+		factor = 1.1
 		has_trait = prostitute_2
 	}
 
 	modifier = {
-		factor = 0.2
+		factor = 1.2
 		has_trait = prostitute_3
 	}
 }

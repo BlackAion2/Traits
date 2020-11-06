@@ -1,0 +1,23 @@
+﻿carn_should_suppress_on_pregnancy_maintenance_trigger = {
+	OR = {
+		has_character_flag = carn_suppress_all_on_pregnancy_maintenance
+		has_character_flag = carn_suppress_next_on_pregnancy_maintenance
+		has_trait_with_flag = carn_suppress_all_on_pregnancy_maintenance
+	}
+}
+
+carn_should_suppress_on_pregnancy_notification_trigger = {
+	OR = {
+		has_character_flag = carn_suppress_all_on_pregnancy_notification
+		has_character_flag = carn_suppress_next_on_pregnancy_notification
+		has_trait_with_flag = carn_suppress_all_on_pregnancy_notification
+	}
+}
+
+carn_should_suppress_on_birth_notification_trigger = {
+	OR = {
+		has_character_flag = carn_suppress_all_on_birth_notification
+		has_character_flag = carn_suppress_next_on_birth_notification
+		has_trait_with_flag = carn_suppress_all_on_birth_notification
+	}
+}

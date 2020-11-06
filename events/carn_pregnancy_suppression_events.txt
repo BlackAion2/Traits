@@ -1,0 +1,44 @@
+﻿namespace = carn_pregnancy_suppression
+
+# 0001. When pregnancy maintenance event is suppressed
+# 0002. When notification event is suppressed
+# 0003. Clear next_on_pregnancy_* flags when pregnancy is aborted
+
+carn_pregnancy_suppression.0001 = {
+	hidden = yes
+
+	trigger = {
+		carn_should_suppress_on_pregnancy_maintenance_trigger = yes
+	}
+	
+	immediate = {
+		remove_character_flag = carn_suppress_next_on_pregnancy_maintenance
+		trigger_event = {
+			on_action = carn_on_pregnancy_maintenance_suppressed
+		}
+	}
+}
+
+carn_pregnancy_suppression.0002 = {
+	hidden = yes
+
+	trigger = {
+		carn_should_suppress_on_pregnancy_notification_trigger = yes
+	}
+	
+	immediate = {
+		remove_character_flag = carn_suppress_next_on_pregnancy_notification
+		trigger_event = {
+			on_action = carn_on_pregnancy_notification_suppressed
+		}
+	}
+}
+
+carn_pregnancy_suppression.0003 = {
+	hidden = yes
+	
+	immediate = {
+		remove_character_flag = carn_suppress_next_on_pregnancy_maintenance
+		remove_character_flag = carn_suppress_next_on_pregnancy_notification
+	}
+}

@@ -1,5 +1,5 @@
 ﻿carn_work_as_prostitute_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_prostitution.dds"
+	picture = "gfx/interface/illustrations/decisions/decision_carn_prostitution.dds"
 
 	desc = carn_work_as_prostitute_decision_desc
 
@@ -32,7 +32,8 @@
 
 	is_valid = {
 		custom_description = {
-			text = "carn_effective_age_under_prostitution_age_cutoff"
+			text = "carn_effective_age_under_value"
+			value = carn_prostitution_age_cutoff
 			effective_age < carn_prostitution_age_cutoff
 		}
 	}
@@ -99,7 +100,7 @@
 
 carn_stop_work_as_prostitute_decision = {
 	ai_check_interval = 0
-	picture = "gfx/interface/illustrations/decisions/decision_prostitution.dds"
+	picture = "gfx/interface/illustrations/decisions/decision_carn_prostitution.dds"
 
 	desc = carn_stop_work_as_prostitute_decision_desc
 

@@ -36,3 +36,58 @@
  game_concept_prostitute_possessive: "Prostitute's"
  game_concept_prostitutes_possessive: "Prostitutes'"
  game_concept_prostitute_desc: "A prostitute is a [character|E] who solicits payment for sex. Any character can use the $carn_work_as_prostitute_decision$ [decision|E] to become a prostitute, as long as their [faith|E] allows them to do so.\n\nThe performance of a prostitute is based on their [diplomacy|E], [intrigue|E], intelligence, and attractiveness. An especially skilled prostitute may become an [GetTrait('prostitute_2').GetName( GetNullCharacter )] or even a [GetTrait('prostitute_3').GetName( GetNullCharacter )].\n\nWorking as a prostitute is legally sanctioned and not considered [extramarital_sex|E]. However, it may still result in [bastard|E] children or other consequences if the character is not careful..."
+
+ game_concept_fetish: "Fetish"
+ game_concept_fetishes: "Fetishes"
+ game_concept_fetish_desc: "When a [character|E] gains the [GetTrait('deviant').GetName( GetNullCharacter )] [trait|E] or [secret|E], they will also get a random fetish if Carnalitas's Fetish System is enabled. You can see a character's publicly known fetishes by mousing over the icon next to their sexual orientation.\n\nFetishes are purely cosmetic by default, but mods may add features and content for characters with specific fetishes."
+
+ game_concept_lactation: "Lactation"
+ game_concept_lactating: "Lactating"
+ game_concept_milk: "Milk"
+ game_concept_milk_production: "Milk Production"
+ game_concept_lactation_desc: "When Carnalitas's Lactation System is enabled, [characters|E] may have their milk production increased by pregnancy or other effects. This will cause them to start lactating for a period of time. Successive pregnancies allow a character to produce more milk and lactate for a longer period of time.\n\nLactation is purely cosmetic by default, but mods may add features and content for lactating characters."
+
+ game_concept_anal: "Anal"
+ game_concept_anal_desc: "The act of having sex involving the penetration of the anus."
+
+ game_concept_sadism: "Sadism"
+ game_concept_sadism_desc: "Gaining pleasure from inflicting pain on others."
+
+ game_concept_masochism: "Masochism"
+ game_concept_masochism_desc: "Gaining pleasure from experiencing pain."
+
+ game_concept_bestiality: "Bestiality"
+ game_concept_bestiality_desc: "The act of having sex with animals."
+
+ game_concept_watersports: "Watersports"
+ game_concept_watersports_desc: "Gaining pleasure from either pissing on, or being pissed on by someone."
+
+ game_concept_scat: "Scat"
+ game_concept_scat_desc: "Gaining pleasure from either shitting on, or being shat on by someone."
+
+ game_concept_gore: "Gore"
+ game_concept_gore_desc: "Gaining pleasure from the sight of blood, guts and gore."
+
+ game_concept_foot_play: "Foot Play"
+ game_concept_foot_play_desc: "Gaining pleasure from any acts (sexual or otherwise) involving feet."
+
+ game_concept_bondage: "Bondage"
+ game_concept_bondage_desc: "Gaining pleasure from either tying someone up, or being tied up."
+
+ game_concept_domination: "Domination"
+ game_concept_domination_desc: "$game_concept_dominant_desc$"
+
+ game_concept_submission: "Submission"
+ game_concept_submission_desc: "$game_concept_submissive_desc$"
+
+ game_concept_raping: "Raping"
+ game_concept_raping_desc: "The act of having sex with someone who is unwilling."
+
+ game_concept_being_raped: "Being Raped"
+ game_concept_being_raped_desc: "The act of having sex against your will."
+
+ game_concept_lactation_fetish: "$game_concept_lactation$"
+ game_concept_lactation_fetish_desc: "$game_concept_lactation_desc$"
+
+ game_concept_unknown_fetish: "Unknown Fetish"
+ game_concept_unknown_fetish_desc: "An unknown fetish. Whatever it is, it's probably fucked-up."

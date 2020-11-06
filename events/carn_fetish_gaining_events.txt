@@ -1,0 +1,473 @@
+﻿namespace = carn_fetish
+
+# 1000. Anal
+# 1001. Sadism
+# 1002. Masochism
+# 1003. Bestiality
+# 1004. Watersports
+# 1005. Scat
+# 1006. Gore
+# 1007. Foot play
+# 1008. Bondage
+# 1009. Domination
+# 1010. Submission
+# 1011. Raping
+# 1012. Being raped
+# 1013. Lactation
+
+# 1000. Anal
+
+carn_fetish.1000 = {
+	hidden = yes
+
+	trigger = {
+		has_game_rule = carn_fetishes_enabled
+		has_game_rule = carn_content_anal_enabled
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = anal
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { # Male & Futa
+			factor = 2
+			carn_gender_can_impregnate_trigger = yes
+		}
+		modifier = { # Male Gay
+			factor = 2
+			is_male = yes
+			is_attracted_to_men = yes
+		}
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = anal
+		}
+	}
+}
+
+# 1001. Sadism
+
+carn_fetish.1001 = {
+	hidden = yes
+
+	trigger = {
+		has_game_rule = carn_content_painful_enabled
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = sadism
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { # Male & Futa
+			factor = 2
+			carn_gender_can_impregnate_trigger = yes
+		}
+		modifier = { # Callous
+			factor = 2
+			has_trait = callous
+		}
+		modifier = { # Sadistic
+			factor = 10
+			has_trait = sadistic
+		}
+		modifier = { # Compassionate
+			factor = 0.5
+			has_trait = compassionate
+		}
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = sadism
+		}
+	}
+}
+
+# 1002. Masochism
+
+carn_fetish.1002 = {
+	hidden = yes
+
+	trigger = {
+		has_game_rule = carn_content_painful_enabled
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = masochism
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { # Male
+			factor = 0.5
+			is_male = yes
+		}
+		modifier = { # Paranoid
+			factor = 0.5
+			has_trait = paranoid
+		}
+		modifier = { # Trusting
+			factor = 1.5
+			has_trait = trusting
+		}
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = masochism
+		}
+	}
+}
+
+# 1003. Bestiality
+
+carn_fetish.1003 = {
+	hidden = yes
+
+	trigger = {
+		has_game_rule = carn_content_bestiality_enabled
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = bestiality
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = bestiality
+		}
+	}
+}
+
+# 1004. Watersports
+
+carn_fetish.1004 = {
+	hidden = yes
+
+	trigger = {
+		has_game_rule = carn_content_watersports_enabled
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = watersports
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { # Male
+			factor = 2
+			is_male = yes
+		}
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = watersports
+		}
+	}
+}
+
+# 1005. Scat
+
+carn_fetish.1005 = {
+	hidden = yes
+
+	trigger = {
+		has_game_rule = carn_content_scat_enabled
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = scat
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { # Male
+			factor = 2
+			is_male = yes
+		}
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = scat
+		}
+	}
+}
+
+# 1006. Gore
+
+carn_fetish.1006 = {
+	hidden = yes
+
+	trigger = {
+		has_game_rule = carn_content_gore_enabled
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = gore
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { # Male
+			factor = 2.5
+			is_male = yes
+		}
+		modifier = { # Compassionate
+			factor = 0
+			has_trait = compassionate
+		}
+		modifier = { # Callous
+			factor = 2
+			has_trait = callous
+		}
+		modifier = { # Sadistic
+			factor = 2
+			has_trait = sadistic
+		}
+		modifier = { # Wrathful
+			factor = 2
+			has_trait = wrathful
+		}
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = gore
+		}
+	}
+}
+
+# 1007. Foot play
+
+carn_fetish.1007 = {
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = foot_play
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { # Male
+			factor = 10
+			is_male = yes
+		}
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = foot_play
+		}
+	}
+}
+
+# 1008. Bondage
+
+carn_fetish.1008 = {
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = bondage
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = bondage
+		}
+	}
+}
+
+# 1009. Domination
+
+carn_fetish.1009 = {
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = domination
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { # Male & Futa
+			factor = 1.3
+			carn_gender_can_impregnate_trigger = yes
+		}
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = domination
+		}
+	}
+}
+
+# 1010. Submission
+
+carn_fetish.1010 = {
+	hidden = yes
+
+	trigger = {
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = submission
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { # Male & Futa
+			factor = 0.7
+			is_male = yes
+		}
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = submission
+		}
+	}
+}
+
+# 1011. Raping
+
+carn_fetish.1011 = {
+	hidden = yes
+
+	trigger = {
+		has_game_rule = carn_content_consent_noncon
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = raping
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { # Compassionate
+			factor = 0
+			has_trait = compassionate
+		}
+		modifier = { # Callous
+			factor = 2
+			has_trait = callous
+		}
+		modifier = { # Sadistic
+			factor = 4
+			has_trait = sadistic
+		}
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = raping
+		}
+	}
+}
+
+# 1012. Being raped
+
+carn_fetish.1012 = {
+	hidden = yes
+
+	trigger = {
+		has_game_rule = carn_content_consent_noncon
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = being_raped
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = { # Female
+			factor = 2
+			is_female = yes
+		}
+		modifier = { # Craven
+			factor = 0.5
+			has_trait = craven
+		}
+		modifier = { # Paranoid
+			factor = 0.5
+			has_trait = paranoid
+		}
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = being_raped
+		}
+	}
+}
+
+# 1013. Lactation
+
+carn_fetish.1013 = {
+	hidden = yes
+
+	trigger = {
+		has_game_rule = carn_fetishes_enabled
+		NOT = { has_game_rule = carn_lactation_disabled }
+		NOT = {
+			carn_has_fetish_trigger = {
+				FETISH = lactation
+			}
+		}
+	}
+
+	weight_multiplier = {
+		base = 1
+		modifier = {
+			factor = 1.25
+			has_trait = greedy
+		}
+		modifier = {
+			factor = 0.75
+			has_trait = temperate
+		}
+	}
+
+	immediate = {
+		carn_add_fetish_effect = {
+			FETISH = lactation
+		}
+	}
+}

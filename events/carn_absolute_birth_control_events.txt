@@ -1,0 +1,17 @@
+﻿namespace = carn_absolute_birth_control
+
+carn_absolute_birth_control.0001 = {
+	hidden = yes
+
+	trigger = {
+		carn_has_absolute_birth_control_trigger = yes
+		is_pregnant = yes
+	}
+	
+	immediate = {
+		end_pregnancy = yes
+		trigger_event = {
+			on_action = carn_on_absolute_birth_control_end_pregnancy
+		}
+	}
+}

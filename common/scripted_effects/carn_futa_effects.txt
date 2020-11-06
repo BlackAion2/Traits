@@ -53,7 +53,7 @@ carn_seed_futa_trait_effect = {
 				}
 				if = {
 					limit = {
-						has_game_rule = carn_futa_trait_inheritance_off
+						has_game_rule = carn_futa_trait_inheritance_disabled
 					}
 					if = {
 						limit = { is_female = yes }
@@ -81,7 +81,7 @@ carn_add_futa_effect = {
 			carn_is_futa_trigger = no
 		}
 		if = {
-			limit = { has_game_rule = carn_futa_trait_inheritance_on }
+			limit = { has_game_rule = carn_futa_trait_inheritance_enabled }
 			add_trait = futa_genetic
 		}
 		else = {

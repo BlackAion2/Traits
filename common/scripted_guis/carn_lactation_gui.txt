@@ -1,0 +1,6 @@
+﻿carn_lactation_gui = {
+	scope = character
+	is_shown = {
+		carn_is_lactating_trigger = yes
+	}
+}

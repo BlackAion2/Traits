@@ -61,6 +61,20 @@
 				title = msg_carn_started_working_as_prostitute
 				right_icon = scope:recipient
 				scope:recipient = {
+					if = {
+						limit = {
+							carn_is_prostitute_trigger = no
+							NOT = {
+								carn_has_fetish_trigger = {
+									FETISH = submission
+								}
+							}
+						}
+						add_opinion = {
+							target = scope:actor
+							modifier = carn_forced_me_into_prostitution_opinion
+						}
+					}
 					carn_start_working_as_prostitute_effect = yes
 				}
 			}

@@ -1,0 +1,39 @@
+﻿carn_fetish_gui = {
+	scope = character
+	saved_scopes = {
+		player
+	}
+	is_shown = {
+		OR = {
+			has_trait = deviant
+			AND = {
+				exists = scope:player
+				OR = {
+					root = scope:player # Show own fetishes even without deviant trait or secret
+					scope:player = {
+						any_known_secret = {
+							secret_type = secret_deviant
+							secret_owner = root
+						}
+					}
+				}
+			}
+		}
+		carn_has_any_fetish_trigger = yes
+	}
+}
+
+carn_fetish_gui_list = {
+	scope = character
+	is_shown = {
+		carn_has_any_fetish_trigger = yes
+	}
+	effect = {
+		every_in_list = {
+			variable = carn_active_fetishes
+			carn_fetish_tooltip_effect = {
+				FETISH = this
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+﻿# carn_is_pregnant_trigger
+# carn_is_visibly_pregnant_trigger
+# carn_has_any_custom_pregnancy_trigger
+# carn_has_custom_pregnancy_type_trigger (requires `PREGNANCY_TYPE`)
+# carn_custom_pregnancy_stage_equals_trigger (requires `STAGE`)
+# carn_custom_pregnancy_can_be_aborted_trigger
+
+# this checks whether a character is pregnant at all, even if it doesn't show
+carn_is_pregnant_trigger = {
+	OR = {
+		carn_has_normal_pregnancy_no_absolute_birth_control_trigger = yes
+		carn_has_any_custom_pregnancy_trigger = yes
+	}
+}
+
+# this checks whether a character has a trait that shows they are clearly pregnant
+carn_is_visibly_pregnant_trigger = {
+	OR = {
+		has_trait = pregnant
+		has_trait_with_flag = carn_custom_pregnancy
+	}
+}
+
+carn_has_any_custom_pregnancy_trigger = {
+	exists = var:carn_custom_pregnancy
+}
+
+carn_has_custom_pregnancy_type_trigger = { # requires `PREGNANCY_TYPE`
+	exists = var:carn_custom_pregnancy
+	var:carn_custom_pregnancy = flag:$PREGNANCY_TYPE$
+}
+
+carn_custom_pregnancy_stage_equals_trigger = { # requires `STAGE`
+	exists = var:carn_custom_pregnancy_stage
+	var:carn_custom_pregnancy_stage = $STAGE$
+}
+
+# if this is true, the pregnancy can't be overwritten by other pregnancies
+# other mods can also check this as a condition for whether a custom pregnancy should be abortable by decision, etc.
+carn_custom_pregnancy_can_be_aborted_trigger = {
+	NOR = {
+		has_character_flag = carn_block_aborting_any_pregnancy
+		has_trait_with_flag = carn_block_aborting_any_pregnancy
+		has_character_flag = carn_block_aborting_any_custom_pregnancy
+		has_trait_with_flag = carn_block_aborting_any_custom_pregnancy
+		has_character_flag = carn_block_aborting_next_custom_pregnancy
+	}
+}

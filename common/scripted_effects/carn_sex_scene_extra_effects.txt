@@ -1,22 +1,44 @@
-﻿# This effect is meant for streamlining sex events
+﻿# These effects are meant for streamlining sex events
+carn_undress_character_effect = {
+	if = {
+		limit = {
+			NOT = { has_character_flag = is_naked }
+		}
+		add_character_flag = {
+			flag = is_naked
+			days = 180 # So character won't stay naked forever when something goes wrong
+		}
+	}
+	else = {
+		# A local variable will be automatically removed after the event chain has been completed.
+		set_local_variable = {
+			name = character_was_already_naked
+			value = yes
+		}
+	}
+}
+
+carn_dress_character_effect = {
+	if = {
+		limit = {
+			NOT = { exists = local_var:character_was_already_naked }
+		}
+		remove_character_flag = is_naked
+	}
+}
+
 carn_make_root_and_sex_partner_naked_for_this_event_effect = {
 	if = {
 		limit = { is_ai = no }
-		add_character_flag = {
-			flag = is_naked
-			days = 1
-		}
+		carn_undress_character_effect = yes
 		scope:carn_sex_partner = {
-			add_character_flag = {
-				flag = is_naked
-				days = 1
-			}
+			carn_undress_character_effect = yes
 		}
 	}
 }
 carn_make_root_and_sex_partner_no_longer_naked_effect = {
-	remove_character_flag = is_naked
+	carn_dress_character_effect = yes
 	scope:carn_sex_partner = {
-		remove_character_flag = is_naked
+		carn_dress_character_effect = yes
 	}
 }

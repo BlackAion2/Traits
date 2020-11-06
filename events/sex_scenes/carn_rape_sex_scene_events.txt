@@ -1,0 +1,145 @@
+﻿namespace = carn_sex_scene
+
+# 0003. Generic noncon scene (dom)
+# 0004. Generic noncon scene (sub)
+
+##########################################################################
+# Example noncon scene (dom)
+##########################################################################
+carn_sex_scene.0003 = {
+	type = character_event
+	title = carn_sex_scene.0003.t
+	desc = {
+		desc = carn_sex_scene.0003.desc_opening
+		desc = carn_sex_scene.0003.desc_ending
+	}
+	
+	theme = prison
+	left_portrait = {
+		character = scope:carn_sex_player
+		animation = schadenfreude
+	}
+	right_portrait = {
+		character = scope:carn_sex_target
+		animation = shock
+	}
+
+	trigger = {
+		carn_sex_scene_is_noncon = yes
+		carn_sex_scene_is_dom_player = yes
+		carn_sex_scene_is_giving_player = yes
+		carn_sex_scene_matches_requested_flags_trigger = yes
+	}
+
+	immediate = {
+		carn_sex_scene_is_noncon = yes
+		carn_sex_scene_is_dom_player = yes
+
+		carn_had_sex_with_effect = {
+			CHARACTER_1 = scope:carn_sex_player
+			CHARACTER_2 = scope:carn_sex_target
+			C1_PREGNANCY_CHANCE = pregnancy_chance
+			C2_PREGNANCY_CHANCE = pregnancy_chance
+			STRESS_EFFECTS = scope:carn_sex_stress_effects
+			DRAMA = scope:carn_sex_drama
+		}
+
+		scope:carn_sex_target = {
+			carn_undress_character_effect = yes
+		}
+	}
+
+	option = {
+		name = carn_sex_scene.0003.a
+	}
+
+	after = {
+		scope:carn_sex_target = {
+			carn_dress_character_effect = yes
+		}
+	}
+}
+
+##########################################################################
+# Example noncon scene (sub)
+##########################################################################
+carn_sex_scene.0004 = {
+	type = character_event
+	title = carn_sex_scene.0004.t
+	desc = {
+		desc = carn_sex_scene.0004.desc_opening
+		desc = carn_sex_scene.0004.desc_ending
+	}
+	
+	theme = prison
+	left_portrait = {
+		character = scope:carn_sex_player
+		animation = shock
+	}
+	right_portrait = {
+		character = scope:carn_sex_target
+		animation = schadenfreude
+	}
+
+	trigger = {
+		carn_sex_scene_is_noncon = yes
+		carn_sex_scene_is_sub_player = yes
+		carn_sex_scene_is_receiving_player = yes
+		carn_sex_scene_matches_requested_flags_trigger = yes
+	}
+
+	immediate = {
+		carn_sex_scene_is_noncon = yes
+		carn_sex_scene_is_sub_player = yes
+
+		carn_had_sex_with_effect = {
+			CHARACTER_1 = scope:carn_sex_player
+			CHARACTER_2 = scope:carn_sex_target
+			C1_PREGNANCY_CHANCE = pregnancy_chance
+			C2_PREGNANCY_CHANCE = pregnancy_chance
+			STRESS_EFFECTS = scope:carn_sex_stress_effects
+			DRAMA = scope:carn_sex_drama
+		}
+
+		if = {
+			limit = {
+				exists = scope:carn_rape_victim
+			}
+			show_as_tooltip = {
+				carn_rape_victim_stress_effect = yes
+			}
+		}
+
+		scope:carn_sex_player = {
+			carn_undress_character_effect = yes
+		}
+	}
+
+	option = {
+		name = {
+			trigger = {
+				NOT = {
+					carn_has_fetish_trigger = {
+						FETISH = being_raped
+					}
+				}
+			}
+			text = carn_sex_scene.0004.a
+		}
+
+		name = {
+			trigger = {
+				carn_has_fetish_trigger = {
+					FETISH = being_raped
+				}
+			}
+			text = carn_sex_scene.0004.a.being_raped_fetish
+		}
+	}
+
+	after = {
+		scope:carn_sex_player = {
+			carn_dress_character_effect = yes
+		}
+	}
+}

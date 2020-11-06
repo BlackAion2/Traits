@@ -1,0 +1,11 @@
+﻿carn_has_absolute_birth_control_trigger = {
+	OR = {
+		has_character_flag = carn_absolute_birth_control
+		has_trait_with_flag = carn_absolute_birth_control
+	}
+}
+
+carn_has_normal_pregnancy_no_absolute_birth_control_trigger = {
+	is_pregnant = yes
+	carn_has_absolute_birth_control_trigger = no
+}

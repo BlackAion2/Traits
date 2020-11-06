@@ -751,6 +751,18 @@ window = {
 								}
 							}
 
+							# Carnalitas: lactation UI
+							hbox = {
+
+								icon = {
+									datacontext = "[GetScriptedGui( 'carn_lactation_gui' )]"
+									visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
+									size = { 23 23 }
+									texture = "gfx/interface/icons/icon_carn_lactation_gui.dds"
+									tooltip = "carn_lactation_gui_tooltip"
+								}
+							}
+
 							expand = {}
 						}
 
@@ -4221,6 +4233,51 @@ types CharacterWindow
 			frame = "[Character.GetSexualityFrame]"
 			texture = "gfx/interface/icons/character_status/sexuality_icons_female.dds"
 			tooltip = "SEXUALITY_TT"
+		}
+
+		# Carnalitas fetishes
+		# I would have preferred to do this with a gridbox, but I can't figure out how to pass a list of arguments to the GUI
+		icon = {
+			datacontext = "[GetScriptedGui( 'carn_fetish_gui' )]"
+			visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).AddScope( 'player', GetPlayer.MakeScope ).End )]"
+			size = { 20 20 }
+			texture = "gfx/interface/icons/icon_carn_fetish_gui.dds"
+			tooltipwidget = {
+				container = {
+					using = GeneralTooltipSetup
+					alwaystransparent = no
+					widget = {
+						name = "background"
+						using = DefaultTooltipBackground
+						size = { 100% 100% }
+						alwaystransparent = no
+					}
+					vbox = {
+						margin = { 20 20 }
+						margin_top = 10
+						layoutpolicy_horizontal = expanding
+						alwaystransparent = no
+
+						text_single = {
+							layoutpolicy_horizontal = growing
+							fonttintcolor = "[TooltipInfo.GetTintColor]"
+							using = DefaultTooltipText
+							alwaystransparent = no
+							text = "carn_fetish_gui_title"
+						}
+
+						text_single = {
+							layoutpolicy_horizontal = growing
+							fonttintcolor = "[TooltipInfo.GetTintColor]"
+							using = DefaultTooltipText
+							alwaystransparent = no
+							datacontext = "[GetScriptedGui( 'carn_fetish_gui_list' )]"
+							visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( Character.MakeScope ).End )]"
+							text = "[ScriptedGui.BuildTooltip( GuiScope.SetRoot( GetPlayer.MakeScope ).End ) ]"
+						}
+					}
+				}
+			}
 		}
 
 		expand = {}

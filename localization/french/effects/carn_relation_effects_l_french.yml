@@ -1,0 +1,49 @@
+﻿l_french:
+
+carn_i_gain_slave:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] devient votre [slave|El]"
+carn_they_gain_slave:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] devient [CHARACTER.LocalPlayerString( 'votre ', 'l’' )][slave|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_got_slave:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] est devenu[TARGET_CHARACTER.Custom('FR_E')] votre [slave|El]"
+carn_they_got_slave:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] est devenu[TARGET_CHARACTER.Custom('FR_E')] [CHARACTER.LocalPlayerString( 'votre ', 'l’' )][slave|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_gain_slave_owner:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] devient votre [slave_owner|El]"
+carn_they_gain_slave_owner:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] devient [CHARACTER.LocalPlayerString( 'votre', 'le' )] [slave_owner|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_got_slave_owner:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] est devenu[TARGET_CHARACTER.Custom('FR_E')] votre [slave_owner|El]"
+carn_they_got_slave_owner:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] devient [CHARACTER.LocalPlayerString( 'votre', 'le' )] [slave_owner|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_lose_slave:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus votre [slave|El]"
+carn_they_lose_slave:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus [CHARACTER.LocalPlayerString( 'votre ', 'l’' )][slave|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_lost_slave:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus votre [slave|El]"
+carn_they_lost_slave:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus [CHARACTER.LocalPlayerString( 'votre ', 'l’' )][slave|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_lose_slave_owner:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus votre [slave_owner|El]"
+carn_they_lose_slave_owner:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus [CHARACTER.LocalPlayerString( 'votre', 'le' )] [slave_owner|El] [CHARACTER.Custom('FR_only_du_GetShortUIName')][CHARACTER.GetShortUIName] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_lost_slave_owner:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus votre [slave_owner|El]"
+carn_they_lost_slave_owner:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus [CHARACTER.LocalPlayerString( 'votre', 'le' )] [slave_owner|El] [CHARACTER.Custom('FR_only_du_GetShortUIName')][CHARACTER.GetShortUIName] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_gain_dominant:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] devient votre [dominant|El]"
+carn_they_gain_dominant:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] devient [CHARACTER.LocalPlayerString( 'votre', 'le' )] [dominant|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_got_dominant:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] est devenu[TARGET_CHARACTER.Custom('FR_E')] votre [dominant|El]"
+carn_they_got_dominant:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] devient [CHARACTER.LocalPlayerString( 'votre', 'le' )] [dominant|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_lose_dominant:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus votre [dominant|El]"
+carn_they_lose_dominant:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus [CHARACTER.LocalPlayerString( 'votre ', 'le' )][dominant|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_lost_dominant:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus votre [dominant|El]"
+carn_they_lost_dominant:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus [CHARACTER.LocalPlayerString( 'votre', 'le' )] [dominant|El] [CHARACTER.Custom('FR_only_du_GetShortUIName')][CHARACTER.GetShortUIName] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_gain_submissive:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] devient votre [submissive|El]"
+carn_they_gain_submissive:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] devient [CHARACTER.LocalPlayerString( 'votre', 'le' )] [submissive|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_got_submissive:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] est devenu[TARGET_CHARACTER.Custom('FR_E')] votre [submissive|El]"
+carn_they_got_submissive:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] est devenu[TARGET_CHARACTER.Custom('FR_E')] [CHARACTER.LocalPlayerString( 'votre ', 'le' )][submissive|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_lose_submissive:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus votre [submissive|El]"
+carn_they_lose_submissive:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus [CHARACTER.LocalPlayerString( 'votre ', 'le' )][submissive|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"
+
+carn_i_lost_submissive:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus votre [submissive|El]"
+carn_they_lost_submissive:1 "[TARGET_CHARACTER.Custom('FR_only_le_GetShortUIName')|U][TARGET_CHARACTER.GetShortUIName] n'est plus [CHARACTER.LocalPlayerString( 'votre ', 'le' )][submissive|El] [CHARACTER.LocalPlayerString( '', 'Loc_FR_du_GetShortUIName' )]"

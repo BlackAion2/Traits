@@ -1,571 +1,90 @@
-﻿# Adds a random fetish to a character based on several factors
-# Will never add the same one twice
+﻿# carn_add_random_fetish_effect
+# carn_add_fetish_effect (requires `FETISH`, a fetish flag)
+# carn_remove_all_fetishes_effect
+# carn_remove_fetish_effect (requires `FETISH`, a fetish flag)
+# carn_give_deviant_secret_or_trait_if_has_any_fetish_effect
+# carn_remove_deviant_secret_or_trait_if_has_no_fetishes_effect
+
 carn_add_random_fetish_effect = {
 	if = {
-		limit = { has_game_rule = carn_fetishes_enabled_true }
+		limit = { has_game_rule = carn_fetishes_enabled }
 
 		custom_description = {
 			text = carn_add_random_fetish_effect
-		}
-
-		add_character_flag = carn_fetishes_seeded
-
-		random_list = {
-			# fetishes with game rule toggle
-			30 = { # Anal
-				trigger = { # Female
-					has_game_rule = carn_content_anal_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_anal
-						}
-					}
-				}
-				modifier = { # Male & Futa
-					factor = 2
-					carn_gender_can_impregnate_trigger = yes
-				}
-				modifier = { # Male Gay
-					factor = 2
-					is_male = yes
-					is_attracted_to_men = yes
-				}
-				carn_add_fetish_anal_effect = yes
+			trigger_event = {
+				on_action = carn_on_new_random_fetish
 			}
-			20 = { # Sadism
-				trigger = { # Female
-					has_game_rule = carn_content_painful_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_sadism
-						}
-					}
-				}
-				modifier = { # Male & Futa
-					factor = 2
-					carn_gender_can_impregnate_trigger = yes
-				}
-				modifier = { # Callous
-					factor = 2
-					has_trait = callous
-				}
-				modifier = { # Sadistic
-					factor = 10
-					has_trait = sadistic
-				}
-				modifier = { # Compassionate
-					factor = 0.5
-					has_trait = compassionate
-				}
-				carn_add_fetish_sadism_effect = yes
-			}
-			40 = { # Masochism
-				trigger = { # Female & Futa
-					has_game_rule = carn_content_painful_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_masochism
-						}
-					}
-				}
-				modifier = { # Male
-					factor = 0.5
-					is_male = yes
-				}
-				modifier = { # Paranoid
-					factor = 0.5
-					has_trait = paranoid
-				}
-				modifier = { # Trusting
-					factor = 1.5
-					has_trait = trusting
-				}
-				carn_add_fetish_masochism_effect = yes
-			}
-			5 = { # Bestiality
-				trigger = { # Any Gender
-					has_game_rule = carn_content_bestiality_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_bestiality
-						}
-					}
-				}
-				carn_add_fetish_bestiality_effect = yes
-			}
-			5 = { # Watersports
-				trigger = { # Female & Futa
-					has_game_rule = carn_content_watersports_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_watersports
-						}
-					}
-				}
-				modifier = { # Male
-					factor = 2
-					is_male = yes
-				}
-				carn_add_fetish_watersports_effect = yes
-			}
-			5 = { # Scat
-				trigger = { # Female & Futa
-					has_game_rule = carn_content_scat_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_scat
-						}
-					}
-				}
-				modifier = { # Male
-					factor = 2
-					is_male = yes
-				}
-				carn_add_fetish_scat_effect = yes
-			}
-			2 = { # Gore
-				trigger = { # Female & Futa
-					has_game_rule = carn_content_gore_on
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_gore
-						}
-					}
-				}
-				modifier = { # Male
-					factor = 2.5
-					is_male = yes
-				}
-				modifier = { # Compassionate
-					factor = 0
-					has_trait = compassionate
-				}
-				modifier = { # Callous
-					factor = 2
-					has_trait = callous
-				}
-				modifier = { # Sadistic
-					factor = 2
-					has_trait = sadistic
-				}
-				modifier = { # Wrathful
-					factor = 2
-					has_trait = wrathful
-				}
-				carn_add_fetish_gore_effect = yes
-			}
-
-			# fetishes without game rule toggle
-			1 = { # Foot play
-				trigger = { # Female & Futa
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_foot_play
-						}
-					}
-				}
-				modifier = { # Male
-					factor = 10
-					is_male = yes
-				}
-				carn_add_fetish_foot_play_effect = yes
-			}
-			45 = { # Bondage
-				trigger = { # Any Gender
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_bondage
-						}
-					}
-				}
-				modifier = { # Trusting
-					factor = 1.5
-					has_trait = trusting
-				}
-				modifier = { # Craven
-					factor = 0.5
-					has_trait = craven
-				}
-				modifier = { # Paranoid
-					factor = 0.5
-					has_trait = paranoid
-				}
-				carn_add_fetish_bondage_effect = yes
-			}
-			45 = { # Dom
-				trigger = { # Female
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_domination
-						}
-					}
-				}
-				modifier = { # Male & Futa
-					add = 15
-					carn_gender_can_impregnate_trigger = yes
-				}
-				carn_add_fetish_domination_effect = yes
-			}
-			65 = { # Sub
-				trigger = { # Female & Futa
-					NOT = {
-						is_target_in_variable_list = {
-							name = carn_active_fetishes
-							target = flag:carn_fetish_submission
-						}
-					}
-				}
-				modifier = { # Male
-					add = -15
-					is_male = yes
-				}
-				modifier = { # Craven
-					factor = 0.5
-					has_trait = craven
-				}
-				modifier = { # Paranoid
-					factor = 0.5
-					has_trait = paranoid
-				}
-				modifier = { # Trusting
-					factor = 1.5
-					has_trait = trusting
-				}
-				carn_add_fetish_submission_effect = yes
-			}
+			add_character_flag = carn_fetishes_seeded
 		}
 	}
 }
 
-carn_add_given_fetish_effect = {
+carn_add_fetish_effect = {
 	save_scope_value_as = {
 		name = carn_new_fetish
 		value = flag:$FETISH$
 	}
-
 	if = {
 		limit = {
-			has_game_rule = carn_fetishes_enabled_true
-			NOT = {
-				is_target_in_variable_list = {
+			# fetishes must be enabled in game rules
+			has_game_rule = carn_fetishes_enabled
+			NOR = {
+				# doesn't already have the fetish
+				carn_has_fetish_trigger = {
+					FETISH = $FETISH$
+				}
+				# fetish isn't blocked by game rules
+				AND = {
+					scope:carn_new_fetish = flag:anal
+					NOT = { has_game_rule = carn_content_anal_enabled }
+				}
+				AND = {
+					OR = {
+						scope:carn_new_fetish = flag:sadism
+						scope:carn_new_fetish = flag:masochism
+					}
+					NOT = { has_game_rule = carn_content_painful_enabled }
+				}
+				AND = {
+					scope:carn_new_fetish = flag:bestiality
+					NOT = { has_game_rule = carn_content_bestiality_enabled }
+				}
+				AND = {
+					scope:carn_new_fetish = flag:watersports
+					NOT = { has_game_rule = carn_content_watersports_enabled }
+				}
+				AND = {
+					scope:carn_new_fetish = flag:scat
+					NOT = { has_game_rule = carn_content_scat_enabled }
+				}
+				AND = {
+					scope:carn_new_fetish = flag:gore
+					NOT = { has_game_rule = carn_content_gore_enabled }
+				}
+				AND = {
+					OR = {
+						scope:carn_new_fetish = flag:raping
+						scope:carn_new_fetish = flag:being_raped
+					}
+					NOT = { has_game_rule = carn_content_consent_noncon }
+				}
+			}
+		}
+		send_interface_message = {
+			type = event_generic_neutral
+			title = carn_msg_fetish_gained
+			right_icon = this
+			custom_description = {
+				text = carn_add_fetish_$FETISH$_effect
+				add_to_variable_list = {
 					name = carn_active_fetishes
 					target = scope:carn_new_fetish
 				}
-			}
-		}
-
-		add_character_flag = carn_fetishes_seeded
-
-		if = {
-			limit = { scope:carn_new_fetish = flag:carn_fetish_anal }
-			if = { # If within an if because otherwise it triggers the bottom else
-				limit = { has_game_rule = carn_content_anal_on }
-				carn_add_fetish_anal_effect = yes
-			}
-		}
-		else_if = {
-			limit = { scope:carn_new_fetish = flag:carn_fetish_sadism }
-			if = {
-				limit = { has_game_rule = carn_content_painful_on }
-				carn_add_fetish_sadism_effect = yes
-			}
-		}
-		else_if = {
-			limit = { scope:carn_new_fetish = flag:carn_fetish_masochism }
-			if = {
-				limit = { has_game_rule = carn_content_painful_on }
-				carn_add_fetish_masochism_effect = yes
-			}
-		}
-		else_if = {
-			limit = { scope:carn_new_fetish = flag:carn_fetish_bestiality }
-			if = {
-				limit = { has_game_rule = carn_content_bestiality_on }
-				carn_add_fetish_bestiality_effect = yes
-			}
-		}
-		else_if = {
-			limit = { scope:carn_new_fetish = flag:carn_fetish_watersports }
-			if = {
-				limit = { has_game_rule = carn_content_watersports_on }
-				carn_add_fetish_watersports_effect = yes
-			}
-		}
-		else_if = {
-			limit = { scope:carn_new_fetish = flag:carn_fetish_scat }
-			if = {
-				limit = { has_game_rule = carn_content_scat_on }
-				carn_add_fetish_scat_effect = yes
-			}
-		}
-		else_if = {
-			limit = { scope:carn_new_fetish = flag:carn_fetish_gore }
-			if = {
-				limit = { has_game_rule = carn_content_gore_on }
-				carn_add_fetish_gore_effect = yes
-			}
-		}
-		else_if = {
-			limit = { scope:carn_new_fetish = flag:carn_fetish_foot_play }
-			carn_add_fetish_foot_play_effect = yes
-		}
-		else_if = {
-			limit = { scope:carn_new_fetish = flag:carn_fetish_bondage }
-			carn_add_fetish_bondage_effect = yes
-		}
-		else_if = {
-			limit = { scope:carn_new_fetish = flag:carn_fetish_domination }
-			carn_add_fetish_domination_effect = yes
-		}
-		else_if = {
-			limit = { scope:carn_new_fetish = flag:carn_fetish_submission }
-			carn_add_fetish_submission_effect = yes
-		}
-		else = { # Support for custom fetishes
-			custom_description = {
-				text = carn_add_random_fetish_effect
-			}
-			add_to_variable_list = {
-				name = carn_active_fetishes
-				target = scope:carn_new_fetish
-			}
-		}
-	}
-}
-
-carn_add_fetish_anal_effect = {
-	if = {
-		limit = {
-			NOT = {
-				is_target_in_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_anal
+				trigger_event = {
+					on_action = carn_on_gain_fetish
 				}
+				add_character_flag = carn_fetishes_seeded
 			}
-			has_game_rule = carn_content_anal_on
-		}
-		custom_description = {
-			text = carn_add_fetish_anal_effect
-		}
-		add_to_variable_list = {
-			name = carn_active_fetishes
-			target = flag:carn_fetish_anal
-		}
-	}
-}
-
-carn_add_fetish_sadism_effect = {
-	if = {
-		limit = {
-			NOT = {
-				is_target_in_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_sadism
-				}
-			}
-			has_game_rule = carn_content_painful_on
-		}
-		custom_description = {
-			text = carn_add_fetish_sadism_effect
-		}
-		add_to_variable_list = {
-			name = carn_active_fetishes
-			target = flag:carn_fetish_sadism
-		}
-	}
-}
-
-carn_add_fetish_masochism_effect = {
-	if = {
-		limit = {
-			NOT = {
-				is_target_in_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_masochism
-				}
-			}
-			has_game_rule = carn_content_painful_on
-		}
-		custom_description = {
-			text = carn_add_fetish_masochism_effect
-		}
-		add_to_variable_list = {
-			name = carn_active_fetishes
-			target = flag:carn_fetish_masochism
-		}
-	}
-}
-
-carn_add_fetish_bestiality_effect = {
-	if = {
-		limit = {
-			NOT = {
-				is_target_in_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_bestiality
-				}
-			}
-			has_game_rule = carn_content_bestiality_on
-		}
-		custom_description = {
-			text = carn_add_fetish_bestiality_effect
-		}
-		add_to_variable_list = {
-			name = carn_active_fetishes
-			target = flag:carn_fetish_bestiality
-		}
-	}
-}
-
-carn_add_fetish_watersports_effect = {
-	if = {
-		limit = {
-			NOT = {
-				is_target_in_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_watersports
-				}
-			}
-			has_game_rule = carn_content_watersports_on
-		}
-		custom_description = {
-			text = carn_add_fetish_watersports_effect
-		}
-		add_to_variable_list = {
-			name = carn_active_fetishes
-			target = flag:carn_fetish_watersports
-		}
-	}
-}
-
-carn_add_fetish_scat_effect = {
-	if = {
-		limit = {
-			NOT = {
-				is_target_in_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_scat
-				}
-			}
-			has_game_rule = carn_content_scat_on
-		}
-		custom_description = {
-			text = carn_add_fetish_scat_effect
-		}
-		add_to_variable_list = {
-			name = carn_active_fetishes
-			target = flag:carn_fetish_scat
-		}
-	}
-}
-
-carn_add_fetish_gore_effect = {
-	if = {
-		limit = {
-			NOT = {
-				is_target_in_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_gore
-				}
-			}
-			has_game_rule = carn_content_gore_on
-		}
-		custom_description = {
-			text = carn_add_fetish_gore_effect
-		}
-		add_to_variable_list = {
-			name = carn_active_fetishes
-			target = flag:carn_fetish_gore
-		}
-	}
-}
-
-carn_add_fetish_foot_play_effect = {
-	if = {
-		limit = {
-			NOT = {
-				is_target_in_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_foot_play
-				}
-			}
-		}
-		custom_description = {
-			text = carn_add_fetish_foot_play_effect
-		}
-		add_to_variable_list = {
-			name = carn_active_fetishes
-			target = flag:carn_fetish_foot_play
-		}
-	}
-}
-
-carn_add_fetish_bondage_effect = {
-	if = {
-		limit = {
-			NOT = {
-				is_target_in_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_bondage
-				}
-			}
-		}
-		custom_description = {
-			text = carn_add_fetish_bondage_effect
-		}
-		add_to_variable_list = {
-			name = carn_active_fetishes
-			target = flag:carn_fetish_bondage
-		}
-	}
-}
-
-carn_add_fetish_domination_effect = {
-	if = {
-		limit = {
-			NOT = {
-				is_target_in_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_domination
-				}
-			}
-		}
-		custom_description = {
-			text = carn_add_fetish_domination_effect
-		}
-		add_to_variable_list = {
-			name = carn_active_fetishes
-			target = flag:carn_fetish_domination
-		}
-	}
-}
-
-carn_add_fetish_submission_effect = {
-	if = {
-		limit = {
-			NOT = {
-				is_target_in_variable_list = {
-					name = carn_active_fetishes
-					target = flag:carn_fetish_submission
-				}
-			}
-		}
-		custom_description = {
-			text = carn_add_fetish_submission_effect
-		}
-		add_to_variable_list = {
-			name = carn_active_fetishes
-			target = flag:carn_fetish_submission
 		}
 	}
 }
@@ -573,24 +92,104 @@ carn_add_fetish_submission_effect = {
 carn_remove_all_fetishes_effect = {
 	custom_description = {
 		text = carn_remove_all_fetishes_effect
+		clear_variable_list = carn_active_fetishes
+		trigger_event = {
+			on_action = carn_on_lose_fetish
+		}
 	}
-	clear_variable_list = carn_active_fetishes
 }
 
-carn_remove_given_fetish_effect = {
+carn_remove_fetish_effect = {
 	if = {
 		limit = {
-			is_target_in_variable_list = {
-				name = carn_active_fetishes
-				target = flag:$FETISH$
+			carn_has_fetish_trigger = {
+				fetish = $FETISH$
 			}
 		}
 		custom_description = {
-			text = carn_remove_given_fetish_effect
+			text = carn_remove_fetish_effect
+			remove_list_variable = {
+				name = carn_active_fetishes
+				target = flag:$FETISH$
+			}
+			trigger_event = {
+				on_action = carn_on_lose_fetish
+			}
 		}
-		remove_list_variable = {
-			name = carn_active_fetishes
-			target = flag:$FETISH$
+	}
+}
+
+carn_give_deviant_secret_or_trait_if_has_any_fetish_effect = {
+	if = {
+		limit = {
+			carn_has_any_fetish_trigger = yes
+		}
+		carn_give_deviant_secret_or_trait_no_fetish_effect = yes
+	}
+}
+
+carn_remove_deviant_secret_or_trait_if_has_no_fetishes_effect = {
+	if = {
+		limit = {
+			carn_has_any_fetish_trigger = no
+		}
+		remove_trait = deviant
+		every_secret = {
+			limit = {
+				secret_type = secret_deviant
+			}
+			remove_secret = yes
+		}
+	}
+}
+
+carn_fetish_tooltip_effect = {
+	switch = {
+		trigger = $FETISH$
+		flag:anal = {
+			custom_tooltip = carn_fetish_gui_anal
+		}
+		flag:sadism = {
+			custom_tooltip = carn_fetish_gui_sadism
+		}
+		flag:masochism = {
+			custom_tooltip = carn_fetish_gui_masochism
+		}
+		flag:bestiality = {
+			custom_tooltip = carn_fetish_gui_bestiality
+		}
+		flag:watersports = {
+			custom_tooltip = carn_fetish_gui_watersports
+		}
+		flag:scat = {
+			custom_tooltip = carn_fetish_gui_scat
+		}
+		flag:gore = {
+			custom_tooltip = carn_fetish_gui_gore
+		}
+		flag:foot_play = {
+			custom_tooltip = carn_fetish_gui_foot_play
+		}
+		flag:bondage = {
+			custom_tooltip = carn_fetish_gui_bondage
+		}
+		flag:domination = {
+			custom_tooltip = carn_fetish_gui_domination
+		}
+		flag:submission = {
+			custom_tooltip = carn_fetish_gui_submission
+		}
+		flag:raping = {
+			custom_tooltip = carn_fetish_gui_raping
+		}
+		flag:being_raped = {
+			custom_tooltip = carn_fetish_gui_being_raped
+		}
+		flag:lactation = {
+			custom_tooltip = carn_fetish_gui_lactation
+		}
+		fallback = {
+			custom_tooltip = carn_fetish_gui_unknown
 		}
 	}
 }

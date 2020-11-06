@@ -1,0 +1,37 @@
+﻿on_pregnancy_mother = {
+	events = {
+		carn_pregnancy_suppression.0001 # maintenance event suppressed
+		carn_pregnancy_suppression.0002 # notification event suppressed
+	}
+}
+
+on_pregnancy_ended_mother = {
+	events = {
+		carn_pregnancy_suppression.0003 # Clear next_on_pregnancy_* flags when pregnancy ends
+	}
+}
+
+# This is called when the `carn_suppress_*_on_pregnancy_maintenance` flag causes pregnancy.0001 to be suppressed
+# does nothing baseline, meant for modders to substitute their own maintenance event
+carn_on_pregnancy_maintenance_suppressed = {
+	events = {
+	}
+}
+
+# This is called when the `carn_suppress_*_on_pregnancy_notification` flag causes a pregnancy notification event to be suppressed
+# (any event in pregnancy_events.txt other than pregnancy.0001) 
+# does nothing baseline, meant for modders to substitute their own notification event
+carn_on_pregnancy_notification_suppressed = {
+	events = {
+	}
+}
+
+# This is called when the `carn_suppress_*_on_birth_notification` flag causes a birth notification event to be suppressed
+# (birth.1001 and similar events) 
+# does nothing baseline, meant for modders to substitute their own notification event
+# uses on_birth_mother scopes, root is mother
+# remember to trigger both mother and father events
+carn_on_birth_notification_suppressed = {
+	events = {
+	}
+}

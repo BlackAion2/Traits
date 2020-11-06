@@ -1,0 +1,17 @@
+﻿carn_normal_or_custom_pregnancy_can_be_aborted_trigger = {
+	OR = {
+		carn_normal_pregnancy_can_be_aborted_trigger = yes
+		carn_custom_pregnancy_can_be_aborted_trigger = yes
+	}
+}
+
+carn_normal_pregnancy_can_be_aborted_trigger = {
+	carn_has_normal_pregnancy_no_absolute_birth_control_trigger = yes
+	NOR = {
+		has_character_flag = carn_block_aborting_any_pregnancy
+		has_trait_with_flag = carn_block_aborting_any_pregnancy
+		has_character_flag = carn_block_aborting_any_normal_pregnancy
+		has_trait_with_flag = carn_block_aborting_any_normal_pregnancy
+		has_character_flag = carn_block_aborting_next_normal_pregnancy
+	}
+}

@@ -36,3 +36,58 @@ game_concept_prostitution:1 "娼妓"
 game_concept_prostitute_possessive:1 "娼妓的"
 game_concept_prostitutes_possessive:1 "娼妓们的"
 game_concept_prostitute_desc:2 "娼妓[character|E]以出卖肉体换取金钱。任何角色都可以通过$carn_work_as_prostitute_decision$[decision|E]成为娼妓。\n\n根据[faith|E]不同，风尘事务在一些信仰中可能是[shunned|E]或[criminal|E]。"
+
+game_concept_fetish:0 "Fetish"
+game_concept_fetishes:0 "Fetishes"
+game_concept_fetish_desc:0 "When a [character|E] gains the [GetTrait('deviant').GetName( GetNullCharacter )] [trait|E] or [secret|E], they will also get a random fetish if Carnalitas's Fetish System is enabled. You can see a character's publicly known fetishes by mousing over the icon next to their sexual orientation.\n\nFetishes are purely cosmetic by default, but mods may add features and content for characters with specific fetishes."
+
+game_concept_lactation:0 "Lactation"
+game_concept_lactating:0 "Lactating"
+game_concept_milk:0 "Milk"
+game_concept_milk_production:0 "Milk Production"
+game_concept_lactation_desc:0 "When Carnalitas's Lactation System is enabled, [characters|E] may have their milk production increased by pregnancy or other effects. This will cause them to start lactating for a period of time. Successive pregnancies allow a character to produce more milk and lactate for a longer period of time.\n\nLactation is purely cosmetic by default, but mods may add features and content for lactating characters."
+
+game_concept_anal:0 "Anal"
+game_concept_anal_desc:0 "The act of having sex involving the penetration of the anus."
+
+game_concept_sadism:0 "Sadism"
+game_concept_sadism_desc:0 "Gaining pleasure from inflicting pain on others."
+
+game_concept_masochism:0 "Masochism"
+game_concept_masochism_desc:0 "Gaining pleasure from experiencing pain."
+
+game_concept_bestiality:0 "Bestiality"
+game_concept_bestiality_desc:0 "The act of having sex with animals."
+
+game_concept_watersports:0 "Watersports"
+game_concept_watersports_desc:0 "Gaining pleasure from either pissing on, or being pissed on by someone."
+
+game_concept_scat:0 "Scat"
+game_concept_scat_desc:0 "Gaining pleasure from either shitting on, or being shat on by someone."
+
+game_concept_gore:0 "Gore"
+game_concept_gore_desc:0 "Gaining pleasure from the sight of blood, guts and gore."
+
+game_concept_foot_play:0 "Foot Play"
+game_concept_foot_play_desc:0 "Gaining pleasure from any acts (sexual or otherwise) involving feet."
+
+game_concept_bondage:0 "Bondage"
+game_concept_bondage_desc:0 "Gaining pleasure from either tying someone up, or being tied up."
+
+game_concept_domination:0 "Domination"
+game_concept_domination_desc:0 "$game_concept_dominant_desc$"
+
+game_concept_submission:0 "Submission"
+game_concept_submission_desc:0 "$game_concept_submissive_desc$"
+
+game_concept_raping:0 "Raping"
+game_concept_raping_desc:0 "The act of having sex with someone who is unwilling."
+
+game_concept_being_raped:0 "Being Raped"
+game_concept_being_raped_desc:0 "The act of having sex against your will."
+
+game_concept_lactation_fetish:0 "$game_concept_lactation$"
+game_concept_lactation_fetish_desc:0 "$game_concept_lactation_desc$"
+
+game_concept_unknown_fetish:0 "Unknown Fetish"
+game_concept_unknown_fetish_desc:0 "An unknown fetish. Whatever it is, it's probably fucked-up."

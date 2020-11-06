@@ -34,6 +34,13 @@ carn_enslave_effect = {
 				limit = { exists = betrothed }
 				break_betrothal = betrothed
 			}
+			if = {
+				# By default, randomly generated peasant leaders will disappear if captured in battle
+				limit = {
+					has_character_flag =  peasant_faction_random_peasant
+				}
+				add_character_flag = peasant_revolt_do_not_kill
+			}
 		}
 	}
 

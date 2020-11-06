@@ -1,0 +1,33 @@
+﻿# fired when a character gets the deviant trait
+# each of these events should apply a new fetish
+carn_on_new_random_fetish = {
+	random_events = {
+		30 = carn_fetish.1000 # Anal
+		20 = carn_fetish.1001 # Sadism
+		40 = carn_fetish.1002 # Masochism
+		5 = carn_fetish.1003 # Bestiality
+		5 = carn_fetish.1004 # Watersports
+		5 = carn_fetish.1005 # Scat
+		5 = carn_fetish.1006 # Gore
+		5 = carn_fetish.1007 # Foot play
+		45 = carn_fetish.1008 # Bondage
+		45 = carn_fetish.1009 # Domination
+		65 = carn_fetish.1010 # Submission
+		15 = carn_fetish.1011 # Raping
+		15 = carn_fetish.1012 # Being raped
+		30 = carn_fetish.1013 # Lactation
+	}
+}
+
+# currently does nothing, meant for modders
+# use scope:carn_new_fetish to get the fetish flag
+carn_on_gain_fetish = {
+	events = {
+	}
+}
+
+# currently does nothing, meant for modders
+carn_on_lose_fetish = {
+	events = {
+	}
+}

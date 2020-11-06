@@ -1,4 +1,7 @@
-﻿carn_tits = {
+﻿# This file is named 00_carn_tits so that the vanilla game's clothing replacement for bust gene will be loaded after it.
+# DO NOT RENAME THIS FILE to anything after 01_clothes, or you will get boobs clipping with clothes.
+
+carn_tits = {
 	usage = game
 	selection_behavior = weighted_random
 	tits_average_bust_default = {
@@ -7,14 +10,14 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_default
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
 				add = 1
-				has_game_rule = carn_dt_enabled_true
+				has_game_rule = carn_dt_enabled
 				NOR = {
 					has_trait = tits_small
 					has_trait = tits_big
@@ -28,14 +31,14 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_1_half
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
 				add = 1
-				has_game_rule = carn_dt_enabled_true
+				has_game_rule = carn_dt_enabled
 				NOR = {
 					has_trait = tits_small
 					has_trait = tits_big
@@ -49,14 +52,14 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_1_full
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
 				add = 1
-				has_game_rule = carn_dt_enabled_true
+				has_game_rule = carn_dt_enabled
 				NOR = {
 					has_trait = tits_small
 					has_trait = tits_big
@@ -70,14 +73,14 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_2_half
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
 				add = 1
-				has_game_rule = carn_dt_enabled_true
+				has_game_rule = carn_dt_enabled
 				NOR = {
 					has_trait = tits_small
 					has_trait = tits_big
@@ -91,14 +94,14 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_2_full
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
 				add = 1
-				has_game_rule = carn_dt_enabled_true
+				has_game_rule = carn_dt_enabled
 				NOR = {
 					has_trait = tits_small
 					has_trait = tits_big
@@ -112,14 +115,14 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_3_half
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
 				add = 1
-				has_game_rule = carn_dt_enabled_true
+				has_game_rule = carn_dt_enabled
 				NOR = {
 					has_trait = tits_small
 					has_trait = tits_big
@@ -133,14 +136,14 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_3_full
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
 				add = 1
-				has_game_rule = carn_dt_enabled_true
+				has_game_rule = carn_dt_enabled
 				NOR = {
 					has_trait = tits_small
 					has_trait = tits_big
@@ -154,14 +157,14 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_4_half
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
 				add = 1
-				has_game_rule = carn_dt_enabled_true
+				has_game_rule = carn_dt_enabled
 				NOR = {
 					has_trait = tits_small
 					has_trait = tits_big
@@ -175,14 +178,14 @@
 				mode = replace
 				gene = gene_bs_bust
 				template = bust_shape_4_full
-				value = 0.5
+				range = { 0.4 0.6 }
 			}
 		}
 		weight = {
 			base = 0
 			modifier = {
 				add = 1
-				has_game_rule = carn_dt_enabled_true
+				has_game_rule = carn_dt_enabled
 				NOR = {
 					has_trait = tits_small
 					has_trait = tits_big
@@ -662,7 +665,9 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+				}
 			}
 		}
 	}
@@ -679,7 +684,9 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+				}
 			}
 		}
 	}
@@ -696,7 +703,9 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+				}
 			}
 		}
 	}
@@ -713,7 +722,9 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+				}
 			}
 		}
 	}
@@ -730,7 +741,9 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+				}
 			}
 		}
 	}
@@ -747,7 +760,9 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+				}
 			}
 		}
 	}
@@ -764,7 +779,9 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+				}
 			}
 		}
 	}
@@ -781,7 +798,9 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+				}
 			}
 		}
 	}
@@ -798,7 +817,9 @@
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_1
+				OR = {
+					has_trait = tits_big_1
+				}
 			}
 		}
 	}

@@ -1,0 +1,17 @@
+﻿namespace = carn_custom_pregnancy
+
+# 0001. If a custom pregnancy exists, advance custom pregnancy stage and fire on_action
+carn_custom_pregnancy.0001 = {
+	hidden = yes
+
+	trigger = {
+		is_alive = yes
+		carn_has_any_custom_pregnancy_trigger = yes
+	}
+
+	immediate = {
+		trigger_event = {
+			on_action = carn_on_custom_pregnancy_stage_change
+		}
+	}
+}
