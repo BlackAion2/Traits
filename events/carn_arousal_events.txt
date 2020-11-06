@@ -60,7 +60,7 @@ carn_arousal.0002 = {
 
 		trigger_event = {
 			id = carn_arousal.0002
-			days = 1
+			days = 3
 		}
 	}
 }
