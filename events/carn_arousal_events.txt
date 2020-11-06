@@ -49,28 +49,15 @@ carn_arousal.0002 = {
 
 	# Player character changed without dying
 	on_trigger_fail = {
-		# Flag needs to be removed in case we want to play that character again later
+		# Flag needs to be removed in case we lose control of a character (thus dropping out of this event loop), but get to play this character again later
 		remove_character_flag = carn_track_arousal_periodically
 	}
 
 	immediate = {
-		# Basic "seeding".
-		if = {
-			limit = {
-				NOT = { has_variable = arousal }
-			}
-			set_variable = {
-				name = arousal
-				value = 100
-			}
+		carn_add_arousal_effect = { 
+			VALUE = 1
 		}
 
-		change_variable = {
-			name = arousal
-			add = 1
-		}
-
-		# Repeat every day ad nauseam
 		trigger_event = {
 			id = carn_arousal.0002
 			days = 1

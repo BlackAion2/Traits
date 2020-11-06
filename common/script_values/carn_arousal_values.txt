@@ -1,0 +1,43 @@
+﻿carn_arousal_gain_difficulty_multiplier = {
+	if = {
+		limit = { has_game_rule = carn_arousal_difficulty_very_easy }
+		value = 0.66
+	}
+	else_if = {
+		limit = { has_game_rule = carn_arousal_difficulty_easy }
+		value = 0.8
+	}
+	else_if = {
+		limit = { has_game_rule = carn_arousal_difficulty_hard }
+		value = 1.25
+	}
+	else_if = {
+		limit = { has_game_rule = carn_arousal_difficulty_very_hard }
+		value = 1.5
+	}
+	else = {
+		value = 1
+	}
+}
+
+carn_arousal_loss_difficulty_multiplier = {
+	if = {
+		limit = { has_game_rule = carn_arousal_difficulty_very_easy }
+		value = 1.5
+	}
+	else_if = {
+		limit = { has_game_rule = carn_arousal_difficulty_easy }
+		value = 1.25
+	}
+	else_if = {
+		limit = { has_game_rule = carn_arousal_difficulty_hard }
+		value = 0.8
+	}
+	else_if = {
+		limit = { has_game_rule = carn_arousal_difficulty_very_hard }
+		value = 0.66
+	}
+	else = {
+		value = 1
+	}
+}

@@ -1732,7 +1732,36 @@ widget = {
 	icon = {
 		visible = "[And(GetPlayer.IsValid, Not(GetVariableSystem.Exists( 'hide_bottom_left_HUD')))]"
 		parentanchor = bottom|left
-		
+		size = { 442 44 }
+		texture = "gfx/interface/hud/hud_bg_character_bar.dds"
+		spritetype = corneredtiled
+		spriteborder_left = 70
+		spriteborder_right = 240
+		texture_density = 2
+
+		state = {
+			name = _show
+			using = Animation_Curve_Default
+			duration = 0.21
+
+			position = { 0 0 }
+			alpha = 1
+		}
+
+		state = {
+			name = _hide
+			using = Animation_Curve_Default
+			duration = 0.21
+
+			position = { -36 50 }
+			alpha = 0
+		}
+	}
+	# Carnalitas: Replace bar with a 116px longer one if arousal widget is used
+	icon = {
+		datacontext = "[GetScriptedGui( 'carn_has_rule_manage_arousal' )]"
+		visible = "[ScriptedGui.IsShown( 'none' )]"
+		parentanchor = bottom|left
 		size = { 558 44 }
 		texture = "gfx/interface/hud/hud_bg_character_bar.dds"
 		spritetype = corneredtiled
@@ -1758,7 +1787,7 @@ widget = {
 			alpha = 0
 		}
 	}
-
+	
 	### BOTTOM LEFT CHARACTER PORTRAIT
 	container = {
 		datacontext = "[GetPlayer]"
@@ -2436,12 +2465,13 @@ widget = {
 			name = "arousal_widget"
 			size = { 110 55 }
 
+			datacontext = "[GetScriptedGui( 'carn_has_rule_manage_arousal' )]"
+			visible = "[ScriptedGui.IsShown( 'none' )]"
+
 			widget = {
 				parentanchor = center
 				size = { 180 108 }
-
-				#GetPlayer.Custom('GetStress')
-				tooltip = "[GetPlayer.MakeScope.Var('arousal').GetValue]" #"PLAYER_STRESS_TOOLTIP"
+				tooltip = "PLAYER_AROUSAL_TOOLTIP"
 				using = tooltip_ne
 
 				widget = {
@@ -2542,9 +2572,7 @@ widget = {
 
 							texture = "gfx/interface/icons/arousal/icon_arousal_level.dds"
 							framesize = { 70 70 }
-
-							# Decides if icon for level 0-1-2-3 should be used. Index starts at 1.
-							frame = 1 #"[IntToFrameIndex( GetPlayer.GetStressLevel )]"
+							frame = 1
 						}
 						icon = {
 							parentanchor = vcenter
@@ -2554,9 +2582,7 @@ widget = {
 
 							texture = "gfx/interface/icons/arousal/icon_arousal_level.dds"
 							framesize = { 70 70 }
-
-							# Decides if icon for level 0-1-2-3 should be used. Index starts at 1.
-							frame = 2 #"[IntToFrameIndex( GetPlayer.GetStressLevel )]"
+							frame = 2
 						}
 						icon = {
 							parentanchor = vcenter
@@ -2566,9 +2592,7 @@ widget = {
 
 							texture = "gfx/interface/icons/arousal/icon_arousal_level.dds"
 							framesize = { 70 70 }
-
-							# Decides if icon for level 0-1-2-3 should be used. Index starts at 1.
-							frame = 3 #"[IntToFrameIndex( GetPlayer.GetStressLevel )]"
+							frame = 3
 						}
 						icon = {
 							parentanchor = vcenter
@@ -2578,9 +2602,7 @@ widget = {
 
 							texture = "gfx/interface/icons/arousal/icon_arousal_level.dds"
 							framesize = { 70 70 }
-
-							# Decides if icon for level 0-1-2-3 should be used. Index starts at 1.
-							frame = 4 #"[IntToFrameIndex( GetPlayer.GetStressLevel )]"
+							frame = 4
 						}
 					}
 				}
