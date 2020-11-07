@@ -1,17 +1,11 @@
 ﻿# carn_add_arousal_effect
-
+# carn_arousal_seeding
 
 carn_add_arousal_effect = {
-	if = {
-		limit = {
-			NOT = { has_variable = arousal }
-		}
-		set_variable = {
-			name = arousal
-			value = 100
-		}
-	}
+	# In case arousal has not been set yet
+	carn_arousal_seeding = yes
 
+	# Adjust gain/loss according to difficulty
 	if = {
 		limit = {
 			$VALUE$ > 0
@@ -34,6 +28,39 @@ carn_add_arousal_effect = {
 				add = $VALUE$
 				multiply = carn_arousal_loss_difficulty_multiplier
 			}
+		}
+	}
+
+	# Keep result in Range [0,400]
+	if = {
+		limit = {
+			carn_arousal > 400
+		}
+		set_variable = {
+			name = arousal
+			value = 400
+		}
+	}
+	else_if = {
+		limit = {
+			carn_arousal < 0
+		}
+		set_variable = {
+			name = arousal
+			value = 0
+		}
+	}
+}
+
+# Very basic 'seeding' for now.
+carn_arousal_seeding = {
+	if = {
+		limit = {
+			NOT = { has_variable = arousal }
+		}
+		set_variable = {
+			name = arousal
+			value = 100
 		}
 	}
 }
