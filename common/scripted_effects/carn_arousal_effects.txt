@@ -5,6 +5,12 @@ carn_add_arousal_effect = {
 	# In case arousal has not been set yet
 	carn_arousal_seeding = yes
 
+	# Store old level for later
+	set_local_variable = {
+		name = old_arousal_level
+		value = carn_arousal_level
+	}
+
 	# Adjust gain/loss according to difficulty
 	if = {
 		limit = {
@@ -28,6 +34,43 @@ carn_add_arousal_effect = {
 				add = $VALUE$
 				multiply = carn_arousal_loss_difficulty_multiplier
 			}
+		}
+	}
+
+	# Fire events if arousal level changed
+	if = {
+		limit = { 
+			local_var:old_arousal_level < carn_arousal_level
+			carn_arousal_level = 1
+		}
+		trigger_event = {
+			on_action = on_arousal_level_1
+		}
+	}
+	else_if = {
+		limit = { 
+			local_var:old_arousal_level < carn_arousal_level
+			carn_arousal_level = 2
+		}
+		trigger_event = {
+			on_action = on_arousal_level_2
+		}
+	}
+	else_if = {
+		limit = { 
+			local_var:old_arousal_level < carn_arousal_level
+			carn_arousal_level = 3
+		}
+		trigger_event = {
+			on_action = on_arousal_level_3
+		}
+	}
+	else_if = {
+		limit = { 
+			local_var:old_arousal_level > carn_arousal_level
+		}
+		trigger_event = {
+			on_action = on_arousal_level_reduced
 		}
 	}
 

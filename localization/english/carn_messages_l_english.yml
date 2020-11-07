@@ -1,0 +1,5 @@
+﻿l_english: 
+ carn_arousal_level_reduced.message: "Reduced Arousal Level"
+ carn_arousal_level_reduced.text: "You are no longer as overwhelmed by Arousal"
+ carn_arousal_level_increased.message: "Increased Arousal Level"
+ carn_arousal_level_increased.text: "You are becoming overwhelmed by Arousal"

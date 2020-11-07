@@ -11,7 +11,7 @@ quarterly_playable_pulse = {
 	}
 }
 
-# Check every quarter if arousal tracking should start, since it's only done for the player
+# Check every quarter if arousal tracking should start (player only)
 # Would be cleaner to catch character switch events directly
 start_arousal_tracking_pulse = {
 	trigger = {
@@ -25,6 +25,65 @@ start_arousal_tracking_pulse = {
 		trigger_event = {
 			id = carn_arousal.0002
 			days = 1
+		}
+	}
+}
+
+# Triggered when arousal level goes down
+# Root is the character
+on_arousal_level_reduced = {
+	effect = {
+		send_interface_toast = {
+			type = carn_msg_lost_arousal_level
+			left_icon = root
+		}
+	}
+}
+
+# Going to a new arousal level will fire this.
+on_arousal_level_1 = {
+	trigger = {
+		NOT = { has_character_flag = recently_hit_arousal_threshold } # Prevents multiple mental breaks from occuring on the same day (causes errors and creates an unbreakable stress loop).
+	}
+	events = {
+		# For modders
+	}
+	effect = {
+		send_interface_toast = {
+			type = carn_msg_gained_arousal_level
+			left_icon = root
+		}
+	}
+}
+
+# Going to a new arousal level will fire this.
+on_arousal_level_2 = {
+	trigger = {
+		NOT = { has_character_flag = recently_hit_arousal_threshold } # Prevents multiple mental breaks from occuring on the same day (causes errors and creates an unbreakable stress loop).
+	}
+	events = {
+		# For modders
+	}
+	effect = {
+		send_interface_toast = {
+			type = carn_msg_gained_arousal_level
+			left_icon = root
+		}
+	}
+}
+
+# Going to a new arousal level will fire this.
+on_arousal_level_3 = {
+	trigger = {
+		NOT = { has_character_flag = recently_hit_arousal_threshold } # Prevents multiple mental breaks from occuring on the same day (causes errors and creates an unbreakable stress loop).
+	}
+	events = {
+		# For modders
+	}
+	effect = {
+		send_interface_toast = {
+			type = carn_msg_gained_arousal_level
+			left_icon = root
 		}
 	}
 }

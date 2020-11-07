@@ -1,5 +1,7 @@
 ﻿@msg_good_soundeffect = "event:/SFX/UI/Notifications/Messages/sfx_ui_message_theme_positive"
 @msg_bad_soundeffect = "event:/SFX/UI/Notifications/Messages/sfx_ui_message_theme_negative"
+@toast_soundeffect_good = "event:/SFX/UI/Notifications/Toasts/sfx_ui_notifications_toast_positive"
+@toast_soundeffect_bad = "event:/SFX/UI/Notifications/Toasts/sfx_ui_notifications_toast_negative"
 
 carn_event_arousal = {
 	icon = "icon_stress_gain.dds"
@@ -23,4 +25,20 @@ carn_prostitute_random_event_bad = {
 	desc = event_message_effect
 	style = bad
 	soundeffect = @msg_bad_soundeffect
+}
+
+carn_msg_gained_arousal_level = {
+	display = toast
+	title = carn_arousal_level_increased.message
+	desc = carn_arousal_level_increased.text
+	style = bad
+	soundeffect = @toast_soundeffect_bad
+}
+
+carn_msg_lost_arousal_level = {
+	display = toast
+	title = carn_arousal_level_reduced.message
+	desc = carn_arousal_level_reduced.text
+	style = good
+	soundeffect = @toast_soundeffect_good
 }
