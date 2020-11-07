@@ -43,9 +43,6 @@ carn_arousal_loss_difficulty_multiplier = {
 }
 
 carn_arousal = {
-	# In case arousal has not been set yet
-	carn_arousal_seeding = yes
-
 	value = var:arousal
 }
 
