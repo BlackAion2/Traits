@@ -86,3 +86,7 @@ carn_force_start_prostitution_interaction_desc:1 "Forcer [recipient.GetShortUINa
 
 carn_force_stop_prostitution_interaction:1 "Arrêter la prostitution forcée"
 carn_force_stop_prostitution_interaction_desc:1 "Arrêter de forcer [recipient.GetShortUINameNoTooltip] à travailler pour vous en tant que [Concept( 'prostitute', 'prostitué' )|El][recipient.Custom('FR_E')|El]"
+
+carn_rape_interaction:1 "Violer"
+carn_rape_interaction_desc:1 "Maîtrisez et profiter de [recipient.GetShortUINameNoTooltip]"
+carn_rape_effect_not_attracted_to_warning_tt:1 "#X Vous n'êtes pas attiré[carn_rape_rapist.Custom('FR_E')] par [carn_rape_victim.GetShortUINameNoTooltip]#!"

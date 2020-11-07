@@ -1,0 +1,15 @@
+﻿l_spanish:
+
+carn_very_low_milk_production_description:0 "a very small trickle of"
+carn_low_milk_production_description:0 "a small amount of"
+carn_average_milk_production_description:0 "a healthy amount of"
+carn_high_milk_production_description:0 "an impressive amount of"
+carn_very_high_milk_production_description:0 "an incredible amount of"
+carn_extreme_milk_production_description:0 "an extreme amount of"
+
+carn_very_low:0 "very low"
+carn_low:0 "low"
+carn_average:0 "average"
+carn_high:0 "high"
+carn_very_high:0 "very high"
+carn_extreme:0 "extreme"

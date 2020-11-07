@@ -36,6 +36,16 @@ setting_carn_birth_control_female_only_desc:1 "Seuls les femmes et futanaris pou
 setting_carn_birth_control_male_only:1 "#high Hommes seulement#!"
 setting_carn_birth_control_male_only_desc:1 "Seuls les hommes et futanaris pourront utiliser des méthodes de contraception, réduisant leur fertilité contre une part de leur revenus."
 
+rule_carn_lactation:1 "#X Carnalitas:#! Système de lactation"
+setting_carn_lactation_disabled:1 "Désactivé"
+setting_carn_lactation_disabled_desc:1 "Le système de lactation de Carnalitas sera désactivé."
+setting_carn_lactation_female_only:1 "#high Femmes seulement#!"
+setting_carn_lactation_female_only_desc:1 "la grossesse ou des mods peuvent induire de la lactation chez les personnages féminins ou futanaris."
+setting_carn_lactation_male_only:1 "#high Hommes seulement#!"
+setting_carn_lactation_male_only_desc:1 "Des mods peuvent induire de la lactation chez les personnages masculins."
+setting_carn_lactation_any_gender:1 "#high N'importe quel genre#!"
+setting_carn_lactation_any_gender_desc:1 "la grossesse ou des mods peuvent induire de la lactation chez des personnages de n'importe quel genre."
+
 rule_carn_dt:1 "#X Carnalitas:#! Traits des caractéristiques sexuelles"
 setting_carn_dt_disabled:1 "Désactivé"
 setting_carn_dt_disabled_desc:1 "Les personnages seront créés sans traits congénitaux de poitrines et pénis."

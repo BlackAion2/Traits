@@ -321,10 +321,6 @@
 			add = 30
 			scope:renounce_claims = yes
 		}
-		modifier = {
-			add = 10
-			scope:recruit = yes
-		}
 		modifier = { # Rivals can rot
 			add = -40
 			scope:actor = {

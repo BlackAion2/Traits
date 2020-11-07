@@ -22,6 +22,7 @@ import argparse;
 import sys;
 import glob;
 import shutil;
+import re;
 from typing import Tuple, List;
 from enum import Enum;
 
@@ -36,6 +37,7 @@ Yaml = Tuple[str, str, TranslationStatus, bool];
 
 BASE_LANGUAGE = 'english';
 ENCODING = 'utf-8-sig';
+BACKUP_SUFFIX = '_backup';
 
 localization_dir = os.path.abspath('localization');
 base_dir = os.path.join(localization_dir, BASE_LANGUAGE);
@@ -120,20 +122,25 @@ def get_yaml_from_file(path: str) -> List[Yaml]:
 
     return yaml;
 
-def yaml_to_string(yaml: Yaml, include_translate: bool = True) -> str:
-    """Converst a YAML Tuple to string"""
+def yaml_to_string(yaml: Yaml, include_translate: bool = True, override_translate_status: str = '') -> str:
+    """Converts a YAML Tuple to string"""
     translate_str = '' if not include_translate else str(yaml[2].value);
+    if not override_translate_status == '':
+        translate_str = override_translate_status;
     return yaml[0]+':'+translate_str+' '+yaml[1]+'\n';
 
 def update_translation_file(input_path: str, output_path: str, output_lang: str):
     """Updates the provided file with new translations"""
 
     output_lang_name = get_lang_name(output_lang);
+    output_path_short = re.sub(r'^.*?localization', '', output_path)
+    input_path_short = re.sub(r'^.*?localization', '', input_path)
 
-    print('Updating file '+output_path);
+    print("========================================");
+    print('Updating file '+output_path_short);
 
     if not os.path.exists(output_path):
-        print('File does not exist, copying from '+input_path+' to '+output_path);
+        print('=> File does not exist, copying from '+input_path_short+' to '+output_path_short);
         shutil.copyfile(input_path, output_path);
 
     input_yaml = get_yaml_from_file(input_path);
@@ -144,8 +151,9 @@ def update_translation_file(input_path: str, output_path: str, output_lang: str)
     new_lines = create_empty_list(input_len);
 
     if output_len != input_len:
-        print('Input length does not equal output length: '+str(input_len)+'!='+str(output_len));
+        print('=> Input length does not equal output length: '+str(input_len)+' != '+str(output_len));
 
+    output_len_updated = input_len;
     for i in range(input_len):
         cur_input = input_yaml[i];
         # is comment
@@ -166,17 +174,30 @@ def update_translation_file(input_path: str, output_path: str, output_lang: str)
 
         # not found means we just add the input
         if not found_in_output[0]:
-            print('Missing key '+ cur_input[0]);
-            new_lines[i] = yaml_to_string(cur_input);
+            print('==> New key: '+ cur_input[0]);
+            new_lines[i] = yaml_to_string(cur_input, True, "0");
             continue;
 
-        # if we found it in the output file we check if it's translated
+        # if we found it in the output file we check if it's already flagged as needing update, and keep the translation
+        if found_in_output[2] == TranslationStatus.NEEDSUPDATE:
+            new_lines[i] = yaml_to_string(found_in_output);
+            continue;
+
+        # if we found it in the output file we check if it needs update and we add the NEEDSUPDATE status
+        if cur_input[2] == TranslationStatus.NEEDSUPDATE and found_in_output[2] == TranslationStatus.TRANSLATED:
+            print('==> New Update Needed: '+ cur_input[0]);
+            new_lines[i] = "#" + yaml_to_string(found_in_output) + yaml_to_string(cur_input, True, "2");
+            # i = i+1;
+            # output_len_updated = output_len_updated+1;
+            continue;
+
+        # if we found it in the output file we check if it's translated and keep the translation
         if found_in_output[2] == TranslationStatus.TRANSLATED:
             new_lines[i] = yaml_to_string(found_in_output);
             continue;
 
         # if it's not translated then we copy the input
-        new_lines[i] = yaml_to_string(cur_input);
+        new_lines[i] = yaml_to_string(cur_input, True, "0");
 
     with open(output_path, 'w', encoding=ENCODING) as file_stream:
         file_stream.writelines(new_lines);
@@ -205,14 +226,46 @@ def copy_base_translations(input_dir: str, output_dir: str, input_lang: str, out
             path = os.path.join(output_dir, file_name);
             update_translation_file(item, path, output_lang);
 
+def rename_deleted_or_moved_files(input_dir: str, output_dir: str, input_lang: str, output_lang: str):
+    """
+    Rename files in the translation that are not present in the english localization anymore
+    """
+
+    input_lang_file_name = get_lang_name(input_lang)+'.yml';
+    output_lang_file_name = get_lang_name(output_lang)+'.yml';
+
+
+    # We get a list of all files in the english localization
+    input_file_list = list()
+    for subdir, dirs, files in os.walk(input_dir):
+        for file in files:
+            cur_input_file = os.path.join(subdir, file).split(input_lang_file_name);
+            cur_input_file = cur_input_file[0].split(input_dir);
+            input_file_list += cur_input_file;
+
+    # We compare the translation files with the english ones, and rename those that don't exist in the english loc anymore
+    # With the exception of the language specific custom localizations in "custom_localization_[output_lang]"
+    for subdir, dirs, files in os.walk(output_dir):
+        for file in files:
+            cur_output_file = os.path.join(subdir, file).split(output_lang_file_name);
+            cur_output_file = cur_output_file[0].split(output_lang);
+            if not cur_output_file[1] in input_file_list and not os.path.isdir(cur_output_file[1]) and not file.endswith(BACKUP_SUFFIX) and not subdir.endswith("custom_localization_" + output_lang):
+                print("========================================");
+                print("=> '" + input_lang + cur_output_file[1] + input_lang_file_name + "' doesn't exist anymore");
+                print(" ==> renaming the " + output_lang + " version for backup");
+                os.rename(os.path.join(subdir, file), os.path.join(subdir, file) + BACKUP_SUFFIX)
+
 def updating(output_language: str):
     """Updates all Translations"""
 
+    print("===================================================");
     print('Updating Translation for Language: '+output_language);
+    print("===================================================");
     output_dir = os.path.join(localization_dir, output_language);
 
-    print('Using '+BASE_LANGUAGE+' Translations from '+base_dir+' in '+output_dir);
+    print('=> Using '+BASE_LANGUAGE+' Translations from '+base_dir+' in '+output_dir);
     copy_base_translations(base_dir, output_dir, BASE_LANGUAGE, output_language);
+    rename_deleted_or_moved_files(base_dir, output_dir, BASE_LANGUAGE, output_language);
 
 def get_translation_stats_file(base: str, path: str, cur_lang: str, detail: bool) -> Tuple[str, int, int, int]:
     """Gets the number of translated and not translated string of a file"""
