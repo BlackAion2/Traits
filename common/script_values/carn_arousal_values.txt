@@ -41,3 +41,25 @@ carn_arousal_loss_difficulty_multiplier = {
 		value = 1
 	}
 }
+
+carn_arousal = {
+	value = var:arousal
+}
+
+carn_arousal_level = {
+	if = {
+		limit = { carn_arousal < 100 }
+		value = 0
+	}
+	else_if = {
+		limit = { carn_arousal < 200 }
+		value = 1
+	}
+	else_if = {
+		limit = { carn_arousal < 300 }
+		value = 2
+	}
+	else = {
+		value = 3
+	}
+}
