@@ -108,7 +108,10 @@ carn_had_sex_with_effect = {
 			if = {
 				limit = {
 					$CHARACTER_1$ = { is_female = yes }
-					$CHARACTER_2$ = { carn_gender_can_impregnate_trigger = yes }
+					$CHARACTER_2$ = {
+						#carn_gender_can_impregnate_trigger = yes
+						is_male = yes
+					}
 				}
 				$CHARACTER_1$ = { 
 					if = {
@@ -165,7 +168,10 @@ carn_had_sex_with_effect = {
 			}
 			else_if = {
 				limit = {
-					$CHARACTER_1$ = { carn_gender_can_impregnate_trigger = yes }
+					$CHARACTER_1$ = {
+						#carn_gender_can_impregnate_trigger = yes
+						is_male = yes
+					}
 					$CHARACTER_2$ = { is_female = yes }
 				}
 				$CHARACTER_1$ = {
