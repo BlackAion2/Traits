@@ -54,6 +54,7 @@
 		every_relation = {
 			type = soulmate
 			limit = {
+				soulmate_relation_is_exclusive_trigger = yes
 				NOT = { #So we don't add it both at discovery and exposure
 					has_opinion_modifier = {
 						target = scope:sex_character
@@ -84,6 +85,7 @@
 			every_relation = {
 				type = soulmate
 				limit = {
+					soulmate_relation_is_exclusive_trigger = yes
 					NOT = { #So we don't add it both at discovery and exposure
 						has_opinion_modifier = {
 							target = scope:sex_character
