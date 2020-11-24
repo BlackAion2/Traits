@@ -14,7 +14,7 @@
  setting_carn_sex_interaction_no_cd: "#high No Cooldown#!"
  setting_carn_sex_interaction_no_cd_desc: "You can use the $carn_sex_interaction$ Character Interaction as much as you want. However, its game effects will only trigger once every [EmptyScope.ScriptValue('carn_sex_interaction_cooldown_base')|0] months."
 
- carn_arousal: "#X Carnalitas:#! Arousal"
+ rule_carn_arousal: "#X Carnalitas:#! Arousal"
  setting_carn_arousal_disabled: "Disabled"
  setting_carn_arousal_disabled_desc: "Arousal is not tracked, and characters will not naturally gain stress over time. This may cause balance issues if you frequently $carn_sex_interaction$."
  setting_carn_arousal_causes_stress: "#high Arousal Causes Stress#!"
