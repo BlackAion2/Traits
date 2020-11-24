@@ -1,0 +1,147 @@
+﻿l_spanish:
+
+carn_i_gain_slave:0 "[TARGET_CHARACTER.GetShortUIName|U] becomes your [slave|E]"
+carn_they_gain_slave:0 "[TARGET_CHARACTER.GetShortUIName|U] becomes [CHARACTER.GetShortUINamePossessive] [slave|E]"
+
+carn_i_got_slave:0 "[TARGET_CHARACTER.GetShortUIName|U] became your [slave|E]"
+carn_they_got_slave:0 "[TARGET_CHARACTER.GetShortUIName|U] became [CHARACTER.GetShortUINamePossessive] [slave|E]"
+
+carn_i_gain_slave_owner:0 "[TARGET_CHARACTER.GetShortUIName|U] becomes your [slave_owner|E]"
+carn_they_gain_slave_owner:0 "[TARGET_CHARACTER.GetShortUIName|U] becomes [CHARACTER.GetShortUINamePossessive] [slave_owner|E]"
+
+carn_i_got_slave_owner:0 "[TARGET_CHARACTER.GetShortUIName|U] became your [slave_owner|E]"
+carn_they_got_slave_owner:0 "[TARGET_CHARACTER.GetShortUIName|U] became [CHARACTER.GetShortUINamePossessive] [slave_owner|E]"
+
+carn_i_lose_slave:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [slave|E]"
+carn_they_lose_slave:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [slave|E]"
+
+carn_i_lost_slave:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [slave|E]"
+carn_they_lost_slave:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [slave|E]"
+
+carn_i_lose_slave_owner:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [slave_owner|E]"
+carn_they_lose_slave_owner:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [slave_owner|E]"
+
+carn_i_lost_slave_owner:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [slave_owner|E]"
+carn_they_lost_slave_owner:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [slave_owner|E]"
+
+carn_i_gain_dominant:0 "[TARGET_CHARACTER.GetShortUIName|U] becomes your [dominant|E]"
+carn_they_gain_dominant:0 "[TARGET_CHARACTER.GetShortUIName|U] becomes [CHARACTER.GetShortUINamePossessive] [dominant|E]"
+
+carn_i_got_dominant:0 "[TARGET_CHARACTER.GetShortUIName|U] became your [dominant|E]"
+carn_they_got_dominant:0 "[TARGET_CHARACTER.GetShortUIName|U] became [CHARACTER.GetShortUINamePossessive] [dominant|E]"
+
+carn_i_lose_dominant:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [dominant|E]"
+carn_they_lose_dominant:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [dominant|E]"
+
+carn_i_lost_dominant:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [dominant|E]"
+carn_they_lost_dominant:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [dominant|E]"
+
+carn_i_gain_submissive:0 "[TARGET_CHARACTER.GetShortUIName|U] becomes your [submissive|E]"
+carn_they_gain_submissive:0 "[TARGET_CHARACTER.GetShortUIName|U] becomes [CHARACTER.GetShortUINamePossessive] [submissive|E]"
+
+carn_i_got_submissive:0 "[TARGET_CHARACTER.GetShortUIName|U] became your [submissive|E]"
+carn_they_got_submissive:0 "[TARGET_CHARACTER.GetShortUIName|U] became [CHARACTER.GetShortUINamePossessive] [submissive|E]"
+
+carn_i_lose_submissive:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [submissive|E]"
+carn_they_lose_submissive:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [submissive|E]"
+
+carn_i_lost_submissive:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer your [submissive|E]"
+carn_they_lost_submissive:0 "[TARGET_CHARACTER.GetShortUIName|U] is no longer [CHARACTER.GetShortUINamePossessive] [submissive|E]"
+
+carn_i_gain_fetish:0 "You gain a fetish"
+carn_i_gained_fetish:0 "You gained a fetish"
+carn_they_gain_fetish:0 "[CHARACTER.GetShortUIName|U] gains a fetish"
+carn_they_gained_fetish:0 "[CHARACTER.GetShortUIName|U] gained a fetish"
+carn_gains_fetish:0 "Gains a fetish"
+carn_gained_fetish:0 "Gained a fetish"
+
+carn_i_gain_fetish_anal_effect:0 "You gain an anal fetish"
+carn_i_gained_fetish_anal_effect:0 "You gained an anal fetish"
+carn_they_gain_fetish_anal_effect:0 "[CHARACTER.GetShortUIName|U] gains an anal fetish"
+carn_they_gained_fetish_anal_effect:0 "[CHARACTER.GetShortUIName|U] gained an anal fetish"
+carn_gain_fetish_anal_effect:0 "Gains an anal fetish"
+carn_gained_fetish_anal_effect:0 "Gained an anal fetish"
+
+carn_i_gain_fetish_sadism_effect:0 "You gain a sadism fetish"
+carn_i_gained_fetish_sadism_effect:0 "You gained a sadism fetish"
+carn_they_gain_fetish_sadism_effect:0 "[CHARACTER.GetShortUIName|U] gains a sadism fetish"
+carn_they_gained_fetish_sadism_effect:0 "[CHARACTER.GetShortUIName|U] gained a sadism fetish"
+carn_gain_fetish_sadism_effect:0 "Gains a sadism fetish"
+carn_gained_fetish_sadism_effect:0 "Gained a sadism fetish"
+
+carn_i_gain_fetish_masochism_effect:0 "You gain a masochism fetish"
+carn_i_gained_fetish_masochism_effect:0 "You gained a masochism fetish"
+carn_they_gain_fetish_masochism_effect:0 "[CHARACTER.GetShortUIName|U] gains a masochism fetish"
+carn_they_gained_fetish_masochism_effect:0 "[CHARACTER.GetShortUIName|U] gained a masochism fetish"
+carn_gain_fetish_masochism_effect:0 "Gains a masochism fetish"
+carn_gained_fetish_masochism_effect:0 "Gained a masochism fetish"
+
+carn_i_gain_fetish_bestiality_effect:0 "You gain a bestiality fetish"
+carn_i_gained_fetish_bestiality_effect:0 "You gained a bestiality fetish"
+carn_they_gain_fetish_bestiality_effect:0 "[CHARACTER.GetShortUIName|U] gains a bestiality fetish"
+carn_they_gained_fetish_bestiality_effect:0 "[CHARACTER.GetShortUIName|U] gained a bestiality fetish"
+carn_gain_fetish_bestiality_effect:0 "Gains a bestiality fetish"
+carn_gained_fetish_bestiality_effect:0 "Gained a bestiality fetish"
+
+carn_i_gain_fetish_watersports_effect:0 "You gain a watersports fetish"
+carn_i_gained_fetish_watersports_effect:0 "You gained a watersports fetish"
+carn_they_gain_fetish_watersports_effect:0 "[CHARACTER.GetShortUIName|U] gains a watersports fetish"
+carn_they_gained_fetish_watersports_effect:0 "[CHARACTER.GetShortUIName|U] gained a watersports fetish"
+carn_gain_fetish_watersports_effect:0 "Gains a watersports fetish"
+carn_gained_fetish_watersports_effect:0 "Gained a watersports fetish"
+
+carn_i_gain_fetish_scat_effect:0 "You gain a scat fetish"
+carn_i_gained_fetish_scat_effect:0 "You gained a scat fetish"
+carn_they_gain_fetish_scat_effect:0 "[CHARACTER.GetShortUIName|U] gains a scat fetish"
+carn_they_gained_fetish_scat_effect:0 "[CHARACTER.GetShortUIName|U] gained a scat fetish"
+carn_gain_fetish_scat_effect:0 "Gains a scat fetish"
+carn_gained_fetish_scat_effect:0 "Gained a scat fetish"
+
+carn_i_gain_fetish_gore_effect:0 "You gain a gore fetish"
+carn_i_gained_fetish_gore_effect:0 "You gained a gore fetish"
+carn_they_gain_fetish_gore_effect:0 "[CHARACTER.GetShortUIName|U] gains a gore fetish"
+carn_they_gained_fetish_gore_effect:0 "[CHARACTER.GetShortUIName|U] gained a gore fetish"
+carn_gain_fetish_gore_effect:0 "Gains a gore fetish"
+carn_gained_fetish_gore_effect:0 "Gained a gore fetish"
+
+carn_i_gain_fetish_foot_play_effect:0 "You gain a foot play fetish"
+carn_i_gained_fetish_foot_play_effect:0 "You gained a foot play fetish"
+carn_they_gain_fetish_foot_play_effect:0 "[CHARACTER.GetShortUIName|U] gains a foot play fetish"
+carn_they_gained_fetish_foot_play_effect:0 "[CHARACTER.GetShortUIName|U] gained a foot play fetish"
+carn_gain_fetish_foot_play_effect:0 "Gains a foot play fetish"
+carn_gained_fetish_foot_play_effect:0 "Gained a foot play fetish"
+
+carn_i_gain_fetish_bondage_effect:0 "You gain a bondage fetish"
+carn_i_gained_fetish_bondage_effect:0 "You gained a bondage fetish"
+carn_they_gain_fetish_bondage_effect:0 "[CHARACTER.GetShortUIName|U] gains a bondage fetish"
+carn_they_gained_fetish_bondage_effect:0 "[CHARACTER.GetShortUIName|U] gained a bondage fetish"
+carn_gain_fetish_bondage_effect:0 "Gains a bondage fetish"
+carn_gained_fetish_bondage_effect:0 "Gained a bondage fetish"
+
+carn_i_gain_fetish_domination_effect:0 "You gain a domination fetish"
+carn_i_gained_fetish_domination_effect:0 "You gained a domination fetish"
+carn_they_gain_fetish_domination_effect:0 "[CHARACTER.GetShortUIName|U] gains a domination fetish"
+carn_they_gained_fetish_domination_effect:0 "[CHARACTER.GetShortUIName|U] gained a domination fetish"
+carn_gain_fetish_domination_effect:0 "Gains a domination fetish"
+carn_gained_fetish_domination_effect:0 "Gained a domination fetish"
+
+carn_i_gain_fetish_submission_effect:0 "You gain a submission fetish"
+carn_i_gained_fetish_submission_effect:0 "You gained a submission fetish"
+carn_they_gain_fetish_submission_effect:0 "[CHARACTER.GetShortUIName|U] gains a submission fetish"
+carn_they_gained_fetish_submission_effect:0 "[CHARACTER.GetShortUIName|U] gained a submission fetish"
+carn_gain_fetish_submission_effect:0 "Gains a submission fetish"
+carn_gained_fetish_submission_effect:0 "Gained a submission fetish"
+
+carn_i_lose_fetishes_effect:0 "You lose all fetishes"
+carn_i_lost_fetishes_effect:0 "You lost all fetishes"
+carn_they_lose_fetishes_effect:0 "[CHARACTER.GetShortUIName|U] loses all fetishes"
+carn_they_lost_fetishes_effect:0 "[CHARACTER.GetShortUIName|U] lost all fetishes"
+carn_lose_fetishes_effect:0 "Loses all fetishes"
+carn_lost_fetishes_effect:0 "Lost all fetishes"
+
+carn_i_lose_fetish_effect:0 "You lose a fetish"
+carn_i_lost_fetish_effect:0 "You lost a fetish"
+carn_they_lose_fetish_effect:0 "[CHARACTER.GetShortUIName|U] loses a fetish"
+carn_they_lost_fetish_effect:0 "[CHARACTER.GetShortUIName|U] lost a fetish"
+carn_lose_fetish_effect:0 "Loses a fetish"
+carn_lost_fetish_effect:0 "Lost a fetish"

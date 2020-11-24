@@ -1,4 +1,4 @@
 ﻿l_spanish:
-carn_slave.0001.t:0 "Enslaved"
-carn_slave.0001.desc:0 "I am led into the courtyard, where my shoes are taken from me and manacles are placed around my wrists. I am resigned to my terrible fate as the sneering [actor.GetShortUIName] pronounces me a slave."
-carn_slave.0001.a:0 "From this day onward, I am little more than property."
+carn_slave.0001.t:1 "Esclavizado"
+carn_slave.0001.desc:1 "Me llevan hasta el patio, donde me despojan de mi calzado y me cologan grilletes en mis muñecas. Me resigno a mi terrible destino mientras [actor.GetShortUIName] me proclama como un esclavo más."
+carn_slave.0001.a:1 "Desde este dia, no soy más que la propiedad de otros."

@@ -1,0 +1,15 @@
+﻿l_spanish:
+
+ carn_very_low_milk_production_description:1 "Un poquito de"
+ carn_low_milk_production_description:1 "Un poco de"
+ carn_average_milk_production_description:1 "Una saludable cantidad de"
+ carn_high_milk_production_description:1 "Una impresionante cantidad de"
+ carn_very_high_milk_production_description:1 "Una increible cantidad de"
+ carn_extreme_milk_production_description:1 "Una cantidad enorme de"
+
+ carn_very_low:1 "Muy poco"
+ carn_low:1 "Poco"
+ carn_average:1 "Normal"
+ carn_high:1 "Mayor"
+ carn_very_high:1 "Superior"
+ carn_extreme:1 "Extremo" 
