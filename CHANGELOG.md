@@ -6,6 +6,10 @@ Compatible with saved games from version 1.3 and up.
 
 * Updated for compatibility with CK3 version 1.2.
 
+## Localization
+
+* Added partial Spanish translation thanks to Kalvis.
+
 ## Bug Fixes
 
 * Fixed saved games rarely being corrupted because of a pregnancy being recorded with a futa character as the father.
