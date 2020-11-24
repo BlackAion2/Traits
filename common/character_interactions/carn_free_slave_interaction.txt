@@ -28,6 +28,12 @@
 		scope:actor = {
 			has_relation_slave = scope:recipient
 		}
+		scope:recipient = {
+			NOR = {
+				has_character_flag = carn_slave_cannot_be_freed
+				has_trait_with_flag = carn_slave_cannot_be_freed
+			}
+		}
 	}
 
 	is_valid_showing_failures_only = {
