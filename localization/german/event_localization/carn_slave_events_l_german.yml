@@ -1,4 +1,4 @@
-﻿l_german:
-carn_slave.0001.t:0 "Enslaved"
-carn_slave.0001.desc:0 "I am led into the courtyard, where my shoes are taken from me and manacles are placed around my wrists. I am resigned to my terrible fate as the sneering [actor.GetShortUIName] pronounces me a slave."
-carn_slave.0001.a:0 "From this day onward, I am little more than property."
+l_german:
+carn_slave.0001.t:0 "Versklavt"
+carn_slave.0001.desc:0 "Ich werde in den Hof geführt, wo mir die Schuhe abgenommen und die Fesseln um meine Handgelenke gelegt werden. Ich habe mich mit meinem schrecklichen Schicksal abgefunden, als der spöttische [actor.GetShortUIName] mich zum Sklaven erklärt."
+carn_slave.0001.a:0 "Von diesem Tag an bin ich kaum mehr als Eigentum."
