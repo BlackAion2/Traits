@@ -114,6 +114,56 @@ types ButtonIcons
 		texture = "gfx/interface/icons/flat_icons/title.dds"
 	}
 
+	type button_randomize = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/randomize.dds"
+	}
+
+	type button_homosexual_female = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/homosexual_female.dds"
+	}
+
+	type button_homosexual_male = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/homosexual_male.dds"
+	}
+
+	type button_heterosexual = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/heterosexual.dds"
+	}
+
+	type button_bisexual_female = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/bisexual_female.dds"
+	}
+
+	type button_bisexual_male = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/bisexual_male.dds"
+	}
+
+	type button_asexual = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/asexual.dds"
+	}
+
+	type button_male = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/male.dds"
+	}
+
+	type button_female = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/female.dds"
+	}
+
+	type button_revert = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/revert.dds"
+	}
+
 	type button_search = button_icon
 	{
 		texture = "gfx/interface/icons/flat_icons/search.dds"
@@ -173,12 +223,6 @@ types ButtonIcons
 		clicksound = "event:/SFX/UI/Unit/Army/sfx_ui_unit_army_merge"
 	}
 
-	type button_army_attach = button_icon
-	{
-		texture = "gfx/interface/icons/flat_icons/army_attach.dds"
-		clicksound = "event:/SFX/UI/Unit/Army/sfx_ui_unit_army_attach"
-	}
-
 	type button_army_details = button_icon
 	{
 		texture = "gfx/interface/icons/flat_icons/army_details.dds"
@@ -187,6 +231,16 @@ types ButtonIcons
 	type button_army_reorganize = button_icon
 	{
 		texture = "gfx/interface/icons/flat_icons/army_reorganize.dds"
+	}
+
+	type button_attach_to_unit = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/army_attach.dds"
+	}
+
+	type button_detach_from_unit = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/army_detach.dds"
 	}
 
 	type button_army_split_off_special_troops = button_icon
@@ -348,6 +402,7 @@ types ButtonIcons
 
 	type button_select_arrow = button_icon_custom
 	{
+		size = { 20 20 }
 		texture = "gfx/interface/icons/flat_icons/select_arrow.dds"
 	}
 
@@ -479,6 +534,11 @@ types ButtonIcons
 			uppressedframe = 3
 		}
 	}
+
+    type button_trait = button_group
+    {
+    	icon_trait = {}
+    }
 
 	###############################################################################
 	### Add sound effects here to ensure they are consistent between buttons types.

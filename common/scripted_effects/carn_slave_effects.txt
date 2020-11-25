@@ -507,7 +507,7 @@ carn_free_slave_interaction_effect = {
 			}
 			set_character_faith = scope:actor.faith
 			add_opinion = {
-				modifier = demanded_conversion
+				modifier = demanded_my_conversion_opinion
 				target = scope:owner
 			}
 		}

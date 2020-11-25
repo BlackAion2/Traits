@@ -1,0 +1,3 @@
+﻿l_spanish:
+carn_cv_spouses_heading:0 "$SECONDARY_SPOUSES$ #weak ([GetDataModelSize(CharacterWindow.GetSecondarySpouses)])#!"
+carn_cv_concubines_heading:0 "$doctrine_concubines_name$ #weak ([GetDataModelSize(CharacterWindow.GetConcubines)])#!"

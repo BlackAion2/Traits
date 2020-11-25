@@ -1,17 +1,17 @@
 ﻿l_spanish:
 
-dominant:0 "[dominant|E]"
-relation_dominant:0 "dominant"
-relation_dominant_possessive:0 "dominant's"
+dominant:1 "[dominant|E]"
+relation_dominant:1 "Dominante"
+relation_dominant_possessive:1 "del Dominante"
 
-submissive:0 "[submissive|E]"
-relation_submissive:0 "submissive"
-relation_submissive_possessive:0 "submissive's"
+submissive:1 "[submissive|E]"
+relation_submissive:1 "Sumiso"
+relation_submissive_possessive:1 "Del Sumiso"
 
-slave:0 "[slave|E]"
-relation_slave:0 "slave"
-relation_slave_possessive:0 "slave's"
+slave:1 "[slave|E]"
+relation_slave:1 "Esclavo"
+relation_slave_possessive:1 "Del Esclavo"
 
-slave_owner:0 "[slave_owner|E]"
-relation_slave_owner:0 "owner"
-relation_slave_owner_possessive:0 "owner's"
+slave_owner:1 "[slave_owner|E]"
+relation_slave_owner:1 "Propietario"
+relation_slave_owner_possessive:1 "Del Propietario"

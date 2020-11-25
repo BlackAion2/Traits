@@ -108,7 +108,10 @@ carn_had_sex_with_effect = {
 			if = {
 				limit = {
 					$CHARACTER_1$ = { is_female = yes }
-					$CHARACTER_2$ = { carn_gender_can_impregnate_trigger = yes }
+					$CHARACTER_2$ = {
+						#carn_gender_can_impregnate_trigger = yes
+						is_male = yes
+					}
 				}
 				$CHARACTER_1$ = { 
 					if = {
@@ -165,19 +168,25 @@ carn_had_sex_with_effect = {
 			}
 			else_if = {
 				limit = {
-					$CHARACTER_1$ = { carn_gender_can_impregnate_trigger = yes }
+					$CHARACTER_1$ = {
+						#carn_gender_can_impregnate_trigger = yes
+						is_male = yes
+					}
 					$CHARACTER_2$ = { is_female = yes }
 				}
-				$CHARACTER_1$ = {
+				$CHARACTER_2$ = {
 					if = {
 						limit = {
-							NOT = { $CHARACTER_2$ = { has_trait = pregnant } }
-						}
-						$CHARACTER_2$ = {
-							add_to_variable_list = {
-								name = potential_father_variable_list
-								target = $CHARACTER_1$
+							$CHARACTER_1$ = {
+								effective_age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE
 							}
+							is_pregnant = no
+							effective_age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
+							effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
+						}
+						add_to_variable_list = {
+							name = potential_father_variable_list
+							target = $CHARACTER_1$
 						}
 						if = {
 							limit = {
@@ -190,48 +199,17 @@ carn_had_sex_with_effect = {
 									is_courtier = no
 								}
 							}
-							set_variable = {
-								name = story_peasant_affair_target
-								value = $CHARACTER_2$
-							}
-							$CHARACTER_2$ = {
-								if = {
-									limit = {
-										is_pregnant = no
-										effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
-									}
-									random = {
-										chance = $C2_PREGNANCY_CHANCE$
-										modifier = {
-											factor = carn_birth_control_pregnancy_chance_multiplier
-											OR = {
-												$CHARACTER_1$ = { has_character_modifier = carn_using_birth_control_modifier }
-												$CHARACTER_2$ = { has_character_modifier = carn_using_birth_control_modifier }
-											}
-										}
-										add_character_flag = {
-											flag = peasant_is_pregnant
-											days = 560
-										}
-									}
+							$CHARACTER_1$ = {
+								set_variable = {
+									name = story_peasant_affair_target
+									value = $CHARACTER_2$
 								}
 							}
-							create_story = story_peasant_affair
-						}
-						else_if = {
-							limit = {
-								effective_age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE
-								$CHARACTER_2$ = {
+							if = {
+								limit = {
 									is_pregnant = no
-									effective_age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
 									effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
 								}
-							}
-							save_scope_value_as = {
-								name = carn_sex_char_2_impregnated
-								value = no
-							}
-							$CHARACTER_2$ = {
 								random = {
 									chance = $C2_PREGNANCY_CHANCE$
 									modifier = {
@@ -241,13 +219,42 @@ carn_had_sex_with_effect = {
 											$CHARACTER_2$ = { has_character_modifier = carn_using_birth_control_modifier }
 										}
 									}
-									make_pregnant = {
-										father = $CHARACTER_1$
+									add_character_flag = {
+										flag = peasant_is_pregnant
+										days = 560
 									}
-									save_scope_value_as = {
-										name = carn_sex_char_2_impregnated
-										value = yes
+								}
+							}
+							create_story = story_peasant_affair
+						}
+						else_if = {
+							limit = {
+								$CHARACTER_1$ = {
+									effective_age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE
+								}
+								is_pregnant = no
+								effective_age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
+								effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
+							}
+							save_scope_value_as = {
+								name = carn_sex_char_2_impregnated
+								value = no
+							}
+							random = {
+								chance = $C2_PREGNANCY_CHANCE$
+								modifier = {
+									factor = carn_birth_control_pregnancy_chance_multiplier
+									OR = {
+										$CHARACTER_1$ = { has_character_modifier = carn_using_birth_control_modifier }
+										$CHARACTER_2$ = { has_character_modifier = carn_using_birth_control_modifier }
 									}
+								}
+								make_pregnant = {
+									father = $CHARACTER_1$
+								}
+								save_scope_value_as = {
+									name = carn_sex_char_2_impregnated
+									value = yes
 								}
 							}
 						}
@@ -350,16 +357,16 @@ carn_had_sex_with_effect = {
 				$CHARACTER_1$ = {
 					give_incest_secret_or_nothing_with_target_effect = { CHARACTER = $CHARACTER_2$ }
 				}
-				hidden_effect = {
-					$CHARACTER_2$ = { give_incest_secret_or_nothing_with_target_effect = { CHARACTER = $CHARACTER_1$ } }
+				$CHARACTER_2$ = {
+					give_incest_secret_or_nothing_with_target_effect = { CHARACTER = $CHARACTER_1$ }
 				}
 
 				#Homosexuality
 				$CHARACTER_1$ = {
 					give_homosexual_secret_or_nothing_with_target_effect = { CHARACTER = $CHARACTER_2$ }
 				}
-				hidden_effect = {
-					$CHARACTER_2$ = { give_homosexual_secret_or_nothing_with_target_effect = { CHARACTER = $CHARACTER_1$ } }
+				$CHARACTER_2$ = {
+					give_homosexual_secret_or_nothing_with_target_effect = { CHARACTER = $CHARACTER_1$ }
 				}
 			}
 		}
