@@ -5,16 +5,11 @@
 	carn_sex_interaction_no_cd = {}
 }
 
-carn_arousal_stress = {
-	default = carn_arousal_stress_disabled
-	carn_arousal_stress_disabled = {}
-	carn_arousal_stress_enabled = {}
-}
-
-carn_manage_arousal = {
-	default = carn_manage_arousal_disabled
-	carn_manage_arousal_disabled = {}
-	carn_manage_arousal_enabled = {}
+carn_arousal = {
+	default = carn_arousal_disabled
+	carn_arousal_disabled = {}
+	carn_arousal_causes_stress = {}
+	carn_arousal_managed = {}
 }
 
 carn_arousal_difficulty = {

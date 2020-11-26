@@ -2,10 +2,10 @@
 	scope = none
 
 	is_shown = {
-		has_game_rule = carn_manage_arousal_enabled
+		has_game_rule = carn_arousal_managed
 	}
 	is_valid = {
-		has_game_rule = carn_manage_arousal_enabled
+		has_game_rule = carn_arousal_managed
 	}
 	effect = {}
 }
