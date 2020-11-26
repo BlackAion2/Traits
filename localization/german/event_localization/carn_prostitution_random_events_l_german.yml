@@ -1,13 +1,13 @@
-﻿l_german:
-carn_can_no_longer_work_as_prostitute_tooltip:2 "[carn_prostitute.GetShortUIName|U] can no longer work as a prostitute"
-carn_prostitution_random_events.0001.notification:0 "Prostitution: Improved Skills"
-carn_prostitution_random_events.0002.notification:0 "Prostitution: Rivals Slander You"
-carn_prostitution_random_events.0003.notification:0 "Prostitution: [ROOT.Char.GetFaith.PriestNeuterPlural|U] Condemn You"
-carn_prostitution_random_events.0005.notification:0 "Prostitution: Client Tips High"
+l_german:
+carn_can_no_longer_work_as_prostitute_tooltip:2 "[carn_prostitute.GetShortUIName|U] kann nicht mehr als Prostituierte arbeiten"
+carn_prostitution_random_events.0001.notification:0 "Prostitution: Verbesserte Fähigkeiten"
+carn_prostitution_random_events.0002.notification:0 "Prostitution: Rivalen verleumden Sie"
+carn_prostitution_random_events.0003.notification:0 "Prostitution: [ROOT.Char.GetFaith.PriestNeuterPlural|U] Verurteilen Sie"
+carn_prostitution_random_events.0005.notification:0 "Prostitution: Kundentipps hoch"
 
-carn_prostitution_random_events.0011.t:0 "Prostitution: An Alluring Proposition"
-carn_prostitution_random_events.0011.desc:0 "As I lay seductively in my bedchamber, I am intrigued to find that my next client is none other than [client.Custom2('MyCharacterIntroduction', ROOT.Char)].\n\nGazing upon my form with unrestrained lust, [client.GetSheHe] assures me that I will be compensated well for my service..."
+carn_prostitution_random_events.0011.t:0 "Prostitution: Eine verlockende Proposition"
+carn_prostitution_random_events.0011.desc:0 "Während ich verführerisch in meinem Schlafgemach liege, bin ich fasziniert, festzustellen, dass mein nächster Klient kein anderer als [client.Custom2('MyCharacterIntroduction', ROOT.Char)] ist. Wenn ich meine Form mit hemmungsloser Lust betrachte, versichert mir [client.GetSheHe], dass ich für meine Dienstleistung gut entschädigt werde..."
 
-carn_prostitution_random_events.0011.a:0 "Who am I to refuse such an opportunity?"
-carn_prostitution_random_events.0011.b:0 "I am afraid I must decline."
-carn_prostitution_random_events.0011.c:0 "This could be a juicy scandal..."
+carn_prostitution_random_events.0011.a:0 "Wer bin ich, dass ich eine solche Gelegenheit ablehne?"
+carn_prostitution_random_events.0011.b:0 "Ich fürchte, ich muss ablehnen."
+carn_prostitution_random_events.0011.c:0 "Das könnte ein saftiger Skandal werden..."
