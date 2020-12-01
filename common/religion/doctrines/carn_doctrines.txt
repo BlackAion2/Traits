@@ -168,6 +168,10 @@ carn_dummy_doctrine = {
 		parameters = {
 			naked_males_active = no
 			naked_females_active = no
+			naked_malepriest_active = no
+			naked_malepriests_active = no
+			naked_femalepriest_active = no
+			naked_femalepriests_active = no
 		}
 	}
 }
