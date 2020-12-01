@@ -161,8 +161,8 @@ pregnancy.1001 = {
 	left_portrait = scope:real_father
 
 	trigger = {
-		any_consort = {
-			this = scope:real_father
+		carn_any_consort_or_slave_or_slave_owner_is_character_trigger = {
+			CHARACTER = scope:real_father
 		}
 		carn_should_suppress_on_pregnancy_notification_trigger = no
 		carn_has_absolute_birth_control_trigger = no
@@ -267,7 +267,10 @@ pregnancy.1101 = {
 
 	trigger = {
 		# Event is only valid if our former spouse (dead or divorced) is both the real and assumed father (e.g., it was a legitimate pregnancy when the child was conceived).
-		former_consort_was_father = yes
+		OR = {
+			former_consort_was_father = yes
+			carn_real_father_is_former_slave_or_slave_owner_trigger = yes
+		}
 		carn_should_suppress_on_pregnancy_notification_trigger = no
 		carn_has_absolute_birth_control_trigger = no
 	}
@@ -342,6 +345,9 @@ pregnancy.1103 = {
 					OR = {
 						any_former_concubine = { this = scope:mother }
 						any_former_concubinist = { this = scope:mother }
+						scope:mother = {
+							carn_real_father_is_former_slave_or_slave_owner_trigger = yes
+						}
 					}
 			    }
 			    desc = pregnancy.1103.opening_concubine
@@ -356,6 +362,9 @@ pregnancy.1103 = {
 					OR = {
 						any_former_concubine = { this = scope:mother }
 						any_former_concubinist = { this = scope:mother }
+						scope:mother = {
+							carn_real_father_is_former_slave_or_slave_owner_trigger = yes
+						}
 					}
 			    }
 			    desc = pregnancy.1103.desc_concubine
@@ -404,7 +413,14 @@ pregnancy.2001 = {
 				exists = this
 			}
 			# Same for if a former spouse/concubine got us pregant.
-			former_consort_was_father = yes
+			OR = {
+				former_consort_was_father = yes
+				carn_real_father_is_former_slave_or_slave_owner_trigger = yes
+			}
+			# Carnalitas: slave daddies are ok.
+			carn_any_consort_or_slave_or_slave_owner_is_character_trigger = {
+				CHARACTER = scope:real_father
+			}
 		}
 		carn_should_suppress_on_pregnancy_notification_trigger = no
 		carn_has_absolute_birth_control_trigger = no
@@ -547,8 +563,15 @@ pregnancy.2002 = {
 		}
 
 		# OBJECTION! If a former spouse/concubine is both the real and assumed father, it's not actually a bastard!
-		NOT = {	
-			former_consort_was_father = yes
+		NOR = {	
+			OR = {
+				former_consort_was_father = yes
+				carn_real_father_is_former_slave_or_slave_owner_trigger = yes
+			}
+			# Carnalitas: slave daddies are ok.
+			carn_any_consort_or_slave_or_slave_owner_is_character_trigger = {
+				CHARACTER = scope:real_father
+			}
 		}
 		
 		carn_should_suppress_on_pregnancy_notification_trigger = no

@@ -23,3 +23,26 @@ carn_candidate_to_sell_slave_to_trigger = {
 	NOT = { is_at_war_with = scope:actor }
 	is_imprisoned = no
 }
+
+carn_any_consort_or_slave_or_slave_owner_is_character_trigger = {
+	OR = {
+		any_consort = {
+			this = $CHARACTER$
+		}
+		any_relation = {
+			type = slave
+			this = $CHARACTER$
+		}
+		any_relation = {
+			type = slave_owner
+			this = $CHARACTER$
+		}
+	}
+}
+
+carn_real_father_is_former_slave_or_slave_owner_trigger = {
+	has_opinion_modifier = {
+		target = scope:real_father
+		modifier = carn_former_slave_or_slave_owner_opinion
+	}
+}

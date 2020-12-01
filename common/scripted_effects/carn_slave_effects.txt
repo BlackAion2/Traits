@@ -422,6 +422,16 @@ carn_free_slave_effect = {
 	every_relation = {
 		type = slave_owner
 		remove_relation_slave = prev
+		hidden_effect = {
+			add_opinion = {
+				target = prev
+				modifier = carn_former_slave_or_slave_owner_opinion
+			}
+			reverse_add_opinion = {
+				target = prev
+				modifier = carn_former_slave_or_slave_owner_opinion
+			}
+		}
 		save_scope_as = former_owner
 	}
 	hidden_effect = {
@@ -636,6 +646,14 @@ carn_buy_slave_effect = {
 			every_relation = {
 				type = slave_owner
 				remove_relation_slave = prev
+				add_opinion = {
+					target = prev
+					modifier = carn_former_slave_or_slave_owner_opinion
+				}
+				reverse_add_opinion = {
+					target = prev
+					modifier = carn_former_slave_or_slave_owner_opinion
+				}
 			}
 			if = {
 				limit = { is_imprisoned_by = scope:seller }

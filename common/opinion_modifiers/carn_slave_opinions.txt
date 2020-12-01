@@ -70,3 +70,9 @@ carn_forced_me_into_prostitution_opinion = {
 	years = 30
 	decaying = yes
 }
+
+# used for pregnancy logic, to prevent pregnancies from ex-slaves or ex-owners being treated as bastard pregnancies
+carn_former_slave_or_slave_owner_opinion = {
+	opinion = 0
+	months = 9
+}
