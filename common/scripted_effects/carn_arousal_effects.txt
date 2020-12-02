@@ -1,7 +1,7 @@
-﻿# carn_add_arousal_effect
+﻿# carn_add_arousal
 # carn_arousal_seeding
 
-carn_add_arousal_effect = {
+carn_add_arousal = {
 	# In case arousal has not been set yet
 	carn_arousal_seeding = yes
 
@@ -23,6 +23,10 @@ carn_add_arousal_effect = {
 				multiply = carn_arousal_gain_difficulty_multiplier
 			}
 		}
+		custom_description = {
+			text = carn_add_arousal
+			value = $VALUE$
+		}
 	}
 	else_if = {
 		limit = {
@@ -34,6 +38,10 @@ carn_add_arousal_effect = {
 				add = $VALUE$
 				multiply = carn_arousal_loss_difficulty_multiplier
 			}
+		}
+		custom_description = {
+			text = carn_add_arousal
+			value = $VALUE$
 		}
 	}
 

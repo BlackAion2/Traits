@@ -1,0 +1,13 @@
+﻿l_english: 
+ I_GAINED_AROUSAL_EFFECT: "You gained [arousal_gain_i]$VALUE|-0$ [arousal|E]"
+ I_LOST_AROUSAL_EFFECT: "You lost [arousal_loss_i]$VALUE|+0$ [arousal|E]"
+ THEY_GAINED_AROUSAL_EFFECT: "[CHARACTER.GetShortUIName|U] gained [arousal_gain_i]$VALUE|V0$ [arousal|E]"
+ THEY_LOST_AROUSAL_EFFECT: "[CHARACTER.GetShortUIName|U] lost [arousal_loss_i]$VALUE|V0$ [arousal|E]"
+ GAINED_AROUSAL_EFFECT: "Gained [arousal_gain_i]$VALUE|V0$ [arousal|E]"
+ LOST_AROUSAL_EFFECT: "Lost [arousal_loss_i]$VALUE|V0$ [arousal|E]"
+ I_GAIN_AROUSAL_EFFECT: "You gain [arousal_gain_i]$VALUE|-0$ [arousal|E]"
+ I_LOSE_AROUSAL_EFFECT: "You lose [arousal_loss_i]$VALUE|+0$ [arousal|E]"
+ THEY_GAIN_AROUSAL_EFFECT: "[CHARACTER.GetShortUIName|U] gains [arousal_gain_i]$VALUE|V0$ [arousal|E]"
+ THEY_LOSE_AROUSAL_EFFECT: "[CHARACTER.GetShortUIName|U] loses [arousal_loss_i]$VALUE|V0$ [arousal|E]"
+ GAIN_AROUSAL_EFFECT: "Gains [arousal_gain_i]$VALUE|V0$ [arousal|E]"
+ LOSE_AROUSAL_EFFECT: "Loses [arousal_loss_i]$VALUE|V0$ [arousal|E]"

@@ -54,7 +54,7 @@ carn_arousal.0002 = {
 	}
 
 	immediate = {
-		carn_add_arousal_effect = { 
+		carn_add_arousal = { 
 			VALUE = 1
 		}
 
