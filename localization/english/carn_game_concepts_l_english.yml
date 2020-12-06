@@ -91,3 +91,13 @@
 
  game_concept_unknown_fetish: "Unknown Fetish"
  game_concept_unknown_fetish_desc: "An unknown fetish. Whatever it is, it's probably fucked-up."
+
+ game_concept_arousal: "Arousal"
+ game_concept_arousal_desc: "$game_concept_arousal$ measures a character's libido and sexual well-being. Characters gain Arousal over time, and lose Arousal upon receiving carnal pleasure.\n\nCharacters who gain enough Arousal will also gain an [arousal_level|E], causing various negative effects that persist until they manage to reduce their Arousal."
+ game_concept_arousal_level: "Arousal Level"
+ game_concept_arousal_levels: "Arousal Levels"
+ game_concept_arousal_level_desc: "Every 100 [arousal|E] a character accumulates also causes them to gain an Arousal Level. Arousal Levels range from 0 to 3, with each level imposing increasingly negative effects."
+ game_concept_aroused: "Aroused"
+ game_concept_arousal_i:0 "@arousal_icon!"
+ game_concept_arousal_gain_i: "@arousal_gain_icon!"
+ game_concept_arousal_loss_i: "@arousal_loss_icon!"

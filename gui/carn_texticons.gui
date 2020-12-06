@@ -1,0 +1,30 @@
+
+texticon = {
+	icon = arousal_icon
+	iconsize = {
+		texture = "gfx/interface/icons/arousal/icon_arousal.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = arousal_gain_icon
+	iconsize = {
+		texture = "gfx/interface/icons/arousal/icon_arousal_gain.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}
+
+texticon = {
+	icon = arousal_loss_icon
+	iconsize = {
+		texture = "gfx/interface/icons/arousal/icon_arousal_loss.dds"
+		size = { 25 25 }
+		offset = { 0 6 }
+		fontsize = 16
+	}
+}

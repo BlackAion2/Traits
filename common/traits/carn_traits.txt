@@ -32,6 +32,8 @@ futa = {
 
 	physical = yes
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -67,6 +69,8 @@ futa_genetic = {
 	birth = 0
 	random_creation = 0
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -83,6 +87,7 @@ futa_genetic = {
 # Small dick
 dick_small_1 = {
 	index = 6902
+	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -109,6 +114,8 @@ dick_small_1 = {
 	birth = 0 # handled through script
 	random_creation = 0
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -125,6 +132,7 @@ dick_small_1 = {
 # Tiny dick
 dick_small_2 = {
 	index = 6903
+	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -151,6 +159,8 @@ dick_small_2 = {
 	birth = 0 # handled through script
 	random_creation = 0
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -167,6 +177,7 @@ dick_small_2 = {
 # Micro dick
 dick_small_3 = {
 	index = 6904
+	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -193,6 +204,8 @@ dick_small_3 = {
 	birth = 0 # handled through script
 	random_creation = 0
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -209,6 +222,7 @@ dick_small_3 = {
 # Big dick
 dick_big_1 = {
 	index = 6905
+	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -236,6 +250,8 @@ dick_big_1 = {
 	birth = 0 # handled through script
 	random_creation = 0
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -252,6 +268,7 @@ dick_big_1 = {
 # Huge dick
 dick_big_2 = {
 	index = 6906
+	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -279,6 +296,8 @@ dick_big_2 = {
 	birth = 0 # handled through script
 	random_creation = 0
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -295,6 +314,7 @@ dick_big_2 = {
 # Gigantic dick
 dick_big_3 = {
 	index = 6907
+	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -322,6 +342,8 @@ dick_big_3 = {
 	birth = 0 # handled through script
 	random_creation = 0
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -338,6 +360,7 @@ dick_big_3 = {
 # Small Tits
 tits_small_1 = {
 	index = 6908
+	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -364,6 +387,8 @@ tits_small_1 = {
 	birth = 0 # handled through script
 	random_creation = 0
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -380,6 +405,7 @@ tits_small_1 = {
 # Tiny Tits
 tits_small_2 = {
 	index = 6909
+	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -405,6 +431,8 @@ tits_small_2 = {
 	birth = 0 # handled through script
 	random_creation = 0
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -421,6 +449,7 @@ tits_small_2 = {
 # Flat Tits
 tits_small_3 = {
 	index = 6910
+	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -447,6 +476,8 @@ tits_small_3 = {
 	birth = 0 # handled through script
 	random_creation = 0
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -463,6 +494,7 @@ tits_small_3 = {
 # Big Tits
 tits_big_1 = {
 	index = 6911
+	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -490,6 +522,8 @@ tits_big_1 = {
 	birth = 0 # handled through script
 	random_creation = 0
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -506,6 +540,7 @@ tits_big_1 = {
 # Huge Tits
 tits_big_2 = {
 	index = 6912
+	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -533,6 +568,8 @@ tits_big_2 = {
 	birth = 0 # handled through script
 	random_creation = 0
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -549,6 +586,7 @@ tits_big_2 = {
 # Gigantic Tits
 tits_big_3 = {
 	index = 6913
+	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -575,6 +613,8 @@ tits_big_3 = {
 
 	birth = 0 # handled through script
 	random_creation = 0
+
+	ruler_designer_cost = 0
 
 	desc = {
 		first_valid = {
@@ -609,6 +649,8 @@ slave = { # Chattel Slave
 	
 	inherit_chance = 100
 	parent_inheritance_sex = female
+	
+	shown_in_ruler_designer = no
 
 	desc = {
 		first_valid = {
@@ -650,6 +692,8 @@ former_slave = { # Freedman/Freedwoman
 
 	diplomacy = -1
 
+	ruler_designer_cost = 0
+
 	desc = {
 		first_valid = {
 			triggered_desc = {
@@ -670,6 +714,7 @@ former_slave = { # Freedman/Freedwoman
 
 prostitute_1 = {
 	index = 6916
+	minimum_age = 16
 	lifestyle = yes
 
 	name = {
@@ -717,6 +762,8 @@ prostitute_1 = {
 		}
 	}
 
+	ruler_designer_cost = 0
+
 	ai_greed = medium_positive_ai_value
 	ai_sociability = medium_positive_ai_value
 
@@ -738,6 +785,7 @@ prostitute_1 = {
 
 prostitute_2 = {
 	index = 6917
+	minimum_age = 16
 	lifestyle = yes
 
 	name = {
@@ -788,6 +836,8 @@ prostitute_2 = {
 		}
 	}
 
+	ruler_designer_cost = 30
+
 	ai_greed = medium_positive_ai_value
 	ai_sociability = medium_positive_ai_value
 
@@ -809,6 +859,7 @@ prostitute_2 = {
 
 prostitute_3 = {
 	index = 6918
+	minimum_age = 16
 	lifestyle = yes
 
 	name = {
@@ -846,6 +897,8 @@ prostitute_3 = {
 		opinion_modifier = carn_prostitution_intolerant_opinion
 		ignore_opinion_value_if_same_trait = yes
 	}
+
+	ruler_designer_cost = 75
 	
 	desc = {
 		first_valid = {

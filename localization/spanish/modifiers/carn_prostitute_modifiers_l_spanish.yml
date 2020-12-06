@@ -1,7 +1,7 @@
 ﻿l_spanish:
-carn_working_as_prostitute_1_modifier:0 "Working as a $trait_prostitute_1$"
-carn_working_as_prostitute_1_modifier_desc:0 "This character is shamelessly selling their body to anyone with coin."
-carn_working_as_prostitute_2_modifier:0 "Working as an $trait_prostitute_2$"
-carn_working_as_prostitute_2_modifier_desc:0 "This character is an influential prostitute patronized by many clients."
-carn_working_as_prostitute_3_modifier:0 "Working as a $trait_prostitute_3$"
-carn_working_as_prostitute_3_modifier_desc:0 "This character receives nightly visits from nobility and royalty."
+carn_working_as_prostitute_1_modifier:1 "Trabajando como $trait_prostitute_1$"
+carn_working_as_prostitute_1_modifier_desc:1 "Este personaje vende su cuerpo impudicamente a cambio de monedas."
+carn_working_as_prostitute_2_modifier:1 "Trabajando como $trait_prostitute_2$"
+carn_working_as_prostitute_2_modifier_desc:1 "La influyente labor sexual de este personaje es avalada por varios clientes."
+carn_working_as_prostitute_3_modifier:1 "Trabajando como $trait_prostitute_3$"
+carn_working_as_prostitute_3_modifier_desc:1 "Este personaje recibe visitas nocturnas tanto como de la nobleza como de la realeza."

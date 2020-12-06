@@ -1,6 +1,6 @@
 ﻿l_spanish:
 
-carn_sex_scene.0001.t:0 "Throes of Passion"
-carn_sex_scene.0001.desc_opening:0 "I find my [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('carn_sex_target'))] [carn_sex_target.GetTitledFirstName] waiting eagerly."
-carn_sex_scene.0001.desc_ending:0 "[ROOT.Char.Custom2('sex_scene', SCOPE.sC('carn_sex_target'))]"
-carn_sex_scene.0001.a:0 "Wonderful."
+carn_sex_scene.0001.t:1 "Agonia de Pasion"
+carn_sex_scene.0001.desc_opening:1 "Encuentro a mi [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('carn_sex_target'))] [carn_sex_target.GetTitledFirstName] esperandome ansiosamente."
+carn_sex_scene.0001.desc_ending:1 "[ROOT.Char.Custom2('sex_scene', SCOPE.sC('carn_sex_target'))]"
+carn_sex_scene.0001.a:1 "Explendido."

@@ -54,13 +54,13 @@ carn_arousal.0002 = {
 	}
 
 	immediate = {
-		carn_add_arousal_effect = { 
+		carn_add_arousal = { 
 			VALUE = 1
 		}
 
 		trigger_event = {
 			id = carn_arousal.0002
-			days = 3
+			days = 6
 		}
 	}
 }

@@ -1,13 +1,13 @@
 ﻿l_spanish:
-carn_can_no_longer_work_as_prostitute_tooltip:0 "[carn_prostitute.GetShortUIName|U] can no longer work as a prostitute"
-carn_prostitution_random_events.0001.notification:0 "Prostitution: Improved Skills"
-carn_prostitution_random_events.0002.notification:0 "Prostitution: Rivals Slander You"
-carn_prostitution_random_events.0003.notification:0 "Prostitution: [ROOT.Char.GetFaith.PriestNeuterPlural|U] Condemn You"
-carn_prostitution_random_events.0005.notification:0 "Prostitution: Client Tips High"
+carn_can_no_longer_work_as_prostitute_tooltip:1 "[carn_prostitute.GetShortUIName|U] No puede ejercer más la prostitución"
+carn_prostitution_random_events.0001.notification:1 "Prostitución: Hablilidades Mejoradas"
+carn_prostitution_random_events.0002.notification:1 "Prostitución: La competencia te calumnia"
+carn_prostitution_random_events.0003.notification:1 "Prostitución: [ROOT.Char.GetFaith.PriestNeuterPlural|U] Te condena"
+carn_prostitution_random_events.0005.notification:1 "Prostitución: Buenas propinas"
 
-carn_prostitution_random_events.0011.t:0 "Prostitution: An Alluring Proposition"
-carn_prostitution_random_events.0011.desc:0 "As I lay seductively in my bedchamber, I am intrigued to find that my next client is none other than [client.Custom2('MyCharacterIntroduction', ROOT.Char)].\n\nGazing upon my form with unrestrained lust, [client.GetSheHe] assures me that I will be compensated well for my service..."
+carn_prostitution_random_events.0011.t:1 "Prostitución: Una proposición seductora"
+carn_prostitution_random_events.0011.desc:1 "Mientras estoy en mis aposentos, me intriga saber que mi próximo cliente no es nada más que [client.Custom2('MyCharacterIntroduction', ROOT.Char)].\n\nContenplandome con una lujuria desenfrenada, [client.GetSheHe] me asegura que tendre una buena recompensa por mis servicios..."
 
-carn_prostitution_random_events.0011.a:0 "Who am I to refuse such an opportunity?"
-carn_prostitution_random_events.0011.b:0 "I am afraid I must decline."
-carn_prostitution_random_events.0011.c:0 "This could be a juicy scandal..."
+carn_prostitution_random_events.0011.a:1 "¡Quién soy para rechazar tal propuesta?"
+carn_prostitution_random_events.0011.b:1 "Me temo que debo rechazar su oferta."
+carn_prostitution_random_events.0011.c:1 "Esto prodría ser un gran escandalo..."

@@ -1,6 +1,6 @@
 ﻿l_spanish:
 
-action_carn_can_sex_interaction:0 "You can $carn_sex_interaction$"
-action_carn_can_sex_interaction_label:0 "$action_carn_can_sex_interaction$"
-action_carn_can_sex_interaction_desc:0 "You can use the $carn_sex_interaction$ [character_interaction|E] to reduce [stress|E] or try for a baby, among other effects."
-action_carn_can_sex_interaction_click:0 "#I Click to $carn_sex_interaction$#!"
+action_carn_can_sex_interaction:1 "Puedes $Tener Relaciones$"
+action_carn_can_sex_interaction_label:1 "$action_carn_can_sex_interaction$"
+action_carn_can_sex_interaction_desc:1 "Puedes the $Tener Relaciones$ [character_interaction|E] para reducir [stress|E] o ir por un bebé, entre otros efectos."
+action_carn_can_sex_interaction_click:1 "#$Tener Relaciones$#!"

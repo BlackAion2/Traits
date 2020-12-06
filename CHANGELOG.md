@@ -1,41 +1,19 @@
-# Carnalitas 1.3.2
+# Carnalitas 1.3.3
 
 Compatible with saved games from version 1.3 and up.
 
-## New Features
+## Compatibility
 
-### Fetishes
+* Updated for compatibility with CK3 version 1.2.
 
-* Gave all fetishes a corresponding game concept description.
+## Localization
 
-### (Modding) Pregnancy Suppression System
-
-* Added a birth notification suppression system that functions similarly to pregnancy suppression. This allows you to replace `birth.1001` and similar events with your own event in `carn_on_birth_notification_suppressed`. Note that you will need to replace both mother and father notification events.
-
-New character and trait flag:
-
-* `carn_suppress_all_on_birth_notification`
-
-New character flag (not trait flag):
-
-* `carn_suppress_next_on_birth_notification`
-
-New on_action:
-
-* `carn_on_birth_notification_suppressed`
-
-### Miscellaneous
-
-New scripted triggers:
-
-* `carn_should_have_no_pregnancy_complications_trigger`
+* Added partial Spanish translation thanks to Kalvis.
 
 ## Tweaks
 
-* Fetish GUI is no longer hardcoded from the character window. Instead it is now reliant on a list in scripted_gui which should be easier to maintain.
+* (Modding) Added `carn_slave_cannot_be_freed` flag by request. This character or trait flag blocks a slave from being freed.
 
 ## Bug Fixes
 
-* Fixed pregnancy events having multiple sets of options. This fix overrides `pregnancy_events.txt`
-* Fixed the Free Slave interaction having bad AI weighting, causing error.log to overflow with error messages after a while.
-* Randomly generated peasant/populist rebellion leaders which are made into slaves no longer disappear if captured in battle.
+* Fixed saved games rarely being corrupted because of a pregnancy being recorded with a futa character as the father.
