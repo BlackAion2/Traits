@@ -20,8 +20,32 @@
 			}
 		}
 		AND = {
-			faith = {
-				has_doctrine_parameter = naked_priests_active
+			OR = {
+				faith = {
+					has_doctrine_parameter = naked_priests_active
+				}
+				AND = {
+					is_male = yes
+					OR = {
+						faith = {
+							has_doctrine_parameter = naked_malepriest_active
+						}
+						faith = {
+							has_doctrine_parameter = naked_malepriests_active
+						}
+					}
+				}
+				AND = {
+					is_female = yes
+					OR = {
+						faith = {
+							has_doctrine_parameter = naked_femalepriest_active
+						}
+						faith = {
+							has_doctrine_parameter = naked_femalepriests_active
+						}
+					}
+				}
 			}
 			OR = {
 				ai_zeal >= 50

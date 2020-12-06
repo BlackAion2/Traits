@@ -87,7 +87,6 @@ futa_genetic = {
 # Small dick
 dick_small_1 = {
 	index = 6902
-	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -132,7 +131,6 @@ dick_small_1 = {
 # Tiny dick
 dick_small_2 = {
 	index = 6903
-	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -177,7 +175,6 @@ dick_small_2 = {
 # Micro dick
 dick_small_3 = {
 	index = 6904
-	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -222,7 +219,6 @@ dick_small_3 = {
 # Big dick
 dick_big_1 = {
 	index = 6905
-	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -268,7 +264,6 @@ dick_big_1 = {
 # Huge dick
 dick_big_2 = {
 	index = 6906
-	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -314,7 +309,6 @@ dick_big_2 = {
 # Gigantic dick
 dick_big_3 = {
 	index = 6907
-	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -360,7 +354,6 @@ dick_big_3 = {
 # Small Tits
 tits_small_1 = {
 	index = 6908
-	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -405,7 +398,6 @@ tits_small_1 = {
 # Tiny Tits
 tits_small_2 = {
 	index = 6909
-	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -449,7 +441,6 @@ tits_small_2 = {
 # Flat Tits
 tits_small_3 = {
 	index = 6910
-	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -494,7 +485,6 @@ tits_small_3 = {
 # Big Tits
 tits_big_1 = {
 	index = 6911
-	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -540,7 +530,6 @@ tits_big_1 = {
 # Huge Tits
 tits_big_2 = {
 	index = 6912
-	minimum_age = 16
 
 	name = {
 		first_valid = {
@@ -586,7 +575,6 @@ tits_big_2 = {
 # Gigantic Tits
 tits_big_3 = {
 	index = 6913
-	minimum_age = 16
 
 	name = {
 		first_valid = {

@@ -1,19 +1,18 @@
-# Carnalitas 1.3.3
+# Carnalitas 1.3.4
 
 Compatible with saved games from version 1.3 and up.
 
-## Compatibility
+## New Features
 
-* Updated for compatibility with CK3 version 1.2.
+### Slavery System
 
-## Localization
+* Modding: Added `carn_any_consort_or_slave_or_slave_owner_is_character_trigger`, `carn_real_father_is_former_slave_or_slave_owner_trigger`
 
-* Added partial Spanish translation thanks to Kalvis.
+### Miscellaneous
 
-## Tweaks
-
-* (Modding) Added `carn_slave_cannot_be_freed` flag by request. This character or trait flag blocks a slave from being freed.
+* Added the doctrine parameters `naked_femalepriests_active` and `naked_malepriests_active` which make only female or only male priests naked, respectively. Also checks for `naked_femalepriest_active` and `naked_malepriest_active` for compatibility with the female nudism tenets mod.
 
 ## Bug Fixes
 
-* Fixed saved games rarely being corrupted because of a pregnancy being recorded with a futa character as the father.
+* Fixed body part traits not being inherited.
+* Fixed slave pregnancies being treated as bastards.

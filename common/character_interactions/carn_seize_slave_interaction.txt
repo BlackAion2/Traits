@@ -124,7 +124,17 @@ carn_seize_slave_interaction = {
 		scope:recipient = {
 			every_relation = {
 				type = slave_owner
-				hidden_effect = { remove_relation_slave = prev }
+				hidden_effect = {
+					remove_relation_slave = prev
+					add_opinion = {
+						target = prev
+						modifier = carn_former_slave_or_slave_owner_opinion
+					}
+					reverse_add_opinion = {
+						target = prev
+						modifier = carn_former_slave_or_slave_owner_opinion
+					}
+				}
 				add_opinion = {
 					target = scope:actor
 					modifier = carn_stole_my_slave_opinion
