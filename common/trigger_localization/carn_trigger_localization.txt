@@ -22,14 +22,9 @@ carn_cannot_have_sex = {
 	third_not = carn_cannot_have_sex
 }
 
-carn_effective_age_under_prostitution_age_cutoff = {
-	first = carn_effective_age_under_prostitution_age_cutoff
-	third = carn_effective_age_under_prostitution_age_cutoff
-}
-
-carn_effective_age_under_lactation_age_cutoff = {
-	first = carn_effective_age_under_lactation_age_cutoff
-	third = carn_effective_age_under_lactation_age_cutoff
+carn_effective_age_under_value_cutoff = {
+	first = carn_effective_age_under_value_cutoff
+	third = carn_effective_age_under_value_cutoff
 }
 
 carn_has_any_fetish_trigger = {
