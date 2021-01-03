@@ -14,6 +14,7 @@ Compatible with saved games from version 1.3 and up.
 
 ## Bug Fixes
 
+* Fixed enslaving a ruler who is the primary attacker or defender in a war causing the game to bug out.
 * Fixed body part traits appearing on the children of ruler designed characters when body part traits are turned off in game rules.
 * Fixed children spawned by the "generate families" game rule inheriting misgendered body part traits.
 * Added the character window bugfix from the CK3 1.2.2 hotfix update.
