@@ -31,11 +31,7 @@
 			}
 			if = { # No consort found, find a lover
 				limit = { 
-					NOT = { 
-						any_in_list = {
-							list = sexable_partner 
-						} 
-					} 
+					NOT = { exists = scope:sexable_partner } 
 				}
 				random_relation = {
 					type = lover

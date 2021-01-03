@@ -15,16 +15,27 @@ carn_enslave_effect = {
 		if = {
 			limit = { is_ruler = yes }
 			every_character_war = {
-				limit = {
-					primary_attacker = scope:new_slave
+				if = {
+					limit = {
+						primary_attacker = scope:new_slave
+					}
+					end_war = invalidated
 				}
-				end_war = invalidated
-			}
-			every_character_war = {
-				limit = {
-					primary_defender = scope:new_slave
+				else_if = {
+					limit = {
+						primary_defender = scope:new_slave
+					}
+					if = {
+						limit = { primary_attacker = scope:new_owner }
+						end_war = attacker
+					}
+					else = {
+						end_war = invalidated
+					}
 				}
-				end_war = attacker
+				else = {
+					remove_participant = scope:new_slave
+				}
 			}
 			depose = yes
 		}

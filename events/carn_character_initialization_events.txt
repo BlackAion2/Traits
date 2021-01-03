@@ -1,7 +1,5 @@
 ﻿namespace = carn_character_initialization
 
-# we fire two pulses, one at startup and one the next day to catch any game-rule-spawned characters -- bit of a performance hiccup but it can't be helped
-
 carn_character_initialization.0001 = {
 	type = empty
 	hidden = yes
@@ -9,18 +7,6 @@ carn_character_initialization.0001 = {
 	immediate = {
 		every_living_character = {
 			trigger_event = { on_action = carn_character_initialization_pulse }
-			trigger_event = {
-				id = carn_character_initialization.0002
-				days = 1
-			}
 		}
-	}
-}
-
-carn_character_initialization.0002 = {
-	hidden = yes
-
-	immediate = {
-		trigger_event = { on_action = carn_character_initialization_pulse }
 	}
 }
