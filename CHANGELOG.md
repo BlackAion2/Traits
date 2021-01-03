@@ -1,18 +1,21 @@
-# Carnalitas 1.3.4
+# Carnalitas 1.3.5
 
 Compatible with saved games from version 1.3 and up.
 
 ## New Features
 
-### Slavery System
+### Lactation System
 
-* Modding: Added `carn_any_consort_or_slave_or_slave_owner_is_character_trigger`, `carn_real_father_is_former_slave_or_slave_owner_trigger`
+* Modders: added trait and character flag `carn_lactation_ignores_effective_age`. Useful for characters that aren't immortal but can lactate past menopause for whatever reason.
 
-### Miscellaneous
+## Tweaks
 
-* Added the doctrine parameters `naked_femalepriests_active` and `naked_malepriests_active` which make only female or only male priests naked, respectively. Also checks for `naked_femalepriest_active` and `naked_malepriest_active` for compatibility with the female nudism tenets mod.
+* The "Make Love" notification will now appear if you do not have an eligible spouse or concubine but have an eligible lover.
 
 ## Bug Fixes
 
-* Fixed body part traits not being inherited.
-* Fixed slave pregnancies being treated as bastards.
+* Fixed enslaving a ruler who is the primary attacker or defender in a war causing the game to bug out.
+* Fixed fetish UI incorrectly showing the player's fetishes rather than the character's fetishes.
+* Fixed body part traits appearing on the children of ruler designed characters when body part traits are turned off in game rules.
+* Fixed children spawned by the "generate families" game rule inheriting misgendered body part traits.
+* Added the character window bugfix from the CK3 1.2.2 hotfix update.

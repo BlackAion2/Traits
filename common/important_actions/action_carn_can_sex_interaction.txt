@@ -6,12 +6,20 @@
 					has_game_rule = carn_sex_interaction_disabled
 					has_character_flag = carn_sex_interaction_effect_cd
 				}
-            	carn_can_have_sex_trigger = yes
-				any_consort = {
-					root = { is_attracted_to_gender_of = prev }
-            		is_diplomatically_available = yes
-            		carn_can_have_sex_trigger = yes
-				}
+				carn_can_have_sex_trigger = yes
+				OR = {
+					any_consort = {
+						root = { is_attracted_to_gender_of = prev }
+						is_diplomatically_available = yes
+						carn_can_have_sex_trigger = yes
+					}
+					any_relation = {
+						type = lover
+						root = { is_attracted_to_gender_of = prev }
+						is_diplomatically_available = yes
+						carn_can_have_sex_trigger = yes
+					}
+				}				
 			}
 			random_consort = {
 				limit = {
@@ -19,12 +27,26 @@
             		is_diplomatically_available = yes
 					carn_can_have_sex_trigger = yes
 				}
-				save_scope_as = sexable_consort
+				save_scope_as = sexable_partner
+			}
+			if = { # No consort found, find a lover
+				limit = { 
+					NOT = { exists = scope:sexable_partner } 
+				}
+				random_relation = {
+					type = lover
+					limit = {
+						root = { is_attracted_to_gender_of = prev }
+						is_diplomatically_available = yes
+						carn_can_have_sex_trigger = yes
+					}					
+					save_scope_as = sexable_partner
+				}
 			}
 			try_create_important_action = {
 				important_action_type = action_carn_can_sex_interaction
 				actor = root
-				recipient = scope:sexable_consort
+				recipient = scope:sexable_partner
 			}
 		}
 	}

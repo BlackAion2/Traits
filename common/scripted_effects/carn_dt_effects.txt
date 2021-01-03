@@ -24,7 +24,6 @@
 
 # randomly seed inactive dick and tits traits, regardless of age or gender
 carn_seed_dt_traits_effect = {
-	add_character_flag = carn_dt_traits_seeded
 	if = {
 		limit = { has_character_flag = carn_seed_dick_small_1 }
 		carn_add_dick_small_1_effect = yes
@@ -141,6 +140,7 @@ carn_seed_dt_traits_effect = {
 			}	
 		}
 	}
+	add_character_flag = carn_dt_traits_seeded
 }
 
 # makes all dt traits inactive for children

@@ -22,6 +22,7 @@ carn_dt.0001 = {
 	}
 
 	immediate = {
+		carn_make_all_dt_traits_inactive_effect = yes
 		carn_seed_dt_traits_effect = yes
 		if = {
 			limit = { is_adult = yes }
@@ -35,10 +36,6 @@ carn_dt.0001 = {
 
 carn_dt.0002 = {
 	hidden = yes
-
-	trigger = {
-		has_game_rule = carn_dt_enabled
-	}
 
 	immediate = {
 		scope:child = {

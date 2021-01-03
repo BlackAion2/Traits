@@ -11,10 +11,18 @@
 carn_can_lactate_trigger = {
 	NOT = { has_game_rule = carn_lactation_disabled }
 	is_adult = yes
-	custom_description = {
-		text = "carn_effective_age_under_value"
-		value = carn_lactation_age_cutoff
-		effective_age < carn_lactation_age_cutoff
+	trigger_if = {
+		limit = {
+			NOR = {
+				has_character_flag = carn_lactation_ignores_effective_age
+				has_trait_with_flag = carn_lactation_ignores_effective_age
+			}
+		}
+		custom_description = {
+			text = "carn_effective_age_under_value"
+			value = carn_lactation_age_cutoff
+			effective_age < carn_lactation_age_cutoff
+		}
 	}
 	OR = {
 		AND = {
