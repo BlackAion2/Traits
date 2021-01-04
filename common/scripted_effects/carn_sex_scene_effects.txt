@@ -17,7 +17,7 @@
 #
 # STRESS_EFFECTS is yes or no, whether you want the sex scene to affect stress.
 #
-# DRAMA is yes or no, whether you want the sex scene to trigger adultery and peasant affair storylines. (Note: This doesn't stop a relationship from being adulterous, or a child from being born a bastard. It just affects whether the stress effects and story cycles will happen.)
+# DRAMA is yes or no, whether you want the sex scene to trigger adultery and peasant affair storylines. (Note: This doesn't stop a relationship from being adulterous, or a child from being born a bastard. It just affects whether the story cycles will happen.)
 #
 # (Cheri recommends setting STRESS_EFFECTS = yes and DRAMA = yes unless you have a really good reason.)
 #

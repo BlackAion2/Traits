@@ -32,7 +32,7 @@
 
 # For example:
 # carn_create_personality_replacement_effect = {
-#	TRAIT = lustful
+#	NEW_TRAIT = lustful
 # }
 
 # This will pick a trait to remove and set it as `scope:carn_replaced_trait`
