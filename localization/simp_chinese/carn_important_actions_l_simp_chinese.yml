@@ -1,6 +1,5 @@
 ﻿l_simp_chinese:
-
-action_carn_can_sex_interaction:0 "You can $carn_sex_interaction$"
-action_carn_can_sex_interaction_label:0 "$action_carn_can_sex_interaction$"
-action_carn_can_sex_interaction_desc:0 "You can use the $carn_sex_interaction$ [character_interaction|E] to reduce [stress|E] or try for a baby, among other effects."
-action_carn_can_sex_interaction_click:0 "#I Click to $carn_sex_interaction$#!"
+ action_carn_can_sex_interaction: "你可以$carn_sex_interaction$"
+ action_carn_can_sex_interaction_label: "$action_carn_can_sex_interaction$"
+ action_carn_can_sex_interaction_desc: "你可以通过与[character_interaction|E]$carn_sex_interaction$来降低[stress|E]或者尝试要个孩子，此外还有别的效果。"
+ action_carn_can_sex_interaction_click: "#I 点击$carn_sex_interaction$#!"

@@ -1,6 +1,5 @@
 ﻿l_simp_chinese:
-
-carn_sex_scene.0001.t:1 "情欲的刺痛"
-carn_sex_scene.0001.desc_opening:1 "我发现我的[ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('carn_sex_target'))][carn_sex_target.GetTitledFirstName]正在焦急地等待着。"
-carn_sex_scene.0001.desc_ending:1 "[ROOT.Char.Custom2('sex_scene', SCOPE.sC('carn_sex_target'))]"
-carn_sex_scene.0001.a:1 "棒极了。"
+ carn_sex_scene.0001.t: "情欲的刺痛"
+ carn_sex_scene.0001.desc_opening: "我发现我的[ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('carn_sex_target'))][carn_sex_target.GetTitledFirstName]正在焦急地等待着。"
+ carn_sex_scene.0001.desc_ending: "[ROOT.Char.Custom2('sex_scene', SCOPE.sC('carn_sex_target'))]"
+ carn_sex_scene.0001.a: "棒极了。"
