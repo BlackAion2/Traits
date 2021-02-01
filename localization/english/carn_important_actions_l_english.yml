@@ -4,3 +4,12 @@
  action_carn_can_sex_interaction_label: "$action_carn_can_sex_interaction$"
  action_carn_can_sex_interaction_desc: "You can use the $carn_sex_interaction$ [character_interaction|E] to reduce [stress|E] or try for a baby, among other effects."
  action_carn_can_sex_interaction_click: "#I Click to $carn_sex_interaction$#!"
+
+ action_carn_can_demand_free_illegal_slaves_interaction: "You can $carn_demand_free_illegal_slaves_interaction$"
+ action_carn_can_demand_free_illegal_slaves_interaction_combined_group_label:0 "$action_carn_can_demand_free_illegal_slaves_interaction$"
+ action_carn_can_demand_free_illegal_slaves_interaction_combined_group_name:0 "$action_carn_can_demand_free_illegal_slaves_interaction$"
+ action_carn_can_demand_free_illegal_slaves_interaction_desc:1 "You can demand that [recipient.GetUIName] free all illegal [slaves|E] they own."
+ action_carn_can_demand_free_illegal_slaves_interaction_combined_group_description:1 "You can demand that your vassals free all illegal [slaves|E] they own."
+ action_carn_can_demand_free_illegal_slaves_interaction_label:0 "You can $carn_demand_free_illegal_slaves_interaction$ from [recipient.GetShortUINameNoTooltip]"
+ action_carn_can_demand_free_illegal_slaves_interaction_combined_label:0 "$carn_demand_free_illegal_slaves_interaction$ from[recipient.GetUINameNoTooltip]"
+ action_carn_can_demand_free_illegal_slaves_interaction_click:0 "#I Click to $carn_demand_free_illegal_slaves_interaction$#!"

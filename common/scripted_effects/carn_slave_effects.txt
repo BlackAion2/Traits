@@ -4,6 +4,7 @@
 # carn_free_illegal_slaves_effect
 # carn_free_slave_interaction_effect
 # carn_buy_slave_effect
+# carn_try_create_demand_free_illegal_slaves_important_action_effect
 
 # enslaves SLAVE to OWNER
 # will also incur opinion, tyranny, piety effects if DRAMA is true
@@ -734,6 +735,50 @@ carn_buy_slave_effect = {
 				right_icon = scope:slave
 				custom_tooltip = carn_msg_scope_slave_is_no_longer_your_slave_desc
 			}
+		}
+	}
+}
+
+carn_try_create_demand_free_illegal_slaves_important_action_effect = {
+	if = {
+		limit = {
+			target_is_liege_or_above = root
+			is_ai = yes
+			OR = {
+				AND = {
+					faith = {
+						has_doctrine = carn_doctrine_same_slavery_crime
+					}
+					any_relation = {
+						type = slave
+						scope:recipient.faith = {
+							faith_hostility_level = {
+								target = prev.faith
+								value < faith_hostile_level
+							}
+						}
+					}
+				}
+				AND = {
+					faith = {
+						has_doctrine = carn_doctrine_other_slavery_crime
+					}
+					any_relation = {
+						type = slave
+						scope:recipient.faith = {
+							faith_hostility_level = {
+								target = prev.faith
+								value >= faith_hostile_level
+							}
+						}
+					}
+				}
+			}
+		}
+		try_create_important_action = {
+			important_action_type = action_carn_can_demand_free_illegal_slaves_interaction
+			actor = root
+			recipient = this
 		}
 	}
 }
