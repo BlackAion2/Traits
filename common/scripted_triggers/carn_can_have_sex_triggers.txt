@@ -10,7 +10,7 @@ carn_can_have_sex_trigger = {
 			}
 			is_adult = yes
 			is_alive = yes
-			is_in_an_activity = no
+			#is_in_an_activity = no
 			is_imprisoned = no
 			has_contagious_deadly_disease_trigger = no
 			NOR = {

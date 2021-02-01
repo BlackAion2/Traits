@@ -57,6 +57,13 @@ carn_enslave_effect = {
 				limit = { exists = betrothed }
 				break_betrothal = betrothed
 			}
+			every_concubine = {
+				scope:new_slave = { remove_concubine = prev }
+			}
+			every_relation = {
+				type = guardian
+				remove_relation_ward = prev
+			}
 			if = {
 				# By default, randomly generated peasant leaders will disappear if captured in battle
 				limit = {

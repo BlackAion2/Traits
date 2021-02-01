@@ -630,10 +630,11 @@ slave = { # Chattel Slave
 	monthly_prestige_gain_mult = -0.75
 	hostile_scheme_power_mult = -0.2
 
-	can_inherit = no
-	blocks_from_claim_inheritance = yes
+	flag = can_not_marry
 	flag = can_not_be_granted_titles
 	flag = can_not_leave_court_voluntarily
+	can_inherit = no
+	blocks_from_claim_inheritance = yes
 	
 	inherit_chance = 100
 	parent_inheritance_sex = female
