@@ -18,5 +18,6 @@ Compatible with saved games from version 1.3 and up.
 
 * Children now lose their guardian upon being enslaved.
 * Enslaving a character now removes all their consorts and concubines.
-* Modders: Fixed misleading documentation for personality replacement library.
 * You can now Demand Manumission from unlanded characters.
+* Fixed futa transformation effect failing to check the futa game rule.
+* Modders: Fixed misleading documentation for personality replacement library.

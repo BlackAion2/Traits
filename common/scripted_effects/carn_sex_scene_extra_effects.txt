@@ -36,6 +36,7 @@ carn_make_root_and_sex_partner_naked_for_this_event_effect = {
 		}
 	}
 }
+
 carn_make_root_and_sex_partner_no_longer_naked_effect = {
 	carn_dress_character_effect = yes
 	scope:carn_sex_partner = {
