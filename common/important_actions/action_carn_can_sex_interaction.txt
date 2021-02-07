@@ -27,7 +27,7 @@
             		is_diplomatically_available = yes
 					carn_can_have_sex_trigger = yes
 				}
-				save_scope_as = sexable_partner
+				save_temporary_scope_as = sexable_partner
 			}
 			if = { # No consort found, find a lover
 				limit = { 
@@ -40,7 +40,7 @@
 						is_diplomatically_available = yes
 						carn_can_have_sex_trigger = yes
 					}					
-					save_scope_as = sexable_partner
+					save_temporary_scope_as = sexable_partner
 				}
 			}
 			try_create_important_action = {

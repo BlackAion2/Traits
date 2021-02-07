@@ -1,6 +1,13 @@
 ﻿l_simp_chinese:
-
-action_carn_can_sex_interaction:0 "You can $carn_sex_interaction$"
-action_carn_can_sex_interaction_label:0 "$action_carn_can_sex_interaction$"
-action_carn_can_sex_interaction_desc:0 "You can use the $carn_sex_interaction$ [character_interaction|E] to reduce [stress|E] or try for a baby, among other effects."
-action_carn_can_sex_interaction_click:0 "#I Click to $carn_sex_interaction$#!"
+ action_carn_can_sex_interaction: "你可以$carn_sex_interaction$"
+ action_carn_can_sex_interaction_label: "$action_carn_can_sex_interaction$"
+ action_carn_can_sex_interaction_desc: "你可以通过与[character_interaction|E]$carn_sex_interaction$来降低[stress|E]或者尝试要个孩子，此外还有别的效果。"
+ action_carn_can_sex_interaction_click: "#I 点击以$carn_sex_interaction$#!"
+ action_carn_can_demand_free_illegal_slaves_interaction: "你可以$carn_demand_free_illegal_slaves_interaction$"
+ action_carn_can_demand_free_illegal_slaves_interaction_combined_group_label:0 "$action_carn_can_demand_free_illegal_slaves_interaction$"
+ action_carn_can_demand_free_illegal_slaves_interaction_combined_group_name:0 "$action_carn_can_demand_free_illegal_slaves_interaction$"
+ action_carn_can_demand_free_illegal_slaves_interaction_desc:1 "你可以要求[recipient.GetUIName]解放他们拥有的所有非法[slaves|E]。"
+ action_carn_can_demand_free_illegal_slaves_interaction_combined_group_description:1 "你可以要求你的封臣解放他们拥有的所有非法[slaves|E]。"
+ action_carn_can_demand_free_illegal_slaves_interaction_label:0 "你可以向[recipient.GetShortUINameNoTooltip]$carn_demand_free_illegal_slaves_interaction$"
+ action_carn_can_demand_free_illegal_slaves_interaction_combined_label:0 "向[recipient.GetUINameNoTooltip]$carn_demand_free_illegal_slaves_interaction$"
+ action_carn_can_demand_free_illegal_slaves_interaction_click:0 "#I 点击以$carn_demand_free_illegal_slaves_interaction$#!"

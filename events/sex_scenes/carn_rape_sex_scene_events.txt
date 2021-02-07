@@ -27,7 +27,6 @@ carn_sex_scene.0003 = {
 	trigger = {
 		carn_sex_scene_is_noncon = yes
 		carn_sex_scene_is_dom_player = yes
-		carn_sex_scene_is_giving_player = yes
 		carn_sex_scene_matches_requested_flags_trigger = yes
 	}
 
@@ -84,7 +83,6 @@ carn_sex_scene.0004 = {
 	trigger = {
 		carn_sex_scene_is_noncon = yes
 		carn_sex_scene_is_sub_player = yes
-		carn_sex_scene_is_receiving_player = yes
 		carn_sex_scene_matches_requested_flags_trigger = yes
 	}
 

@@ -305,12 +305,12 @@ carn_heal_wounds_one_step_effect = {
 	else_if = {
 		limit = { has_trait = wounded_2 }
 		remove_trait = wounded_2 #We do it like this so you can see the trait you've lost
-		add_trait = wounded_1
+		add_trait_force_tooltip = wounded_1
 	}
 	else_if = {
 		limit = { has_trait = wounded_3 }
 		remove_trait = wounded_3
-		add_trait = wounded_2
+		add_trait_force_tooltip = wounded_2
 	}
 }
 

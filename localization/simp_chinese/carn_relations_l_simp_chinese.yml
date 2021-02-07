@@ -1,17 +1,13 @@
 ﻿l_simp_chinese:
-
-dominant:1 "[dominant|E]"
-relation_dominant:1 "赐爱"
-relation_dominant_possessive:1 "赐爱"
-
-submissive:1 "[submissive|E]"
-relation_submissive:1 "承欢"
-relation_submissive_possessive:1 "承欢"
-
-slave:1 "[slave|E]"
-relation_slave:1 "奴隶"
-relation_slave_possessive:1 "奴隶"
-
-slave_owner:1 "[slave_owner|E]"
-relation_slave_owner:1 "奴隶主"
-relation_slave_owner_possessive:1 "奴隶主"
+ dominant: "[dominant|E]"
+ relation_dominant: "赐爱者"
+ relation_dominant_possessive: "赐爱者的"
+ submissive: "[submissive|E]"
+ relation_submissive: "承欢者"
+ relation_submissive_possessive: "承欢者的"
+ slave: "[slave|E]"
+ relation_slave: "奴隶"
+ relation_slave_possessive: "奴隶的"
+ slave_owner: "[slave_owner|E]"
+ relation_slave_owner: "奴隶主"
+ relation_slave_owner_possessive: "奴隶主的"

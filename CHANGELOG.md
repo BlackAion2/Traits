@@ -1,21 +1,28 @@
-# Carnalitas 1.3.5
+# Carnalitas 1.3.6
 
 Compatible with saved games from version 1.3 and up.
 
 ## New Features
 
-### Lactation System
+* Modders: Added `carn_has_any_disease_trigger`.
 
-* Modders: added trait and character flag `carn_lactation_ignores_effective_age`. Useful for characters that aren't immortal but can lactate past menopause for whatever reason.
+## Localization
+
+* Updated Simplified Chinese translation; thanks to huasuifengqu for their hard work!
 
 ## Tweaks
 
-* The "Make Love" notification will now appear if you do not have an eligible spouse or concubine but have an eligible lover.
+* Slaves can no longer marry.
+* Being in an activity, such as a feast, no longer blocks the Make Love interaction.
+* The "Make Love" notification will now select a random eligible partner each time.
+* Removed giving and receiving tags from example noncon scenes since the player isn't actually explicitly stated to be giving or receiving.
+* Added a notification for when you can Demand Manumission.
 
 ## Bug Fixes
 
-* Fixed enslaving a ruler who is the primary attacker or defender in a war causing the game to bug out.
-* Fixed fetish UI incorrectly showing the player's fetishes rather than the character's fetishes.
-* Fixed body part traits appearing on the children of ruler designed characters when body part traits are turned off in game rules.
-* Fixed children spawned by the "generate families" game rule inheriting misgendered body part traits.
-* Added the character window bugfix from the CK3 1.2.2 hotfix update.
+* Children now lose their guardian upon being enslaved.
+* Enslaving a character now removes all their consorts and concubines.
+* You can now Demand Manumission from unlanded characters.
+* Fixed "heal wounds" effect not showing the tooltip when replacing a more severe wounded trait with a less severe wounded trait.
+* Fixed futa transformation effect failing to check the futa game rule.
+* Modders: Fixed misleading documentation for personality replacement library.

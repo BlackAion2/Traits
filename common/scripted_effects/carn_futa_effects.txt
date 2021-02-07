@@ -105,7 +105,7 @@ carn_remove_futa_effect = {
 carn_add_futa_transformation_effect = {
 	if = {
 		limit = {
-			NOT = { has_game_rule = setting_carn_futa_content_disabled }
+			NOT = { has_game_rule = carn_futa_content_disabled }
 			is_female = yes
 			carn_is_futa_trigger = no
 		}
@@ -124,7 +124,7 @@ carn_add_futa_transformation_effect = {
 carn_remove_futa_transformation_effect = {
 	if = {
 		limit = {
-			NOT = { has_game_rule = setting_carn_futa_content_disabled }
+			NOT = { has_game_rule = carn_futa_content_disabled }
 			carn_is_futa_trigger = yes
 		}
 		if = {
