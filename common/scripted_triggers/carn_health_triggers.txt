@@ -1,6 +1,8 @@
 ﻿# carn_has_any_negative_congenital_trait_trigger
 # carn_has_any_minor_disfigurement_trigger
 # carn_has_any_major_disfigurement_trigger
+# carn_has_any_disease_trigger
+# carn_has_any_wound_trigger
 # carn_should_have_no_pregnancy_complications_trigger
 
 # we use this to check the specific traits
@@ -41,6 +43,14 @@ carn_has_any_major_disfigurement_trigger = {
 		has_trait = disfigured
 		has_trait = eunuch
 		has_trait = blind
+	}
+}
+
+carn_has_any_disease_trigger = {
+	OR = {
+		has_trait = sickly
+		has_std_trigger = yes
+		has_treatable_disease_trigger = yes
 	}
 }
 
