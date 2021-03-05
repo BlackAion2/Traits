@@ -1,5 +1,6 @@
 ﻿action_carn_can_demand_free_illegal_slaves_interaction = {
 	combine_into_one = yes
+	
 	check_create_action = {
 		every_vassal_or_below = {
 			carn_try_create_demand_free_illegal_slaves_important_action_effect = yes

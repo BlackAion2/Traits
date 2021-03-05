@@ -740,6 +740,7 @@ carn_buy_slave_effect = {
 }
 
 carn_try_create_demand_free_illegal_slaves_important_action_effect = {
+	save_temporary_scope_as = potential_recipient
 	if = {
 		limit = {
 			target_is_liege_or_above = root
@@ -751,7 +752,7 @@ carn_try_create_demand_free_illegal_slaves_important_action_effect = {
 					}
 					any_relation = {
 						type = slave
-						scope:recipient.faith = {
+						scope:potential_recipient.faith = {
 							faith_hostility_level = {
 								target = prev.faith
 								value < faith_hostile_level
@@ -765,7 +766,7 @@ carn_try_create_demand_free_illegal_slaves_important_action_effect = {
 					}
 					any_relation = {
 						type = slave
-						scope:recipient.faith = {
+						scope:potential_recipient.faith = {
 							faith_hostility_level = {
 								target = prev.faith
 								value >= faith_hostile_level

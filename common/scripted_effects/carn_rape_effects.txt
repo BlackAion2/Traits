@@ -239,11 +239,10 @@ carn_rape_opinion_effects_effect = {
 			add_to_list = family_of_tortured
 		}
 		every_in_list = {
-				list = family_of_tortured
-				add_opinion = {
-					target = scope:carn_rape_rapist
-					modifier = carn_raped_family_member
-				}
+			list = family_of_tortured
+			add_opinion = {
+				target = scope:carn_rape_rapist
+				modifier = carn_raped_family_member
 			}
 		}
 		every_relation = {
@@ -252,11 +251,10 @@ carn_rape_opinion_effects_effect = {
 			add_to_list = friends_of_tortured
 		}
 		every_in_list = {
-				list = friends_of_tortured
-				add_opinion = {
-					target = scope:carn_rape_rapist
-					modifier = carn_raped_my_friend
-				}
+			list = friends_of_tortured
+			add_opinion = {
+				target = scope:carn_rape_rapist
+				modifier = carn_raped_my_friend
 			}
 		}
 		every_spouse = {
@@ -272,7 +270,7 @@ carn_rape_opinion_effects_effect = {
 			limit = {
 				exists = concubinist
 				concubinist = {
-					NOT = { this = scope:carn_rape_rapist } }
+					NOT = { this = scope:carn_rape_rapist }
 				}
 			}
 			concubinist = {
@@ -280,11 +278,10 @@ carn_rape_opinion_effects_effect = {
 			}
 		}
 		every_in_list = {
-				list = lovers_of_tortured
-				add_opinion = {
-					target = scope:carn_rape_rapist
-					modifier = carn_raped_my_lover
-				}
+			list = lovers_of_tortured
+			add_opinion = {
+				target = scope:carn_rape_rapist
+				modifier = carn_raped_my_lover
 			}
 		}
 	}
