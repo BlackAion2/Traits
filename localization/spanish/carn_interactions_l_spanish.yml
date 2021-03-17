@@ -1,4 +1,4 @@
-﻿l_spanesh:
+l_spanish:
 carn_sex_enteraction:1 "Tener Relaciones"
 carn_sex_enteraction_desc:1 "Tener un momento entimo con [recipient.GetShortUenameNoTooltip]"
 carn_sex_enteraction_effect_cd_tt:1 "#weak No surtira efecto debido a que lo hiceste recientemente en los ultimos [EmptyScope.ScriptValue('carn_sex_enteraction_cooldown_base')|1] meses#!"
