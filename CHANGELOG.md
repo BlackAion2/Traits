@@ -1,28 +1,17 @@
-# Carnalitas 1.3.6
+# Carnalitas 1.4
 
-Compatible with saved games from version 1.3 and up.
+This is an update for compatibility with game version 1.3 and will not be compatible with earlier versions or saved games.
 
-## New Features
+## Compatibility
 
-* Modders: Added `carn_has_any_disease_trigger`.
-
-## Localization
-
-* Updated Simplified Chinese translation; thanks to huasuifengqu for their hard work!
+* Updated to work with CK3 version 1.3.
 
 ## Tweaks
 
-* Slaves can no longer marry.
-* Being in an activity, such as a feast, no longer blocks the Make Love interaction.
-* The "Make Love" notification will now select a random eligible partner each time.
-* Removed giving and receiving tags from example noncon scenes since the player isn't actually explicitly stated to be giving or receiving.
-* Added a notification for when you can Demand Manumission.
+* A rapist will now piss off all the victim's spouses, friends, and lovers in addition to their close family. If the victim was a concubine, the rapist will piss off their liege.
+* Rape is now a valid reason for execution if the rapist gets imprisoned by the victim or one of their lovers.
+* Updated Spanish localization. Thanks to Kalvis, our Spanish translator.
 
 ## Bug Fixes
 
-* Children now lose their guardian upon being enslaved.
-* Enslaving a character now removes all their consorts and concubines.
-* You can now Demand Manumission from unlanded characters.
-* Fixed "heal wounds" effect not showing the tooltip when replacing a more severe wounded trait with a less severe wounded trait.
-* Fixed futa transformation effect failing to check the futa game rule.
-* Modders: Fixed misleading documentation for personality replacement library.
+* Fixed Demand Manumission important action not appearing.

@@ -1,8 +1,23 @@
-﻿### DEFILED ###
-carn_raped_family_member = {
+﻿carn_raped_family_member = {
 	opinion = -20
 	years = 20
 	decaying = yes
+	imprisonment_reason = yes
+}
+
+carn_raped_my_friend = {
+	opinion = -20
+	years = 20
+	decaying = yes
+	imprisonment_reason = yes
+}
+
+carn_raped_my_lover = {
+	opinion = -100
+	decaying = yes
+	years = 50
+	imprisonment_reason = yes
+	execute_reason = yes
 }
 
 carn_raped_me = {
@@ -10,4 +25,5 @@ carn_raped_me = {
 	decaying = yes
 	years = 50
 	imprisonment_reason = yes
+	execute_reason = yes
 }

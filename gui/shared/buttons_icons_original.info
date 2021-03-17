@@ -47,6 +47,11 @@ types ButtonIcons
 	{
 		texture = "gfx/interface/icons/flat_icons/copy.dds"
 	}
+	
+	type button_paste = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/paste.dds"
+	}
 
 	type button_add_character = button_icon
 	{
