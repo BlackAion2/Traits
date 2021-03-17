@@ -1,6 +1,10 @@
-# Carnalitas 1.3.7
+# Carnalitas 1.4
 
-Compatible with saved games from version 1.3 and up.
+This is an update for compatibility with game version 1.3 and will not be compatible with earlier versions or saved games.
+
+## Compatibility
+
+* Updated to work with CK3 version 1.3.
 
 ## Tweaks
 
