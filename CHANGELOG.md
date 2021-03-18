@@ -18,3 +18,7 @@ Compatible with saved games from Carnalitas version 1.4 and up.
 * You now get stressed if you are Zealous and you enslave someone for whom enslavement is Shunned in your faith.
 * You now get stressed if  you are Zealous and you moonlight as a prostitute when prostitution is Shunned in your faith.
 * Now uses `seduction` event theme instead of `seduce_scheme` for consistency with internal Paradox event themes.
+
+## Bug Fixes
+
+* Fixed Carnalitas notifications using incorrect icons.
