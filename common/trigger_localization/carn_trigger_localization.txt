@@ -54,3 +54,7 @@ carn_slavery_is_illegal = {
 	first_not = carn_slavery_is_illegal
 	third_not = carn_slavery_is_illegal
 }
+
+carn_take_concubine_available_character_same_sex = {
+	third_not = carn_take_concubine_available_character_same_sex
+}

@@ -81,6 +81,10 @@
  carn_find_same_sex_concubine_interaction_desc: "Find a same-sex [actor.Custom('ConcubineConsort')|U] in your court"
  actor_secondary_carn_find_same_sex_concubine_interaction: "Sender"
 
+ carn_offer_same_sex_concubine_interaction: "Offer [RECIPIENT.Custom('ConcubineConsort')|U]"
+ carn_offer_same_sex_concubine_interaction_desc: "Offer a same-sex [recipient.Custom('ConcubineConsortGameConcept')|U] to [recipient.GetShortUINameNoTooltip]"
+ actor_secondary_carn_offer_same_sex_concubine_interaction: "Concubine"
+
  carn_force_start_prostitution_interaction: "Start Prostitution"
  carn_force_start_prostitution_interaction_desc: "Force [recipient.GetShortUINameNoTooltip] to earn [gold|E] for you as a [prostitute|E]"
 

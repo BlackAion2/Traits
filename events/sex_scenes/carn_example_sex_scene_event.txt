@@ -20,7 +20,7 @@ carn_sex_scene.0001 = {
 		desc = carn_sex_scene.0001.desc_ending
 	}
 	
-	theme = seduce_scheme
+	theme = seduction
 	left_portrait = {
 		character = scope:carn_sex_target
 		animation = flirtation_left

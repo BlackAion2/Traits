@@ -54,11 +54,17 @@
 				}
 			}
 			add_piety_level = -1
+			stress_impact = {
+				zealous = major_stress_impact_gain
+				arrogant = medium_stress_impact_gain
+				chaste = major_stress_impact_gain
+			}
 		}
-
-		stress_impact = {
-			arrogant = medium_stress_impact_gain
-			chaste = major_stress_impact_gain
+		else = {
+			stress_impact = {
+				arrogant = medium_stress_impact_gain
+				chaste = major_stress_impact_gain
+			}
 		}
 	}
 
