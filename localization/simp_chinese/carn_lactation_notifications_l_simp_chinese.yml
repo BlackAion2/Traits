@@ -1,11 +1,11 @@
-﻿l_simp_chinese:
+l_simp_chinese:
  carn_msg_started_lactating: "开始泌乳"
  carn_msg_stopped_lactating: "停止泌乳"
- carn_msg_milk_production_increased: "乳汁产量增加"
- carn_msg_milk_production_decreased: "乳汁产量减少"
- carn_milk_production_notification_desc: "你现在在产[SCOPE.Custom('CarnMilkProductionDescription')][milk|E]"
- carn_stopped_lactating_notification_desc: "你现在不再产[milk|E]了"
+ carn_msg_milk_production_increased: "产乳量上升"
+ carn_msg_milk_production_decreased: "产乳量下降"
+ carn_milk_production_notification_desc: "你现在正在产出[SCOPE.Custom('CarnMilkProductionDescription')][milk|E]"
+ carn_stopped_lactating_notification_desc: "你不再继续产出[milk|E]"
  carn_starts_lactating_tooltip: "开始[lactating|E]"
  carn_stops_lactating_tooltip: "停止[lactating|E]"
- carn_milk_production_increases_tooltip: "[milk_production|E]增加"
- carn_milk_production_decreases_tooltip: "[milk_production|E]减少"
+ carn_milk_production_increases_tooltip: "[milk_production|E]上升"
+ carn_milk_production_decreases_tooltip: "[milk_production|E]下降"
