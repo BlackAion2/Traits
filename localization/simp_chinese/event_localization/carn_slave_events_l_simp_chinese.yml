@@ -1,4 +1,4 @@
-﻿l_simp_chinese:
+l_simp_chinese:
  carn_slave.0001.t: "成为奴隶"
- carn_slave.0001.desc: "我被带进了庭院。我的鞋子被没收，手上也戴上了镣铐。随着[actor.GetShortUIName]轻蔑地宣布我成为奴隶，我不得不接受我糟糕的命运。"
+ carn_slave.0001.desc: "我被带进了庭院。我的鞋子被没收，手上也戴上了镣铐。随着[actor.GetShortUIName]冷笑着宣布我成为奴隶，我的命运正式走向了最糟糕的低谷。"
  carn_slave.0001.a: "从这天起，我就只是他人的财产而已了。"
