@@ -1,4 +1,4 @@
-﻿l_simp_chinese:
+l_simp_chinese:
  carn_slavery_doctrine.0001.desc: "我会完成我的[ROOT.Char.GetFaith.GetReligion.GetAdjectiveNoTooltip]使命，释放我所有非法拥有的奴隶。"
  carn_slavery_doctrine.0001.a: "明智的决定。"
  carn_slavery_doctrine.0002.desc: "我明白你的担忧，但这些奴隶是我花费了很大的代价才弄来的……\n\n如果你愿意补偿我的投资，我很愿意给予这些奴隶自由。"
