@@ -1,4 +1,4 @@
-﻿l_simp_chinese:
+l_simp_chinese:
  carn_enslaved_close_family_opinion: "奴役了亲族成员"
  carn_enslaved_close_family_crime_opinion: "非法奴役了亲族成员"
  carn_enslaved_dynasty_member_opinion: "奴役了宗族成员"
@@ -10,8 +10,8 @@
  carn_demanded_manumission_opinion: "被要求解放奴隶"
  carn_refused_manumission_demand_opinion: "拒绝了解放奴隶"
  carn_illegal_refused_manumission_demand_opinion: "拒绝了解放奴隶"
- carn_freed_me_from_slavery_opinion: "将我从奴役中解救出来"
+ carn_freed_me_from_slavery_opinion: "将我从奴隶制中救出"
  carn_stole_my_slave_opinion: "抢夺了我的奴隶"
  carn_wants_to_be_your_slave_opinion: "想要主人"
  carn_forced_me_into_prostitution_opinion: "强迫我卖淫"
- carn_former_slave_or_slave_owner_opinion: "曾经是主奴关系"
+ carn_former_slave_or_slave_owner_opinion: "曾为主奴"
