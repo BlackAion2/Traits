@@ -22,3 +22,7 @@ Compatible with saved games from Carnalitas version 1.4 and up.
 ## Bug Fixes
 
 * Fixed Carnalitas notifications using incorrect icons.
+
+## Localization
+
+* Updated Simplified Chinese and French translations.
