@@ -19,3 +19,24 @@ carn_gender_can_impregnate_trigger = {
 		carn_is_futa_trigger = yes
 	}
 }
+
+carn_character_genders_can_produce_children_trigger = {
+	OR = {
+		AND = {
+			$CHARACTER_1$ = {
+				is_female = yes
+			}
+			$CHARACTER_2$ = {
+				carn_gender_can_impregnate_trigger = yes
+			}
+		}
+		AND = {
+			$CHARACTER_1$ = {
+				carn_gender_can_impregnate_trigger = yes
+			}
+			$CHARACTER_2$ = {
+				is_female = yes
+			}
+		}
+	}
+}

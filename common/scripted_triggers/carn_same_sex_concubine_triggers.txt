@@ -1,42 +1,106 @@
-﻿carn_can_become_same_sex_concubine_of_actor_trigger = {
+﻿carn_can_become_same_sex_concubine_of_character_trigger = {
 	trigger_if = {
 		limit = {
-			NOT = { is_imprisoned_by = scope:actor }
+			NOT = { is_imprisoned_by = $CHARACTER$ }
 		}
 		is_married = no
 		is_betrothed = no
+		is_concubine = no
+		number_of_concubines = 0
 	}
 	trigger_if = {
 		limit = {
-			is_imprisoned_by = scope:actor
+			is_imprisoned_by = $CHARACTER$
 			is_married = yes
 		}
-		NOT = { is_spouse_of = scope:actor }
+		NOT = { is_spouse_of = $CHARACTER$ }
 	}
-	is_concubine = no
+	NOR = {
+		is_concubine_of = $CHARACTER$
+		has_character_flag = has_been_offered_as_concubine
+	}
 	is_ruler = no
 	is_landed = no
 	is_adult = yes
-	sex_same_as = scope:actor
+	carn_could_marry_same_sex_character_trigger = { CHARACTER = $CHARACTER$ } #Gender, recent divorce, allowed to marry, no illegal incest etc.
+}
 
-	save_temporary_scope_as = recipient_scope
-	scope:actor.faith = { # My faith allows this level of consanguinity
-		OR = {
-			NOT = { scope:actor = { is_close_or_extended_family_of = scope:recipient_scope } }
-			AND = {
-				scope:actor = { is_cousin_of = scope:recipient_scope }
-				has_doctrine_parameter = allows_cousin_marriage
-			}
-			AND = {
-				scope:actor = {
-					OR = {
-						is_uncle_or_aunt_of = scope:recipient_scope
-						is_nibling_of = scope:recipient_scope
-					}
-				}
-				has_doctrine_parameter = allows_aunt_nephew_and_uncle_niece_marriage
-			}
-			has_doctrine_parameter = allows_unrestricted_marriage
+carn_could_marry_same_sex_character_trigger = {
+	save_temporary_scope_as = can_marry_check
+	can_marry_common_trigger = yes
+	$CHARACTER$ = { can_marry_common_trigger = yes }
+	sex_same_as = $CHARACTER$
+	#Have you recently divorced this character?
+	NOT = {
+		has_opinion_modifier = {
+			modifier = divorced_me_opinion
+			target = $CHARACTER$
 		}
 	}
+	#Faith hostility & consanguinity
+	trigger_if = {
+		limit = { NOT = { is_courtier_of = $CHARACTER$ } } #If you're someone's courtier, your liege can marry you anyway
+		faith = {
+			faith_allows_marriage_consanguinity_trigger = {
+				CHARACTER_1 = scope:can_marry_check
+				CHARACTER_2 = $CHARACTER$
+			}
+			#faith_hostility_level = {
+			#	target = $CHARACTER$.faith
+			#	value < faith_hostility_prevents_marriage_level
+			#}
+		}
+	}
+	trigger_if = {
+		limit = { $CHARACTER$ = { NOT = { is_courtier_of = scope:can_marry_check } } } #If you're someone's courtier, your liege can marry you anyway
+		$CHARACTER$.faith = {
+			faith_allows_marriage_consanguinity_trigger = {
+				CHARACTER_1 = scope:can_marry_check
+				CHARACTER_2 = $CHARACTER$
+			}
+			#faith_hostility_level = {
+			#	target = scope:can_marry_check.faith
+			#	value < faith_hostility_prevents_marriage_level
+			#}
+		}
+	}
+	NOT = {
+		scope:can_marry_check = { is_spouse_of = $CHARACTER$ }
+	}
+}
+
+carn_can_be_offered_as_same_sex_concubine_to_character_trigger = {
+	trigger_if = {
+		limit = {
+			NOT = { is_imprisoned_by = $GIVER$ }
+		}
+		is_married = no
+		is_betrothed = no
+		OR = {
+			is_concubine = no
+			is_concubine_of = $GIVER$
+		}
+		number_of_concubines = 0
+	}
+	trigger_if = {
+		limit = {
+			is_imprisoned_by = $GIVER$
+			is_married = yes
+		}
+		NOR = {
+			is_spouse_of = $CHARACTER$
+			is_spouse_of = $GIVER$
+		}
+	}
+	NOR = {
+		is_concubine_of = $CHARACTER$
+		has_character_flag = has_been_offered_as_concubine
+	}
+	is_ruler = no
+	is_landed = no
+	is_adult = yes
+	NOT = {
+		is_theocratic_lessee = yes
+	}
+	carn_could_marry_same_sex_character_trigger = { CHARACTER = $CHARACTER$ } #Gender, recent divorce, allowed to marry, no illegal incest etc.
 }

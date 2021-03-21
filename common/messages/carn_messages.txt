@@ -2,7 +2,7 @@
 @msg_bad_soundeffect = "event:/SFX/UI/Notifications/Messages/sfx_ui_message_theme_negative"
 
 carn_event_arousal = {
-	icon = "icon_stress_gain.dds"
+	icon = "icon_stress_gain"
 	title = carn_msg_arousal
 	desc = event_message_effect
 	style = bad
@@ -10,7 +10,7 @@ carn_event_arousal = {
 }
 
 carn_prostitute_random_event_good = {
-	icon = "prostitution.dds"
+	icon = "prostitution"
 	title = event_message_title
 	desc = event_message_effect
 	style = good
@@ -18,7 +18,7 @@ carn_prostitute_random_event_good = {
 }
 
 carn_prostitute_random_event_bad = {
-	icon = "prostitution.dds"
+	icon = "prostitution"
 	title = event_message_title
 	desc = event_message_effect
 	style = bad

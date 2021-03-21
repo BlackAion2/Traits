@@ -33,3 +33,5 @@ carn_is_lactating_trigger:1 "Est en train d'[lactating|El]"
 carn_not_is_lactating_trigger:1 "N'est #bold pas#! en train d'[lactating|El]"
 
 carn_slavery_is_illegal:1 "Votre foi ne vous permet pas d'asservir des [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U]"
+
+carn_take_concubine_available_character_same_sex:1 "Personne n'est disponible pour servir de [TARGET_CHARACTER.Custom('ConcubineConsort')]"

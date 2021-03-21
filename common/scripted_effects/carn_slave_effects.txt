@@ -317,6 +317,9 @@ carn_enslave_effect = {
 				}
 				add_piety = medium_piety_loss
 				add_piety_level = -1
+				stress_impact = {
+					zealous = medium_stress_impact_gain
+				}
 			}
 
 			# Stress loss		

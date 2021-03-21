@@ -1,7 +1,7 @@
-﻿l_simp_chinese:
- carn_working_as_prostitute_1_modifier: "$trait_prostitute_1$"
- carn_working_as_prostitute_1_modifier_desc: "这个角色不知羞耻地向任何付钱的人出卖肉体。"
- carn_working_as_prostitute_2_modifier: "$trait_prostitute_2$"
- carn_working_as_prostitute_2_modifier_desc: "这个角色是有影响力的妓女/男妓，有许多顾客光顾。"
- carn_working_as_prostitute_3_modifier: "$trait_prostitute_3$"
- carn_working_as_prostitute_3_modifier_desc: "这个角色每晚都会接待贵族和皇室。"
+l_simp_chinese:
+ carn_working_as_prostitute_1_modifier: "作为$trait_prostitute_1$工作"
+ carn_working_as_prostitute_1_modifier_desc: "这个角色无耻地向任何有钱的人出卖自己的身体。"
+ carn_working_as_prostitute_2_modifier: "作为$trait_prostitute_2$工作"
+ carn_working_as_prostitute_2_modifier_desc: "这个角色是受到许多客户青睐的知名娼妓。"
+ carn_working_as_prostitute_3_modifier: "作为$trait_prostitute_3$工作"
+ carn_working_as_prostitute_3_modifier_desc: "这个角色在晚上甚至会接待贵族和皇族。"

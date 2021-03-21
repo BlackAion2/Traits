@@ -211,7 +211,7 @@ carn_prostitution_random_events.0011 = {
 	title = carn_prostitution_random_events.0011.t
 	desc = carn_prostitution_random_events.0011.desc
 
-	theme = seduce_scheme
+	theme = seduction
 
 	override_background = {
 		event_background = bedchamber
