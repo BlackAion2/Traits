@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
  action_carn_can_sex_interaction: "你可以$carn_sex_interaction$"
  action_carn_can_sex_interaction_label: ""
  action_carn_can_sex_interaction_desc: "你可以使用$carn_sex_interaction$[character_interaction|E]来减轻[stress|E]或者试试能否得到一个孩子，还可能会有其他效果。"

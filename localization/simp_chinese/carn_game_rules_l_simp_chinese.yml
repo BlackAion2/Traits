@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
  rule_carn_std: "#X 巫山世界：#!性病传播"
  setting_carn_std_enabled: "默认"
  setting_carn_std_enabled_desc: "不会对$trait_lovers_pox$和$trait_great_pox$做出改变。"
