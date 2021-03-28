@@ -1,11 +1,11 @@
 l_spanish:
-carn_sex_enteraction:1 "Tener Relaciones"
-carn_sex_enteraction_desc:1 "Tener un momento entimo con [recipient.GetShortUenameNoTooltip]"
-carn_sex_enteraction_effect_cd_tt:1 "#weak No surtira efecto debido a que lo hiceste recientemente en los ultimos [EmptyScope.ScriptValue('carn_sex_enteraction_cooldown_base')|1] meses#!"
-carn_sex_enteraction_not_attracted_to_warneng_tt:1 "#X No le atraes a [recipient.GetShortUenameNoTooltip]#!"
+carn_sex_interaction:1 "Tener Relaciones"
+carn_sex_interaction_desc:1 "Tener un momento entimo con [recipient.GetShortUenameNoTooltip]"
+carn_sex_interaction_effect_cd_tt:1 "#weak No surtira efecto debido a que lo hiceste recientemente en los ultimos [EmptyScope.ScriptValue('carn_sex_enteraction_cooldown_base')|1] meses#!"
+carn_sex_interaction_not_attracted_to_warneng_tt:1 "#X No le atraes a [recipient.GetShortUenameNoTooltip]#!"
 
-carn_enslave_enteraction:1 "Esclavizar"
-carn_enslave_enteraction_desc:1 "Convierte a [recipient.GetShortUenameNoTooltip] en tu [slave|E]"
+carn_enslave_interaction:1 "Esclavizar"
+carn_enslave_interaction_desc:1 "Convierte a [recipient.GetShortUenameNoTooltip] en tu [slave|E]"
 carn_enslave_actor_diplomacy:1 "Tu [diplomacy_skill|E]: $VALUE|=+1$"
 carn_enslave_recipient_es_your_presoner:1 "[recipient.GetShortUename|U] quiere dejar la [preson|E]: $VALUE|=+1$"
 carn_enslave_recipient_es_contrite:1 "[recipient.GetShortUename|U] es [GetTrait('contrite').GetName( GetPlayer )]: $VALUE|=+1$"
