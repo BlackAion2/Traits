@@ -1,4 +1,4 @@
-﻿l_spanish:
+l_spanish:
 NOT_IS_ATTRACTED_TO_TRIGGER:1 "No le atrae a [TARGET_CHARACTER.GetShortUIName]"
 
 carn_i_can_be_granted_titles:1 "Se te puede otorgar titulos"
@@ -8,9 +8,11 @@ carn_not_they_can_be_granted_titles:1 "[CHARACTER.GetShortUIName|U] no se le pue
 carn_can_be_granted_titles:1 "Puede otorgar titulos"
 carn_not_can_be_granted_titles:1 "No puede otorgar titulos"
 
-carn_slavery_is_illegal:1 "Tú fé no te permite tomar miembros de [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U] como esclavos"
+ccarn_cannot_be_raped:1 "No puede cometer abuso"
 
 carn_cannot_have_max_number_of_slave_prostitutes:1 "No puedes tener más [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|1] esclavos ejerciendo la prostitución"
+
+carn_cannot_have_sex:1 "No puede tener relaciones"
 
 carn_effective_age_under_prostitution_age_cutoff:1 "La edad es menor que [EmptyScope.ScriptValue('carn_prostitution_age_cutoff')|1]"
 
@@ -20,3 +22,16 @@ carn_they_have_a_fetish_trigger:1 "[CHARACTER.GetShortUIName|U] Tiene un fetiche
 carn_not_they_have_a_fetish_trigger:1 "[CHARACTER.GetShortUIName|U] #bold No#! tiene un fetiche"
 carn_has_any_fetish_trigger:1 "Tiene un fetiche"
 carn_not_has_a_fetish_trigger:1 "#bold No#! tiene un fetiche"
+
+carn_is_diplomatically_available:1 "No esta disponible"
+
+carn_i_am_lactating_trigger:1 "Estas [lactating|E]"
+carn_not_i_am_lactating_trigger:1 "#bold No# estas [lactating|E]"
+carn_they_are_lactating_trigger:1 "[CHARACTER.GetShortUIName|U] esta [lactating|E]"
+carn_not_they_are_lactating_trigger:1 "[CHARACTER.GetShortUIName|U] #bold No# esta [lactating|E]"
+carn_is_lactating_trigger:1 "Esta [lactating|E]"
+carn_not_is_lactating_trigger:1 "#bold No# esta [lactating|E]"
+
+carn_slavery_is_illegal:1 "Tú fé no te permite tomar miembros de [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U] como esclavos"
+
+carn_take_concubine_available_character_same_sex:1 "Nadie disponible para ser [TARGET_CHARACTER.Custom('ConcubineConsort')]"
