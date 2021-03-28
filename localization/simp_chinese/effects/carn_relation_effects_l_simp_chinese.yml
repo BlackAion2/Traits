@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
  carn_i_gain_slave: "[TARGET_CHARACTER.GetShortUIName|U]成为了你的[slave|E]"
  carn_they_gain_slave: "[TARGET_CHARACTER.GetShortUIName|U]成为了[CHARACTER.GetShortUINamePossessive][slave|E]"
  carn_i_got_slave: "[TARGET_CHARACTER.GetShortUIName|U]成为了你的[slave|E]"

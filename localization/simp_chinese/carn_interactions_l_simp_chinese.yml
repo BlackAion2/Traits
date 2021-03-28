@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
  carn_sex_interaction:2 "共赴巫山"
  carn_sex_interaction_desc: "与[recipient.GetShortUINameNoTooltip]度过一段亲密时光。"
  carn_sex_interaction_effect_cd_tt: "#weak 由于你在[EmptyScope.ScriptValue('carn_sex_interaction_cooldown_base')|0]个月以内已经使用过类似的互动选项，因此将不会有任何效果#!"

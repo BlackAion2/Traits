@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
  carn_i_can_be_granted_titles: "你可以被授予头衔"
  carn_not_i_can_be_granted_titles: "你不能被授予头衔"
  carn_they_can_be_granted_titles: "[CHARACTER.GetShortUIName|U]可以被授予头衔"
