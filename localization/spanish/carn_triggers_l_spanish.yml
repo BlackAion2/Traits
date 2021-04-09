@@ -1,4 +1,4 @@
-l_spanish:
+﻿l_spanish:
 NOT_IS_ATTRACTED_TO_TRIGGER:1 "No le atrae a [TARGET_CHARACTER.GetShortUIName]"
 
 carn_i_can_be_granted_titles:1 "Se te puede otorgar titulos"
