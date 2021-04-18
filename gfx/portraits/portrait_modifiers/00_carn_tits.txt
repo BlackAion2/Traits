@@ -19,8 +19,8 @@ carn_tits = {
 				add = 1
 				has_game_rule = carn_dt_enabled
 				NOR = {
-					has_trait = tits_small
-					has_trait = tits_big
+					carn_has_small_tits_trigger = yes
+					carn_has_big_tits_trigger = yes
 				}
 			}
 		}
@@ -40,8 +40,8 @@ carn_tits = {
 				add = 1
 				has_game_rule = carn_dt_enabled
 				NOR = {
-					has_trait = tits_small
-					has_trait = tits_big
+					carn_has_small_tits_trigger = yes
+					carn_has_big_tits_trigger = yes
 				}
 			}
 		}
@@ -61,8 +61,8 @@ carn_tits = {
 				add = 1
 				has_game_rule = carn_dt_enabled
 				NOR = {
-					has_trait = tits_small
-					has_trait = tits_big
+					carn_has_small_tits_trigger = yes
+					carn_has_big_tits_trigger = yes
 				}
 			}
 		}
@@ -82,8 +82,8 @@ carn_tits = {
 				add = 1
 				has_game_rule = carn_dt_enabled
 				NOR = {
-					has_trait = tits_small
-					has_trait = tits_big
+					carn_has_small_tits_trigger = yes
+					carn_has_big_tits_trigger = yes
 				}
 			}
 		}
@@ -103,8 +103,8 @@ carn_tits = {
 				add = 1
 				has_game_rule = carn_dt_enabled
 				NOR = {
-					has_trait = tits_small
-					has_trait = tits_big
+					carn_has_small_tits_trigger = yes
+					carn_has_big_tits_trigger = yes
 				}
 			}
 		}
@@ -124,8 +124,8 @@ carn_tits = {
 				add = 1
 				has_game_rule = carn_dt_enabled
 				NOR = {
-					has_trait = tits_small
-					has_trait = tits_big
+					carn_has_small_tits_trigger = yes
+					carn_has_big_tits_trigger = yes
 				}
 			}
 		}
@@ -145,8 +145,8 @@ carn_tits = {
 				add = 1
 				has_game_rule = carn_dt_enabled
 				NOR = {
-					has_trait = tits_small
-					has_trait = tits_big
+					carn_has_small_tits_trigger = yes
+					carn_has_big_tits_trigger = yes
 				}
 			}
 		}
@@ -166,8 +166,8 @@ carn_tits = {
 				add = 1
 				has_game_rule = carn_dt_enabled
 				NOR = {
-					has_trait = tits_small
-					has_trait = tits_big
+					carn_has_small_tits_trigger = yes
+					carn_has_big_tits_trigger = yes
 				}
 			}
 		}
@@ -187,8 +187,8 @@ carn_tits = {
 				add = 1
 				has_game_rule = carn_dt_enabled
 				NOR = {
-					has_trait = tits_small
-					has_trait = tits_big
+					carn_has_small_tits_trigger = yes
+					carn_has_big_tits_trigger = yes
 				}
 			}
 		}
@@ -206,7 +206,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_3
+				carn_has_tits_small_3_trigger = yes
 			}
 		}
 	}
@@ -223,7 +223,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_3
+				carn_has_tits_small_3_trigger = yes
 			}
 		}
 	}
@@ -240,7 +240,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_3
+				carn_has_tits_small_3_trigger = yes
 			}
 		}
 	}
@@ -257,7 +257,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_3
+				carn_has_tits_small_3_trigger = yes
 			}
 		}
 	}
@@ -274,7 +274,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_3
+				carn_has_tits_small_3_trigger = yes
 			}
 		}
 	}
@@ -291,7 +291,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_3
+				carn_has_tits_small_3_trigger = yes
 			}
 		}
 	}
@@ -308,7 +308,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_3
+				carn_has_tits_small_3_trigger = yes
 			}
 		}
 	}
@@ -325,7 +325,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_3
+				carn_has_tits_small_3_trigger = yes
 			}
 		}
 	}
@@ -342,7 +342,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_3
+				carn_has_tits_small_3_trigger = yes
 			}
 		}
 	}
@@ -359,7 +359,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_2
+				carn_has_tits_small_2_trigger = yes
 			}
 		}
 	}
@@ -376,7 +376,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_2
+				carn_has_tits_small_2_trigger = yes
 			}
 		}
 	}
@@ -393,7 +393,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_2
+				carn_has_tits_small_2_trigger = yes
 			}
 		}
 	}
@@ -410,7 +410,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_2
+				carn_has_tits_small_2_trigger = yes
 			}
 		}
 	}
@@ -427,7 +427,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_2
+				carn_has_tits_small_2_trigger = yes
 			}
 		}
 	}
@@ -444,7 +444,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_2
+				carn_has_tits_small_2_trigger = yes
 			}
 		}
 	}
@@ -461,7 +461,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_2
+				carn_has_tits_small_2_trigger = yes
 			}
 		}
 	}
@@ -478,7 +478,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_2
+				carn_has_tits_small_2_trigger = yes
 			}
 		}
 	}
@@ -495,7 +495,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_2
+				carn_has_tits_small_2_trigger = yes
 			}
 		}
 	}
@@ -512,7 +512,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_1
+				carn_has_tits_small_1_trigger = yes
 			}
 		}
 	}
@@ -529,7 +529,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_1
+				carn_has_tits_small_1_trigger = yes
 			}
 		}
 	}
@@ -546,7 +546,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_1
+				carn_has_tits_small_1_trigger = yes
 			}
 		}
 	}
@@ -563,7 +563,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_1
+				carn_has_tits_small_1_trigger = yes
 			}
 		}
 	}
@@ -580,7 +580,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_1
+				carn_has_tits_small_1_trigger = yes
 			}
 		}
 	}
@@ -597,7 +597,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_1
+				carn_has_tits_small_1_trigger = yes
 			}
 		}
 	}
@@ -614,7 +614,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_1
+				carn_has_tits_small_1_trigger = yes
 			}
 		}
 	}
@@ -631,7 +631,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_1
+				carn_has_tits_small_1_trigger = yes
 			}
 		}
 	}
@@ -648,7 +648,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_small_1
+				carn_has_tits_small_1_trigger = yes
 			}
 		}
 	}
@@ -666,7 +666,7 @@ carn_tits = {
 			modifier = {
 				add = 3
 				OR = {
-					has_trait = tits_big_1
+					carn_has_tits_big_1_trigger = yes
 				}
 			}
 		}
@@ -685,7 +685,7 @@ carn_tits = {
 			modifier = {
 				add = 3
 				OR = {
-					has_trait = tits_big_1
+					carn_has_tits_big_1_trigger = yes
 				}
 			}
 		}
@@ -704,7 +704,7 @@ carn_tits = {
 			modifier = {
 				add = 3
 				OR = {
-					has_trait = tits_big_1
+					carn_has_tits_big_1_trigger = yes
 				}
 			}
 		}
@@ -723,7 +723,7 @@ carn_tits = {
 			modifier = {
 				add = 3
 				OR = {
-					has_trait = tits_big_1
+					carn_has_tits_big_1_trigger = yes
 				}
 			}
 		}
@@ -742,7 +742,7 @@ carn_tits = {
 			modifier = {
 				add = 3
 				OR = {
-					has_trait = tits_big_1
+					carn_has_tits_big_1_trigger = yes
 				}
 			}
 		}
@@ -761,7 +761,7 @@ carn_tits = {
 			modifier = {
 				add = 3
 				OR = {
-					has_trait = tits_big_1
+					carn_has_tits_big_1_trigger = yes
 				}
 			}
 		}
@@ -780,7 +780,7 @@ carn_tits = {
 			modifier = {
 				add = 3
 				OR = {
-					has_trait = tits_big_1
+					carn_has_tits_big_1_trigger = yes
 				}
 			}
 		}
@@ -799,7 +799,7 @@ carn_tits = {
 			modifier = {
 				add = 3
 				OR = {
-					has_trait = tits_big_1
+					carn_has_tits_big_1_trigger = yes
 				}
 			}
 		}
@@ -818,7 +818,7 @@ carn_tits = {
 			modifier = {
 				add = 3
 				OR = {
-					has_trait = tits_big_1
+					carn_has_tits_big_1_trigger = yes
 				}
 			}
 		}
@@ -836,7 +836,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_2
+				carn_has_tits_big_2_trigger = yes
 			}
 		}
 	}
@@ -853,7 +853,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_2
+				carn_has_tits_big_2_trigger = yes
 			}
 		}
 	}
@@ -870,7 +870,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_2
+				carn_has_tits_big_2_trigger = yes
 			}
 		}
 	}
@@ -887,7 +887,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_2
+				carn_has_tits_big_2_trigger = yes
 			}
 		}
 	}
@@ -904,7 +904,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_2
+				carn_has_tits_big_2_trigger = yes
 			}
 		}
 	}
@@ -921,7 +921,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_2
+				carn_has_tits_big_2_trigger = yes
 			}
 		}
 	}
@@ -938,7 +938,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_2
+				carn_has_tits_big_2_trigger = yes
 			}
 		}
 	}
@@ -955,7 +955,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_2
+				carn_has_tits_big_2_trigger = yes
 			}
 		}
 	}
@@ -972,7 +972,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_2
+				carn_has_tits_big_2_trigger = yes
 			}
 		}
 	}
@@ -989,7 +989,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_3
+				carn_has_tits_big_3_trigger = yes
 			}
 		}
 	}
@@ -1006,7 +1006,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_3
+				carn_has_tits_big_3_trigger = yes
 			}
 		}
 	}
@@ -1023,7 +1023,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_3
+				carn_has_tits_big_3_trigger = yes
 			}
 		}
 	}
@@ -1040,7 +1040,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_3
+				carn_has_tits_big_3_trigger = yes
 			}
 		}
 	}
@@ -1057,7 +1057,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_3
+				carn_has_tits_big_3_trigger = yes
 			}
 		}
 	}
@@ -1074,7 +1074,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_3
+				carn_has_tits_big_3_trigger = yes
 			}
 		}
 	}
@@ -1091,7 +1091,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_3
+				carn_has_tits_big_3_trigger = yes
 			}
 		}
 	}
@@ -1108,7 +1108,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_3
+				carn_has_tits_big_3_trigger = yes
 			}
 		}
 	}
@@ -1125,7 +1125,7 @@ carn_tits = {
 			base = 0
 			modifier = {
 				add = 3
-				has_trait = tits_big_3
+				carn_has_tits_big_3_trigger = yes
 			}
 		}
 	}

@@ -55,6 +55,30 @@ carn_dt_trait_names = {
 	carn_dt_trait_names_immersive = {}
 }
 
+carn_dt_dick_small = {
+	default = carn_dt_dick_small_bad
+	carn_dt_dick_small_good = {}
+	carn_dt_dick_small_bad = {}
+}
+
+carn_dt_dick_big = {
+	default = carn_dt_dick_big_good
+	carn_dt_dick_big_good = {}
+	carn_dt_dick_big_bad = {}
+}
+
+carn_dt_tits_small = {
+	default = carn_dt_tits_small_bad
+	carn_dt_tits_small_good = {}
+	carn_dt_tits_small_bad = {}
+}
+
+carn_dt_tits_big = {
+	default = carn_dt_tits_big_good
+	carn_dt_tits_big_good = {}
+	carn_dt_tits_big_bad = {}
+}
+
 carn_futa_content = {
 	default = carn_futa_content_disabled
 	carn_futa_content_disabled = {}

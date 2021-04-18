@@ -1,27 +1,27 @@
 ﻿carn_dick_size_value = {
 	value = 0
 	if = {
-		limit = { has_trait = dick_big_1 }
+		limit = { carn_has_dick_big_1_trigger = yes }
 		add = 1
 	}
 	else_if = {
-		limit = { has_trait = dick_big_2 }
+		limit = { carn_has_dick_big_2_trigger = yes }
 		add = 2
 	}
 	else_if = {
-		limit = { has_trait = dick_big_3 }
+		limit = { carn_has_dick_big_3_trigger = yes }
 		add = 3
 	}
 	else_if = {
-		limit = { has_trait = dick_small_1 }
+		limit = { carn_has_dick_small_1_trigger = yes }
 		add = -1
 	}
 	else_if = {
-		limit = { has_trait = dick_small_2 }
+		limit = { carn_has_dick_small_2_trigger = yes }
 		add = -2
 	}
 	else_if = {
-		limit = { has_trait = dick_small_3 }
+		limit = { carn_has_dick_small_3_trigger = yes }
 		add = -3
 	}
 }
@@ -29,27 +29,27 @@
 carn_tits_size_value = {
 	value = 0
 	if = {
-		limit = { has_trait = tits_big_1 }
+		limit = { carn_has_tits_big_1_trigger = yes }
 		add = 1
 	}
 	else_if = {
-		limit = { has_trait = tits_big_2 }
+		limit = { carn_has_tits_big_2_trigger = yes }
 		add = 2
 	}
 	else_if = {
-		limit = { has_trait = tits_big_3 }
+		limit = { carn_has_tits_big_3_trigger = yes }
 		add = 3
 	}
 	else_if = {
-		limit = { has_trait = tits_small_1 }
+		limit = { carn_has_tits_small_1_trigger = yes }
 		add = -1
 	}
 	else_if = {
-		limit = { has_trait = tits_small_2 }
+		limit = { carn_has_tits_small_2_trigger = yes }
 		add = -2
 	}
 	else_if = {
-		limit = { has_trait = tits_small_3 }
+		limit = { carn_has_tits_small_3_trigger = yes }
 		add = -3
 	}
 }

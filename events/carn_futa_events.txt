@@ -21,6 +21,7 @@ carn_futa.0001 = {
 	}
 
 	immediate = {
+		carn_flip_ruler_designed_futa_trait_to_game_rule_effect = yes
 		carn_seed_futa_trait_effect = yes
 	}
 }

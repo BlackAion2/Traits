@@ -58,6 +58,30 @@
  setting_carn_dt_trait_names_immersive: "#high Immersive#!"
  setting_carn_dt_trait_names_immersive_desc: "The breast and penis size traits of characters will be named '$trait_tits_big_1_immersive$,' '$trait_dick_big_1_immersive$,' and so on."
 
+ rule_carn_dt_dick_small: "#X Carnalitas:#! Small Penis Desirability"
+ setting_carn_dt_dick_small_bad: "Negative"
+ setting_carn_dt_dick_small_bad_desc: "Small penises will be considered a negative congenital trait."
+ setting_carn_dt_dick_small_good: "#high Positive#!"
+ setting_carn_dt_dick_small_good_desc: "Small penises will be considered a positive congenital trait."
+ 
+ rule_carn_dt_dick_big: "#X Carnalitas:#! Large Penis Desirability"
+ setting_carn_dt_dick_big_good: "Positive"
+ setting_carn_dt_dick_big_good_desc: "Large penises will be considered a positive congenital trait."
+ setting_carn_dt_dick_big_bad: "#high Negative#!"
+ setting_carn_dt_dick_big_bad_desc: "Large penises will be considered a negative congenital trait."
+
+ rule_carn_dt_tits_small: "#X Carnalitas:#! Small Breasts Desirability"
+ setting_carn_dt_tits_small_bad: "Negative"
+ setting_carn_dt_tits_small_bad_desc: "Small breasts will be considered a negative congenital trait."
+ setting_carn_dt_tits_small_good: "#high Positive#!"
+ setting_carn_dt_tits_small_good_desc: "Small breasts will be considered a positive congenital trait."
+ 
+ rule_carn_dt_tits_big: "#X Carnalitas:#! Large Breasts Desirability"
+ setting_carn_dt_tits_big_good: "Positive"
+ setting_carn_dt_tits_big_good_desc: "Large breasts will be considered a positive congenital trait."
+ setting_carn_dt_tits_big_bad: "#high Negative#!"
+ setting_carn_dt_tits_big_bad_desc: "Large breasts will be considered a negative congenital trait."
+
  rule_carn_futa_trait_name: "#X Carnalitas:#! Futanari Trait Name"
  setting_carn_futa_trait_name_futa: "Default"
  setting_carn_futa_trait_name_futa_desc: "A woman with both male and female sexual organs will be called a $carn_futanari$."
