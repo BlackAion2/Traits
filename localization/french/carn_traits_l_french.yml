@@ -6,6 +6,8 @@ trait_futa_desc:1 "Ce personnage a les organes sexuels féminins et masculins.\n
 trait_futa_character_desc:1 "[ROOT.Char.GetFirstNameNoTooltip] a les organes sexuels féminins et masculins.\n\nDû à une restriction du moteur de jeu, ce personnage ne peut pas se marrier ou enfanter avec une femme dans la version actuelle de Carnalitas. Elle peut toujours se marrier avec des hommes et tomber enceinte."
 
 trait_dick_small:1 "Petites Bites"
+trait_dick_small_good:1 "$trait_dick_small$"
+trait_dick_small_bad:1 "$trait_dick_small$"
 
 trait_dick_small_1:1 "Petite Bite"
 trait_dick_small_1_immersive:1 "Jouvenceau"
@@ -23,6 +25,8 @@ trait_dick_small_3_desc:1 "Le pénis de ce personnage est tellement petit qu'on 
 trait_dick_small_3_character_desc:1 "Le pénis de [ROOT.Char.GetFirstNameNoTooltip] est tellement petit qu'on peine à le voir."
 
 trait_dick_big:1 "Grosses Bites"
+trait_dick_big_good:1 "$trait_dick_big$"
+trait_dick_big_bad:1 "$trait_dick_big$"
 
 trait_dick_big_1:1 "Grosse Bite"
 trait_dick_big_1_immersive:1 "Bien-Membré"
@@ -40,6 +44,8 @@ trait_dick_big_3_desc:1 "Ce personnage a un membre si impressionnant qu'il est i
 trait_dick_big_3_character_desc:1 "[ROOT.Char.GetFirstNameNoTooltip] a un membre si impressionnant qu'il est impossible de le dissimuler sous des vêtements."
 
 trait_tits_small:1 "Petits Nichons"
+trait_tits_small_good:1 "$trait_tits_small$"
+trait_tits_small_bad:1 "$trait_tits_small$"
 
 trait_tits_small_1:1 "Petits Nichons"
 trait_tits_small_1_immersive:1 "Petite"
@@ -57,6 +63,8 @@ trait_tits_small_3_desc:1 "La poitrine de ce personnage est aussi plate qu'une p
 trait_tits_small_3_character_desc:1 "La poitrine de [ROOT.Char.GetFirstNameNoTooltip] est aussi plate qu'une planche à pain."
 
 trait_tits_big:1 "Gros Nichons"
+trait_tits_big_good:1 "$trait_tits_big$"
+trait_tits_big_bad:1 "$trait_tits_big$"
 
 trait_tits_big_1:1 "Gros Nichons"
 trait_tits_big_1_immersive:1 "Forte poitrine"

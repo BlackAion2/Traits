@@ -58,6 +58,30 @@ setting_carn_dt_trait_names_default_desc:1 "Les traits des poitrines et pénis d
 setting_carn_dt_trait_names_immersive:1 "#high Immersif#!"
 setting_carn_dt_trait_names_immersive_desc:1 "Les traits des poitrines et pénis des personnages seront nommés '$trait_tits_big_1_immersive$', '$trait_dick_big_1_immersive$', et ainsi de suite."
 
+rule_carn_dt_dick_small:1 "#X Carnalitas:#! Désirabilité des petits pénis"
+setting_carn_dt_dick_small_bad:1 "Négatif"
+setting_carn_dt_dick_small_bad_desc:1 "Les petits pénis seront considérés comme un trait congénital négatif."
+setting_carn_dt_dick_small_good:1 "#high Positif#!"
+setting_carn_dt_dick_small_good_desc:1 "Les petits pénis seront considérés comme un trait congénital positif."
+
+rule_carn_dt_dick_big:1 "#X Carnalitas:#! Désirabilité des gros pénis"
+setting_carn_dt_dick_big_good:1 "Positif"
+setting_carn_dt_dick_big_good_desc:1 "Les gros pénis seront considérés comme un trait congénital positif."
+setting_carn_dt_dick_big_bad:1 "#high Négatif#!"
+setting_carn_dt_dick_big_bad_desc:1 "Les gros pénis seront considérés comme un trait congénital négatif."
+
+rule_carn_dt_tits_small:1 "#X Carnalitas:#! Désirabilité des petits seins"
+setting_carn_dt_tits_small_bad:1 "Négatif"
+setting_carn_dt_tits_small_bad_desc:1 "Les petits seins seront considérés comme un trait congénital négatif."
+setting_carn_dt_tits_small_good:1 "#high Positif#!"
+setting_carn_dt_tits_small_good_desc:1 "Les petits seins seront considérés comme un trait congénital positif."
+
+rule_carn_dt_tits_big:1 "#X Carnalitas:#! Désirabilité des gros seins"
+setting_carn_dt_tits_big_good:1 "Positif"
+setting_carn_dt_tits_big_good_desc:1 "Les gros seins seront considérés comme un trait congénital positif."
+setting_carn_dt_tits_big_bad:1 "#high Négatif#!"
+setting_carn_dt_tits_big_bad_desc:1 "Les gros seins seront considérés comme un trait congénital négatif."
+
 rule_carn_futa_trait_name:1 "#X Carnalitas:#! Nom du trait $trait_futa$"
 setting_carn_futa_trait_name_futa:1 "Par défaut"
 setting_carn_futa_trait_name_futa_desc:1 "Les personnages ayant à la fois des organes sexuels féminin et masculin seront appelés '$carn_futanari$'."
