@@ -14,6 +14,10 @@ New triggers:
 * `carn_should_have_dick_trigger`
 * `carn_should_have_tits_trigger`
 * `carn_has_dick_small_1_trigger` (and so on for every body part trait)
+* `carn_has_bad_dick_trigger`
+* `carn_has_good_dick_trigger`
+* `carn_has_bad_tits_trigger`
+* `carn_has_good_tits_trigger`
 
 ## Tweaks
 
