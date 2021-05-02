@@ -7,6 +7,11 @@
 # carn_has_big_dick_trigger
 # carn_has_small_tits_trigger
 # carn_has_big_tits_trigger
+# card_has_bad_dick_trigger
+# card_has_good_dick_trigger
+# card_has_bad_tits_trigger
+# card_has_good_tits_trigger
+
 # carn_has_bigger_dick_than_character_trigger
 # carn_has_smaller_dick_than_character_trigger
 # carn_has_bigger_tits_than_character_trigger
