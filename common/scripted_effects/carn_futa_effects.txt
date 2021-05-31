@@ -1,4 +1,5 @@
 ﻿# carn_seed_futa_trait_effect
+# carn_flip_ruler_designed_futa_trait_to_game_rule_effect
 # carn_add_futa_effect
 # carn_remove_futa_effect
 # carn_add_futa_transformation_effect
@@ -69,6 +70,17 @@ carn_seed_futa_trait_effect = {
 				}
 			}
 		}
+	}
+}
+
+carn_flip_ruler_designed_futa_trait_to_game_rule_effect = {
+	if = {
+		limit = {
+			has_game_rule = carn_futa_trait_inheritance_enabled
+			has_trait = futa
+		}
+		remove_trait = futa
+		add_trait = futa_genetic
 	}
 }
 

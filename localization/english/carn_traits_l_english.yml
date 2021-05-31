@@ -6,6 +6,8 @@ trait_futa_desc: "This character has the sexual organs of both a woman and a man
 trait_futa_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has the sexual organs of both a woman and a man.\n\nDue to game engine restrictions, this character cannot father children or marry other women in the current version of Carnalitas. She can still marry men and get pregnant."
 
 trait_dick_small: "Small Dicks"
+trait_dick_small_good: "$trait_dick_small$"
+trait_dick_small_bad: "$trait_dick_small$"
 
 trait_dick_small_1: "Small Dick"
 trait_dick_small_1_immersive: "Stripling"
@@ -23,6 +25,8 @@ trait_dick_small_3_desc: "This character has such a small penis that it can scar
 trait_dick_small_3_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has such a small penis that it can scarcely be found."
 
 trait_dick_big: "Big Dicks"
+trait_dick_big_good: "$trait_dick_big$"
+trait_dick_big_bad: "$trait_dick_big$"
 
 trait_dick_big_1: "Big Dick"
 trait_dick_big_1_immersive: "Well-Endowed"
@@ -40,6 +44,8 @@ trait_dick_big_3_desc: "This character has such an impressive manhood that it is
 trait_dick_big_3_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has such an impressive manhood that it is impossible to conceal beneath clothing."
 
 trait_tits_small: "Small Tits"
+trait_tits_small_good: "$trait_tits_small$"
+trait_tits_small_bad: "$trait_tits_small$"
 
 trait_tits_small_1: "Small Tits"
 trait_tits_small_1_immersive: "Petite"
@@ -57,6 +63,8 @@ trait_tits_small_3_desc: "This character's bosom is as flat as a board."
 trait_tits_small_3_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip]'s bosom is as flat as a board."
 
 trait_tits_big: "Big Tits"
+trait_tits_big_good: "$trait_tits_big$"
+trait_tits_big_bad: "$trait_tits_big$"
 
 trait_tits_big_1: "Big Tits"
 trait_tits_big_1_immersive: "Bosomy"
