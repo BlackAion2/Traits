@@ -21,6 +21,7 @@ New triggers:
 
 ## Tweaks
 
+* Added icons to game rules to make it clearer which are from Carnalitas.
 * Made birth control cost much less income and piety.
 * Removed one of the two futa traits from the ruler designer. Choosing the futa trait in the ruler designer will now automatically give you the trait selected by the game rule on game start.
 ** Added `carn_flip_ruler_designed_futa_trait_to_game_rule_effect`
