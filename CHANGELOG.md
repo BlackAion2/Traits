@@ -29,3 +29,4 @@ New triggers:
 ## Localization
 
 * Updated Spanish localization.
+* Added icons to game rules headers
