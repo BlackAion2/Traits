@@ -730,17 +730,17 @@ carn_add_dick_big_3_effect = {
 		limit = { has_game_rule = carn_dt_enabled }
 		if = {
 			limit = { has_game_rule = carn_dt_dick_big_good }
-			add_trait = dick_big_good_2
+			add_trait = dick_big_good_3
 			if = {
 				limit = { is_adult = no }
-				make_trait_inactive = dick_big_good_2
+				make_trait_inactive = dick_big_good_3
 			}
 		}
 		else = {
-			add_trait = dick_big_bad_2
+			add_trait = dick_big_bad_3
 			if = {
 				limit = { is_adult = no }
-				make_trait_inactive = dick_big_bad_2
+				make_trait_inactive = dick_big_bad_3
 			}
 		}
 	}
