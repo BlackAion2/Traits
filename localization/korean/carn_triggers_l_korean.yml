@@ -1,35 +1,37 @@
 ﻿l_korean:
-NOT_IS_ATTRACTED_TO_TRIGGER:0 "Is not attracted to [TARGET_CHARACTER.GetShortUIName]"
+ NOT_IS_ATTRACTED_TO_TRIGGER:1 "은(는) [TARGET_CHARACTER.GetShortUIName]에게 끌리지 않습니다."
 
-carn_i_can_be_granted_titles:1 "당신은 [titles|E](을)를 수여할 수 있습니다."
-carn_not_i_can_be_granted_titles:1 "당신은 [titles|E](을)를 수여할 수 없습니다."
-carn_they_can_be_granted_titles:1 "[CHARACTER.GetShortUIName|U](은)는 [titles|E](을)를 수여할 수 있습니다."
-carn_not_they_can_be_granted_titles:1 "[CHARACTER.GetShortUIName|U](은)는 [titles|E](을)를 수여할 수 없습니다."
-carn_can_be_granted_titles:1 "[titles|E](은)는 수여 할 수 있습니다."
-carn_not_can_be_granted_titles:1 "[titles|E](은)는 수여 할 수 없습니다."
+ carn_i_can_be_granted_titles:1 "당신은 작위를 수여받을 수 있습니다."
+ carn_not_i_can_be_granted_titles:1 "당신은 작위를 수여받을 수 없습니다."
+ carn_they_can_be_granted_titles:1 "[CHARACTER.GetShortUIName|U](은)는 작위를 수여받을 수 있습니다."
+ carn_not_they_can_be_granted_titles:1 "[CHARACTER.GetShortUIName|U](은)는 작위를 수여받을 수 없습니다."
+ carn_can_be_granted_titles:1 "는 작위를 수여받을 수 있음"
+ carn_not_can_be_granted_titles:1 "는 작위를 수여받을 수 없음"
 
-carn_cannot_be_raped:0 "Cannot be raped"
+ carn_cannot_be_raped:1 "강간당할 수 없음"
 
-carn_cannot_have_max_number_of_slave_prostitutes:0 "You do not have more than [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|0] slaves working as prostitutes"
+ carn_cannot_have_max_number_of_slave_prostitutes:1 "매춘부로 일하는 노예를 [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|0]명 이상 보유할 수 없음"
 
-carn_cannot_have_sex:0 "Cannot have sex"
+ carn_cannot_have_sex:1 "섹스할 수 없음"
 
-carn_effective_age_under_value:0 "Age is less than $VALUE|0$"
+ carn_effective_age_under_value:1 "연령이 $VALUE|0$ 미만임"
 
-carn_i_have_a_fetish_trigger:0 "You have a [fetish|E]"
-carn_not_i_have_a_fetish_trigger:0 "You do #bold not#! have a [fetish|E]"
-carn_they_have_a_fetish_trigger:0 "[CHARACTER.GetShortUIName|U] has a [fetish|E]"
-carn_not_they_have_a_fetish_trigger:0 "[CHARACTER.GetShortUIName|U] does #bold not#! have a [fetish|E]"
-carn_has_any_fetish_trigger:0 "Has any [fetish|E]"
-carn_not_has_a_fetish_trigger:0 "Does #bold not#! have a [fetish|E]"
+ carn_i_have_a_fetish_trigger:1 "당신에게 [fetish|E]가 있음"
+ carn_not_i_have_a_fetish_trigger:1 "당신에게 [fetish|E]가 #bold 없음#!"
+ carn_they_have_a_fetish_trigger:1 "[CHARACTER.GetShortUIName|U]에게 [fetish|E]가 있음"
+ carn_not_they_have_a_fetish_trigger:1 "[CHARACTER.GetShortUIName|U]에게 [fetish|E]가 #bold 없음#!"
+ carn_has_any_fetish_trigger:1 "[fetish|E]가 있음"
+ carn_not_has_a_fetish_trigger:1 "[fetish|E]가 #bold 없음#!"
 
-carn_is_diplomatically_available:0 "Is currently occupied"
+ carn_is_diplomatically_available:1 "이 바쁨"
 
-carn_i_am_lactating_trigger:0 "You are [lactating|E]"
-carn_not_i_am_lactating_trigger:0 "You are #bold not#! [lactating|E]"
-carn_they_are_lactating_trigger:0 "[CHARACTER.GetShortUIName|U] is [lactating|E]"
-carn_not_they_are_lactating_trigger:0 "[CHARACTER.GetShortUIName|U] is #bold not#! [lactating|E]"
-carn_is_lactating_trigger:0 "Is [lactating|E]"
-carn_not_is_lactating_trigger:0 "Is #bold not#! [lactating|E]"
+ carn_i_am_lactating_trigger:1 "당신이 [lactating|E] 중"
+ carn_not_i_am_lactating_trigger:1 "당신이 [lactating|E] 중이지 #bold 않음#!"
+ carn_they_are_lactating_trigger:1 "[CHARACTER.GetShortUIName|U](이)가 [lactating|E] 중"
+ carn_not_they_are_lactating_trigger:1 "[CHARACTER.GetShortUIName|U](이)가 [lactating|E] 중이지 #bold 않음#!"
+ carn_is_lactating_trigger:1 "(이)가 [lactating|E] 중"
+ carn_not_is_lactating_trigger:1 "(이)가 [lactating|E] 중이지 #bold 않음#!"
 
-carn_slavery_is_illegal:1 "당신의 신앙은 [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U]의 노예화를 허락하지 않습니다."
+ carn_slavery_is_illegal:1 "당신의 신앙은 [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U]의 노예화를 허락하지 않습니다."
+
+ carn_take_concubine_available_character_same_sex: "[TARGET_CHARACTER.Custom('ConcubineConsort')]으로 들일 수 있는 대상이 없음"

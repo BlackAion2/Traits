@@ -1,7 +1,7 @@
 ﻿l_korean:
-carn_working_as_prostitute_1_modifier:1 "$trait_prostitute_1$(으)로 일한다"
-carn_working_as_prostitute_1_modifier_desc:1 "이 캐릭터는 부끄럽게도 자신의 몸을 아무에게나 팔고 있다."
-carn_working_as_prostitute_2_modifier:1 "$trait_prostitute_2$(으)로 일한다"
-carn_working_as_prostitute_2_modifier_desc:1 "이 캐릭터는 많은 고객으로부터 후원을 받는 영향력있는 캐릭터다."
-carn_working_as_prostitute_3_modifier:1 "$trait_prostitute_3$(으)로 일한다"
-carn_working_as_prostitute_3_modifier_desc:1 "귀족과 왕족들은 밤마다 이 캐릭터를 방문한다."
+carn_working_as_prostitute_1_modifier:1 "$trait_prostitute_1$로 일한다"
+carn_working_as_prostitute_1_modifier_desc:1 "이 인물은 부끄럽게도 자신의 몸을 아무에게나 팔고 있다."
+carn_working_as_prostitute_2_modifier:1 "$trait_prostitute_2$로 일한다"
+carn_working_as_prostitute_2_modifier_desc:1 "이 인물은 많은 고객으로부터 후원을 받는 영향력있는 캐릭터다."
+carn_working_as_prostitute_3_modifier:1 "$trait_prostitute_3$로 일한다"
+carn_working_as_prostitute_3_modifier_desc:1 "귀족과 왕족들은 밤마다 이 인물을 방문한다."
