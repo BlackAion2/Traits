@@ -1,4 +1,6 @@
 ﻿l_korean:
 
-carn_raped_family_member:0 "Raped Family Member"
-carn_raped_me:0 "Raped Me"
+ carn_raped_family_member:1 "가족을 강간함"
+ carn_raped_my_friend:1 "친구를 강간함"
+ carn_raped_my_lover:1 "연인을 강간함"
+ carn_raped_me:1 "나를 강간함"

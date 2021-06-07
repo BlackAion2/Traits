@@ -1,12 +1,12 @@
 ﻿l_korean:
 
-carn_sex_scene.0003.t:0 "Defilement"
-carn_sex_scene.0003.desc_opening:0 "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] looks at me with fear and dread as I approach [carn_sex_target.GetHerHim].\n\nI rip [carn_sex_target.GetHerHis] [carn_sex_target.Custom('GetClothingArticle')] off [carn_sex_target.GetHerHis] body and force myself onto [carn_sex_target.GetHerHim]. Driven by lust, I have my way with my prisoner, without a care for anything but my own pleasure.\n\n"
-carn_sex_scene.0003.desc_ending:0 "After having had my fun with [carn_sex_target.GetHerHim], I take my leave, paying [carn_sex_target.GetHerHim] no more attention."
-carn_sex_scene.0003.a:0 "Now [carn_sex_target.GetShortUIName] knows [carn_sex_target.GetHerHis] place."
+carn_sex_scene.0003.t:1 "능욕"
+carn_sex_scene.0003.desc_opening:1 "내가 [carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U]에게 다가가자 [carn_sex_target.GetSheHe]는 나를 공포의 눈빛으로 바라본다.\n\n[carn_sex_target.GetHerHis] [carn_sex_target.Custom('GetClothingArticle')](을)를 찢어버리고 [carn_sex_target.GetHerHim]에게 봉사를 강요한다. 음욕에 떠밀려서, 나는 오직 나 자신의 쾌락 외에는 아무것도 개의치 않으며 죄수의 몸을 마음껏 농락한다.\n\n"
+carn_sex_scene.0003.desc_ending:1 "[carn_sex_target.GetHerHim]와의 즐거운 시간을 보낸 뒤, 나는 [carn_sex_target.GetHerHim]에게 더 이상 관심을 두지 않은 채 그 자리를 떠난다."
+carn_sex_scene.0003.a:1 "이제 [carn_sex_target.GetShortUIName]에게 자신의 처지가 제대로 이해됐겠지."
 
-carn_sex_scene.0004.t:0 "Raped"
-carn_sex_scene.0004.desc_opening:0 "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] looks at me hungrily as [carn_sex_target.GetSheHe] approaches me, [carn_sex_target.GetHerHis] intent clear.\n\n[carn_sex_target.GetSheHe|U] rips my [carn_sex_player.Custom('GetClothingArticle')] off my body and forces [carn_sex_target.GetHerselfHimself] onto me. Driven by lust, [carn_sex_target.GetSheHe] has [carn_sex_target.GetHerHis] way with me, without a care for anything but [carn_sex_target.GetHerHis] own pleasure.\n\n"
-carn_sex_scene.0004.desc_ending:0 "After defiling me, [carn_sex_target.GetSheHe] takes [carn_sex_target.GetHerHis] leave, paying me no more attention."
-carn_sex_scene.0004.a:0 "I feel sick..."
-carn_sex_scene.0004.a.being_raped_fetish:0 "That felt... good..."
+carn_sex_scene.0004.t:1 "강간"
+carn_sex_scene.0004.desc_opening:1 "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U]의 시선은 명백히도 굶주린 채, 나에게로 천천히 다가온다.\n\n[carn_sex_target.GetSheHe|U]가 내 [carn_sex_player.Custom('GetClothingArticle')](을)를 찢어버리고 [carn_sex_target.GetHerselfHimself]의 몸을 억지로 내게 겹친다. 음욕이 시키는 대로, [carn_sex_target.GetSheHe]는 자신의 쾌락 외에는 아무것도 개의치 않으며 나의 몸을 마음껏 농락한다.\n\n"
+carn_sex_scene.0004.desc_ending:1 "나를 더럽히고, [carn_sex_target.GetSheHe]는 내게 더 이상 관심을 두지 않고 그 자리를 떠난다.."
+carn_sex_scene.0004.a:1 "몸이 아파..."
+carn_sex_scene.0004.a.being_raped_fetish:1 "기분... 좋았어..."
