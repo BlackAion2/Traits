@@ -19,7 +19,7 @@ carn_can_lactate_trigger = {
 			}
 		}
 		custom_description = {
-			text = "carn_effective_age_under_value"
+			text = "carn_effective_age_under_value_cutoff"
 			value = carn_lactation_age_cutoff
 			effective_age < carn_lactation_age_cutoff
 		}
