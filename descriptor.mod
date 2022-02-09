@@ -1,8 +1,8 @@
-version="1.5.2"
+version="1.6"
 tags={
 	"Gameplay"
 	"Character Interactions"
 	"Events"
 }
 name="Carnalitas"
-supported_version="1.4.*"
+supported_version="1.5.*"

@@ -10,10 +10,13 @@
 		scope:liege = {
 			player_heir_position = {
 				target = prev
-				position <= 2 #Not 1st, 2nd or 3rd player heir (0,1,2)
+				value <= 2 #Not 1st, 2nd or 3rd player heir (0,1,2)
 			}
 		}
-		scope:liege = { has_relation_court_physician = scope:leaving_courtier }
+		AND = {
+			has_any_court_position = yes
+			any_court_position_employer = { this = scope:liege }
+		}
 		has_relation_lover = scope:liege
 		is_knight_of = scope:liege
 		any_relation = {
@@ -72,7 +75,7 @@
 		#Keep daughters/sons for marriages
 		AND = {
 			OR = {
-			is_child_of = scope:liege
+				is_child_of = scope:liege
 				is_grandchild_of = scope:liege
 				is_great_grandchild_of = scope:liege
 			}
@@ -98,7 +101,7 @@
 		#No children of liege can leave court while children
 		AND = {
 			OR = {
-			is_child_of = scope:liege
+				is_child_of = scope:liege
 				is_grandchild_of = scope:liege
 				is_great_grandchild_of = scope:liege
 			}
@@ -150,5 +153,11 @@
 		
 		# Children taught a lesson won't leave
 		has_character_modifier = mellowed_spirit
+
+		# Courtiers with sponsored inspirations won't leave on their own.
+		AND = {
+			exists = inspiration
+			inspiration = {	exists = inspiration_sponsor }
+		}
 	}
 }

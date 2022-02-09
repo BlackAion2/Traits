@@ -1,11 +1,12 @@
-# Carnalitas 1.5.2
+# Carnalitas 1.6
 
-Compatible with saved games from Carnalitas 1.5 and up.
-
-## Features
-
-* Re-added same-sex concubinage, because Paradox added it back in.
+NOT COMPATIBLE WITH OLDER SAVED GAMES. Don't do it.
 
 ## Compatibility
 
-* Added support for CK3 1.4 Azure. Nothing really broke, this just tells CK3 the mod is updated for the new version.
+* Added support for CK3 1.5 and Royal Court.
+
+## Modding
+
+New scripted triggers:
+* `carn_possible_pregnancy_after_sex_with_character_trigger`
