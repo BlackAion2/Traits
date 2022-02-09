@@ -107,20 +107,18 @@ carn_had_sex_with_effect = {
 		hidden_effect = {
 			if = {
 				limit = {
-					$CHARACTER_1$ = { is_female = yes }
-					$CHARACTER_2$ = {
-						#carn_gender_can_impregnate_trigger = yes
-						is_male = yes
+					$CHARACTER_1$ = {
+						possible_pregnancy_after_sex_with_character_trigger = { CHARACTER = $CHARACTER_2$ }
 					}
 				}
-				$CHARACTER_1$ = { 
-					if = {
-						limit = {
-							is_pregnant = no
-							effective_age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
-							effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
-							$CHARACTER_2$ = { effective_age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE }
+				if = {
+					limit = {
+						$CHARACTER_1$ = { is_female = yes }
+						$CHARACTER_2$ = {
+							carn_gender_can_impregnate_trigger = yes
 						}
+					}
+					$CHARACTER_1$ = { 
 						add_to_variable_list = {
 							name = potential_father_variable_list
 							target = $CHARACTER_2$
@@ -156,6 +154,11 @@ carn_had_sex_with_effect = {
 									is_landed = no
 									is_courtier = no
 								}
+								NOT = {
+									any_scheme = {
+										scheme_target = $CHARACTER_2$
+									}
+								}
 							}
 							set_variable = {
 								name = story_peasant_affair_target
@@ -165,25 +168,14 @@ carn_had_sex_with_effect = {
 						}
 					}
 				}
-			}
-			else_if = {
-				limit = {
-					$CHARACTER_1$ = {
-						#carn_gender_can_impregnate_trigger = yes
-						is_male = yes
-					}
-					$CHARACTER_2$ = { is_female = yes }
-				}
-				$CHARACTER_2$ = {
-					if = {
-						limit = {
-							$CHARACTER_1$ = {
-								effective_age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE
-							}
-							is_pregnant = no
-							effective_age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
-							effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
+				else_if = {
+					limit = {
+						$CHARACTER_1$ = {
+							carn_gender_can_impregnate_trigger = yes
 						}
+						$CHARACTER_2$ = { is_female = yes }
+					}
+					$CHARACTER_2$ = {
 						add_to_variable_list = {
 							name = potential_father_variable_list
 							target = $CHARACTER_1$
@@ -227,15 +219,7 @@ carn_had_sex_with_effect = {
 							}
 							create_story = story_peasant_affair
 						}
-						else_if = {
-							limit = {
-								$CHARACTER_1$ = {
-									effective_age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE
-								}
-								is_pregnant = no
-								effective_age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
-								effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
-							}
+						else = {
 							save_scope_value_as = {
 								name = carn_sex_char_2_impregnated
 								value = no

@@ -40,3 +40,37 @@ carn_character_genders_can_produce_children_trigger = {
 		}
 	}
 }
+
+carn_possible_pregnancy_after_sex_with_character_trigger = {
+	trigger_if = {
+		limit = { 
+			carn_gender_can_impregnate_trigger = yes 
+			$CHARACTER$ = { is_female = yes }
+		}
+		effective_age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE
+		fertility >= 0.1
+
+		$CHARACTER$ ={ 
+			effective_age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
+			effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
+			fertility >= 0.1
+			is_pregnant = no
+		}
+	}
+
+	trigger_if = {
+		limit = { 
+			is_female = yes 
+			$CHARACTER$ = { carn_gender_can_impregnate_trigger = yes }
+		}
+		effective_age >= define:NChildbirth|MIN_FEMALE_REPRODUCTION_AGE
+		effective_age < define:NChildbirth|MAX_FEMALE_REPRODUCTION_AGE
+		fertility >= 0.1
+		is_pregnant = no
+			
+		$CHARACTER$ = {
+			effective_age >= define:NChildbirth|MIN_MALE_REPRODUCTION_AGE
+			fertility >= 0.1
+		}
+	}
+}

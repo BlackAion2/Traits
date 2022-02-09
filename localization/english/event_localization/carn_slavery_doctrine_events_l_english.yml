@@ -2,7 +2,7 @@
  carn_slavery_doctrine.0001.desc: "I will do my [ROOT.Char.GetFaith.GetReligion.GetAdjectiveNoTooltip] duty and free my unlawfully enslaved servants from their bonds."
  carn_slavery_doctrine.0001.a: "A wise decision."
 
- carn_slavery_doctrine.0002.desc: "I understand your concerns, but I aquired these slaves at great expense...\n\nIf you were to recoup my investment, I would be more than willing to allow them their freedom."
+ carn_slavery_doctrine.0002.desc: "I understand your concerns, but I acquired these slaves at great expense...\n\nIf you were to recoup my investment, I would be more than willing to allow them their freedom."
  carn_slavery_doctrine.0002.a: "It is the [ROOT.Char.GetFaith.GetReligion.GetAdjectiveNoTooltip] thing to do."
  carn_slavery_doctrine.0002.b: "I will not pay for your sinful acquisitions!"
  carn_slavery_doctrine.0002.c: "I am afraid that you have no choice in the matter."

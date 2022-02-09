@@ -1,11 +1,23 @@
-# Carnalitas 1.5.2
+# Carnalitas 1.6
 
-Compatible with saved games from Carnalitas 1.5 and up.
+This update makes Carnalitas compatible with Royal Court and 1.5 Fleur-de-Lis.
 
-## Features
+NOT COMPATIBLE WITH OLDER SAVED GAMES. Don't do it.
 
-* Re-added same-sex concubinage, because Paradox added it back in.
+## Tweaks
+
+* Made the expanded traits view smaller and more like the vanilla trait grid.
+
+## Bug Fixes
+
+* Fixed cutoff age trigger text not showing properly.
+* Fixed some typos; thanks to klorpa for catching them!
 
 ## Compatibility
 
-* Added support for CK3 1.4 Azure. Nothing really broke, this just tells CK3 the mod is updated for the new version.
+* Updated all files to work with CK3 1.5 and Royal Court as intended.
+
+## Modding
+
+New scripted triggers:
+* `carn_possible_pregnancy_after_sex_with_character_trigger`

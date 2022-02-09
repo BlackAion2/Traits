@@ -56,7 +56,7 @@ types ButtonIcons
 	{
 		texture = "gfx/interface/icons/flat_icons/copy.dds"
 	}
-	
+
 	type button_paste = button_icon
 	{
 		texture = "gfx/interface/icons/flat_icons/paste.dds"
@@ -167,6 +167,17 @@ types ButtonIcons
 	type button_revert = button_icon
 	{
 		texture = "gfx/interface/icons/flat_icons/revert.dds"
+	}
+
+	type button_undo = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/revert.dds"
+	}
+
+	type button_redo = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/revert.dds"
+		mirror = horizontal
 	}
 
 	type button_search = button_icon
@@ -352,6 +363,11 @@ types ButtonIcons
 		texture = "gfx/interface/icons/flat_icons/prison_execute.dds"
 	}
 
+	type button_royal_court = button_icon
+	{
+		texture = "gfx/interface/icons/flat_icons/royal_court.dds"
+	}
+
 	type button_me = button_icon
 	{
 		texture = "gfx/interface/icons/flat_icons/window_me.dds"
@@ -453,6 +469,14 @@ types ButtonIcons
 		texture = "gfx/interface/icons/flat_icons/kick_player.dds"
 	}
 
+	type button_capture = button_icon {
+		size = { 40 40 }
+		texture = "gfx/interface/icons/flat_icons/capture.dds"
+	}
+
+	type button_adopt_court_language = button_icon_highlight {
+		texture = "gfx/interface/icons/flat_icons/plus.dds"
+	}
 
 	##### FRONTEND BUTTONS #####
 	type button_account = button_icon {
@@ -540,10 +564,32 @@ types ButtonIcons
 		}
 	}
 
-    type button_trait = button_group
-    {
-    	icon_trait = {}
-    }
+	type button_open_inventory = button_normal
+	{
+		visible = "[Or( Character.IsLocalPlayer, Or( Character.HasArtifacts, Character.HasAnyArtifactClaims ) )]"
+		enabled = "[Or(  Or( Character.IsLocalPlayer, Character.HasArtifacts), Character.HasAnyArtifactClaims )]"
+		onclick = "[ToggleGameViewData( 'inventory', Character.GetID )]"
+		tooltip = "[SelectLocalization( Or( Or( Character.IsLocalPlayer, Character.HasArtifacts), Character.HasAnyArtifactClaims ),'OPEN_INVENTORY_TOOLTIP','EMPTY_INVENTORY_TOOLTIP')]"
+
+		icon = {
+			texture = "gfx/interface/buttons/button_lifestyles_base.dds"
+			size = { 100% 100% }
+		}
+
+		button_icon_highlight = {
+			block "highlight_icon_size"
+			{
+				size = { 25 25 }
+			}
+			parentanchor = center
+			texture = "gfx/interface/icons/flat_icons/inventory.dds"
+		}
+	}
+
+	type button_trait = button_group
+	{
+		icon_trait = {}
+	}
 
 	###############################################################################
 	### Add sound effects here to ensure they are consistent between buttons types.
