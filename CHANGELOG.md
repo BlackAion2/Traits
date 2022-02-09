@@ -11,10 +11,11 @@ NOT COMPATIBLE WITH OLDER SAVED GAMES. Don't do it.
 ## Bug Fixes
 
 * Fixed cutoff age trigger text not showing properly.
+* Fixed some typos; thanks to klorpa for catching them!
 
 ## Compatibility
 
-* Added support for CK3 1.5 and Royal Court.
+* Updated all files to work with CK3 1.5 and Royal Court as intended.
 
 ## Modding
 
