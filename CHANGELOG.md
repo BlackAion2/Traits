@@ -1,23 +1,26 @@
-# Carnalitas 1.6
+# Carnalitas 1.6.1
 
-This update makes Carnalitas compatible with Royal Court and 1.5 Fleur-de-Lis.
+Bugfix and quality of life release.
 
-NOT COMPATIBLE WITH OLDER SAVED GAMES. Don't do it.
+Compatible with saved games from Carnalitas 1.6 and up.
 
-## Tweaks
+# Features
 
-* Made the expanded traits view smaller and more like the vanilla trait grid.
+* Removed same-sex concubine interactions and scripts since they are in base game now.
+* Guests who have desirable body part traits should now be correctly described in the court window.
+** The description will be grammatically incorrect if you use Default trait names instead of Immersive ("A Big Tits woman"). This would take a ridiculous amount of effort to fix so you'll just have to deal with it.
 
-## Bug Fixes
+# Bug Fixes
 
-* Fixed cutoff age trigger text not showing properly.
-* Fixed some typos; thanks to klorpa for catching them!
+* Fixed cutoff age trigger text not showing properly. Again.
 
-## Compatibility
+# Modding
 
-* Updated all files to work with CK3 1.5 and Royal Court as intended.
-
-## Modding
+* You can now block Make Love with `carn_block_sex_interaction_to_opinion` and `carn_block_sex_interaction_from_opinion`
 
 New scripted triggers:
-* `carn_possible_pregnancy_after_sex_with_character_trigger`
+* `carn_has_sex_blocking_disease_trigger`
+
+New character and trait flags:
+* `carn_block_send_sex_interaction`
+* `carn_block_receive_sex_interaction`

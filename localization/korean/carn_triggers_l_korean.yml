@@ -14,7 +14,7 @@
 
  carn_cannot_have_sex:1 "섹스할 수 없음"
 
- carn_effective_age_under_value:1 "연령이 $VALUE|0$ 미만임"
+ carn_effective_age_under_value_cutoff:1 "연령이 $VALUE|0$ 미만임"
 
  carn_i_have_a_fetish_trigger:1 "당신에게 [fetish|E]가 있음"
  carn_not_i_have_a_fetish_trigger:1 "당신에게 [fetish|E]가 #bold 없음#!"
@@ -33,5 +33,3 @@
  carn_not_is_lactating_trigger:1 "(이)가 [lactating|E] 중이지 #bold 않음#!"
 
  carn_slavery_is_illegal:1 "당신의 신앙은 [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U]의 노예화를 허락하지 않습니다."
-
- carn_take_concubine_available_character_same_sex: "[TARGET_CHARACTER.Custom('ConcubineConsort')]으로 들일 수 있는 대상이 없음"

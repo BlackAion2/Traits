@@ -6,7 +6,7 @@
  carn_slavery_doctrine.0002.a: "It is the [ROOT.Char.GetFaith.GetReligion.GetAdjectiveNoTooltip] thing to do."
  carn_slavery_doctrine.0002.b: "I will not pay for your sinful acquisitions!"
  carn_slavery_doctrine.0002.c: "I am afraid that you have no choice in the matter."
-
+ 
  carn_slavery_doctrine.0003.desc: "I see the wisdom of your request, but these slaves are indispensable in their service...\n\nPerhaps if you promised to support me in my other endeavors, I would be able to cope with their loss."
  carn_slavery_doctrine.0003.a: "I will help you make this right."
  carn_slavery_doctrine.0003.b: "Your mistakes are not mine to bear!"

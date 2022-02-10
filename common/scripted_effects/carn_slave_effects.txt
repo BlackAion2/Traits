@@ -351,7 +351,6 @@ carn_enslave_effect = {
 						forgiving = 0 #No stress reduction
 					}
 				}
-				
 			}
 			
 			#Tyranny

@@ -14,7 +14,7 @@ carn_cannot_have_max_number_of_slave_prostitutes:1 "Vous n'avez pas plus de [Emp
 
 carn_cannot_have_sex:1 "Ne peut pas avoir de sexe"
 
-carn_effective_age_under_value:1 "L'âge est inférieur à $VALUE|0$"
+carn_effective_age_under_value_cutoff:1 "L'âge est inférieur à $VALUE|0$"
 
 carn_i_have_a_fetish_trigger:1 "Vous avez un fétiche"
 carn_not_i_have_a_fetish_trigger:1 "Vous n'avez #bold pas#! de fétiche"
@@ -33,5 +33,3 @@ carn_is_lactating_trigger:1 "Est en train d'[lactating|El]"
 carn_not_is_lactating_trigger:1 "N'est #bold pas#! en train d'[lactating|El]"
 
 carn_slavery_is_illegal:1 "Votre foi ne vous permet pas d'asservir des [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U]"
-
-carn_take_concubine_available_character_same_sex:1 "Personne n'est disponible pour servir de [TARGET_CHARACTER.Custom('ConcubineConsort')]"

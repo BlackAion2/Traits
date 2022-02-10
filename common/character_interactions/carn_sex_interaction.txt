@@ -12,9 +12,25 @@
         }
         scope:actor = {
             is_adult = yes
+            NOR = {
+                has_trait_with_flag = carn_block_send_sex_interaction
+                has_character_flag = carn_block_send_sex_interaction
+                has_opinion_modifier = {
+                    target = scope:recipient
+                    modifier = carn_block_sex_interaction_to_opinion
+                }
+            }
         }
         scope:recipient = {
             is_adult = yes
+            NOR = {
+                has_trait_with_flag = carn_block_receive_sex_interaction
+                has_character_flag = carn_block_receive_sex_interaction
+                has_opinion_modifier = {
+                    target = scope:actor
+                    modifier = carn_block_sex_interaction_from_opinion
+                }
+            }
         }
         OR = {
             scope:actor = {

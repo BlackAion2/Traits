@@ -75,12 +75,6 @@ carn_msg_scope_new_slave_becomes_your_slave_desc:0 "[new_slave.GetTitledFirstNam
 carn_msg_prev_becomes_your_slave_desc:0 "[PREV.GetTitledFirstName] has become your [slave|E]"
 carn_msg_scope_slave_is_no_longer_your_slave_desc:0 "[slave.GetTitledFirstName] is no longer your [slave|E]"
 
-carn_make_same_sex_concubine_interaction:0 "Make [RECIPIENT.Custom('ConcubineConsort')|U]"
-actor_secondary_carn_make_same_sex_concubine_interaction:0 "Sender"
-carn_find_same_sex_concubine_interaction:0 "Find [ACTOR.Custom('ConcubineConsort')|U]"
-carn_find_same_sex_concubine_interaction_desc:0 "Find a same-sex [actor.Custom('ConcubineConsort')|U] in your court"
-actor_secondary_carn_find_same_sex_concubine_interaction:0 "Sender"
-
 carn_force_start_prostitution_interaction:0 "Start Prostitution"
 carn_force_start_prostitution_interaction_desc:0 "Force [recipient.GetShortUINameNoTooltip] to earn [gold|E] for you as a [prostitute|E]"
 
