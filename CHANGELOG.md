@@ -14,6 +14,10 @@ Compatible with saved games from Carnalitas 1.6 and up.
 
 * Fixed cutoff age trigger text not showing properly. Again.
 
+# Tweaks
+
+* If you have the Divine Retribution perk, rape no longer incurs a piety loss and your court chaplain no longer gets a poor opinion of you. (It's still despicable though. You monster.)
+
 # Modding
 
 * You can now block Make Love with `carn_block_sex_interaction_to_opinion` and `carn_block_sex_interaction_from_opinion`
