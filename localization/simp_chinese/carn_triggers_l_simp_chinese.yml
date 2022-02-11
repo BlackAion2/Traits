@@ -10,7 +10,7 @@
  NOT_IS_ATTRACTED_TO_TRIGGER: "对[TARGET_CHARACTER.GetShortUIName]不感兴趣"
  carn_cannot_be_raped: "不能被强奸"
  carn_cannot_have_sex: "不能性交"
- carn_effective_age_under_value: "年龄小于$VALUE|0$"
+ carn_effective_age_under_value_cutoff: "年龄小于$VALUE|0$"
  carn_i_have_a_fetish_trigger: "你有一个[fetish|E]"
  carn_not_i_have_a_fetish_trigger: "你#bold 并不#!拥有一个[fetish|E]"
  carn_they_have_a_fetish_trigger: "[CHARACTER.GetShortUIName|U]拥有一个[fetish|E]"

@@ -33,5 +33,3 @@ carn_is_lactating_trigger:1 "Esta [lactating|E]"
 carn_not_is_lactating_trigger:1 "#bold No# esta [lactating|E]"
 
 carn_slavery_is_illegal:1 "Tú fé no te permite tomar miembros de [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U] como esclavos"
-
-carn_take_concubine_available_character_same_sex:1 "Nadie disponible para ser [TARGET_CHARACTER.Custom('ConcubineConsort')]"

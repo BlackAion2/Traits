@@ -1,6 +1,15 @@
 ﻿l_german:
 
-action_carn_can_sex_interaction:0 "You can $carn_sex_interaction$"
-action_carn_can_sex_interaction_label:0 "$action_carn_can_sex_interaction$"
-action_carn_can_sex_interaction_desc:0 "You can use the $carn_sex_interaction$ [character_interaction|E] to reduce [stress|E] or try for a baby, among other effects."
-action_carn_can_sex_interaction_click:0 "#I Click to $carn_sex_interaction$#!"
+ action_carn_can_sex_interaction: "Ihr könnt $carn_sex_interaction$"
+ action_carn_can_sex_interaction_label: "$action_carn_can_sex_interaction$"
+ action_carn_can_sex_interaction_desc: "Ihr könnt $carn_sex_interaction$ [character_interaction|E] nutzen, um [stress|E] zu reduzieren oder ein Kind zu zeugen, neben anderen Effekten."
+ action_carn_can_sex_interaction_click: "#I Klicken für $carn_sex_interaction$#!"
+
+ action_carn_can_demand_free_illegal_slaves_interaction: "Ihr könnt $carn_demand_free_illegal_slaves_interaction$"
+ action_carn_can_demand_free_illegal_slaves_interaction_combined_group_label: "$action_carn_can_demand_free_illegal_slaves_interaction$"
+ action_carn_can_demand_free_illegal_slaves_interaction_combined_group_name: "$action_carn_can_demand_free_illegal_slaves_interaction$"
+ action_carn_can_demand_free_illegal_slaves_interaction_desc: "Ihr könnt verlangen, dass [recipient.GetUIName] alle ihre illegalen [slaves|E] freilässt."
+ action_carn_can_demand_free_illegal_slaves_interaction_combined_group_description: "Ihr könnt verlangen, dass Eure Vasallen ihre [slaves|E] freilassen."
+ action_carn_can_demand_free_illegal_slaves_interaction_label: "Ihr könnt $carn_demand_free_illegal_slaves_interaction$ von [recipient.GetShortUINameNoTooltip] verlangen"
+ action_carn_can_demand_free_illegal_slaves_interaction_combined_label: "$carn_demand_free_illegal_slaves_interaction$ von [recipient.GetUINameNoTooltip]"
+ action_carn_can_demand_free_illegal_slaves_interaction_click: "#I Klicken für $carn_demand_free_illegal_slaves_interaction$#!"

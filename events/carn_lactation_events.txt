@@ -2,7 +2,7 @@
 
 # 0001. Yearly milk production decrease
 # 0002. Gain milk production on pregnancy
-# 0003. Seed lactation at start of game
+# 0003. Seed lactation from pregnancy on character initialization pulse
 
 # 0001. Yearly milk production decrease
 carn_lactation.0001 = {

@@ -1,35 +1,37 @@
 ﻿l_german:
-NOT_IS_ATTRACTED_TO_TRIGGER:0 "Is not attracted to [TARGET_CHARACTER.GetShortUIName]"
+ NOT_IS_ATTRACTED_TO_TRIGGER: "Fühlt sich nicht angezogen von [TARGET_CHARACTER.GetShortUIName]"
 
-carn_i_can_be_granted_titles:0 "You can be granted titles"
-carn_not_i_can_be_granted_titles:0 "You cannot be granted titles"
-carn_they_can_be_granted_titles:0 "[CHARACTER.GetShortUIName|U] can be granted titles"
-carn_not_they_can_be_granted_titles:0 "[CHARACTER.GetShortUIName|U] cannot be granted titles"
-carn_can_be_granted_titles:0 "Can be granted titles"
-carn_not_can_be_granted_titles:0 "Cannot be granted titles"
+ carn_i_can_be_granted_titles: "Euch können Titel verliehen werden"
+ carn_not_i_can_be_granted_titles: "Euch können keine Titel verliehen werden"
+ carn_they_can_be_granted_titles: "[CHARACTER.GetShortUIName|U] können Titel verliehen werden"
+ carn_not_they_can_be_granted_titles: "[CHARACTER.GetShortUIName|U] können keine Titel verliehen werden"
+ carn_can_be_granted_titles: "Kann Titel erhalten"
+ carn_not_can_be_granted_titles: "Kann keine Titel erhalten"
 
-carn_cannot_be_raped:0 "Cannot be raped"
+ carn_cannot_be_raped: "Kann nicht vergewaltigt werden"
 
-carn_cannot_have_max_number_of_slave_prostitutes:0 "You do not have more than [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|0] slaves working as prostitutes"
+ carn_cannot_have_max_number_of_slave_prostitutes: "Ihr könnt nicht mehr als [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|0] Sklaven als Prostituierte arbeiten lassen"
 
-carn_cannot_have_sex:0 "Cannot have sex"
+ carn_cannot_have_sex: "Kann keinen Sex haben"
 
-carn_effective_age_under_value:0 "Age is less than $VALUE|0$"
+carn_effective_age_under_value: "Alter ist unter $VALUE|0$"
 
-carn_i_have_a_fetish_trigger:0 "You have a [fetish|E]"
-carn_not_i_have_a_fetish_trigger:0 "You do #bold not#! have a [fetish|E]"
-carn_they_have_a_fetish_trigger:0 "[CHARACTER.GetShortUIName|U] has a [fetish|E]"
-carn_not_they_have_a_fetish_trigger:0 "[CHARACTER.GetShortUIName|U] does #bold not#! have a [fetish|E]"
-carn_has_any_fetish_trigger:0 "Has any [fetish|E]"
-carn_not_has_a_fetish_trigger:0 "Does #bold not#! have a [fetish|E]"
+ carn_i_have_a_fetish_trigger: "Ihr habt einen [fetish|E]"
+ carn_not_i_have_a_fetish_trigger: "Ihr habt #bold keinen#! [fetish|E]"
+ carn_they_have_a_fetish_trigger: "[CHARACTER.GetShortUIName|U] hat einen [fetish|E]"
+ carn_not_they_have_a_fetish_trigger: "[CHARACTER.GetShortUIName|U] hat #bold keinen#! [fetish|E]"
+ carn_has_any_fetish_trigger: "Hat irgendeinen [fetish|E]"
+ carn_not_has_a_fetish_trigger: "Hat #bold keinen#! [fetish|E]"
 
-carn_is_diplomatically_available:0 "Is currently occupied"
+ carn_is_diplomatically_available: "Ist derzeit beschäftigt"
 
-carn_i_am_lactating_trigger:0 "You are [lactating|E]"
-carn_not_i_am_lactating_trigger:0 "You are #bold not#! [lactating|E]"
-carn_they_are_lactating_trigger:0 "[CHARACTER.GetShortUIName|U] is [lactating|E]"
-carn_not_they_are_lactating_trigger:0 "[CHARACTER.GetShortUIName|U] is #bold not#! [lactating|E]"
-carn_is_lactating_trigger:0 "Is [lactating|E]"
-carn_not_is_lactating_trigger:0 "Is #bold not#! [lactating|E]"
+ carn_i_am_lactating_trigger: "Ihr [lactating|E]"
+ carn_not_i_am_lactating_trigger: "Ihr [lactating|E] #bold nicht#!"
+ carn_they_are_lactating_trigger: "[CHARACTER.GetShortUIName|U] [lactating|E]"
+ carn_not_they_are_lactating_trigger: "[CHARACTER.GetShortUIName|U] [lactating|E] #bold nicht#!"
+ carn_is_lactating_trigger: "[lactating|E]"
+ carn_not_is_lactating_trigger: "[lactating|E] #bold nicht#!"
 
-carn_slavery_is_illegal:0 "Your faith does not permit the taking of [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U] as slaves"
+ carn_slavery_is_illegal: "Euer Glaube erlaubt es nicht, [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U] zu versklaven"
+
+ carn_take_concubine_available_character_same_sex: "Niemand ist verfügbar, um als [TARGET_CHARACTER.Custom('ConcubineConsort')] zu dienen"

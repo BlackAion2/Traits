@@ -8,13 +8,15 @@ carn_not_they_can_be_granted_titles:1 "[CHARACTER.Custom('FR_only_le_GetShortUIN
 carn_can_be_granted_titles:1 "Peut se voir attribuer des titres"
 carn_not_can_be_granted_titles:1 "Ne peut pas se voir attribuer de titres"
 
+carn_can_always_have_sex:1 "Peut toujours avoir des relations sexuelles"
+
 carn_cannot_be_raped:1 "Ne peut pas être violé[CHARACTER.Custom('FR_E')]"
 
 carn_cannot_have_max_number_of_slave_prostitutes:1 "Vous n'avez pas plus de [EmptyScope.ScriptValue('carn_max_slave_prostitutes_per_owner')|0] esclaves travaillant en tant que prostituées"
 
-carn_cannot_have_sex:1 "Ne peut pas avoir de sexe"
+carn_cannot_have_sex:1 "Ne peut pas avoir de relation sexuelle"
 
-carn_effective_age_under_value:1 "L'âge est inférieur à $VALUE|0$"
+carn_effective_age_under_value_cutoff:1 "L'âge est inférieur à $VALUE|0$"
 
 carn_i_have_a_fetish_trigger:1 "Vous avez un fétiche"
 carn_not_i_have_a_fetish_trigger:1 "Vous n'avez #bold pas#! de fétiche"
@@ -33,5 +35,3 @@ carn_is_lactating_trigger:1 "Est en train d'[lactating|El]"
 carn_not_is_lactating_trigger:1 "N'est #bold pas#! en train d'[lactating|El]"
 
 carn_slavery_is_illegal:1 "Votre foi ne vous permet pas d'asservir des [CHARACTER.GetFaith.GetAdherentNamePluralNoTooltip|U]"
-
-carn_take_concubine_available_character_same_sex:1 "Personne n'est disponible pour servir de [TARGET_CHARACTER.Custom('ConcubineConsort')]"

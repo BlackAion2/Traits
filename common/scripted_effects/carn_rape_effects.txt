@@ -197,25 +197,30 @@ carn_rape_effect = {
 		carn_rape_victim_stress_effect = yes
 
 		###CHURCH OPINION & PIETY###
-		add_piety = medium_piety_loss
-
 		if = {
-			limit = {
-				any_learning_councillor = {
-					opinion = {
-						target = scope:carn_rape_victim
-						value >= -50
+        	limit = {
+            	NOT = { has_perk = divine_retribution_perk }
+            }
+            add_piety = medium_piety_loss
+
+			if = {
+				limit = {
+					any_learning_councillor = {
+						opinion = {
+							target = scope:carn_rape_victim
+							value >= -50
+						}
+					}
+				}
+				random_learning_councillor = {
+					add_opinion = {
+						modifier = impious_opinion
+						opinion = -20
+						target = scope:carn_rape_rapist
 					}
 				}
 			}
-			random_learning_councillor = {
-				add_opinion = {
-					modifier = impious_opinion
-					opinion = -20
-					target = scope:carn_rape_rapist
-				}
-			}
-		}
+        } 
 	}
 }
 

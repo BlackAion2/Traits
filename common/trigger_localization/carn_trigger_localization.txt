@@ -7,6 +7,11 @@
 	global_not = carn_not_can_be_granted_titles
 }
 
+carn_can_always_have_sex = {
+	first = carn_can_always_have_sex
+	third = carn_can_always_have_sex
+}
+
 carn_cannot_be_raped = {
 	first_not = carn_cannot_be_raped
 	third_not = carn_cannot_be_raped
@@ -53,8 +58,4 @@ carn_is_lactating_trigger = {
 carn_slavery_is_illegal = {
 	first_not = carn_slavery_is_illegal
 	third_not = carn_slavery_is_illegal
-}
-
-carn_take_concubine_available_character_same_sex = {
-	third_not = carn_take_concubine_available_character_same_sex
 }
