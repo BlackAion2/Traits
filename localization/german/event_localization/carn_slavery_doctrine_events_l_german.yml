@@ -1,20 +1,19 @@
-l_german:
-carn_slavery_doctrine.0001.desc:0 "Ich werde meine [ROOT.Char.GetFaith.GetReligion.GetAdjectiveNoTooltip] Pflicht tun und meine unrechtmäßig versklavten Diener aus ihren Fesseln befreien."
-carn_slavery_doctrine.0001.a:0 "Eine weise Entscheidung."
+﻿l_german:
+ carn_slavery_doctrine.0001.desc: "Ich werde meine [ROOT.Char.GetFaith.GetReligion.GetAdjectiveNoTooltip] Pflicht erfüllen und meine rechtswidrig versklavten Diener von ihren Fesseln befreien."
+ carn_slavery_doctrine.0001.a: "Eine weise Entscheidung."
 
-carn_slavery_doctrine.0002.desc:0 "Ich verstehe Ihre Bedenken, aber ich habe diese Sklaven mit großem Aufwand erworben...\n\nWenn Sie meine Investition zurückerhalten würden, wäre ich mehr als bereit, ihnen ihre Freiheit zu gewähren."
-carn_slavery_doctrine.0002.a:0 "Es ist das [ROOT.Char.GetFaith.GetReligion.GetAdjectiveNoTooltip], was zu tun ist."
-carn_slavery_doctrine.0002.b:0 "Ich werde nicht für Ihre sündigen Anschaffungen bezahlen!"
-carn_slavery_doctrine.0002.c:0 "Ich fürchte, dass Sie in dieser Angelegenheit keine Wahl haben."
+ carn_slavery_doctrine.0002.desc: "Ich verstehe Eure Bedenken, aber ich habe diese Sklaven mit hohem finanziellen Aufwand erworben ...\n\nWenn Ihr meine Investition ausgleichen würdet, wäre ich mehr als bereit, ihnen ihre Freiheit zu gewähren."
+ carn_slavery_doctrine.0002.a: "Es ist die rechtschaffene [ROOT.Char.GetFaith.GetReligion.GetAdjectiveNoTooltip] Art, so zu handeln."
+ carn_slavery_doctrine.0002.b: "Ich werde nicht für Eure sündigen Anschaffungen bezahlen!"
+ carn_slavery_doctrine.0002.c: "Ich fürchte, Ihr habt in dieser Angelegenheit keine Wahl."
 
-carn_slavery_doctrine.0003.desc:0 "Ich sehe die Weisheit Ihrer Bitte, aber diese Sklaven sind in ihrem Dienst unentbehrlich...\n\nWenn Sie mir vielleicht versprechen würden, mich bei meinen anderen Bemühungen zu unterstützen, könnte ich ihren Verlust verkraften."
-carn_slavery_doctrine.0003.a:0 "Ich werde Ihnen helfen, dies zu korrigieren."
-carn_slavery_doctrine.0003.b:0 "Ihre Fehler stehen mir nicht zu!"
-carn_slavery_doctrine.0003.c:0 "Sie haben zunächst andere Schulden, die Sie mir zurückzahlen müssen."
-
-carn_slavery_doctrine.0004.desc:0 "Ihre Forderungen sind unvernünftig und unbegründet. Meine Sklaven sind für [recipient.GetFaith.PantheonTerm] nicht von Belang."
-carn_slavery_doctrine.0004.hooking_out:0 "\n\nich möchte Sie auch daran erinnern, dass Sie mir etwas schuldig sind und das Thema am besten nicht weiter verfolgen sollten."
-carn_slavery_doctrine.0004.b:0 "Dann soll [recipient.GetFaith.PantheonTerm] Zeuge Ihres Urteils sein."
-carn_slavery_doctrine.0004.c:0 "Glauben Sie nicht, dass ich Ihnen das durchgehen lasse!"
-carn_slavery_doctrine.0004.d:0 "Oh, ich denke, Sie werden genau das tun, was ich Ihnen sage."
-
+ carn_slavery_doctrine.0003.desc: "Ich erkenne die Klugheit Eurer Bitte, aber diese Sklaven sind in ihrem Dienst unentbehrlich ...\n\nVielleicht wäre ich in der Lage, mit ihrem Verlust fertig zu werden, wenn Ihr mir versprechen würdet, mich bei meinen anderen Unternehmungen zu unterstützen."
+ carn_slavery_doctrine.0003.a: "Ich helfe Euch, dies richtig zu machen."
+ carn_slavery_doctrine.0003.b: "Eure Fehler sind nicht von mir auszubaden!"
+ carn_slavery_doctrine.0003.c: "Ihr habt zunächst andere Schulden, die Ihr mir zurückzahlen müsst."
+ 
+ carn_slavery_doctrine.0004.desc: "Euhre Forderungen sind unvernünftig und unbegründet. Meine Sklaven gehen [recipient.GetFaith.PantheonTerm] nichts an."
+ carn_slavery_doctrine.0004.hooking_out: "\n\nIch möchte Euch auch daran erinnern, dass Ihr mir etwas schuldet und das Problem besser nicht weiter verfolgen solltet."
+ carn_slavery_doctrine.0004.b: "Dann soll [recipient.GetFaith.PantheonTerm] Zeuge Eures Urteils sein."
+ carn_slavery_doctrine.0004.c: "Glaubt nicht, dass ich Euch damit davonkommen lasse!"
+ carn_slavery_doctrine.0004.d: "Oh, ich denke, Ihr werdet genau das tun, was ich Euch sage."

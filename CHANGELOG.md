@@ -4,6 +4,10 @@ Bugfix and quality of life release.
 
 Compatible with saved games from Carnalitas 1.6 and up.
 
+# Localization
+
+* Now has a German translation courtesy of MariaStellina!
+
 # Features
 
 * Removed same-sex concubine interactions and scripts since they are in base game now.

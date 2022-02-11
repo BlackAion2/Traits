@@ -1,3 +1,3 @@
-l_german:
-carn_msg_arousal:0 "Erregung verursacht Stress"
-carn_msg_arousal_desc:0 "Ein Mangel an sexueller Befriedigung macht Sie [stress_gain_i] [gestresst|E]"
+﻿l_german:
+carn_msg_arousal: "Erregung verursacht Stress"
+carn_msg_arousal_desc: "Ein Mangel an sexueller Befriedigung verursacht, dass Ihr [stressed|E] [stress_gain_i]"
