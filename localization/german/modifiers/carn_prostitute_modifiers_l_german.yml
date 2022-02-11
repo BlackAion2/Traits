@@ -1,7 +1,7 @@
-l_german:
-carn_working_as_prostitute_1_modifier:0 "Arbeit als $trait_prostitute_1$"
-carn_working_as_prostitute_1_modifier_desc:0 "Dieser Charakter verkauft schamlos seinen Körper an jeden, der Münzen hat."
-carn_working_as_prostitute_2_modifier:0 "Arbeit als $trait_prostitute_2$"
-carn_working_as_prostitute_2_modifier_desc:0 "Dieser Charakter ist eine einflussreiche Prostituierte, die von vielen Kunden bevormundet wird."
-carn_working_as_prostitute_3_modifier:0 "Arbeit als $trait_prostitute_3$"
-carn_working_as_prostitute_3_modifier_desc:0 "Dieser Charakter erhält nächtliche Besuche von Adel und Königshäusern."
+﻿l_german:
+ carn_working_as_prostitute_1_modifier: "Als $trait_prostitute_1$ arbeiten"
+ carn_working_as_prostitute_1_modifier_desc: "Dieser Charakter verkauft schamlos seinen Körper an jeden, der Geld hat."
+ carn_working_as_prostitute_2_modifier: "Als $trait_prostitute_2$ arbeiten"
+ carn_working_as_prostitute_2_modifier_desc: "Dieser Charakter ist eine einflussreiche Prostituierte, die von vielen Kunden regelmäßig besucht wird."
+ carn_working_as_prostitute_3_modifier: "Als $trait_prostitute_3$ arbeiten"
+ carn_working_as_prostitute_3_modifier_desc: "Dieser Charakter erhält nächtliche Besuche von Adel und Königtum."

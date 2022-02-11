@@ -1,0 +1,7 @@
+﻿carn_block_sex_interaction_to_opinion = {
+	opinion = 0
+}
+
+carn_block_sex_interaction_from_opinion = {
+	opinion = 0
+}

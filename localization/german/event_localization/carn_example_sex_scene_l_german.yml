@@ -1,6 +1,6 @@
-l_german:
+﻿l_german:
 
-carn_sex_scene.0001.t:0 "Throes of Passion"
-carn_sex_scene.0001.desc_opening:0 "Ich finde meinen [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('carn_sex_target'))] [carn_sex_target.GetTitledFirstName] sehnsüchtig wartend."
-carn_sex_scene.0001.desc_ending:0 "[ROOT.Char.Custom2('sex_scene', SCOPE.sC('carn_sex_target'))]"
-carn_sex_scene.0001.a:0 "Wunderbar."
+ carn_sex_scene.0001.t: "Krämpfe der Leidenschaft"
+ carn_sex_scene.0001.desc_opening: "Ich treffe [ROOT.Char.Custom2('RelationToMeShort', SCOPE.sC('carn_sex_target'))] [carn_sex_target.GetTitledFirstName] an ... ungeduldig wartend."
+ carn_sex_scene.0001.desc_ending: "[ROOT.Char.Custom2('sex_scene', SCOPE.sC('carn_sex_target'))]"
+ carn_sex_scene.0001.a: "Wunderbar."

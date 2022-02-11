@@ -1,8 +1,13 @@
 ﻿# checks that a character is a reasonable target for a sex scene
 carn_can_have_sex_trigger = {
 	OR = {
-		has_trait_with_flag = carn_can_always_have_sex
-		has_character_flag = carn_can_always_have_sex
+		custom_description = {
+			text = "carn_can_always_have_sex"
+			OR = {
+				has_trait_with_flag = carn_can_always_have_sex
+				has_character_flag = carn_can_always_have_sex
+			}
+		}
 		AND = {
 			custom_description = {
 				text = "carn_is_diplomatically_available"
@@ -12,12 +17,11 @@ carn_can_have_sex_trigger = {
 			is_alive = yes
 			#is_in_an_activity = no
 			is_imprisoned = no
-			has_contagious_deadly_disease_trigger = no
+			has_wounds_trigger = no
+			carn_has_sex_blocking_disease_trigger = no
 			NOR = {
 				has_trait = incapable
 				has_trait = celibate
-				has_wounds_trigger = yes
-				has_treatable_disease_trigger = yes
 				custom_description = {
 					text = "carn_cannot_have_sex"
 					has_trait_with_flag = carn_cannot_have_sex
@@ -37,8 +41,13 @@ carn_can_be_raped_trigger = {
 		}
 	}
 	OR = {
-		has_trait_with_flag = carn_can_always_have_sex
-		has_character_flag = carn_can_always_have_sex
+		custom_description = {
+			text = "carn_can_always_have_sex"
+			OR = {
+				has_trait_with_flag = carn_can_always_have_sex
+				has_character_flag = carn_can_always_have_sex
+			}
+		}
 		AND = {
 			custom_description = {
 				text = "carn_is_diplomatically_available"
@@ -46,11 +55,10 @@ carn_can_be_raped_trigger = {
 			}
 			is_adult = yes
 			is_alive = yes
-			has_contagious_deadly_disease_trigger = no
+			has_wounds_trigger = no
+			carn_has_sex_blocking_disease_trigger = no
 			NOR = {
 				has_trait = incapable
-				has_wounds_trigger = yes
-				has_treatable_disease_trigger = yes
 				custom_description = {
 					text = "carn_cannot_have_sex"
 					has_trait_with_flag = carn_cannot_have_sex
@@ -58,5 +66,17 @@ carn_can_be_raped_trigger = {
 				}
 			}
 		}
+	}
+}
+
+carn_has_sex_blocking_disease_trigger = {
+	OR = {
+		has_trait = consumption
+		has_trait = ill
+		has_trait = pneumonic
+		has_trait = typhus
+		has_trait = smallpox
+		has_trait = bubonic_plague
+		has_trait = leper
 	}
 }

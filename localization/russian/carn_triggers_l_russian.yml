@@ -14,7 +14,7 @@ carn_cannot_have_max_number_of_slave_prostitutes:0 "You do not have more than [E
 
 carn_cannot_have_sex:0 "Cannot have sex"
 
-carn_effective_age_under_value:0 "Age is less than $VALUE|0$"
+carn_effective_age_under_value_cutoff:0 "Age is less than $VALUE|0$"
 
 carn_i_have_a_fetish_trigger:0 "You have a [fetish|E]"
 carn_not_i_have_a_fetish_trigger:0 "You do #bold not#! have a [fetish|E]"
