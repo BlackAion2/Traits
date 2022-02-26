@@ -1,15 +1,15 @@
 ﻿l_german:
 
- carn_msg_started_lactating: "Laktieren beginnen"
- carn_msg_stopped_lactating: "Laktieren beenden"
- carn_msg_milk_production_increased: "Milchproduktion gesteigert"
- carn_msg_milk_production_decreased: "Milchproduktion verringert"
+ carn_msg_started_lactating:1 "Laktieren beginnen"
+ carn_msg_stopped_lactating:1 "Laktieren beenden"
+ carn_msg_milk_production_increased:1 "Milchproduktion gesteigert"
+ carn_msg_milk_production_decreased:1 "Milchproduktion verringert"
 
- carn_milk_production_notification_desc: "Ihr produziert nun [SCOPE.Custom('CarnMilkProductionDescription')] [milk|E]"
+ carn_milk_production_notification_desc:1 "Ihr produziert nun [SCOPE.Custom('CarnMilkProductionDescription')] [milk|E]"
 
- carn_stopped_lactating_notification_desc: "Ihr produziert nicht länger [milk|E]"
+ carn_stopped_lactating_notification_desc:1 "Ihr produziert nicht länger [milk|E]"
 
- carn_starts_lactating_tooltip: "Beginnt [lactating|E]"
- carn_stops_lactating_tooltip: "Beendet [lactating|E]"
- carn_milk_production_increases_tooltip: "[milk_production|E] steigert sich"
- carn_milk_production_decreases_tooltip: "[milk_production|E] verringert sich"
+ carn_starts_lactating_tooltip:1 "Beginnt [lactating|E]"
+ carn_stops_lactating_tooltip:1 "Beendet [lactating|E]"
+ carn_milk_production_increases_tooltip:1 "[milk_production|E] steigert sich"
+ carn_milk_production_decreases_tooltip:1 "[milk_production|E] verringert sich"

@@ -1,13 +1,13 @@
 ﻿l_german:
- carn_can_no_longer_work_as_prostitute_tooltip: "[carn_prostitute.GetShortUIName|U] kann nicht länger als Prostituierte arbeiten"
- carn_prostitution_random_events.0001.notification: "Prostitution: Verbesserte Fähigkeiten"
- carn_prostitution_random_events.0002.notification: "Prostitution: Rivalen verleumden Euch"
- carn_prostitution_random_events.0003.notification: "Prostitution: [ROOT.Char.GetFaith.PriestNeuterPlural|U] verurteilen Euch"
- carn_prostitution_random_events.0005.notification: "Prostitution: Kundentrinkgeld hoch"
+carn_can_no_longer_work_as_prostitute_tooltip:1 "[carn_prostitute.GetShortUIName|U] kann nicht länger als Prostituierte arbeiten"
+carn_prostitution_random_events.0001.notification:1 "Prostitution: Verbesserte Fähigkeiten"
+carn_prostitution_random_events.0002.notification:1 "Prostitution: Rivalen verleumden Euch"
+carn_prostitution_random_events.0003.notification:1 "Prostitution: [ROOT.Char.GetFaith.PriestNeuterPlural|U] verurteilen Euch"
+carn_prostitution_random_events.0005.notification:1 "Prostitution: Kundentrinkgeld hoch"
 
- carn_prostitution_random_events.0011.t: "Prostitution: Ein verlockendes Angebot"
- carn_prostitution_random_events.0011.desc: "Während ich verführerisch in meinem Schlafgemach liege, bin ich fasziniert festzustellen, dass mein nächster Klient kein geringerer ist als [client.Custom2('MyCharacterIntroduction', ROOT.Char)].\n\n[client. GetSheHe|U] versichert mir, dass ich für meine Dienste gut entlohnt werde ..."
+carn_prostitution_random_events.0011.t:1 "Prostitution: Ein verlockendes Angebot"
+carn_prostitution_random_events.0011.desc:1 "Während ich verführerisch in meinem Schlafgemach liege, bin ich fasziniert festzustellen, dass mein nächster Klient kein geringerer ist als [client.Custom2('MyCharacterIntroduction', ROOT.Char)].\n\n[client.GetSheHe|U] versichert mir, dass ich für meine Dienste gut entlohnt werde ..."
 
- carn_prostitution_random_events.0011.a: "Wer bin ich, eine solche Gelegenheit abzulehnen?"
- carn_prostitution_random_events.0011.b: "Ich fürchte, ich muss ablehnen."
- carn_prostitution_random_events.0011.c: "Das könnte ein saftiger Skandal werden..."
+carn_prostitution_random_events.0011.a:1 "Wer bin ich, eine solche Gelegenheit abzulehnen?"
+carn_prostitution_random_events.0011.b:1 "Ich fürchte, ich muss ablehnen."
+carn_prostitution_random_events.0011.c:1 "Das könnte ein saftiger Skandal werden..."

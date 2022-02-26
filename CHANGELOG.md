@@ -4,6 +4,10 @@ Bugfix and quality of life release.
 
 Compatible with saved games from Carnalitas 1.6 and up.
 
+# Localization
+
+* Updated German localization.
+
 # Tweaks
 
 * Futa trait description updated to clarify that same-sex marriage is possible now, just not impregnation.
