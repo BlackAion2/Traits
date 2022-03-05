@@ -111,12 +111,4 @@ carn_upgrade_lifestyle_prostitute_effect = {
 	else = {
 		add_trait = prostitute_1
 	}
-	if = {
-		limit = {
-			faith = {
-				NOT = { has_doctrine = carn_doctrine_prostitution_accepted }
-			}
-		}
-		add_piety_level = -1
-	}
 }

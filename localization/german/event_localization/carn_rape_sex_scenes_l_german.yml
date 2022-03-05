@@ -1,12 +1,12 @@
-﻿l_german: 
+﻿l_german:
 
- carn_sex_scene.0003.t: "Beschmutzt"
- carn_sex_scene.0003.desc_opening: "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] sieht mich mit Angst und Schrecken an, als ich mich nähere.\n\nIch reiße [carn_sex_target.GetHerHis] die [carn_sex_target.Custom('GetClothingArticle')] vom Körper und werfe mich gierig auf mein Opfer. Von Lust getrieben, zwinge ich dem Gefangenen meinen Willen auf, ohne mich um etwas anderes als mein eigenes Vergnügen zu kümmern.\n\n"
- carn_sex_scene.0003.desc_ending: "Nachdem ich meinen Spaß mit [carn_sex_target.GetHerHim] hatte, gehe ich, ohne meinem geschundenen Opfer weitere Aufmerksamkeit zu schenken."
- carn_sex_scene.0003.a: "Nun kennt [carn_sex_target.GetShortUIName] [carn_sex_target.GetHerHis]en Platz."
+carn_sex_scene.0003.t:1 "Beschmutzt"
+carn_sex_scene.0003.desc_opening:1 "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] sieht mich mit Angst und Schrecken an, als ich mich nähere.\n\nIch reiße [carn_sex_target.Custom('DE_PRO_PER_S_3P_D')] das [carn_sex_target.Custom('GetClothingArticle')] vom Körper und werfe mich gierig auf mein Opfer. Von Lust getrieben, zwinge ich [carn_sex_target.Custom('DE_PRO_PER_S_3P_D')] meinen Willen auf, ohne mich um etwas anderes als mein eigenes Vergnügen zu kümmern.\n\n"
+carn_sex_scene.0003.desc_ending:1 "Nachdem ich meinen Spaß mit [carn_sex_target.Custom('DE_PRO_PER_S_3P_D')] hatte, gehe ich, ohne meinem geschundenen Opfer weitere Aufmerksamkeit zu schenken."
+carn_sex_scene.0003.a:1 "Nun kennt [carn_sex_target.GetShortUIName] [carn_sex_target.Custom('DE_PRO_POS_S_3P')]en Platz."
 
- carn_sex_scene.0004.t: "Vergewaltigt"
- carn_sex_scene.0004.desc_opening: "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] sieht mich hungrig an. Als [carn_sex_target.GetSheHe] sich mir nähert, ist [carn_sex_target.GetHerHis]e Absicht glasklar.\n\n[carn_sex_target.GetSheHe|U] reißt mir die [carn_sex_player.Custom('GetClothingArticle')] von meinem Leib und wirft sich gewaltsam auf mich. Von Lust getrieben, zwingt [carn_sex_target.GetSheHe] mir [carn_sex_target.GetHerHis]en Willen auf, ohne sich um etwas anderes als das eigene Vergnügen zu kümmern.\n\n"
- carn_sex_scene.0004.desc_ending: "Nachdem [carn_sex_target.GetSheHe] mich beschmutzt hat, geht [carn_sex_target.GetSheHe], ohne mir weitere Aufmerksamkeit zu schenken."
- carn_sex_scene.0004.a: "Ich fühle mich krank ..."
- carn_sex_scene.0004.a.being_raped_fetish: "Das fühlte sich ... gut an ..."
+carn_sex_scene.0004.t:1 "Vergewaltigt"
+carn_sex_scene.0004.desc_opening:1 "[carn_sex_target.Custom2('MyCharacterIntroduction', ROOT.Char)|U] sieht mich hungrig an. Als [carn_sex_target.GetSheHe] sich mir nähert, ist [carn_sex_target.Custom('DE_PRO_POS_S_3P')]e Absicht glasklar.\n\n[carn_sex_target.GetSheHe|U] reißt mir das [carn_sex_player.Custom('GetClothingArticle')] von meinem Leib und wirft sich gewaltsam auf mich. Von Lust getrieben, zwingt [carn_sex_target.GetSheHe] mir [carn_sex_target.Custom('DE_PRO_POS_S_3P')] Willen auf, ohne sich um etwas anderes als das eigene Vergnügen zu kümmern.\n\n"
+carn_sex_scene.0004.desc_ending:1 "Nachdem [carn_sex_target.GetSheHe] mich beschmutzt hat, geht [carn_sex_target.GetSheHe], ohne mir weitere Aufmerksamkeit zu schenken."
+carn_sex_scene.0004.a:1 "Ich fühle mich krank ..."
+carn_sex_scene.0004.a.being_raped_fetish:1 "Das fühlte sich ... gut an ..."

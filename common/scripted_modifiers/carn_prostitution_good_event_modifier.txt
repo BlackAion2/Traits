@@ -30,4 +30,11 @@
 		factor = 1.2
 		has_trait = prostitute_3
 	}
+
+	modifier = {
+		factor = 2
+		culture = {
+			has_cultural_parameter = carn_more_good_prostitution_events
+		}
+	}
 }

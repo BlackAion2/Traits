@@ -1,4 +1,4 @@
 ﻿l_german:
- carn_slave.0001.t: "Versklavt"
- carn_slave.0001.desc: "Ich werde in den Hof geführt, wo mir die Schuhe abgenommen und Fesseln um meine Handgelenke gelegt werden. Ich habe mich mit meinem schrecklichen Schicksal abgefunden, als [actor.GetShortUIName] mich spöttisch zum Sklaven erklärt."
- carn_slave.0001.a: "Von diesem Tag an bin ich kaum mehr als bloßes Eigentum."
+carn_slave.0001.t:1 "Versklavt"
+carn_slave.0001.desc:1 "Ich werde in den Hof geführt, wo mir die Schuhe abgenommen und Fesseln um meine Handgelenke gelegt werden. Ich habe mich mit meinem schrecklichen Schicksal abgefunden, als [actor.GetShortUIName] mich spöttisch zum Sklaven erklärt."
+carn_slave.0001.a:1 "Von diesem Tag an bin ich kaum mehr als bloßes Eigentum."

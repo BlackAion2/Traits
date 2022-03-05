@@ -13,3 +13,51 @@ carn_is_working_as_prostitute_trigger = {
 		has_character_modifier = carn_working_as_prostitute_3_modifier
 	}
 }
+
+carn_accepts_prostitution_trigger = {
+	OR = {
+		faith = { has_doctrine = carn_doctrine_prostitution_accepted }
+		culture = { has_cultural_parameter = carn_prostitution_accepted }
+	}
+}
+
+carn_legal_prostitution_trigger = {
+	OR = {
+		faith = { NOT = { has_doctrine = carn_doctrine_prostitution_crime } }
+		culture = { has_cultural_parameter = carn_prostitution_accepted }
+	}
+}
+
+carn_can_be_prostitute_trigger = {
+	is_adult = yes
+	OR = {
+		has_game_rule = carn_prostitution_content_any_gender
+		AND = {
+			is_male = yes
+			has_game_rule = carn_prostitution_content_male_only
+		}
+		AND = {
+			is_female = yes
+			has_game_rule = carn_prostitution_content_female_only
+		}
+	}
+	OR = {
+		carn_legal_prostitution_trigger = yes
+		trigger_if = {
+			limit = {
+				any_relation = {
+					type = slave_owner
+					is_alive = yes
+				}
+			}
+			any_relation = {
+				type = slave_owner
+				carn_legal_prostitution_trigger = yes
+			}
+		}
+	}
+	NOR = {
+		has_character_flag = carn_cannot_be_prostitute
+		has_trait_with_flag = carn_cannot_be_prostitute
+	}
+}

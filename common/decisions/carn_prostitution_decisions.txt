@@ -6,24 +6,8 @@
 	selection_tooltip = carn_work_as_prostitute_decision_tooltip
 
 	is_shown = {
-		is_adult = yes
-		OR = {
-			has_game_rule = carn_prostitution_content_any_gender
-			AND = {
-				is_male = yes
-				has_game_rule = carn_prostitution_content_male_only
-			}
-			AND = {
-				is_female = yes
-				has_game_rule = carn_prostitution_content_female_only
-			}
-		}
+		carn_can_be_prostitute_trigger = yes
 		carn_is_working_as_prostitute_trigger = no
-		NOR = {
-			faith = { has_doctrine = carn_doctrine_prostitution_crime }
-			has_character_flag = carn_cannot_be_prostitute
-			has_trait_with_flag = carn_cannot_be_prostitute
-		}
 	}
 
 	is_valid_showing_failures_only = {
@@ -49,11 +33,16 @@
 
 		if = {
 			limit = {
-				faith = {
-					NOT = { has_doctrine = carn_doctrine_prostitution_accepted }
-				}
+				carn_is_prostitute_trigger = no
+				carn_accepts_prostitution_trigger = no
 			}
 			add_piety_level = -1
+		}
+
+		if = {
+			limit = {
+				carn_accepts_prostitution_trigger = no
+			}
 			stress_impact = {
 				zealous = major_stress_impact_gain
 				arrogant = medium_stress_impact_gain

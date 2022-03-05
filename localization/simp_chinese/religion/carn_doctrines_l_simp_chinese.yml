@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
  carn_doctrine_same_slavery_name: "奴役正义信仰"
  carn_doctrine_same_slavery_crime_name: "罪行"
  carn_doctrine_same_slavery_crime_desc: "把[ROOT.Faith.GetReligion.GetAdjectiveNoTooltip]的信徒变为奴隶是死罪，因为这样做等同于宣称你自己比[ROOT.Faith.PantheonTerm]还要高贵。"
