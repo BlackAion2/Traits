@@ -113,4 +113,11 @@
 			has_trait = intellect_bad
 		}
 	}
+
+	modifier = {
+		factor = 2
+		culture = {
+			has_cultural_parameter = carn_more_good_prostitution_events
+		}
+	}
 }
