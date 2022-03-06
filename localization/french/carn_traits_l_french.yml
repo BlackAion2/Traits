@@ -2,8 +2,8 @@
 
 trait_futa:1 "Futanari"
 trait_futa_immersive:1 "Hermaphrodite"
-trait_futa_desc:1 "Ce personnage a les organes sexuels féminins et masculins.\n\nDû à une restriction du moteur de jeu, ce personnage ne peut pas se marrier ou enfanter avec une femme dans la version actuelle de Carnalitas. Elle peut toujours se marrier avec des hommes et tomber enceinte."
-trait_futa_character_desc:1 "[ROOT.Char.GetFirstNameNoTooltip] a les organes sexuels féminins et masculins.\n\nDû à une restriction du moteur de jeu, ce personnage ne peut pas se marrier ou enfanter avec une femme dans la version actuelle de Carnalitas. Elle peut toujours se marrier avec des hommes et tomber enceinte."
+trait_futa_desc:1 "Ce personnage a les organes sexuels féminins et masculins.\n\nDû à une restriction du moteur de jeu, ce personnage ne peut pas enfanter avec une femme dans la version actuelle de Carnalitas. Elle peut peut cependant toujours tomber enceinte."
+trait_futa_character_desc:1 "[ROOT.Char.GetFirstNameNoTooltip] a les organes sexuels féminins et masculins.\n\nDû à une restriction du moteur de jeu, ce personnage ne peut pas enfanter avec une femme dans la version actuelle de Carnalitas. Elle peut cependant toujours tomber enceinte."
 
 trait_dick_small:1 "Petites Bites"
 trait_dick_small_good:1 "$trait_dick_small$"
