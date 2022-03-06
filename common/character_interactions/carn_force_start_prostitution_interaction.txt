@@ -41,6 +41,13 @@
 	
 	on_accept = {
 		scope:actor = {
+			if = {
+				limit = {
+					carn_is_prostitute_trigger = no
+					carn_accepts_prostitution_trigger = no
+				}
+				add_piety_level = -1
+			}
 			send_interface_toast = {
 				type = event_generic_neutral
 				title = msg_carn_started_working_as_prostitute
@@ -62,13 +69,6 @@
 					}
 					carn_start_working_as_prostitute_effect = yes
 				}
-			}
-			if = {
-				limit = {
-					carn_is_prostitute_trigger = no
-					carn_accepts_prostitution_trigger = no
-				}
-				add_piety_level = -1
 			}
 			stress_impact = {
 				generous = medium_stress_impact_gain
