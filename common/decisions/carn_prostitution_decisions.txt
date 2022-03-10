@@ -24,19 +24,19 @@
 
 	effect = {
 
-		send_interface_toast = {
-			title = msg_carn_started_working_as_prostitute
-			left_icon = root
-
-			carn_start_working_as_prostitute_effect = yes
-		}
-
 		if = {
 			limit = {
 				carn_is_prostitute_trigger = no
 				carn_accepts_prostitution_trigger = no
 			}
 			add_piety_level = -1
+		}
+
+		send_interface_toast = {
+			title = msg_carn_started_working_as_prostitute
+			left_icon = root
+
+			carn_start_working_as_prostitute_effect = yes
 		}
 
 		if = {

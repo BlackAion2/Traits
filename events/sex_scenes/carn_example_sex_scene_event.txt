@@ -21,6 +21,7 @@ carn_sex_scene.0001 = {
 	}
 	
 	theme = seduction
+	override_background = { event_background = bedchamber }
 	left_portrait = {
 		character = scope:carn_sex_target
 		animation = flirtation_left

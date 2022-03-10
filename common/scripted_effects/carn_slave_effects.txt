@@ -85,15 +85,6 @@ carn_enslave_effect = {
 		}
 	}
 
-	hidden_effect = {
-		scope:new_slave = {
-			if = {
-				limit = { is_imprisoned_by = scope:new_owner }
-				release_from_prison = yes
-			}
-		}
-	}
-
 	if = {
 		limit = { $DRAMA$ = yes }
 		
@@ -172,7 +163,7 @@ carn_enslave_effect = {
 				}
 			}
 
-			# Victim's dynasty hates executioner
+			# Victim's dynasty hates new_owner
 			if = {
 				limit = {
 					exists = dynasty
@@ -275,25 +266,82 @@ carn_enslave_effect = {
 
 			if = {
 				limit = {
-					OR = {
-						#is_spouse_of = scope:new_slave
-						is_close_family_of = scope:new_slave
-						scope:new_slave = { tier_or_related_liege_tier_greater_or_equal_trigger = { TIER = tier_kingdom } } #Kingdom & empire
+					scope:new_slave = {
+						time_in_prison = { years > 15 } # No one even remembers who they are anymore
 					}
 				}
-				add_dread = major_dread_gain
+				# No dread for you
+			}
+			else_if = { # Executing Emperors/HoF is quite dreadful
+				limit = {
+					scope:new_slave = {
+						OR = {
+							highest_held_title_tier >= tier_empire
+							scope:new_owner.faith.religious_head = scope:new_slave # Your head of faith
+						}
+					}
+				}
+				add_dread = execute_interaction_massive_dread_gain
 			}
 			else_if = {
 				limit = {
-					OR = {
-						scope:new_slave = { tier_or_related_liege_tier_equal_trigger = { TIER = tier_duchy } }
-						scope:new_slave = { tier_or_related_liege_tier_equal_trigger = { TIER = tier_county } }
+					scope:new_slave = {
+						OR = {
+							highest_held_title_tier >= tier_kingdom
+							tier_or_related_liege_tier_greater_or_equal_trigger = { TIER = tier_empire }
+							is_powerful_vassal_of = scope:new_owner # Is your powerful vassal
+							target_is_vassal_or_below = scope:new_owner # Your liege/s
+							is_close_family_of = scope:new_owner
+						}
 					}
 				}
-				add_dread = medium_dread_gain
+				add_dread = execute_interaction_major_dread_gain
 			}
-			else = {
-				add_dread = minor_dread_gain
+			else_if = {
+				limit = {
+					scope:new_slave = {
+						OR = {
+							highest_held_title_tier >= tier_duchy
+							tier_or_related_liege_tier_greater_or_equal_trigger = { TIER = tier_kingdom }
+							AND = { # Is your vassal, and higher than Baron
+								is_vassal_of = scope:new_owner
+								primary_title.tier > tier_barony
+							}
+							AND = { # Peer Vassals
+								exists = primary_title
+								primary_title.tier > tier_barony
+								exists = liege
+								liege = scope:new_owner.liege
+							}
+							has_trait = peasant_leader
+						}
+					}
+				}
+				add_dread = execute_interaction_medium_dread_gain
+			}
+			else_if = {
+				limit = {
+					scope:new_slave = {
+						OR = {
+							highest_held_title_tier >= tier_county
+							tier_or_related_liege_tier_greater_or_equal_trigger = { TIER = tier_duchy }
+							is_vassal_of = scope:new_owner # Is your Baron vassal
+							is_close_or_extended_family_of = scope:new_owner
+							
+							scope:new_owner = { # Executing close family of your vassals is dreadful...
+								any_vassal = {
+									is_close_family_of = scope:new_slave
+								}
+							}
+							scope:new_owner = { # Executing close family of your liege/s is the same...
+								any_liege_or_above = {
+									is_close_family_of = scope:new_slave
+								}
+							}
+						}
+					}
+				}
+				add_dread = execute_interaction_minor_dread_gain
 			}
 
 			if = {
@@ -442,6 +490,10 @@ carn_enslave_effect = {
 
 	hidden_effect = {
 		scope:new_slave = {
+			if = {
+				limit = { is_imprisoned_by = scope:new_owner }
+				release_from_prison = yes
+			}
 			trigger_event = {
 				on_action = carn_on_slave_enslaved
 			}
