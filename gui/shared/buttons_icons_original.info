@@ -465,7 +465,7 @@ types ButtonIcons
 		texture = "gfx/interface/icons/flat_icons/capture.dds"
 	}
 
-	type button_adopt_court_language = button_icon_highlight {
+	type button_adopt_court_language = button_icon {
 		texture = "gfx/interface/icons/flat_icons/plus.dds"
 	}
 
