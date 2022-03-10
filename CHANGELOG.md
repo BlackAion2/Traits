@@ -18,4 +18,5 @@ Compatible with saved games from Carnalitas 1.6 and up.
 
 # Tweaks
 
+* Enslaving a character now only gives dread if executing them would give dread.
 * Removed the background and event theme override since bedchamber background is now properly used in vanilla.
