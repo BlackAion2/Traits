@@ -67,6 +67,18 @@ carn_dt_dick_big = {
 	carn_dt_dick_big_bad = {}
 }
 
+carn_dt_balls_small = {
+	default = carn_dt_balls_small_bad
+	carn_dt_balls_small_good = {}
+	carn_dt_balls_small_bad = {}
+}
+
+carn_dt_balls_big = {
+	default = carn_dt_balls_big_good
+	carn_dt_balls_big_good = {}
+	carn_dt_balls_big_bad = {}
+}
+
 carn_dt_tits_small = {
 	default = carn_dt_tits_small_bad
 	carn_dt_tits_small_good = {}
