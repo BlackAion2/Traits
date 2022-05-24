@@ -840,12 +840,20 @@
 						desc = guest_description.dick_big_good_3.desc
 					}
 					triggered_desc = {
+						trigger = { has_trait = balls_big_good_3 }
+						desc = guest_description.balls_big_good_3.desc
+					}
+					triggered_desc = {
 						trigger = { has_trait = tits_small_good_3 }
 						desc = guest_description.tits_small_good_3.desc
 					}
 					triggered_desc = {
 						trigger = { has_trait = dick_small_good_3 }
 						desc = guest_description.dick_small_good_3.desc
+					}
+					triggered_desc = {
+						trigger = { has_trait = balls_small_good_3 }
+						desc = guest_description.balls_small_good_3.desc
 					}
 					triggered_desc = {
 						trigger = { has_trait = tits_big_good_2 }
@@ -856,12 +864,20 @@
 						desc = guest_description.dick_big_good_2.desc
 					}
 					triggered_desc = {
+						trigger = { has_trait = balls_big_good_2 }
+						desc = guest_description.balls_big_good_2.desc
+					}
+					triggered_desc = {
 						trigger = { has_trait = tits_small_good_2 }
 						desc = guest_description.tits_small_good_2.desc
 					}
 					triggered_desc = {
 						trigger = { has_trait = dick_small_good_2 }
 						desc = guest_description.dick_small_good_2.desc
+					}
+					triggered_desc = {
+						trigger = { has_trait = balls_small_good_2 }
+						desc = guest_description.balls_small_good_2.desc
 					}
 					triggered_desc = {
 						trigger = { has_trait = tits_big_good_1 }
@@ -872,12 +888,20 @@
 						desc = guest_description.dick_big_good_1.desc
 					}
 					triggered_desc = {
+						trigger = { has_trait = balls_big_good_1 }
+						desc = guest_description.balls_big_good_1.desc
+					}
+					triggered_desc = {
 						trigger = { has_trait = tits_small_good_1 }
 						desc = guest_description.tits_small_good_1.desc
 					}
 					triggered_desc = {
 						trigger = { has_trait = dick_small_good_1 }
 						desc = guest_description.dick_small_good_1.desc
+					}
+					triggered_desc = {
+						trigger = { has_trait = balls_small_good_1 }
+						desc = guest_description.balls_small_good_1.desc
 					}
 				}
 				desc = guest_description.gentic_end.desc
