@@ -17,6 +17,10 @@
 # 6932: prostitute_1
 # 6933: prostitute_2
 # 6934: prostitute_3
+# 6935-6937: balls_small_good_1 to balls_small_good_3
+# 6938-6940: balls_small_bad_1 to balls_small_bad_3
+# 6941-6943: balls_big_good_1 to balls_big_good_3
+# 6944-6946: balls_big_bad_1 to balls_big_bad_3
 #
 
 futa = {
@@ -1506,5 +1510,609 @@ prostitute_3 = {
 		shy = @neg_compat_low
 		chaste = @neg_compat_high
 		celibate = @neg_compat_high
+	}
+}
+
+# Small balls
+balls_small_good_1 = {
+	index = 6935
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_small_1_immersive
+			}
+			desc = trait_balls_small_1
+		}
+	}
+
+	opposites = {
+		balls_big_good
+		balls_big_bad
+		balls_small_bad
+	}
+
+	group = balls_small_good
+	level = 1
+
+	genetic = yes
+	physical = yes
+	good = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+
+	ruler_designer_cost = 0
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_small_1_desc
+			}
+			desc = trait_balls_small_1_character_desc
+		}
+	}
+}
+
+# Tiny balls
+balls_small_good_2 = {
+	index = 6936
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_small_2_immersive
+			}
+			desc = trait_balls_small_2
+		}
+	}
+
+	opposites = {
+		balls_big_good
+		balls_big_bad
+		balls_small_bad
+	}
+
+	group = balls_small_good
+	level = 2
+
+	genetic = yes
+	physical = yes
+	good = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+
+	ruler_designer_cost = 0
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_small_2_desc
+			}
+			desc = trait_balls_small_2_character_desc
+		}
+	}
+}
+
+# Micro balls
+balls_small_good_3 = {
+	index = 6937
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_small_3_immersive
+			}
+			desc = trait_balls_small_3
+		}
+	}
+
+	opposites = {
+		balls_big_good
+		balls_big_bad
+		balls_small_bad
+	}
+
+	group = balls_small_good
+	level = 3
+
+	genetic = yes
+	physical = yes
+	good = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+
+	ruler_designer_cost = 0
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_small_3_desc
+			}
+			desc = trait_balls_small_3_character_desc
+		}
+	}
+}
+
+# Small balls
+balls_small_bad_1 = {
+	index = 6938
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_small_1_immersive
+			}
+			desc = trait_balls_small_1
+		}
+	}
+
+	opposites = {
+		balls_big_good
+		balls_big_bad
+		balls_small_good
+	}
+
+	group = balls_small_bad
+	level = 1
+
+	genetic = yes
+	physical = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+	
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_small_1_desc
+			}
+			desc = trait_balls_small_1_character_desc
+		}
+	}
+}
+
+# Tiny balls
+balls_small_bad_2 = {
+	index = 6939
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_small_2_immersive
+			}
+			desc = trait_balls_small_2
+		}
+	}
+
+	opposites = {
+		balls_big_good
+		balls_big_bad
+		balls_small_good
+	}
+
+	group = balls_small_bad
+	level = 2
+
+	genetic = yes
+	physical = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+	
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_small_2_desc
+			}
+			desc = trait_balls_small_2_character_desc
+		}
+	}
+}
+
+# Micro balls
+balls_small_bad_3 = {
+	index = 6940
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_small_3_immersive
+			}
+			desc = trait_balls_small_3
+		}
+	}
+
+	opposites = {
+		balls_big_good
+		balls_big_bad
+		balls_small_good
+	}
+
+	group = balls_small_bad
+	level = 3
+
+	genetic = yes
+	physical = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+	
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_small_3_desc
+			}
+			desc = trait_balls_small_3_character_desc
+		}
+	}
+}
+
+# Big balls
+balls_big_good_1 = {
+	index = 6941
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_big_1_immersive
+			}
+			desc = trait_balls_big_1
+		}
+	}
+
+	opposites = {
+		balls_big_bad
+		balls_small_good
+		balls_small_bad
+	}
+
+	group = balls_big_good
+	level = 1
+
+	genetic = yes
+	physical = yes
+	good = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+
+	ruler_designer_cost = 0
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_big_1_desc
+			}
+			desc = trait_balls_big_1_character_desc
+		}
+	}
+}
+
+# Huge balls
+balls_big_good_2 = {
+	index = 6942
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_big_2_immersive
+			}
+			desc = trait_balls_big_2
+		}
+	}
+
+	opposites = {
+		balls_big_bad
+		balls_small_good
+		balls_small_bad
+	}
+
+	group = balls_big_good
+	level = 2
+
+	genetic = yes
+	physical = yes
+	good = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+
+	ruler_designer_cost = 0
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_big_2_desc
+			}
+			desc = trait_balls_big_2_character_desc
+		}
+	}
+}
+
+# Gigantic balls
+balls_big_good_3 = {
+	index = 6943
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_big_3_immersive
+			}
+			desc = trait_balls_big_3
+		}
+	}
+
+	opposites = {
+		balls_big_bad
+		balls_small_good
+		balls_small_bad
+	}
+
+	group = balls_big_good
+	level = 3
+
+	genetic = yes
+	physical = yes
+	good = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+
+	ruler_designer_cost = 0
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_big_3_desc
+			}
+			desc = trait_balls_big_3_character_desc
+		}
+	}
+}
+
+# Big balls
+balls_big_bad_1 = {
+	index = 6944
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_big_1_immersive
+			}
+			desc = trait_balls_big_1
+		}
+	}
+
+	opposites = {
+		balls_big_good
+		balls_small_good
+		balls_small_bad
+	}
+
+	group = balls_big_bad
+	level = 1
+
+	genetic = yes
+	physical = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+	
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_big_1_desc
+			}
+			desc = trait_balls_big_1_character_desc
+		}
+	}
+}
+
+# Big balls
+balls_big_bad_1 = {
+	index = 6944
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_big_1_immersive
+			}
+			desc = trait_balls_big_1
+		}
+	}
+
+	opposites = {
+		balls_big_good
+		balls_small_good
+		balls_small_bad
+	}
+
+	group = balls_big_bad
+	level = 1
+
+	genetic = yes
+	physical = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+	
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_big_1_desc
+			}
+			desc = trait_balls_big_1_character_desc
+		}
+	}
+}
+
+# Huge balls
+balls_big_bad_2 = {
+	index = 6945
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_big_2_immersive
+			}
+			desc = trait_balls_big_2
+		}
+	}
+
+	opposites = {
+		balls_big_good
+		balls_small_good
+		balls_small_bad
+	}
+
+	group = balls_big_bad
+	level = 2
+
+	genetic = yes
+	physical = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+	
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_big_2_desc
+			}
+			desc = trait_balls_big_2_character_desc
+		}
+	}
+}
+
+# Gigantic balls
+balls_big_bad_3 = {
+	index = 6946
+
+	name = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					has_game_rule = carn_dt_trait_names_immersive
+				}
+				desc = trait_balls_big_3_immersive
+			}
+			desc = trait_balls_big_3
+		}
+	}
+
+	opposites = {
+		balls_big_good
+		balls_small_good
+		balls_small_bad
+	}
+
+	group = balls_big_bad
+	level = 3
+
+	genetic = yes
+	physical = yes
+
+	birth = 0 # handled through script
+	random_creation = 0
+	
+	shown_in_ruler_designer = no
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_balls_big_3_desc
+			}
+			desc = trait_balls_big_3_character_desc
+		}
 	}
 }
