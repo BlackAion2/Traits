@@ -53,3 +53,31 @@ carn_tits_size_value = {
 		add = -3
 	}
 }
+
+carn_balls_size_value = {
+	value = 0
+	if = {
+		limit = { carn_has_balls_big_1_trigger = yes }
+		add = 1
+	}
+	else_if = {
+		limit = { carn_has_balls_big_2_trigger = yes }
+		add = 2
+	}
+	else_if = {
+		limit = { carn_has_balls_big_3_trigger = yes }
+		add = 3
+	}
+	else_if = {
+		limit = { carn_has_balls_small_1_trigger = yes }
+		add = -1
+	}
+	else_if = {
+		limit = { carn_has_balls_small_2_trigger = yes }
+		add = -2
+	}
+	else_if = {
+		limit = { carn_has_balls_small_3_trigger = yes }
+		add = -3
+	}
+}
