@@ -55,6 +55,18 @@ carn_has_any_dick_gene_trigger = {
 		has_inactive_trait = dick_big_bad_1
 		has_inactive_trait = dick_big_bad_2
 		has_inactive_trait = dick_big_bad_3
+		has_inactive_trait = balls_small_good_1
+		has_inactive_trait = balls_small_good_2
+		has_inactive_trait = balls_small_good_3
+		has_inactive_trait = balls_small_bad_1
+		has_inactive_trait = balls_small_bad_2
+		has_inactive_trait = balls_small_bad_3
+		has_inactive_trait = balls_big_good_1
+		has_inactive_trait = balls_big_good_2
+		has_inactive_trait = balls_big_good_3
+		has_inactive_trait = balls_big_bad_1
+		has_inactive_trait = balls_big_bad_2
+		has_inactive_trait = balls_big_bad_3
 	}
 }
 
@@ -83,6 +95,8 @@ carn_has_small_dick_trigger = {
 	OR = {
 		has_trait = dick_small_good
 		has_trait = dick_small_bad
+		has_trait = balls_small_good
+		has_trait = balls_small_bad
 	}
 }
 
@@ -91,6 +105,8 @@ carn_has_big_dick_trigger = {
 	OR = {
 		has_trait = dick_big_good
 		has_trait = dick_big_bad
+		has_trait = balls_big_good
+		has_trait = balls_big_bad
 	}
 }
 
@@ -115,6 +131,8 @@ carn_has_bad_dick_trigger = {
 	OR = {
 		has_trait = dick_small_bad
 		has_trait = dick_big_bad
+		has_trait = balls_small_bad
+		has_trait = balls_big_bad
 	}
 }
 
@@ -123,6 +141,8 @@ carn_has_good_dick_trigger = {
 	OR = {
 		has_trait = dick_small_good
 		has_trait = dick_big_good
+		has_trait = balls_small_good
+		has_trait = balls_big_good
 	}
 }
 

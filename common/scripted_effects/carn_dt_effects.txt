@@ -6,11 +6,14 @@
 #
 # carn_remove_dick_trait_effect
 # carn_remove_tits_trait_effect
+# carn_remove_balls_trait_effect
 #
 # carn_increase_dick_size_one_step_effect
 # carn_decrease_dick_size_one_step_effect
 # carn_increase_tits_size_one_step_effect
 # carn_decrease_tits_size_one_step_effect
+# carn_increase_balls_size_one_step_effect
+# carn_decrease_balls_size_one_step_effect
 #
 # carn_add_dick_small_1_effect
 # carn_add_dick_small_2_effect
@@ -24,6 +27,12 @@
 # carn_add_tits_big_1_effect
 # carn_add_tits_big_2_effect
 # carn_add_tits_big_3_effect
+# carn_add_balls_small_1_effect
+# carn_add_balls_small_2_effect
+# carn_add_balls_small_3_effect
+# carn_add_balls_big_1_effect
+# carn_add_balls_big_2_effect
+# carn_add_balls_big_3_effect
 #
 # carn_add_inactive_dick_small_1_effect
 # carn_add_inactive_dick_small_2_effect
@@ -37,9 +46,15 @@
 # carn_add_inactive_tits_big_1_effect
 # carn_add_inactive_tits_big_2_effect
 # carn_add_inactive_tits_big_3_effect
+# carn_add_inactive_balls_small_1_effect
+# carn_add_inactive_balls_small_2_effect
+# carn_add_inactive_balls_small_3_effect
+# carn_add_inactive_balls_big_1_effect
+# carn_add_inactive_balls_big_2_effect
+# carn_add_inactive_balls_big_3_effect
 #
 
-# randomly seed inactive dick and tits traits, regardless of age or gender
+# randomly seed inactive dick, tits and balls traits, regardless of age or gender
 carn_seed_dt_traits_effect = {
 	if = {
 		limit = { has_character_flag = carn_seed_dick_small_1 }
@@ -90,6 +105,58 @@ carn_seed_dt_traits_effect = {
 			}
 			15 = {
 				carn_add_inactive_dick_big_3_effect = yes
+			}	
+		}
+	}
+	if = {
+		limit = { has_character_flag = carn_seed_balls_small_1 }
+		carn_add_balls_small_1_effect = yes
+	}
+	else_if = {
+		limit = { has_character_flag = carn_seed_balls_small_2 }
+		carn_add_balls_small_2_effect = yes
+	}
+	else_if = {
+		limit = { has_character_flag = carn_seed_balls_small_3 }
+		carn_add_balls_small_3_effect = yes
+	}
+	else_if = {
+		limit = { has_character_flag = carn_seed_balls_big_1 }
+		carn_add_balls_big_1_effect = yes
+	}
+	else_if = {
+		limit = { has_character_flag = carn_seed_balls_big_2 }
+		carn_add_balls_big_2_effect = yes
+	}
+	else_if = {
+		limit = { has_character_flag = carn_seed_balls_big_3 }
+		carn_add_balls_big_3_effect = yes
+	}
+	else_if = {
+		limit = {
+			carn_has_any_balls_gene_trigger = no
+		}
+		random_list = {
+			820 = {
+				# nothing
+			}
+			50 = {
+				carn_add_inactive_balls_small_1_effect = yes
+			}
+			25 = {
+				carn_add_inactive_balls_small_2_effect = yes
+			}
+			15 = {
+				carn_add_inactive_balls_small_3_effect = yes
+			}		
+			50 = {
+				carn_add_inactive_balls_big_1_effect = yes
+			}
+			25 = {
+				carn_add_inactive_balls_big_2_effect = yes
+			}
+			15 = {
+				carn_add_inactive_balls_big_3_effect = yes
 			}	
 		}
 	}
@@ -186,6 +253,42 @@ carn_flip_ruler_designed_dt_traits_to_game_rule_effect = {
 		}
 	}
 	if = {
+		limit = { has_game_rule = carn_dt_balls_small_bad }
+		if = {
+			limit = { has_trait = balls_small_good_1 }
+			remove_trait = balls_small_good_1
+			add_trait = balls_small_bad_1
+		}
+		else_if = {
+			limit = { has_trait = balls_small_good_2 }
+			remove_trait = balls_small_good_2
+			add_trait = balls_small_bad_2
+		}
+		if = {
+			limit = { has_trait = balls_small_good_3 }
+			remove_trait = balls_small_good_3
+			add_trait = balls_small_bad_3
+		}
+	}
+	if = {
+		limit = { has_game_rule = carn_dt_balls_big_bad }
+		if = {
+			limit = { has_trait = balls_big_good_1 }
+			remove_trait = balls_big_good_1
+			add_trait = balls_big_bad_1
+		}
+		else_if = {
+			limit = { has_trait = balls_big_good_2 }
+			remove_trait = balls_big_good_2
+			add_trait = balls_big_bad_2
+		}
+		if = {
+			limit = { has_trait = balls_big_good_3 }
+			remove_trait = balls_big_good_3
+			add_trait = balls_big_bad_3
+		}
+	}
+	if = {
 		limit = { has_game_rule = carn_dt_tits_small_bad }
 		if = {
 			limit = { has_trait = tits_small_good_1 }
@@ -272,6 +375,54 @@ carn_make_all_dt_traits_inactive_effect = {
 	else_if = {
 		limit = { has_trait = dick_big_bad_3 }
 		make_trait_inactive = dick_big_bad_3
+	}
+	if = {
+		limit = { has_trait = balls_small_good_1 }
+		make_trait_inactive = balls_small_good_1
+	}
+	else_if = {
+		limit = { has_trait = balls_small_good_2 }
+		make_trait_inactive = balls_small_good_2
+	}
+	else_if = {
+		limit = { has_trait = balls_small_good_3 }
+		make_trait_inactive = balls_small_good_3
+	}
+	else_if = {
+		limit = { has_trait = balls_small_bad_1 }
+		make_trait_inactive = balls_small_bad_1
+	}
+	else_if = {
+		limit = { has_trait = balls_small_bad_2 }
+		make_trait_inactive = balls_small_bad_2
+	}
+	else_if = {
+		limit = { has_trait = balls_small_bad_3 }
+		make_trait_inactive = balls_small_bad_3
+	}
+	else_if = {
+		limit = { has_trait = balls_big_good_1 }
+		make_trait_inactive = balls_big_good_1
+	}
+	else_if = {
+		limit = { has_trait = balls_big_good_2 }
+		make_trait_inactive = balls_big_good_2
+	}
+	else_if = {
+		limit = { has_trait = balls_big_good_3 }
+		make_trait_inactive = balls_big_good_3
+	}
+	else_if = {
+		limit = { has_trait = balls_big_bad_1 }
+		make_trait_inactive = balls_big_bad_1
+	}
+	else_if = {
+		limit = { has_trait = balls_big_bad_2 }
+		make_trait_inactive = balls_big_bad_2
+	}
+	else_if = {
+		limit = { has_trait = balls_big_bad_3 }
+		make_trait_inactive = balls_big_bad_3
 	}
 	if = {
 		limit = { has_trait = tits_small_good_1 }
@@ -377,6 +528,54 @@ carn_activate_gender_specific_dt_traits_effect = {
 			limit = { has_inactive_trait = dick_big_bad_3 }
 			make_trait_active = dick_big_bad_3
 		}
+		if = {
+			limit = { has_inactive_trait = balls_small_good_1 }
+			make_trait_active = balls_small_good_1
+		}
+		else_if = {
+			limit = { has_inactive_trait = balls_small_good_2 }
+			make_trait_active = balls_small_good_2
+		}
+		else_if = {
+			limit = { has_inactive_trait = balls_small_good_3 }
+			make_trait_active = balls_small_good_3
+		}
+		else_if = {
+			limit = { has_inactive_trait = balls_small_bad_1 }
+			make_trait_active = balls_small_bad_1
+		}
+		else_if = {
+			limit = { has_inactive_trait = balls_small_bad_2 }
+			make_trait_active = balls_small_bad_2
+		}
+		else_if = {
+			limit = { has_inactive_trait = balls_small_bad_3 }
+			make_trait_active = balls_small_bad_3
+		}
+		else_if = {
+			limit = { has_inactive_trait = balls_big_good_1 }
+			make_trait_active = balls_big_good_1
+		}
+		else_if = {
+			limit = { has_inactive_trait = balls_big_good_2 }
+			make_trait_active = balls_big_good_2
+		}
+		else_if = {
+			limit = { has_inactive_trait = balls_big_good_3 }
+			make_trait_active = balls_big_good_3
+		}
+		else_if = {
+			limit = { has_inactive_trait = balls_big_bad_1 }
+			make_trait_active = balls_big_bad_1
+		}
+		else_if = {
+			limit = { has_inactive_trait = balls_big_bad_2 }
+			make_trait_active = balls_big_bad_2
+		}
+		else_if = {
+			limit = { has_inactive_trait = balls_big_bad_3 }
+			make_trait_active = balls_big_bad_3
+		}
 	}
 
 	# tits
@@ -446,6 +645,21 @@ carn_remove_dick_trait_effect = {
 	remove_trait = dick_big_bad_1
 	remove_trait = dick_big_bad_2
 	remove_trait = dick_big_bad_3
+}
+
+carn_remove_balls_trait_effect = {
+	remove_trait = balls_small_good_1
+	remove_trait = balls_small_good_2
+	remove_trait = balls_small_good_3
+	remove_trait = balls_small_bad_1
+	remove_trait = balls_small_bad_2
+	remove_trait = balls_small_bad_3
+	remove_trait = balls_big_good_1
+	remove_trait = balls_big_good_2
+	remove_trait = balls_big_good_3
+	remove_trait = balls_big_bad_1
+	remove_trait = balls_big_bad_2
+	remove_trait = balls_big_bad_3
 }
 
 carn_remove_tits_trait_effect = {
@@ -533,6 +747,80 @@ carn_decrease_dick_size_one_step_effect = {
 		}
 		else = {
 			carn_add_dick_small_1_effect = yes
+		}
+	}
+}
+
+carn_increase_balls_size_one_step_effect = {
+	if = {
+		limit = {
+			has_game_rule = carn_dt_enabled
+			is_adult = yes
+			carn_should_have_dick_trigger = yes
+		}
+		if = {
+			limit = { carn_has_balls_big_2_trigger = yes }
+			carn_remove_balls_trait_effect = yes
+			carn_add_balls_big_3_effect = yes
+		}
+		else_if = {
+			limit = { carn_has_balls_big_1_trigger = yes }
+			carn_remove_balls_trait_effect = yes
+			carn_add_balls_big_2_effect = yes
+		}
+		else_if = {
+			limit = { carn_has_balls_small_3_trigger = yes }
+			carn_remove_balls_trait_effect = yes
+			carn_add_balls_small_2_effect = yes
+		}
+		else_if = {
+			limit = { carn_has_balls_small_2_trigger = yes }
+			carn_remove_balls_trait_effect = yes
+			carn_add_balls_small_1_effect = yes
+		}
+		else_if = {
+			limit = { carn_has_balls_small_1_trigger = yes }
+			carn_remove_balls_trait_effect = yes
+		}
+		else = {
+			carn_add_balls_big_1_effect = yes
+		}
+	}
+}
+
+carn_decrease_balls_size_one_step_effect = {
+	if = {
+		limit = {
+			has_game_rule = carn_dt_enabled
+			is_adult = yes
+			carn_should_have_dick_trigger = yes
+		}
+		if = {
+			limit = { carn_has_balls_small_2_trigger = yes }
+			carn_remove_balls_trait_effect = yes
+			carn_add_balls_small_3_effect = yes
+		}
+		else_if = {
+			limit = { carn_has_balls_small_1_trigger = yes }
+			carn_remove_balls_trait_effect = yes
+			carn_add_balls_small_2_effect = yes
+		}
+		else_if = {
+			limit = { carn_has_balls_big_3_trigger = yes }
+			carn_remove_balls_trait_effect = yes
+			carn_add_balls_big_2_effect = yes
+		}
+		else_if = {
+			limit = { carn_has_balls_big_2_trigger = yes }
+			carn_remove_balls_trait_effect = yes
+			carn_add_balls_big_1_effect = yes
+		}
+		else_if = {
+			limit = { carn_has_balls_big_1_trigger = yes }
+			carn_remove_balls_trait_effect = yes
+		}
+		else = {
+			carn_add_balls_small_1_effect = yes
 		}
 	}
 }
@@ -747,6 +1035,138 @@ carn_add_dick_big_3_effect = {
 	add_character_flag = carn_dt_traits_seeded
 }
 
+carn_add_balls_small_1_effect = {
+	if = {
+		limit = { has_game_rule = carn_dt_enabled }
+		if = {
+			limit = { has_game_rule = carn_dt_balls_small_good }
+			add_trait = balls_small_good_1
+			if = {
+				limit = { is_adult = no }
+				make_trait_inactive = balls_small_good_1
+			}
+		}
+		else = {
+			add_trait = balls_small_bad_1
+			if = {
+				limit = { is_adult = no }
+				make_trait_inactive = balls_small_bad_1
+			}
+		}
+	}
+	add_character_flag = carn_dt_traits_seeded
+}
+
+carn_add_balls_small_2_effect = {
+	if = {
+		limit = { has_game_rule = carn_dt_enabled }
+		if = {
+			limit = { has_game_rule = carn_dt_balls_small_good }
+			add_trait = balls_small_good_2
+			if = {
+				limit = { is_adult = no }
+				make_trait_inactive = balls_small_good_2
+			}
+		}
+		else = {
+			add_trait = balls_small_bad_2
+			if = {
+				limit = { is_adult = no }
+				make_trait_inactive = balls_small_bad_2
+			}
+		}
+	}
+	add_character_flag = carn_dt_traits_seeded
+}
+
+carn_add_balls_small_3_effect = {
+	if = {
+		limit = { has_game_rule = carn_dt_enabled }
+		if = {
+			limit = { has_game_rule = carn_dt_balls_small_good }
+			add_trait = balls_small_good_3
+			if = {
+				limit = { is_adult = no }
+				make_trait_inactive = balls_small_good_3
+			}
+		}
+		else = {
+			add_trait = balls_small_bad_3
+			if = {
+				limit = { is_adult = no }
+				make_trait_inactive = balls_small_bad_3
+			}
+		}
+	}
+	add_character_flag = carn_dt_traits_seeded
+}
+
+carn_add_balls_big_1_effect = {
+	if = {
+		limit = { has_game_rule = carn_dt_enabled }
+		if = {
+			limit = { has_game_rule = carn_dt_balls_big_good }
+			add_trait = balls_big_good_1
+			if = {
+				limit = { is_adult = no }
+				make_trait_inactive = balls_big_good_1
+			}
+		}
+		else = {
+			add_trait = balls_big_bad_1
+			if = {
+				limit = { is_adult = no }
+				make_trait_inactive = balls_big_bad_1
+			}
+		}
+	}
+	add_character_flag = carn_dt_traits_seeded
+}
+
+carn_add_balls_big_2_effect = {
+	if = {
+		limit = { has_game_rule = carn_dt_enabled }
+		if = {
+			limit = { has_game_rule = carn_dt_balls_big_good }
+			add_trait = balls_big_good_2
+			if = {
+				limit = { is_adult = no }
+				make_trait_inactive = balls_big_good_2
+			}
+		}
+		else = {
+			add_trait = balls_big_bad_2
+			if = {
+				limit = { is_adult = no }
+				make_trait_inactive = balls_big_bad_2
+			}
+		}
+	}
+	add_character_flag = carn_dt_traits_seeded
+}
+
+carn_add_balls_big_3_effect = {
+	if = {
+		limit = { has_game_rule = carn_dt_enabled }
+		if = {
+			limit = { has_game_rule = carn_dt_balls_big_good }
+			add_trait = balls_big_good_3
+			if = {
+				limit = { is_adult = no }
+				make_trait_inactive = balls_big_good_3
+			}
+		}
+		else = {
+			add_trait = balls_big_bad_3
+			if = {
+				limit = { is_adult = no }
+				make_trait_inactive = balls_big_bad_3
+			}
+		}
+	}
+	add_character_flag = carn_dt_traits_seeded
+}
+
 carn_add_tits_small_1_effect = {
 	if = {
 		limit = { has_game_rule = carn_dt_enabled }
@@ -948,6 +1368,78 @@ carn_add_inactive_dick_big_3_effect = {
 	else = {
 		add_trait = dick_big_bad_3
 		make_trait_inactive = dick_big_bad_3
+	}
+}
+
+carn_add_inactive_balls_small_1_effect = {
+	if = {
+		limit = { has_game_rule = carn_dt_balls_small_good }
+		add_trait = balls_small_good_1
+		make_trait_inactive = balls_small_good_1
+	}
+	else = {
+		add_trait = balls_small_bad_1
+		make_trait_inactive = balls_small_bad_1
+	}
+}
+
+carn_add_inactive_balls_small_2_effect = {
+	if = {
+		limit = { has_game_rule = carn_dt_balls_small_good }
+		add_trait = balls_small_good_2
+		make_trait_inactive = balls_small_good_2
+	}
+	else = {
+		add_trait = balls_small_bad_2
+		make_trait_inactive = balls_small_bad_2
+	}
+}
+
+carn_add_inactive_balls_small_3_effect = {
+	if = {
+		limit = { has_game_rule = carn_dt_balls_small_good }
+		add_trait = balls_small_good_3
+		make_trait_inactive = balls_small_good_3
+	}
+	else = {
+		add_trait = balls_small_bad_3
+		make_trait_inactive = balls_small_bad_3
+	}
+}
+
+carn_add_inactive_balls_big_1_effect = {
+	if = {
+		limit = { has_game_rule = carn_dt_balls_big_good }
+		add_trait = balls_big_good_1
+		make_trait_inactive = balls_big_good_1
+	}
+	else = {
+		add_trait = balls_big_bad_1
+		make_trait_inactive = balls_big_bad_1
+	}
+}
+
+carn_add_inactive_balls_big_2_effect = {
+	if = {
+		limit = { has_game_rule = carn_dt_balls_big_good }
+		add_trait = balls_big_good_2
+		make_trait_inactive = balls_big_good_2
+	}
+	else = {
+		add_trait = balls_big_bad_2
+		make_trait_inactive = balls_big_bad_2
+	}
+}
+
+carn_add_inactive_balls_big_3_effect = {
+	if = {
+		limit = { has_game_rule = carn_dt_balls_big_good }
+		add_trait = balls_big_good_3
+		make_trait_inactive = balls_big_good_3
+	}
+	else = {
+		add_trait = balls_big_bad_3
+		make_trait_inactive = balls_big_bad_3
 	}
 }
 
