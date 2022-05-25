@@ -74,7 +74,7 @@ trait_balls_big_1_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] has
 trait_balls_big_2: "Huge Balls"
 trait_balls_big_2_immersive: "Man-Melons"
 trait_balls_big_2_desc: "This character is incapable of closing their legs and needs furniture to be adjusted to them."
-trait_dick_big_2_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is incapable of closing their legs and needs furniture to be adjusted to them."
+trait_balls_big_2_character_desc: "[ROOT.GetCharacter.GetFirstNameNoTooltip] is incapable of closing their legs and needs furniture to be adjusted to them."
 
 trait_balls_big_3: "Gigantic Balls"
 trait_balls_big_3_immersive: "Pig-Balls"
